@@ -1,0 +1,13 @@
+---
+---
+
+@import "jekyll-theme-chirpy";
+
+#sidebar {
+  #avatar {
+    > a {
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+}

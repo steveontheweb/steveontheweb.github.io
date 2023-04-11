@@ -53,7 +53,7 @@ google_site_verification: # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: 'G-XB4TQNFFGV'  # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint: # fill in the Google Analytics superProxy endpoint of Google App Engine
@@ -81,6 +81,9 @@ img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
 avatar: assets/img/MetaSteve.jpg
+
+# the logo above the avatar
+logo: assets/img/steveontheweb.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true

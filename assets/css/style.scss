@@ -5,12 +5,25 @@
 
 #sidebar {
   .profile-wrapper {
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    #logo {
+      text-align: center !important;
+      > img {
+        width: 12rem;
+        height: 8rem;
+      }
+    }
     #avatar {
       > a {
         width: 12rem;
         height: 12rem;
       }
     }
+    
+
   }
   
 }

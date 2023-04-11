@@ -11,9 +11,10 @@
 
     #logo {
       text-align: center !important;
+      margin-bottom: 1rem;
       > img {
         width: 12rem;
-        height: 8rem;
+        height: auto;
       }
     }
     #avatar {

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AnimToTexture in Unreal
+title: AnimToTexture for Crowds in Unreal
 date: 2023-04-10 18:32 -0600
 ---
 
@@ -15,7 +15,7 @@ Vertex animation is a technique to optimize when rendering large groups of skele
 - [Stephen Phillips' Post on Epic Dev Community](https://dev.epicgames.com/community/learning/tutorials/daE9/unreal-engine-baking-out-vertex-animation-in-editor-with-animtotexture)
 - [Kevin Romand's video walkthrough](https://www.youtube.com/watch?v=vrlFozqB0jA&ab_channel=TrashPraxis)
 - [Kevin Romand's Editor Utility Widget and Blueprint Spawner](https://github.com/kromond/AnimToTextureHelpers)
-  + Make sure you download the individual .uasset files from Github, since they won't work after being extracted from a Github ZIP archive
+  + NOTE: Make sure you download the individual .uasset files from Github, since they won't work after being extracted from a Github ZIP archive
 
 If you're interested in learning how to use AnimToTexture, I highly recommend starting with the resources above, but there are a few key notes to remember:
 

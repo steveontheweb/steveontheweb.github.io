@@ -19,7 +19,7 @@ Vertex animation is a technique to optimize when rendering large groups of skele
 
 If you're interested in learning how to use AnimToTexture, I highly recommend starting with the resources above, but there are a few key notes to remember:
 
-- Use **Enforce Power of Two** if you want your animation to be smooth.  The code checks for this flag and the 16-bit precision option before using high-quality animation.
+- Use **Enforce Power of Two** if you want your animation to be smooth.  The logic seems to require both this and the 16-bit precision option before using high-fidelity animation.
 
 ![Enforce Power of Two](/assets/img/animtotexture/enforce_power_of_two.png)
 

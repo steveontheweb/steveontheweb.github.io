@@ -80,7 +80,7 @@ theme_mode: dark # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: assets/img/MetaSteve.jpg
+avatar: assets/img/steveontheweb7.png
 
 # the logo above the avatar
 logo: assets/img/steveontheweb.png

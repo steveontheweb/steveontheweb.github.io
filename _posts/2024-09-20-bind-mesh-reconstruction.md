@@ -30,7 +30,7 @@ However, there are times where we need to author a mesh in a pre-deformed config
 
 However, with a bit of simple math and Maya API code, we can do this pretty easily.
 
-### The Math
+### Solving for Bind Vertices
 
 In order to do this, we just need to solve for $$\mathbf{v}_{b}$$.
 
@@ -60,7 +60,7 @@ $$
 
 Now that we have the simple math, we just need to write something up using Maya API.
 
-## Code
+### Code Sample
 
 For the full code and example scene, see [Bind Mesh Reconstruction](https://github.com/steveontheweb/bind_mesh_reconstruction)
 

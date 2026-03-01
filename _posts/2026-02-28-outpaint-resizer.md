@@ -6,9 +6,9 @@ categories: [tools, ai, replicate]
 
 Publishing posters, event graphics or flyers across multiple social platforms usually means a lot of painful cropping, squashing or leaving huge blank margins. I built a small Streamlit app that takes the headache out of the process by using **AI outpainting** to automatically extend a poster to any target aspect ratio — filling the extra space with new background that matches the original.
 
-The code is open‑source and available on GitHub: https://github.com/steveontheweb/outpaint_resizer
+The code is open‑source and available on GitHub: [steveontheweb/outpaint_resizer](https://github.com/steveontheweb/outpaint_resizer)
 
-![screenshot of the app](https://raw.githubusercontent.com/steveontheweb/outpaint_resizer/main/Screenshot.png)
+![screenshot of the app](/assets/img/outpaint_resizer.png)
 
 ## Why it exists
 

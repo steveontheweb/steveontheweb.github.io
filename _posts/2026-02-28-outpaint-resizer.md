@@ -36,10 +36,6 @@ Instead of cropping, the app **outpaints** the image. That means it takes your o
 
 Once running you can upload any JPG/PNG/WEBP poster, optionally mark a protected region, tweak the prompt and mask settings, then hit **Generate**. The app displays each result with download, regenerate and edit buttons.
 
-## Demo workflow
-
-> *(Here you can describe a typical workflow: upload a square poster, expand mask to avoid people at the edge, choose Facebook Event and Instagram portrait, preview the canvas, then click generate and download the two outputs.)*
-
 ## Notes & tips
 
 - Use mask expansion (50‑100 px) when characters or objects touch the source edges; otherwise the model will try to continue them.

@@ -7,7 +7,7 @@ order: 1
 > All opinions on this site are my own.  
 {: .prompt-info .bottom}
 
-![Steve Headshot](/assets/img/headshot4.png){: width="512" height="512" .w-50 .left}
+![Steve Headshot](/assets/img/headshot5.png){: width="512" height="512" .w-50 .left}
 Hi!  I'm Steve Middleton, Senior Technical Art Director at BioWare ULC.  
 
 Most of my posts are about **Technical Art & Animation**, **Unreal Engine**, **3D Printing**, **Machine Learning**, and **Electronics**. 

@@ -47,17 +47,35 @@ social:
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/steve-middleton-canada
 
-google_site_verification: # fill in to your verification string
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
+  baidu:
+  facebook:
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-google_analytics:
-  id: G-XB4TQNFFGV 
-  # Google Analytics pageviews report settings
-  pv:
-    proxy_endpoint: # fill in the Google Analytics superProxy endpoint of Google App Engine
-    cache_path: # the local PV cache data, friendly to visitors from GFW region
+analytics:
+  google:
+    id: G-XB4TQNFFGV
+  goatcounter:
+    id:
+  umami:
+    id:
+    domain:
+  matomo:
+    id:
+    domain:
+  cloudflare:
+    id:
+  fathom:
+    id:
+
+pageviews:
+  provider:
 
 # Prefer color scheme setting.
 #
@@ -77,7 +95,7 @@ theme_mode: dark # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+cdn:
 
 # the avatar on sidebar, support local or CORS resources
 avatar: assets/img/headshot5.png
@@ -89,7 +107,7 @@ logo: assets/img/steveontheweb.png
 toc: true
 
 comments:
-  active: giscus
+  provider: giscus
   disqus:
     shortname:
   utterances:
@@ -102,6 +120,7 @@ comments:
     category: Announcements
     category_id: DIC_kwDOJTjvQc4C2gRm
     mapping: pathname
+    strict: 0
     input_position: bottom
     lang: en
     reactions_enabled: 1
@@ -116,6 +135,9 @@ assets:
 
 pwa:
   enabled: true # the option for PWA feature
+  cache:
+    enabled: true
+    deny_paths:
 
 paginate: 10
 

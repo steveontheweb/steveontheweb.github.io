@@ -2,13 +2,19 @@
 title: "Poster Outpaint Resizer: Auto‑resize your posters for social media with AI"
 date: 2026-02-28 10:00:00 -0500
 categories: [tools, ai, replicate]
+description: "A Streamlit tool that uses generative outpainting to adapt posters for multiple social formats."
+tags: [generative-ai, image-tools, streamlit]
+image:
+  path: /assets/img/outpaint_resizer.png
+  alt: "Poster Outpaint Resizer interface showing generated social-media formats"
+featured: true
+content_type: project
+sections: [work, writing]
 ---
 
 Publishing posters, event graphics or flyers across multiple social platforms usually means a lot of painful cropping, squashing or leaving huge blank margins. I built a small Streamlit app that takes the headache out of the process by using **AI outpainting** to automatically extend a poster to any target aspect ratio — filling the extra space with new background that matches the original.
 
 The code is open‑source and available on GitHub: [steveontheweb/outpaint_resizer](https://github.com/steveontheweb/outpaint_resizer)
-
-![screenshot of the app](/assets/img/outpaint_resizer.png)
 
 ## Why it exists
 

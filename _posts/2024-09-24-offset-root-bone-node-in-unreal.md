@@ -2,9 +2,19 @@
 layout: post
 title: Offset Root Bone Node in Unreal
 date: 2024-09-24 08:30 -0600
+description: "How Unreal Engine's Offset Root Bone node reconciles authored root motion with capsule-driven gameplay."
+categories: [technical-art]
+tags: [unreal-engine, animation, root-motion]
+image:
+  path: /assets/img/offsetrootbone/OffsetRootBone_converted.gif
+  alt: "An Unreal Engine animation graph demonstrating the Offset Root Bone node"
+card_image:
+  path: /assets/img/offsetrootbone/OffsetRootBone-cover.jpg
+  alt: "The Offset Root Bone node inside an Unreal Engine animation graph"
+featured: true
+content_type: case-study
+sections: [work, writing]
 ---
-
-![Offset Root Bone Animation](/assets/img/offsetrootbone/OffsetRootBone_converted.gif)
 
 ## What is the Offset Root Bone Node?
 

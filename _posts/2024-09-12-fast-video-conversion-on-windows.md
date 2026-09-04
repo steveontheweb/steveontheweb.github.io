@@ -2,9 +2,16 @@
 layout: post
 title: Fast Video Conversion on Windows
 date: 2024-09-12 08:32 -0600
+description: "A fast Windows Explorer workflow for converting production captures with FFmpeg."
+categories: [tools]
+tags: [ffmpeg, windows, production-pipeline]
+image:
+  path: /assets/img/fastconverttovideo/fast_convert_to_video.png
+  alt: "Windows Explorer context menu with Convert to GIF and Convert to MP4 commands"
+featured: false
+content_type: note
+sections: [writing]
 ---
-
-![Fast Video Conversion on Windows](/assets/img/fastconverttovideo/fast_convert_to_video.png)
 
 ## Why Fast Video Conversion?
 

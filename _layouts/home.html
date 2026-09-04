@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+{% assign hero = site.posts | where: 'title', 'AnimToTexture for Crowds in Unreal' | first %}
+{% assign work_posts = site.posts | where_exp: 'item', 'item.sections contains "work"' %}
+{% assign home_work = work_posts | where_exp: 'item', 'item.title != "Poster Outpaint Resizer: Auto‑resize your posters for social media with AI"' %}
+{% assign writing_posts = site.posts | where_exp: 'item', 'item.sections contains "writing"' %}
+
+<section class="home-hero" aria-labelledby="home-title">
+  <a class="home-hero__visual" href="{{ hero.url | relative_url }}" aria-label="Read {{ hero.title }}">
+    <img src="{{ hero.card_image.path | default: hero.image.path | relative_url }}" alt="{{ hero.card_image.alt | default: hero.image.alt | escape }}" fetchpriority="high">
+    <span class="home-hero__caption">
+      <span>Featured project</span>
+      <strong>{{ hero.title }}</strong>
+    </span>
+  </a>
+  <div class="home-hero__copy">
+    <p class="eyebrow">Studio notebook · Edmonton</p>
+    <h1 id="home-title">Steve<br>Middleton</h1>
+    <p class="home-hero__tagline">Technical art, machine learning, and AI safety.</p>
+    <p class="home-hero__intro">I write about real-time graphics, generative tools, model behaviour, and the systems around them.</p>
+  </div>
+</section>
+
+<section class="home-section" aria-labelledby="selected-work-title">
+  <div class="section-heading">
+    <p class="eyebrow">01 / Selected work</p>
+    <h2 id="selected-work-title">Systems, tools,<br>and moving images.</h2>
+    <a href="{{ '/work/' | relative_url }}">View all work <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="work-grid">
+    {% for post in home_work limit: 3 %}
+      {% include editorial-card.html post=post large=forloop.first eager=forloop.first %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="home-section home-section--writing" aria-labelledby="latest-writing-title">
+  <div class="section-heading">
+    <p class="eyebrow">02 / Latest writing</p>
+    <h2 id="latest-writing-title">Notes from<br>the workbench.</h2>
+    <a href="{{ '/writing/' | relative_url }}">Browse the archive <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="writing-list">
+    {% for post in writing_posts limit: 3 %}
+      <a class="writing-row" href="{{ post.url | relative_url }}">
+        <span class="writing-row__index">0{{ forloop.index }}</span>
+        <span class="writing-row__title">{{ post.title }}</span>
+        <span class="writing-row__topic">{{ post.categories | first | replace: '-', ' ' }}</span>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %Y' }}</time>
+        <span aria-hidden="true">↗</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="home-about" aria-labelledby="home-about-title">
+  <p class="eyebrow">03 / About</p>
+  <div>
+    <h2 id="home-about-title">A technical-art perspective on increasingly intelligent tools.</h2>
+    <p>After years of building tools and pipelines for games, I’m increasingly focused on machine learning, AI evaluation, and safety. This site documents the technical path between those fields.</p>
+    <a href="{{ '/about/' | relative_url }}">More about me <span aria-hidden="true">→</span></a>
+  </div>
+</section>

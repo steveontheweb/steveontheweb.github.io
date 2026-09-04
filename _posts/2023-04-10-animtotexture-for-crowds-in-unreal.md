@@ -2,9 +2,19 @@
 layout: post
 title: AnimToTexture for Crowds in Unreal
 date: 2023-04-10 18:32 -0600
+description: "Practical notes on baking animation into textures for efficient crowd rendering in Unreal Engine."
+categories: [technical-art]
+tags: [unreal-engine, animation, optimization]
+image:
+  path: /assets/img/animtotexture/Foliage.gif
+  alt: "A large animated crowd rendered as foliage instances in Unreal Engine"
+card_image:
+  path: /assets/img/animtotexture/Foliage-cover.jpg
+  alt: "Thousands of animated crowd characters rendered across an Unreal Engine test scene"
+featured: true
+content_type: case-study
+sections: [work, writing]
 ---
-
-![Animated Crowd as Foliage](/assets/img/animtotexture/Foliage.gif)
 
 Anyone working in game development knows that placing a large number of animated characters on the screen can be nearly impossible when you're trying to keep framerates high.  Unfortunately, skeletal meshes are slow for a number of reasons.  
 

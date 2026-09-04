@@ -3,6 +3,15 @@ layout: post
 title: Bind Mesh Reconstruction for Correctives
 date: 2024-09-20 08:00 -0600
 math: true
+description: "Reconstructing a bind mesh from a posed result to reason about corrective deformation and skinning."
+categories: [technical-art]
+tags: [animation, skinning, math]
+image:
+  path: /assets/img/bindmeshreconstruction/bindmeshreconstruction-cover.jpg
+  alt: "Side-by-side bind and twice-deformed polygon meshes shown against a joint chain"
+featured: true
+content_type: case-study
+sections: [work, writing]
 ---
 
 ## Standard Skinning Deformation

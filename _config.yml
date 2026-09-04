@@ -18,12 +18,13 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: steveontheweb.com # the main title
+title: Steve Middleton # the main title
 
-tagline: Creative Services Director at BioWare # it will display as the sub-title
+tagline: Technical art, machine learning, and AI safety. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Technical Art/Animation, Unreal, 3D Printing, Electronic, and more.
+  Notes and projects about real-time graphics, generative tools, model behaviour,
+  and the systems around them.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://steveontheweb.com"
@@ -88,7 +89,7 @@ pageviews:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: dark # [light|dark]
+theme_mode: # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -98,7 +99,7 @@ theme_mode: dark # [light|dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: assets/img/headshot5.png
+avatar: assets/img/headshot5-720.jpg
 
 # the logo above the avatar
 logo: assets/img/steveontheweb.png
@@ -204,6 +205,8 @@ compress_html:
 exclude:
   - "*.gem"
   - "*.gemspec"
+  - website-modernization-brief.md
+  - _site_production
   - tools
   - README.md
   - CHANGELOG.md

@@ -18,19 +18,19 @@ sections: [blog]
 
 ## What is the Offset Root Bone Node?
 
-The Offset Root Bone node was submitted to the engine back in 2022, but only really used in example content recently with the new [Game Animation Sample Project](https://www.unrealengine.com/marketplace/en-US/product/game-animation-sample) from Epic, and it's designed to handle root motion animation in a controlled fashion during gameplay.
+Epic introduced the experimental Offset Root Bone node in [Unreal Engine 5.1](https://dev.epicgames.com/documentation/unreal-engine/unreal-engine-5.1-release-notes?application_version=5.1) in 2022, but it only really started showing up in example content more recently with the new [Game Animation Sample Project](https://www.unrealengine.com/marketplace/en-US/product/game-animation-sample). It's designed to use authored root motion in a controlled fashion while gameplay movement remains authoritative.
 
 ![Game Animation Sample](/assets/img/offsetrootbone/Game%20Animation%20Sample.png)
 
 You can see an earlier implementation of a similar concept using the Rotate Root Bone node in the [Lyra Starter Game](https://www.unrealengine.com/marketplace/en-US/product/lyra) project from Epic (more on this later).
 
-If you're not familiar with what root motion is, there's an [excellent explanation here](https://dev.epicgames.com/documentation/de-de/unreal-engine/root-motion-in-unreal-engine) from Epic.  The TLDR is: in most games, we use capsule-based motion, where the controller and the character capsule solely determine the location and orientation of the character at any given time, and it's up to animation to try to make this look good.  However, this isn't easy to make good-looking animation when the game arbitrarily decides when to rotate or move your character during animations. Turn animations, starts, and many other types of clips are usually authored with very specific movement.  
+If you're not familiar with what root motion is, there's an [excellent explanation here](https://dev.epicgames.com/documentation/en-us/unreal-engine/root-motion-in-unreal-engine) from Epic. The TLDR is: in a conventional in-place locomotion setup, gameplay code drives the character and its collision capsule while animation follows along and tries to make that movement look convincing. That gets difficult when the game changes the character's speed or direction independently of the motion authored into the animation. Turns, starts, and many other types of clips are usually built around very specific movement.
 
 Unreal does allow us to use full root motion for everything, but there are a number of reasons why this isn't the best approach to designing locomotion for your game.
 
 ![Full Root Motion](/assets/img/offsetrootbone/full_root_motion.png)
 
-First of all, it means that the animation clips are making all of the decisions on how fast a character will accelerate, how fast they will turn, etc.  It's important to be able to iterate on these things quickly without having to re-author all of your animations.  In addition, we may want to use the same animation for several different scenarios -- for example, we may author a turn 180 degrees animation but we would like to use the same animation for turning 170 degrees, so we can't just allow the animation to dictate the rotation entirely.  Also, network replication becomes much more complicated if we need to follow complex trajectory paths that come from the root motion animation.
+In a fully animation-driven locomotion setup, the animation clips have much more control over how quickly a character accelerates and turns. It's useful to be able to iterate on those values without re-authoring the animations. We may also want to reuse one animation in several situations—for example, using a 180-degree turn to cover a 170-degree change—so we can't always let the authored motion dictate the result exactly. Unreal does support replicated root motion, particularly through montages and Root Motion Sources, but animation-driven locomotion adds constraints around prediction, synchronization, and correction. Epic generally recommends against using [**Root Motion from Everything**](https://dev.epicgames.com/documentation/en-us/unreal-engine/animation-blueprint-editor-in-unreal-engine) in multiplayer.
 
 This is where the idea of the Offset Root Bone comes in.
 
@@ -38,17 +38,20 @@ This is where the idea of the Offset Root Bone comes in.
 
 You'll notice that the Offset Root Bone node has two "mode" inputs of type `EOffsetRootBoneMode`.  The idea here is that we can dynamically manage when we are pulling data from the root motion in our animations, when we are fully capsule-driven, and when we are somewhere in-between.
 
-The `EOffsetRootBoneMode` has several different modes:
+This article was originally written against Unreal Engine 5.4. In that version, `EOffsetRootBoneMode` had four modes:
+
  - Accumulate
  - Hold
  - Release
  - Interpolate
 
-In the Game Animation Sample Project, the mode is generally kept to accumulate for full root-motion, but if you're intending to use a more traditional state machine with capsule-based locomotion system, I'd highly recommend managing this mode in your state machine.  Here's an explanation of the different modes:
+Beginning in [Unreal Engine 5.5](https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/OffsetRootBoneMode?application_version=5.5), Epic replaced `Hold` with three more specific lock modes that separately control whether animated root motion is consumed or ignored. The four-mode description below is therefore specific to the UE 5.4 implementation.
+
+The Game Animation Sample manages translation and rotation separately. Rotation normally uses `Accumulate`, allowing root motion and steering to control the character's visible orientation, and switches to `Release` during a montage. Translation generally uses `Interpolate` while moving and `Release` when the character stops, becomes airborne, or plays a montage. If you're using a traditional state machine with capsule-based locomotion, I'd recommend managing these modes from the state machine as well. Here's what each of the original modes does:
 
 ### Accumulate
 
-In this mode, we are still capsule-driven, but we rotate the skeleton's root bone to compensate, and create the illusion of full root-motion.  It's called "accumulate" because we are accumulating the capsule motion transforms, multiplying by the inverse, and then re-applying the root-motion transforms.
+In this mode, gameplay movement still drives the mesh component and capsule, while the node accumulates that component movement into an offset. The root counters the component's translation or rotation, allowing it to preserve more of the displacement authored into the animation without handing control of the capsule to the animation.
 
 ### Hold
 
@@ -56,8 +59,8 @@ In this mode, we keep the offset between the root bone and the capsule transform
 
 ### Release
 
-During the release mode, we allow a spring to slowly return the root bone back to the capsule transform.  This would be useful maybe after a start turn animation that used "accumulate" -- maybe during a cycle where it's less noticeable to have sliding (or maybe we're using a foot plant system to correct the sliding procedurally).
+During the release mode, we stop accumulating component movement and blend the existing root offset back toward the capsule transform. The blend speed is controlled by the node's translation and rotation half-life settings. This would be useful after a start or turn animation that used `Accumulate`—perhaps during a cycle where a little sliding is less noticeable, or where a foot-placement system can correct it procedurally.
 
 ### Interpolate
 
-This mode is basically equivalent to being in both Accumulate and Release at the same time.  We are still consuming root motion transforms, but we are using a spring to slowly try to follow the capsule rotation.  This is really useful for smoothing out turning during a cycle animation.
+This mode is roughly equivalent to accumulating and releasing at the same time. The root is allowed to lag behind the moving component, but the offset continuously interpolates back toward it according to the half-life settings. This is useful for allowing some animation-authored translation or rotation while preventing the mesh from drifting too far from the capsule.

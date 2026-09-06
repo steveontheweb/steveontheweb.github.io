@@ -13,7 +13,7 @@ card_image:
   alt: "Thousands of animated crowd characters rendered across an Unreal Engine test scene"
 featured: true
 content_type: case-study
-sections: [work, writing]
+sections: [blog]
 ---
 
 Anyone working in game development knows that placing a large number of animated characters on the screen can be nearly impossible when you're trying to keep framerates high.  Unfortunately, skeletal meshes are slow for a number of reasons.  

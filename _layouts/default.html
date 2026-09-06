@@ -5,7 +5,7 @@ layout: compress
 <!doctype html>
 {% include origin-type.html %}
 {% include lang.html %}
-<html lang="{{ page.lang | default: site.alt_lang | default: site.lang }}">
+<html lang="{{ page.lang | default: site.alt_lang | default: site.lang }}" data-bs-theme="dark">
   {% include head.html lang=lang %}
   <body class="layout--{{ page.layout }}">
     <div id="main-wrapper">
@@ -36,11 +36,7 @@ layout: compress
           {% endif %}
         </div>
 
-        <div class="row">
-          <div class="col-12">
-            {% include site-footer.html %}
-          </div>
-        </div>
+        {% include site-footer.html %}
 
         {% include_cached search-results.html lang=lang %}
       </div>

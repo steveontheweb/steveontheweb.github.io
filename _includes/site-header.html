@@ -1,23 +1,29 @@
 <header class="site-header" aria-label="Primary navigation">
   <div class="site-header__inner">
-    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Steve Middleton, home">
-      <span class="wordmark__name" id="topbar-title">Steve Middleton</span>
-      <span class="wordmark__mark" aria-hidden="true"></span>
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Steve on the Web, by Steve Middleton, P.Eng., home">
+      <img
+        class="wordmark__mark"
+        src="{{ '/assets/img/brand/steve-on-the-web-mark.png' | relative_url }}"
+        width="48"
+        height="48"
+        alt=""
+        aria-hidden="true"
+      >
+      <span class="wordmark__text">
+        <span class="wordmark__name" id="topbar-title">Steve on the Web</span>
+        <span class="wordmark__byline">Steve Middleton, P.Eng.</span>
+      </span>
     </a>
 
     <nav class="site-nav site-nav--desktop" aria-label="Main menu">
-      <a href="{{ '/work/' | relative_url }}"{% if page.url == '/work/' %} aria-current="page"{% endif %}>Work</a>
-      <a href="{{ '/writing/' | relative_url }}"{% if page.url == '/writing/' %} aria-current="page"{% endif %}>Writing</a>
-      <a href="{{ '/ai-safety/' | relative_url }}"{% if page.url == '/ai-safety/' %} aria-current="page"{% endif %}>AI Safety</a>
+      <a href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' %} aria-current="page"{% endif %}>Blog</a>
       <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
     </nav>
 
     <details class="site-menu">
       <summary>Menu</summary>
       <nav class="site-nav" aria-label="Main menu">
-        <a href="{{ '/work/' | relative_url }}"{% if page.url == '/work/' %} aria-current="page"{% endif %}>Work</a>
-        <a href="{{ '/writing/' | relative_url }}"{% if page.url == '/writing/' %} aria-current="page"{% endif %}>Writing</a>
-        <a href="{{ '/ai-safety/' | relative_url }}"{% if page.url == '/ai-safety/' %} aria-current="page"{% endif %}>AI Safety</a>
+        <a href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' %} aria-current="page"{% endif %}>Blog</a>
         <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
       </nav>
     </details>
@@ -26,46 +32,6 @@
       <button type="button" id="search-trigger" class="site-tool" aria-label="Search">
         <i class="fas fa-search fa-fw" aria-hidden="true"></i>
       </button>
-
-      <div class="btn-group">
-        <button
-          type="button"
-          class="site-tool"
-          aria-label="Switch colour mode"
-          id="mode-toggle"
-          data-bs-toggle="dropdown"
-        >
-          <i class="fa-regular fa-sun" data-theme-mode="light" aria-hidden="true"></i>
-          <i class="fa-regular fa-moon" data-theme-mode="dark" aria-hidden="true"></i>
-          <i class="fa-solid fa-display" data-theme-mode="system" aria-hidden="true"></i>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end rounded-0 p-1">
-          <li>
-            <button
-              class="dropdown-item"
-              type="button"
-              data-theme-mode="light"
-              onclick="document.documentElement.dataset.bsTheme='light';localStorage.setItem('theme','light')"
-            >Light</button>
-          </li>
-          <li>
-            <button
-              class="dropdown-item"
-              type="button"
-              data-theme-mode="dark"
-              onclick="document.documentElement.dataset.bsTheme='dark';localStorage.setItem('theme','dark')"
-            >Dark</button>
-          </li>
-          <li>
-            <button
-              class="dropdown-item"
-              type="button"
-              data-theme-mode="system"
-              onclick="localStorage.removeItem('theme');document.documentElement.dataset.bsTheme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'"
-            >System</button>
-          </li>
-        </ul>
-      </div>
 
       <search id="search" class="align-items-center">
         <i class="fas fa-search fa-fw" aria-hidden="true"></i>

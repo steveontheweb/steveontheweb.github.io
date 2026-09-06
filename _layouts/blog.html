@@ -4,29 +4,32 @@ layout: default
 
 <header class="page-masthead page-masthead--split">
   <div>
-    <p class="eyebrow">Field notes & essays</p>
-    <h1>Writing</h1>
+    <p class="eyebrow">Articles &amp; notes</p>
+    <h1>Blog</h1>
   </div>
-  <p>Implementation notes, careful explanations, and working ideas across technical art, models, and evaluation.</p>
+  <p>Graphics, models, experiments, and other things that seemed worth writing down.</p>
 </header>
 
-<div class="topic-filters" role="group" aria-label="Filter writing by topic">
+<div class="topic-filters" role="group" aria-label="Filter blog posts by topic">
   <button type="button" class="topic-filter is-active" data-writing-filter="all" aria-pressed="true">All</button>
   <button type="button" class="topic-filter" data-writing-filter="technical-art" aria-pressed="false">Technical art</button>
   <button type="button" class="topic-filter" data-writing-filter="tools" aria-pressed="false">Tools</button>
-  <button type="button" class="topic-filter" data-writing-filter="ai" aria-pressed="false">Models & AI</button>
+  <button type="button" class="topic-filter" data-writing-filter="ai" aria-pressed="false">Models &amp; AI</button>
 </div>
 
 <div class="writing-index" data-writing-index>
   {% for post in site.posts %}
-    <article class="writing-index__item" data-topics="{{ post.categories | join: ' ' }} {{ post.tags | join: ' ' }}">
+    {% unless post.exclude_from_indexes %}
+      {% assign writing_src = post.card_image.path | default: post.image.path | default: post.image %}
+    <article class="writing-index__item{% unless writing_src %} writing-index__item--text-only{% endunless %}" data-topics="{{ post.categories | join: ' ' }} {{ post.tags | join: ' ' }}">
       <a href="{{ post.url | relative_url }}">
-        <div class="writing-index__image">
-          {% assign writing_src = post.card_image.path | default: post.image.path | default: post.image %}
-          <img src="{{ writing_src | relative_url }}" alt="" loading="lazy">
-        </div>
+        {% if writing_src %}
+          <div class="writing-index__image">
+            <img src="{{ writing_src | relative_url }}" alt="" loading="lazy">
+          </div>
+        {% endif %}
         <div class="writing-index__body">
-          <div class="editorial-card__meta">
+          <div class="writing-index__meta">
             <span>{{ post.categories | first | replace: '-', ' ' }}</span>
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time>
           </div>
@@ -36,5 +39,6 @@ layout: default
         <span class="writing-index__arrow" aria-hidden="true">↗</span>
       </a>
     </article>
+    {% endunless %}
   {% endfor %}
 </div>

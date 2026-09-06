@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Probes for truth, deception, and high-stakes interactions</title>
+  <desc id="desc">A field of model activations in the centre is read by three simple probes labelled truth, deception, and high stakes.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10151d"/>
+      <stop offset="1" stop-color="#171c25"/>
+    </linearGradient>
+    <radialGradient id="field" cx="50%" cy="45%" r="58%">
+      <stop offset="0" stop-color="#27374d" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#151b25" stop-opacity=".08"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" rx="28" fill="url(#background)"/>
+  <rect x="50" y="50" width="1100" height="800" rx="22" fill="none" stroke="#303846" stroke-width="2"/>
+
+  <text x="92" y="122" fill="#7fa9df" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="4">ACTIVATION PROBES</text>
+  <text x="92" y="183" fill="#f2efe7" font-family="Georgia, serif" font-size="45">Different questions, one internal state</text>
+  <line x1="92" y1="218" x2="1108" y2="218" stroke="#303846" stroke-width="2"/>
+
+  <ellipse cx="600" cy="500" rx="255" ry="230" fill="url(#field)" stroke="#3d4859" stroke-width="2"/>
+
+  <g fill="#7fa9df" opacity=".9">
+    <circle cx="454" cy="371" r="8"/><circle cx="502" cy="332" r="5"/><circle cx="551" cy="390" r="11"/>
+    <circle cx="619" cy="340" r="7"/><circle cx="682" cy="376" r="10"/><circle cx="733" cy="342" r="5"/>
+    <circle cx="474" cy="453" r="6"/><circle cx="529" cy="475" r="9"/><circle cx="596" cy="430" r="5"/>
+    <circle cx="661" cy="451" r="8"/><circle cx="728" cy="438" r="6"/>
+    <circle cx="445" cy="546" r="10"/><circle cx="512" cy="561" r="5"/><circle cx="568" cy="523" r="8"/>
+    <circle cx="630" cy="552" r="11"/><circle cx="700" cy="520" r="6"/><circle cx="752" cy="568" r="8"/>
+    <circle cx="490" cy="644" r="7"/><circle cx="551" cy="619" r="5"/><circle cx="608" cy="660" r="9"/>
+    <circle cx="672" cy="626" r="6"/><circle cx="716" cy="655" r="10"/>
+  </g>
+  <g fill="#dda85d" filter="url(#glow)">
+    <circle cx="586" cy="499" r="7"/><circle cx="612" cy="481" r="5"/><circle cx="627" cy="511" r="6"/>
+  </g>
+  <text x="600" y="731" text-anchor="middle" fill="#9ea7b4" font-family="Arial, sans-serif" font-size="17" letter-spacing="3">MODEL ACTIVATIONS</text>
+
+  <g fill="none" stroke-linecap="round" stroke-width="3">
+    <path d="M500 384 C410 301 322 295 247 315" stroke="#7fa9df"/>
+    <path d="M451 506 C355 506 293 506 217 506" stroke="#dda85d"/>
+    <path d="M502 622 C409 696 321 708 247 687" stroke="#a58ad8"/>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="91" y="266" width="258" height="104" rx="14" fill="#171e29" stroke="#3d5572" stroke-width="2"/>
+    <text x="120" y="305" fill="#7fa9df" font-size="15" font-weight="700" letter-spacing="3">REPRESENTATION</text>
+    <text x="120" y="343" fill="#f2efe7" font-size="29">Truth?</text>
+
+    <rect x="91" y="454" width="258" height="104" rx="14" fill="#1d1c1b" stroke="#785d39" stroke-width="2"/>
+    <text x="120" y="493" fill="#dda85d" font-size="15" font-weight="700" letter-spacing="3">MODEL BEHAVIOUR</text>
+    <text x="120" y="531" fill="#f2efe7" font-size="29">Deception?</text>
+
+    <rect x="91" y="642" width="258" height="104" rx="14" fill="#1b1922" stroke="#5c4e75" stroke-width="2"/>
+    <text x="120" y="681" fill="#a58ad8" font-size="15" font-weight="700" letter-spacing="3">CONTEXT</text>
+    <text x="120" y="719" fill="#f2efe7" font-size="29">High stakes?</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="18">
+    <text x="870" y="334" fill="#f2efe7">What information is present?</text>
+    <text x="870" y="397" fill="#f2efe7">What is the model doing?</text>
+    <text x="870" y="460" fill="#f2efe7">How consequential is the request?</text>
+    <circle cx="838" cy="327" r="6" fill="#7fa9df"/>
+    <circle cx="838" cy="390" r="6" fill="#dda85d"/>
+    <circle cx="838" cy="453" r="6" fill="#a58ad8"/>
+  </g>
+
+  <path d="M836 529 H1108" stroke="#303846" stroke-width="2"/>
+  <text x="836" y="581" fill="#9ea7b4" font-family="Arial, sans-serif" font-size="16" letter-spacing="2">SIMPLE READOUTS</text>
+  <text x="836" y="616" fill="#f2efe7" font-family="Georgia, serif" font-size="27">Useful signals.</text>
+  <text x="836" y="650" fill="#f2efe7" font-family="Georgia, serif" font-size="27">Different claims.</text>
+  <text x="836" y="684" fill="#f2efe7" font-family="Georgia, serif" font-size="27">Important limits.</text>
+</svg>

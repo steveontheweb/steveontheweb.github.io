@@ -11,7 +11,7 @@ image:
   alt: "Side-by-side bind and twice-deformed polygon meshes shown against a joint chain"
 featured: true
 content_type: case-study
-sections: [work, writing]
+sections: [blog]
 ---
 
 ## Standard Skinning Deformation

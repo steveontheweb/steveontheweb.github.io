@@ -10,7 +10,7 @@ image:
   alt: "Windows Explorer context menu with Convert to GIF and Convert to MP4 commands"
 featured: false
 content_type: note
-sections: [writing]
+sections: [blog]
 ---
 
 ## Why Fast Video Conversion?

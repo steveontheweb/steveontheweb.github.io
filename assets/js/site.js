@@ -1,27 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.documentElement;
-  const resolveTheme = (mode) => {
-    if (mode !== 'system') return mode;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  };
-
-  const applyTheme = (mode) => {
-    root.dataset.bsTheme = resolveTheme(mode);
-    root.toggleAttribute('data-theme-persisted', mode !== 'system');
-
-    if (mode === 'system') {
-      localStorage.removeItem('theme');
-    } else {
-      localStorage.setItem('theme', mode);
-    }
-  };
-
-  const savedTheme = localStorage.getItem('theme');
-  if (!root.dataset.bsTheme) applyTheme(savedTheme || 'system');
-
-  document.querySelectorAll('#mode-toggle + .dropdown-menu [data-theme-mode]').forEach((button) => {
-    button.addEventListener('click', () => applyTheme(button.dataset.themeMode));
-  });
+  root.dataset.bsTheme = 'dark';
+  root.removeAttribute('data-theme-persisted');
+  localStorage.removeItem('theme');
 
   const filterButtons = [...document.querySelectorAll('[data-writing-filter]')];
   const entries = [...document.querySelectorAll('[data-writing-index] [data-topics]')];

@@ -13,7 +13,7 @@ card_image:
   alt: "The Offset Root Bone node inside an Unreal Engine animation graph"
 featured: true
 content_type: case-study
-sections: [work, writing]
+sections: [blog]
 ---
 
 ## What is the Offset Root Bone Node?

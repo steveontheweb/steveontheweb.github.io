@@ -19,9 +19,13 @@ sections: [blog]
   <figcaption>MetaHuman Animator can now generate facial animation from a recorded voice performance. Image: Epic Games.</figcaption>
 </figure>
 
-One of the quieter additions to Unreal Engine 5.5 may turn out to be one of its most practical: [MetaHuman Animator can now generate facial animation from audio alone](https://forums.unrealengine.com/t/metahuman-ue5-5-release/2122442).
+One of the quieter additions to Unreal Engine 5.5 may turn out to be one of the most important: [MetaHuman Animator can now generate facial animation from audio alone](https://forums.unrealengine.com/t/metahuman-ue5-5-release/2122442).
 
-The workflow is almost suspiciously simple. Import a recorded voice performance, select it in a MetaHuman Performance asset, and process it. The solver generates animation across the full MetaHuman facial rig, including lip sync and plausible upper-face movement. It works locally, supports a range of voices and languages, and can batch-process multiple recordings.
+The workflow is simple. Import a recorded voice performance, select it in a MetaHuman Performance asset, and process it. The solver generates animation across the full MetaHuman facial rig, including lip sync and plausible upper-face movement. It works locally, supports a range of voices and languages, and can batch-process multiple recordings.
+
+This concept isn't new. [NVIDIA's Audio2Face](https://developer.nvidia.com/blog/nvidia-omniverse-audio2face-app-now-available-in-open-beta/) has been available in some form since 2021, generating facial animation from voice input in real time and retargeting that motion onto a character. At EA, [SEED's Voice2Face](https://www.ea.com/technology/news/sca22-voice2face-audio-driven-facial-animation) explored a related problem: generating facial and tongue animation directly from recorded speech, then mapping the result into a production rig. That work was presented publicly at the Eurographics Symposium on Computer Animation in 2022, and I had the opportunity to contribute to the project.
+
+What feels new here is not the basic idea so much as where Epic has placed it. MetaHuman Animator brings audio-driven animation directly into a character system and workflow that many Unreal teams already use. There is no separate application to learn, no custom retargeting step to build, and less friction between generating a performance and editing it alongside the rest of the character animation.
 
 There is no camera to calibrate, no facial capture take to manage, and no actor video that needs to stay aligned with the final edit. There is just the audio file that a production probably already has.
 

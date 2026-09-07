@@ -1,4 +1,5 @@
 name: "Build and Deploy"
+# Repository Pages settings must use GitHub Actions, not branch deployment.
 on:
   push:
     branches:

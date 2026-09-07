@@ -1,5 +1,6 @@
 ---
 title: "What Went Wrong in the OpenAI–Hugging Face Incident"
+slug: what-went-wrong-in-the-openai-hugging-face-incident
 date: 2026-09-04 09:05:00 -0600
 description: "What METR’s investigation suggests about multi-agent coordination, evaluation integrity, and trustworthy monitoring—and what it does not yet establish."
 categories: [ai-safety]

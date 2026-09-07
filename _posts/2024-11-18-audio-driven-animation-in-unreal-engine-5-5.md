@@ -25,7 +25,9 @@ The workflow is simple. Import a recorded voice performance, select it in a Meta
 
 This concept isn't new. [NVIDIA's Audio2Face](https://developer.nvidia.com/blog/nvidia-omniverse-audio2face-app-now-available-in-open-beta/) has been available in some form since 2021, generating facial animation from voice input in real time and retargeting that motion onto a character. At EA, I was part of the small group that started [SEED's Voice2Face](https://www.ea.com/technology/news/sca22-voice2face-audio-driven-facial-animation), which explored a related problem: generating facial and tongue animation directly from recorded speech, then mapping the result into a production rig. The work was later presented publicly at the Eurographics Symposium on Computer Animation in 2022.
 
-What feels new here is not the basic idea so much as where Epic has placed it. MetaHuman Animator brings audio-driven animation directly into a character system and workflow that many Unreal teams already use. There is no separate application to learn, no custom retargeting step to build, and less friction between generating a performance and editing it alongside the rest of the character animation.
+What feels new here is not the basic idea so much as the quality and where Epic has placed it. The results are a substantial step forward from anything I had seen from an audio-driven system at the time. The mouth shapes are more convincing, but the larger improvement is that the rest of the face feels involved too; it reads more like a performance than a lip-sync pass.
+
+MetaHuman Animator also brings that quality directly into a character system and workflow that many Unreal teams already use. There is no separate application to learn, no custom retargeting step to build, and less friction between generating a performance and editing it alongside the rest of the character animation.
 
 There is no camera to calibrate, no facial capture take to manage, and no actor video that needs to stay aligned with the final edit. There is just the audio file that a production probably already has.
 

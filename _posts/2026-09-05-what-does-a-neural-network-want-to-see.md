@@ -39,8 +39,6 @@ The resulting images can reveal a rough hierarchy in the network. Earlier layers
 
 I found this immediately compelling. Looking at a table of activations might tell me that one channel produced a large number. Looking at an optimized image can give me a hypothesis about why.
 
-That word—*hypothesis*—is doing important work.
-
 ## The picture is not stored inside the network
 
 A feature visualization is not an image that the model has hidden somewhere in its weights. It is a newly generated input that strongly activates the selected component.

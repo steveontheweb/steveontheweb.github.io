@@ -124,7 +124,7 @@ The more likely transition is hybrid. The conventional renderer becomes the grou
 
 That is a major change in what a renderer is for.
 
-There will be bad implementations. There will be games where the technique is inappropriate. There will be a great deal of marketing language trying to convince us that a wet-looking forehead is the same thing as photorealism. None of that makes the underlying idea unimportant.
+There will be bad implementations. There will be games where the technique is inappropriate. None of that makes the underlying idea unimportant.
 
 DLSS 5 occasionally looks bad because it is attempting something much harder than making a low-resolution image sharper. It is trying to synthesize the final appearance of an interactive world, in real time, while remaining tied to authored geometry and intent.
 

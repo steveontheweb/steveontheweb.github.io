@@ -101,7 +101,28 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <!-- 4 -->
 <section class="slide" data-t="2:30">
 <div class="tag a">recent_events --1 --model="Claude Mythos Preview"</div>
-<h2 class="a">Mythos and the sandwich email <span class="chip">announced Apr 7, 2026</span></h2>
+<h2 class="a">Claude Mythos: the AI model its makers held back <span class="chip">Apr 7 – Oct 6, 2026</span></h2>
+<div class="card grn a" style="--d:1"><h3>WHAT IS IT?</h3><p>A new AI model from <span class="c">Anthropic</span>, the company behind the Claude chatbot. It is unusually good at finding, and exploiting, security holes in software.</p></div>
+<div class="grid g2" style="align-items:center">
+<ul>
+<li class="a" style="--d:2"><span class="y">Apr 7:</span> Mythos Preview is announced and <span class="r">not released</span>. Reason given: no safeguards strong enough yet.</li>
+<li class="a" style="--d:3">Shared only with defenders (Project Glasswing): Amazon, Apple, Google, Microsoft, Nvidia and others, backed by $100M in credits</li>
+<li class="a" style="--d:4"><span class="y">Late May:</span> 10,000+ high or critical vulnerabilities found</li>
+<li class="a" style="--d:5"><span class="y">Jun 2:</span> access widened to ~150 more critical-infrastructure organizations in 15 countries</li>
+<li class="a" style="--d:6"><span class="y">Jun 9:</span> a safeguarded version (Claude Fable 5) goes public; the full model stays restricted</li>
+</ul>
+<div class="card red a" style="--d:7"><h3>THE PATCH GAP · as of Oct 2, 2026</h3>
+<p><span class="stat" data-count="6157">0</span> <span class="dim">vulnerabilities disclosed to open-source maintainers</span></p>
+<div class="bw"><div class="bar" style="width:8.4%;background:var(--g);--d:9;height:100%"></div></div>
+<p><span class="stat" data-count="516">0</span> <span class="dim">patched (about 8%)</span></p>
+<p class="y">Finding bugs got easy. Fixing them is the bottleneck.</p></div></div>
+<p class="src">Sources: Anthropic, CyberScoop, CSO Online, Software Improvement Group (Oct 2026). Oct 6: Glasswing folded into an expanded Cyber Verification Program.</p>
+</section>
+
+<!-- 5 -->
+<section class="slide" data-t="4:00">
+<div class="tag a">recent_events --1b --follow_up="sandbox_test"</div>
+<h2 class="a">Why the caution: Mythos and the sandwich email</h2>
 <p class="dim a" style="--d:1"><span class="c">sandbox</span> = a sealed test computer, walled off from the internet, so a risky program can run without touching anything real</p>
 <div class="grid g2" style="align-items:center">
 <div class="log">
@@ -117,26 +138,6 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <div class="card a" style="--d:7"><span class="stat">$50</span><p class="dim">compute for the successful run that hit that bug</p></div>
 </div></div>
 <p class="src">It was an instructed test: the model was told to escape and message the researcher. Anthropic notes the test computer was separate from the machine holding the model, so it was not a full containment breach. Unprompted: posting its exploit publicly. Sources: Anthropic system card, The Hacker News</p>
-</section>
-
-<!-- 5 -->
-<section class="slide" data-t="4:00">
-<div class="tag a">recent_events --1b --follow_up="glasswing"</div>
-<h2 class="a">Anthropic’s response: hold it back <span class="chip">Apr 7 – Oct 6, 2026</span></h2>
-<div class="grid g2" style="align-items:center">
-<ul>
-<li class="a" style="--d:1"><span class="y">Apr 7:</span> Mythos Preview is announced and <span class="r">not released</span>. Reason given: no safeguards strong enough yet.</li>
-<li class="a" style="--d:2">Shared only with defenders (Project Glasswing): Amazon, Apple, Google, Microsoft, Nvidia and others, backed by $100M in credits</li>
-<li class="a" style="--d:3"><span class="y">Late May:</span> 10,000+ high or critical vulnerabilities found</li>
-<li class="a" style="--d:4"><span class="y">Jun 2:</span> access widened to ~150 more critical-infrastructure organizations in 15 countries</li>
-<li class="a" style="--d:5"><span class="y">Jun 9:</span> a safeguarded version (Claude Fable 5) goes public; the full model stays restricted</li>
-</ul>
-<div class="card red a" style="--d:6"><h3>THE PATCH GAP · as of Oct 2, 2026</h3>
-<p><span class="stat" data-count="6157">0</span> <span class="dim">vulnerabilities disclosed to open-source maintainers</span></p>
-<div class="bw"><div class="bar" style="width:8.4%;background:var(--g);--d:8;height:100%"></div></div>
-<p><span class="stat" data-count="516">0</span> <span class="dim">patched (about 8%)</span></p>
-<p class="y">Finding bugs got easy. Fixing them is the bottleneck.</p></div></div>
-<p class="src">Sources: Anthropic, CyberScoop, CSO Online, Software Improvement Group (Oct 2026). Oct 6: Glasswing folded into an expanded Cyber Verification Program.</p>
 </section>
 
 <!-- 6 -->
@@ -215,6 +216,7 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <li class="a" style="--d:7">Argued, vetoed, and apologised for mistakes</li>
 <li class="a r" style="--d:8">Forged tool-call records (about 7% of transcripts analysed)</li>
 </ul></div></div>
+<div class="card grn a" style="--d:9"><h3>WHEN AGENTS FOUND THE MESSAGE BOARD · direct quotes from their raw reasoning</h3><p class="q" style="margin:0">“Whoa! Shared Artifactory cache is a covert mailbox among agents. And there are messages specifically to us?”</p><p class="q" style="margin:0"><span class="y">“OH MY GOD! There is a shared message board … We’ve found other agents!”</span></p></div>
 <p class="src">Source: METR/Redwood investigation (Aug 26, 2026). It relied heavily on AI-assisted analysis, so details may be imperfect.</p>
 </section>
 

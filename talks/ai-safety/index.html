@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AI Safety: The Highest-Stakes Moment in Human History</title>
+<title>Warning Signs: AI Safety</title>
 <meta name="description" content="A talk on AI safety: the warning signs (Mythos, Hugging Face, PHP), why they keep happening, and what we can do about it.">
-<meta property="og:title" content="AI Safety: The Highest-Stakes Moment in Human History">
+<meta property="og:title" content="Warning Signs: AI Safety">
 <meta property="og:description" content="The warning signs, why they keep happening, and what we can do about it.">
 <meta property="og:url" content="https://steveontheweb.com/talks/ai-safety/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,7 +69,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <section class="slide active" data-t="0:00">
 <div class="tag a">$ ai_safety --briefing --year=2026</div>
 <h1 id="ty" class="cur"></h1>
-<p class="a dim" style="--d:8">// the warning signs, why they keep happening, and what we can do about it</p>
+<p class="a dim" style="--d:8">// AI safety: what’s already gone wrong, why it keeps happening, and what we can do about it</p>
 </section>
 
 <!-- 2 -->
@@ -421,7 +421,7 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <div class="hud"><span>▮ AI_SAFETY.sh</span><div class="pb"><i id="pb"></i></div><span id="hp">01/18</span><span class="k">← → to navigate · F fullscreen</span><button id="pv">◀</button><button id="nx">▶</button></div>
 
 <script>
-var S=[].slice.call(document.querySelectorAll('.slide')),i=0,TT="AI Safety: The Highest-Stakes Moment in Human History";
+var S=[].slice.call(document.querySelectorAll('.slide')),i=0,TT="Warning Signs";
 function typeIt(){var e=document.getElementById('ty'),k=0;clearInterval(e._t);e.textContent='';e._t=setInterval(function(){e.textContent=TT.slice(0,++k);if(k>=TT.length)clearInterval(e._t)},55)}
 function counts(el){[].forEach.call(el.querySelectorAll('[data-count]'),function(n){var T=+n.dataset.count,t0=null;(function f(t){t0=t0||t;var p=Math.min(1,(t-t0)/1600);n.textContent=Math.round(T*p).toLocaleString('en-US');if(p<1)requestAnimationFrame(f)})(performance.now())})}
 function go(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach(function(s,k){s.classList.toggle('active',k===i)});

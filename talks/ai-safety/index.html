@@ -62,7 +62,7 @@ svg text{font-family:inherit;fill:var(--fg);font-size:11px}
 .chip{display:inline-block;border:1px solid var(--y);color:var(--y);padding:1px 10px;border-radius:12px;font-size:clamp(.65rem,1.2vw,.95rem);font-weight:400;text-shadow:none;vertical-align:middle;white-space:nowrap}
 svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 .bob{display:inline-block;animation:bob 1.6s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-8px) rotate(-6deg)}}
-.q{font-size:clamp(.85rem,1.45vw,1.1rem);font-weight:700;line-height:1.35;margin:0 0 .6vh}#stage{max-height:46vh}a{color:var(--c);word-break:break-all}.rs li{font-size:clamp(.72rem,1.3vw,1rem)}.so{animation:so .6s ease 8.4s forwards}@keyframes so{to{opacity:0}}</style>
+.q{font-size:clamp(.85rem,1.45vw,1.1rem);font-weight:700;line-height:1.35;margin:0 0 .6vh}#stage{max-height:46vh}a{color:var(--c);word-break:break-all}.rs li{font-size:clamp(.72rem,1.3vw,1rem)}.ns [data-s]{opacity:0;transition:opacity .5s}.ns [data-s].on{opacity:1}</style>
 </head>
 <body>
 <!-- 1 -->
@@ -277,86 +277,19 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 </section>
 
 <!-- 11 -->
-<section class="slide" data-t="10:45">
-<div class="tag a">ai --how_it_works --unit="neuron"</div>
-<h2 class="a">How an artificial neuron works</h2>
+<section class="slide ns" id="neuron" data-t="10:45">
+<div class="tag">ai --how_it_works --unit="neuron"</div>
+<h2>How an artificial neuron works</h2>
 <div class="grid g2" style="align-items:center">
-<div class="card a" style="--d:1">
-<svg viewBox="0 0 380 190">
-<g class="so">
-<g class="a" style="--d:1"><circle cx="30" cy="35" r="14" fill="none" stroke="var(--c)"/><circle cx="30" cy="95" r="14" fill="none" stroke="var(--c)"/><circle cx="30" cy="155" r="14" fill="none" stroke="var(--c)"/>
-<text x="30" y="39" text-anchor="middle">x1</text><text x="30" y="99" text-anchor="middle">x2</text><text x="30" y="159" text-anchor="middle">x3</text></g>
-<path class="draw" pathLength="1" style="--d:2" d="M44,38L186,88" fill="none" stroke="var(--c)"/>
-<path class="draw" pathLength="1" style="--d:2" d="M44,95L186,95" fill="none" stroke="var(--c)"/>
-<path class="draw" pathLength="1" style="--d:2" d="M44,152L186,102" fill="none" stroke="var(--c)"/>
-<g class="a" style="--d:4"><text x="100" y="52" fill="var(--y)" style="fill:var(--y)">w1</text><text x="100" y="88" style="fill:var(--y)">w2</text><text x="100" y="140" style="fill:var(--y)">w3</text></g>
-<g class="a" style="--d:5"><circle cx="220" cy="95" r="34" fill="none" stroke="var(--g)" stroke-width="2"/><text x="220" y="101" text-anchor="middle" style="fill:var(--g);font-size:20px">Σ</text></g>
-<path class="draw" pathLength="1" style="--d:6" d="M254,95H340" fill="none" stroke="var(--g)" stroke-width="2"/>
-<g class="a" style="--d:7"><text x="300" y="85" text-anchor="middle" style="fill:var(--g)">fires?</text><text x="352" y="99" style="fill:var(--g);font-size:14px">→</text></g>
-</g>
-<g>
-<path class="a" style="--d:31" d="M40,35L140,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:31" d="M40,35L140,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:31" d="M40,35L140,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:31" d="M40,35L140,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:31" d="M40,95L140,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:31" d="M40,95L140,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:31" d="M40,95L140,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:31" d="M40,95L140,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:31" d="M40,155L140,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:31" d="M40,155L140,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:31" d="M40,155L140,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:31" d="M40,155L140,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,20L240,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,20L240,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,20L240,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,20L240,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,70L240,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,70L240,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,70L240,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,70L240,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,120L240,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,120L240,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,120L240,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,120L240,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,170L240,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,170L240,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,170L240,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:33" d="M140,170L240,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:35" d="M240,20L340,65" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:35" d="M240,20L340,125" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:35" d="M240,70L340,65" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:35" d="M240,70L340,125" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:35" d="M240,120L340,65" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:35" d="M240,120L340,125" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:35" d="M240,170L340,65" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="a" style="--d:35" d="M240,170L340,125" fill="none" stroke="var(--c)" stroke-opacity=".35"/>
-<path class="draw" pathLength="1" style="--d:38" d="M40,95L140,70L240,120L340,65" fill="none" stroke="var(--g)" stroke-width="2"/>
-<circle class="a" style="--d:30" cx="40" cy="35" r="9" fill="var(--card)" stroke="var(--c)"/>
-<circle class="a" style="--d:30" cx="40" cy="95" r="9" fill="var(--card)" stroke="var(--g)"/>
-<circle class="a" style="--d:30" cx="40" cy="155" r="9" fill="var(--card)" stroke="var(--c)"/>
-<circle class="a" style="--d:32" cx="140" cy="20" r="9" fill="var(--card)" stroke="var(--c)"/>
-<circle class="a" style="--d:32" cx="140" cy="70" r="9" fill="var(--card)" stroke="var(--g)"/>
-<circle class="a" style="--d:32" cx="140" cy="120" r="9" fill="var(--card)" stroke="var(--c)"/>
-<circle class="a" style="--d:32" cx="140" cy="170" r="9" fill="var(--card)" stroke="var(--c)"/>
-<circle class="a" style="--d:34" cx="240" cy="20" r="9" fill="var(--card)" stroke="var(--c)"/>
-<circle class="a" style="--d:34" cx="240" cy="70" r="9" fill="var(--card)" stroke="var(--c)"/>
-<circle class="a" style="--d:34" cx="240" cy="120" r="9" fill="var(--card)" stroke="var(--g)"/>
-<circle class="a" style="--d:34" cx="240" cy="170" r="9" fill="var(--card)" stroke="var(--c)"/>
-<circle class="a" style="--d:36" cx="340" cy="65" r="9" fill="var(--card)" stroke="var(--g)"/>
-<circle class="a" style="--d:36" cx="340" cy="125" r="9" fill="var(--card)" stroke="var(--c)"/>
-<text class="a" style="--d:40;fill:var(--dim);font-size:10px" x="40" y="188" text-anchor="middle">inputs</text>
-<text class="a" style="--d:40;fill:var(--dim);font-size:10px" x="190" y="188" text-anchor="middle">hidden layers</text>
-<text class="a" style="--d:40;fill:var(--dim);font-size:10px" x="340" y="188" text-anchor="middle">outputs</text>
-</g>
-</svg></div>
+<div class="card" style="cursor:pointer"><svg viewBox="0 0 380 190"><g data-s="1,2,3"><circle cx="30" cy="35" r="14" fill="none" stroke="var(--c)"/><circle cx="30" cy="95" r="14" fill="none" stroke="var(--c)"/><circle cx="30" cy="155" r="14" fill="none" stroke="var(--c)"/><text x="30" y="39" text-anchor="middle">x1</text><text x="30" y="99" text-anchor="middle">x2</text><text x="30" y="159" text-anchor="middle">x3</text></g><path data-s="2,3" d="M44,38L186,88" fill="none" stroke="var(--c)"/><path data-s="2,3" d="M44,95L186,95" fill="none" stroke="var(--c)"/><path data-s="2,3" d="M44,152L186,102" fill="none" stroke="var(--c)"/><g data-s="2,3"><text x="100" y="52" style="fill:var(--y)">w1</text><text x="100" y="88" style="fill:var(--y)">w2</text><text x="100" y="140" style="fill:var(--y)">w3</text></g><g data-s="3"><circle cx="220" cy="95" r="34" fill="none" stroke="var(--g)" stroke-width="2"/><text x="220" y="101" text-anchor="middle" style="fill:var(--g);font-size:20px">Σ</text><path d="M254,95H340" fill="none" stroke="var(--g)" stroke-width="2"/><text x="300" y="85" text-anchor="middle" style="fill:var(--g)">fires?</text><text x="352" y="99" style="fill:var(--g);font-size:14px">→</text></g><g data-s="4,5,6"><path d="M40,35L140,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,35L140,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,35L140,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,35L140,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,95L140,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,95L140,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,95L140,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,95L140,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,155L140,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,155L140,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,155L140,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,155L140,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,20L240,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,20L240,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,20L240,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,20L240,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,70L240,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,70L240,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,70L240,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,70L240,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,120L240,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,120L240,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,120L240,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,120L240,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,170L240,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,170L240,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,170L240,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,170L240,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,20L340,65" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,20L340,125" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,70L340,65" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,70L340,125" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,120L340,65" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,120L340,125" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,170L340,65" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,170L340,125" fill="none" stroke="var(--c)" stroke-opacity=".35"/><circle cx="40" cy="35" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="40" cy="95" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="40" cy="155" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="140" cy="20" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="140" cy="70" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="140" cy="120" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="140" cy="170" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="240" cy="20" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="240" cy="70" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="240" cy="120" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="240" cy="170" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="340" cy="65" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="340" cy="125" r="9" fill="var(--card)" stroke="var(--c)"/><text x="40" y="188" text-anchor="middle" style="fill:var(--dim);font-size:10px">inputs</text><text x="190" y="188" text-anchor="middle" style="fill:var(--dim);font-size:10px">hidden layers</text><text x="340" y="188" text-anchor="middle" style="fill:var(--dim);font-size:10px">outputs</text></g><g data-s="5,6"><path d="M40,95L140,70L240,120L340,65" fill="none" stroke="var(--g)" stroke-width="2"/><circle cx="40" cy="95" r="9" fill="var(--card)" stroke="var(--g)"/><circle cx="140" cy="70" r="9" fill="var(--card)" stroke="var(--g)"/><circle cx="240" cy="120" r="9" fill="var(--card)" stroke="var(--g)"/><circle cx="340" cy="65" r="9" fill="var(--card)" stroke="var(--g)"/></g></svg></div>
 <ul>
-<li class="a" style="--d:2"><span class="c">Inputs</span> arrive as numbers: pixels, words, signals</li>
-<li class="a" style="--d:3">Each is multiplied by a <span class="y">weight</span> (how much it matters), then everything is added up</li>
-<li class="a" style="--d:4">If the total is big enough, the neuron <span class="g">fires</span> and passes a signal on</li>
-<li class="a" style="--d:34"><span class="c">Chain them in layers:</span> each layer’s outputs become the next layer’s inputs. Stack enough and you get today’s models</li>
+<li data-s="1,2,3,4,5,6"><span class="c">Inputs</span> arrive as numbers: pixels, words, signals</li>
+<li data-s="2,3,4,5,6">Each is multiplied by a <span class="y">weight</span> (how much it matters), then everything is added up</li>
+<li data-s="3,4,5,6">If the total is big enough, the neuron <span class="g">fires</span> and passes a signal on</li>
+<li data-s="4,5,6"><span class="c">Chain them in layers:</span> each layer’s outputs become the next layer’s inputs. Stack enough and you get today’s models</li>
 </ul></div>
-<div class="card grn a" style="--d:8"><p><span class="g">Learning</span> = nudging the weights after each mistake. Modern models have billions of them, and nobody writes the rules by hand.</p></div>
+<div class="card grn" data-s="6"><p><span class="g">Learning</span> = nudging the weights after each mistake. Modern models have billions of them, and nobody writes the rules by hand.</p></div>
+<div style="display:flex;gap:12px;align-items:center"><span id="ndots" style="display:flex;gap:8px"></span><span class="tag">step through: arrow keys, click, or numbers</span></div>
 </section>
 
 <!-- 12 -->
@@ -499,6 +432,19 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <div id="qr" style="background:#fff;padding:10px;border-radius:8px;display:inline-block;width:170px;height:170px"></div>
 <p class="src" style="margin-top:1vh">steveontheweb.com/talks/ai-safety</p></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+(function(){var sec=document.getElementById('neuron'),els=[].slice.call(sec.querySelectorAll('[data-s]')),N=6,n=1,dots=document.getElementById('ndots'),db=[];
+function show(k){els.forEach(function(e){e.classList.toggle('on',k>0&&(','+e.getAttribute('data-s')+',').indexOf(','+k+',')>-1)})}
+function mark(){db.forEach(function(b,i){var on=i+1===n;b.style.background=on?'var(--g)':'none';b.style.color=on?'#000':'var(--g)'})}
+function go1(k){n=k;show(n);mark()}
+function step(d){var m=n+d;if(m<1||m>N)return false;go1(m);return true}
+for(var q=1;q<=N;q++)(function(q){var b=document.createElement('button');b.textContent=q;b.style.cssText='width:24px;height:24px;border-radius:50%;border:1px solid var(--g);font:inherit;font-size:11px;cursor:pointer;padding:0';b.onclick=function(){go1(q)};dots.appendChild(b);db.push(b)})(q);
+sec.querySelector('svg').parentNode.addEventListener('click',function(){step(1)});
+document.addEventListener('keydown',function(e){if(!sec.classList.contains('active'))return;var k=e.key,d=(k==='ArrowRight'||k===' '||k==='PageDown')?1:(k==='ArrowLeft'||k==='PageUp')?-1:0;if(d&&step(d)){e.stopImmediatePropagation();e.preventDefault()}},true);
+document.addEventListener('DOMContentLoaded',function(){['nx','pv'].forEach(function(id){document.getElementById(id).addEventListener('click',function(e){if(sec.classList.contains('active')&&step(id==='nx'?1:-1))e.stopImmediatePropagation()},true)})});
+new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else show(0)}).observe(sec,{attributes:true,attributeFilter:['class']});
+})();
+</script>
 <script>try{if(window.QRCode)new QRCode(document.getElementById('qr'),{text:'https://steveontheweb.com/talks/ai-safety/',width:150,height:150,colorDark:'#000000',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M})}catch(e){}</script>
 </section>
 

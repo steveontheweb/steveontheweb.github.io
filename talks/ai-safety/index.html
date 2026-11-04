@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Warning Signs: AI Safety</title>
+<title>We Are Not Ready: AI Safety</title>
 <meta name="description" content="A talk on AI safety: the warning signs (Mythos, Hugging Face, PHP), why they keep happening, and what we can do about it.">
-<meta property="og:title" content="Warning Signs: AI Safety">
-<meta property="og:description" content="The warning signs, why they keep happening, and what we can do about it.">
+<meta property="og:title" content="We Are Not Ready: AI Safety">
+<meta property="og:description" content="AI is advancing faster than our ability to understand or control it.">
 <meta property="og:url" content="https://steveontheweb.com/talks/ai-safety/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -69,7 +69,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <section class="slide active" data-t="0:00">
 <div class="tag a">$ ai_safety --briefing --year=2026</div>
 <h1 id="ty" class="cur"></h1>
-<p class="a dim" style="--d:8">// AI safety: how fast things have moved this past year, why it keeps surprising us, and what we can do about it</p>
+<p class="a dim" style="--d:8">// AI is advancing faster than our ability to understand or control it</p>
 </section>
 
 <!-- 2 -->
@@ -117,7 +117,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <li class="a" style="--d:7"><span class="y">It moves faster than opinions:</span> plenty of “it will never do that” claims have aged badly</li>
 </ul>
 </div>
-<div class="card grn a" style="--d:8"><p>These camps aren’t mutually exclusive: something can transform the world <em>and</em> carry serious risk. So rather than pick a camp, let’s look at how fast things have moved over the last year.</p></div>
+<div class="card grn a" style="--d:8"><p>These camps aren’t mutually exclusive: something can transform the world <em>and</em> carry serious risk. Here’s why I think we’re not ready: look at how fast things have moved over the last year.</p></div>
 </section>
 
 <!-- 5 -->
@@ -489,7 +489,7 @@ new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else 
 <div class="hud"><span>▮ AI_SAFETY.sh</span><div class="pb"><i id="pb"></i></div><span id="hp">01/18</span><span class="k">← → to navigate · F fullscreen</span><button id="pv">◀</button><button id="nx">▶</button></div>
 
 <script>
-var S=[].slice.call(document.querySelectorAll('.slide')),i=0,TT="Warning Signs";
+var S=[].slice.call(document.querySelectorAll('.slide')),i=0,TT="We Are Not Ready";
 function typeIt(){var e=document.getElementById('ty'),k=0;clearInterval(e._t);e.textContent='';e._t=setInterval(function(){e.textContent=TT.slice(0,++k);if(k>=TT.length)clearInterval(e._t)},55)}
 function counts(el){[].forEach.call(el.querySelectorAll('[data-count]'),function(n){var T=+n.dataset.count,t0=null;(function f(t){t0=t0||t;var p=Math.min(1,(t-t0)/1600);n.textContent=Math.round(T*p).toLocaleString('en-US');if(p<1)requestAnimationFrame(f)})(performance.now())})}
 function go(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach(function(s,k){s.classList.toggle('active',k===i)});

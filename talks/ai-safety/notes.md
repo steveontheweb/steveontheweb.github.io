@@ -42,7 +42,6 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Every box has smart, informed people in it
 - Nobody has done this before, so everyone is guessing from a different starting point
 - Not everyone works with AI at its full capability; many people just use it as a chatbot, or to review a paper
-- Doubt is healthy; we’ve been burned by hype before
 - But “it will never do that” keeps aging badly
 - Most of the fight is about the first question: how powerful?
 > I’ll show you the evidence from this year that got me to “not ready”

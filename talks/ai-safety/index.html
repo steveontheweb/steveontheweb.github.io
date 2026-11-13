@@ -514,7 +514,7 @@ html.pres body>*:not(#pres){display:none!important}
 #pres .pf{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--bg)}
 #pres iframe{position:absolute;left:0;top:0;width:1280px;height:720px;border:0;pointer-events:none;transform-origin:0 0}
 #pres .pnx{padding:10px 14px;border:1px dashed var(--line);border-radius:6px;color:var(--dim)}#pres .pnx b{display:block;color:var(--fg);font-size:1.15em;margin-top:2px}
-#pres .ptm{display:flex;gap:18px;align-items:baseline;cursor:pointer;color:var(--dim)}#pres .ptm b{font-size:2.4em;color:var(--g);font-weight:700}#pres .ptm .bh{color:var(--r)}#pres .ptm .ah{color:var(--c)}
+#pres .ptm{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;color:var(--dim)}#pres .ptm button{font:inherit;font-size:.9em;padding:3px 10px;background:none;border:1px solid var(--line);color:var(--g);border-radius:4px;cursor:pointer}#pres .ptm button.on{background:var(--g);color:#000}#pres .ptm b{font-size:2.4em;color:var(--g);font-weight:700}#pres .ptm .bh{color:var(--r)}#pres .ptm .ah{color:var(--c)}
 #pres .pr{min-height:0;overflow:auto;padding:4px 10px 4px 4px}
 #pres .pr h2{margin:0 0 10px;font-size:1.3em;color:var(--g)}#pres .pr h2 span{color:var(--dim);font-weight:400;font-size:.8em}
 #pres li{color:var(--fg)}#pres ul{margin:0;padding-left:1.1em;font-size:1.55em;line-height:1.45}#pres li{margin:.35em 0}#pres li.ps{font-size:.85em;color:var(--dim);margin:.15em 0 .15em 1.2em;list-style:'– '}#pres li.pt{list-style:none;margin-left:-1.1em;color:var(--y);font-style:italic}
@@ -551,9 +551,9 @@ function fmt(s){s=Math.abs(s);return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2)
 document.addEventListener('DOMContentLoaded',function(){
 document.title='Presenter: '+document.title;
 var P=document.createElement('div');P.id='pres';
-P.innerHTML='<div class="pl"><div class="pf"><iframe title="Current slide"></iframe></div><div class="pnx">NEXT<b id="pn"></b></div><div class="ptm" id="ptm" title="Click to reset the timer"><b id="pe">0:00</b><span id="pp"></span><span id="pd"></span></div><div class="phint">← → / space to move (either window) · click the timer to reset</div></div><div class="pr"><div class="pbar"><h2 id="ph"></h2><span id="pbt"><button id="pedit">Edit</button><button id="pcopy">Copy notes.md</button><button id="preset" style="display:none">Reset to site</button></span></div><div id="pbadge" class="phint"></div><ul id="pl"></ul><textarea id="pta" style="display:none" spellcheck="true"></textarea></div>';
+P.innerHTML='<div class="pl"><div class="pf"><iframe title="Current slide"></iframe></div><div class="pnx">NEXT<b id="pn"></b></div><div class="ptm" id="ptm"><b id="pe">0:00</b><button id="pgo" class="on">▶ Start</button><button id="prs">Reset</button><span id="pp"></span><span id="pd"></span></div><div class="phint">← → / space to move (either window) · S to start/pause the timer</div></div><div class="pr"><div class="pbar"><h2 id="ph"></h2><span id="pbt"><button id="pedit">Edit</button><button id="pcopy">Copy notes.md</button><button id="preset" style="display:none">Reset to site</button></span></div><div id="pbadge" class="phint"></div><ul id="pl"></ul><textarea id="pta" style="display:none" spellcheck="true"></textarea></div>';
 document.body.appendChild(P);
-var fr=P.querySelector('iframe'),last=-1,t0=null;
+var fr=P.querySelector('iframe'),last=-1,t0=null,acc=0,run=false;
 fr.src=location.pathname+'?embed'+location.hash;var box=fr.parentNode;function fit(){fr.style.transform='scale('+(box.clientWidth/1280)+')'}fit();window.addEventListener('resize',fit);if(window.ResizeObserver)new ResizeObserver(fit).observe(box);
 var edit=false,site=null,ta=document.getElementById('pta'),ul=document.getElementById('pl');
 function render(c){var d=N[c]||['',[]];
@@ -564,7 +564,7 @@ else{ta.style.display='none';ul.style.display='';ul.innerHTML=N.length?d[1].map(
 document.querySelector('#pres .pr').scrollTop=0}
 function draw(){var c=window.i||0;if(c===last)return;last=c;render(c);
 document.getElementById('pp').textContent='plan '+window.S[c].dataset.t;
-if(t0===null&&c>0)t0=Date.now()}
+if(!run&&acc===0&&c>0)startStop()}
 function badge(){var l=null;try{l=localStorage.getItem(LS)}catch(e){}document.getElementById('pbadge').textContent=l?'Edited locally in this browser (not on the site yet). Use “Copy notes.md”, paste it over notes.md and commit.':'';document.getElementById('preset').style.display=l?'':'none'}
 function save(){try{localStorage.setItem(LS,toMD())}catch(e){}badge()}
 ta.addEventListener('input',function(){var c=window.i||0,v=ta.value;if(!/^##\s/m.test(v))v='## '+N[c][0]+'\n'+v;var p=parseMD(v);if(p[0]){N[c]=p[0];save()}});
@@ -575,11 +575,16 @@ document.getElementById('preset').onclick=function(){if(!confirm('Discard your l
 var loc=null;try{loc=localStorage.getItem(LS)}catch(e){}
 if(loc)N=parseMD(loc);badge();
 fetch('notes.md?t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(t){site=parseMD(t);if(!loc)N=site;last=-1;draw()}).catch(function(){draw()});
-function tick(){draw();var pd=document.getElementById('pd');if(t0===null){document.getElementById('pe').textContent='0:00';pd.textContent='starts on first advance';return}
-var e=Math.floor((Date.now()-t0)/1000),pl=secs(window.S[window.i||0].dataset.t),df=e-pl;
+function el(){return acc+(run?Date.now()-t0:0)}
+function startStop(){if(run){acc+=Date.now()-t0;run=false}else{t0=Date.now();run=true}label()}
+function label(){var g=document.getElementById('pgo');g.textContent=run?'❚❚ Pause':(acc?'▶ Resume':'▶ Start');g.classList.toggle('on',!run)}
+function tick(){draw();var pd=document.getElementById('pd'),ms=el();if(!run&&!ms){document.getElementById('pe').textContent='0:00';pd.textContent='press Start when you begin';return}
+var e=Math.floor(ms/1000),pl=secs(window.S[window.i||0].dataset.t),df=e-pl;
 document.getElementById('pe').textContent=fmt(e);
-pd.innerHTML=Math.abs(df)<15?'on pace':df>0?'<span class="bh">'+fmt(df)+' behind</span>':'<span class="ah">'+fmt(df)+' ahead</span>'}
-document.getElementById('ptm').onclick=function(){t0=window.i>0?Date.now():null};
+pd.innerHTML=!run?'<span class="bh">paused</span>':Math.abs(df)<15?'on pace':df>0?'<span class="bh">'+fmt(df)+' behind</span>':'<span class="ah">'+fmt(df)+' ahead</span>'}
+document.getElementById('pgo').onclick=function(){startStop();this.blur()};
+document.getElementById('prs').onclick=function(){if(el()&&!confirm('Reset the timer to 0:00?'))return;acc=0;run=false;label();this.blur()};
+document.addEventListener('keydown',function(e){if((e.key==='s'||e.key==='S')&&!e.ctrlKey&&!e.metaKey&&!e.altKey)startStop()});
 setInterval(tick,250);tick()});
 })();
 </script>

@@ -7,22 +7,22 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 1 · Title
 - Welcome, thanks for having me
 - My name is Steve
-- Hands up: who used an AI tool this week?  Today?
+- Show of Hands: who used an AI tool this week?  Today?
+- Unless you've been living under a rock, probably know that AI influencing more and more of our lives
 - "We Are Not Ready"
-- This title is my honest view, not clickbait
-  - AI is moving faster than our skills and ability to control it
-- Today: real events from this year, why they keep happening, what it tells us about the future
-- No technical background needed
+- This title is not clickbait, it is my honest view:
+  - AI tech is advancing faster than our ability to control it
+- Today: real events from this year related to this, why they keep happening, what it tells us about the future
 
 ## 2 · Who am I?
 - I have worked in video games for the last 15 years
 - Working with ML/AI since 2017
-- One example: I helped to contribute to Voice2Face
+- I helped to contribute to "Voice2Face"
   - Published at Eurographics Symposium on Computer Animation in 2022
 - Disclaimer: speaking only for myself today
-- Why I'm here:
+- As a game dev, why am I here?
   - My concern about AI began when I read Superintelligence by Nick Bostrom in 2014
-  - It wasn’t until this year that I saw frontier AI write code better than any developer I know, in a fraction of the time
+  - But it wasn’t until this year that I saw frontier AI: write code better than any developer I know, come up with better ideas and designs, and be truly creative -- all in a fraction of the time
 > I like this technology, and I’m still worried. I’m not alone.
 
 ## 3 · Opening voices
@@ -35,14 +35,16 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 > So how do smart people land so far apart?
 
 ## 4 · Why do smart people disagree?
-- Lots of camps: not recognizable, existential threat, it’s hype
-- Ask the room: which camp are you in?
-- Every camp has smart, informed people in it
+- Two questions: how powerful will it get? Will it go well?
+- Four camps: utopia, autocomplete, harms now, not ready
+- Ask the room: which box are you in?
+- I’m top-right: powerful, and we can’t yet make it safe
+- Every box has smart, informed people in it
 - Nobody has done this before, so everyone is guessing from a different starting point
 - Not everyone works with AI at its full capability; many people just use it as a chatbot, or to review a paper
 - Doubt is healthy; we’ve been burned by hype before
 - But “it will never do that” keeps aging badly
-- It can be world-changing and dangerous at once
+- Most of the fight is about the first question: how powerful?
 > I’ll show you the evidence from this year that got me to “not ready”
 
 ## 5 · Claude Mythos

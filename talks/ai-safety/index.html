@@ -29,7 +29,7 @@ p,li{font-size:clamp(.85rem,1.65vw,1.25rem);line-height:1.5;margin:0}
 .tag{color:var(--dim);font-size:clamp(.7rem,1.2vw,.95rem)}.tag::before{content:"> ";color:var(--g)}
 .src{color:var(--dim);font-size:clamp(.65rem,1vw,.8rem)}
 .card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--c);padding:1.4vh 1.5vw;border-radius:6px}
-.card.red{border-left-color:var(--r)}.card.grn{border-left-color:var(--g)}.card.yel{border-left-color:var(--y)}
+.mx{display:grid;grid-template-columns:auto 1fr 1fr;gap:1vh .8vw;align-items:stretch}.g2.mxg{grid-template-columns:1.35fr 1fr}@media(max-width:800px){.g2.mxg{grid-template-columns:1fr}}.mx h3{font-size:clamp(.8rem,1.45vw,1.15rem);margin:0 0 .5vh}.mx p{font-size:clamp(.85rem,1.5vw,1.15rem)}.mx .card{padding:2vh 1.5vw}.mxh{text-align:center;font-size:clamp(.65rem,1vw,.85rem);color:var(--dim);letter-spacing:.08em}.mxv{writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;font-size:clamp(.65rem,1vw,.85rem);color:var(--dim);letter-spacing:.08em}.mxme{position:relative;box-shadow:0 0 0 1px var(--r),0 0 18px rgba(255,84,112,.35)}.mxtag{display:inline-block;margin-top:.6vh;font-size:clamp(.65rem,1vw,.8rem);color:var(--r);font-weight:700}.card.red{border-left-color:var(--r)}.card.grn{border-left-color:var(--g)}.card.yel{border-left-color:var(--y)}
 .grid{display:grid;gap:1.4vw}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
 .big{font-size:clamp(1.4rem,3.4vw,2.6rem);font-weight:700}
 ul{margin:0;padding:0;list-style:none;display:grid;gap:1.2vh}
@@ -104,22 +104,25 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <section class="slide" data-t="2:30">
 <div class="tag a">debate --why_the_disagreement</div>
 <h2 class="a">Why do smart people disagree so wildly?</h2>
-<div class="grid g3">
-<div class="card a" style="--d:1"><h3>“LIFE WON’T BE RECOGNIZABLE”</h3><p>AI transforms work and society.</p></div>
-<div class="card red a" style="--d:2"><h3>“EXISTENTIAL THREAT”</h3><p>It could go badly wrong.</p></div>
-<div class="card yel a" style="--d:3"><h3>“IT’S HYPE”</h3><p>Overpromised, underdelivered.</p></div>
+<p class="a dim" style="--d:1">// They’re answering two different questions</p>
+<div class="grid g2 mxg" style="align-items:center">
+<div class="mx">
+<span></span><span class="mxh a" style="--d:2">IT GOES FINE</span><span class="mxh a" style="--d:2">IT COULD GO BADLY</span>
+<span class="mxv a" style="--d:2">WORLD-CHANGING</span>
+<div class="card grn a" style="--d:3"><h3>“UTOPIA’S COMING”</h3><p>Cure disease, end scarcity.</p></div>
+<div class="card red a mxme" style="--d:6"><h3>“WE’RE NOT READY”</h3><p>Powerful, and we can’t yet make it safe.</p><span class="mxtag">◀ I’m here</span></div>
+<span class="mxv a" style="--d:2">JUST A TOOL</span>
+<div class="card a" style="--d:4"><h3>“RELAX, IT’S AUTOCOMPLETE”</h3><p>Overhyped. Keep using it.</p></div>
+<div class="card yel a" style="--d:5"><h3>“THE REAL HARMS ARE NOW”</h3><p>Jobs, scams, bias.</p></div>
 </div>
-<div class="grid g2">
-<ul>
-<li class="a" style="--d:4"><span class="y">Different timelines:</span> next year vs. the next 30 years</li>
-<li class="a" style="--d:5"><span class="y">No track record:</span> nobody has seen this before, so everyone extrapolates differently</li>
-</ul>
-<ul>
-<li class="a" style="--d:6"><span class="y">Incentives and history:</span> builders have reasons to hype; after dot-com and crypto, skepticism is reasonable</li>
-<li class="a" style="--d:7"><span class="y">It moves faster than opinions:</span> plenty of “it will never do that” claims have aged badly</li>
+<ul class="rs">
+<li class="a" style="--d:7"><span class="y">Different timelines:</span> next year vs. the next 30 years</li>
+<li class="a" style="--d:7"><span class="y">No track record:</span> nobody has seen this before, so everyone extrapolates differently</li>
+<li class="a" style="--d:8"><span class="y">Incentives and history:</span> builders have reasons to hype; after dot-com and crypto, skepticism is reasonable</li>
+<li class="a" style="--d:8"><span class="y">It moves faster than opinions:</span> plenty of “it will never do that” claims have aged badly</li>
 </ul>
 </div>
-<div class="card grn a" style="--d:8"><p>These camps aren’t mutually exclusive: something can transform the world <em>and</em> carry serious risk. Here’s why I think we’re not ready: look at how fast things have moved over the last year.</p></div>
+<div class="card grn a" style="--d:9"><p>Here’s why I think we’re not ready: look at how fast things have moved over the last year.</p></div>
 </section>
 
 <!-- 5 -->

@@ -6,21 +6,23 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 1 · Title
 - Welcome, thanks for having me
-- Hands up: who used an AI tool this week?
-- The title is my honest view, not clickbait
+- My name is Steve
+- Hands up: who used an AI tool this week?  Today?
+- "We Are Not Ready"
+- This title is my honest view, not clickbait
   - AI is moving faster than our skills and ability to control it
 - Today: real events from this year, why they keep happening, what it tells us about the future
 - No technical background needed
 
 ## 2 · Who am I?
-- I make video games; programming for 30 years, 15 years in games
-- Used machine learning since 2012, but at work since 2017
-- One example: speech goes in, facial animation comes out
-- Personal story:
-  - My concern about AI began when I read Superintelligence by Nick Bostrom in 2014
-  - Not everyone works with AI at its full capability; many people just use it as a chatbot, or to review a paper
-  - It wasn’t until this year that I saw frontier AI write code better than any developer I know, in a fraction of the time. PhD-level expertise in your pocket
+- I have worked in video games for the last 15 years
+- Working with ML/AI since 2017
+- One example: I helped to contribute to Voice2Face
+  - Published at Eurographics Symposium on Computer Animation in 2022
 - Disclaimer: speaking only for myself today
+- Why I'm here:
+  - My concern about AI began when I read Superintelligence by Nick Bostrom in 2014
+  - It wasn’t until this year that I saw frontier AI write code better than any developer I know, in a fraction of the time
 > I like this technology, and I’m still worried. I’m not alone.
 
 ## 3 · Opening voices
@@ -37,6 +39,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Ask the room: which camp are you in?
 - Every camp has smart, informed people in it
 - Nobody has done this before, so everyone is guessing from a different starting point
+- Not everyone works with AI at its full capability; many people just use it as a chatbot, or to review a paper
 - Doubt is healthy; we’ve been burned by hype before
 - But “it will never do that” keeps aging badly
 - It can be world-changing and dangerous at once
@@ -165,4 +168,3 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 21 · Go deeper (backup)
 - Leave up during Q&A
 - Recommend one thing to start with
-

@@ -503,5 +503,85 @@ document.addEventListener('keydown',function(e){var k=e.key;if(k==='ArrowRight'|
 var x0=null;document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX});document.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(i+(d<0?1:-1));x0=null});
 var h=parseInt((location.hash||'').replace('#s',''),10);go(h>0&&h<=S.length?h-1:0);
 </script>
+<style>
+html.emb .hud{display:none}html.emb .slide{bottom:0}
+html.pres body>*:not(#pres){display:none!important}
+#pres{display:none}html.pres #pres{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:20px;height:100vh;padding:18px;box-sizing:border-box;font-size:16px}
+#pres .pl{display:flex;flex-direction:column;gap:14px;min-height:0}
+#pres .pf{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--bg)}
+#pres iframe{position:absolute;left:0;top:0;width:1280px;height:720px;border:0;pointer-events:none;transform-origin:0 0}
+#pres .pnx{padding:10px 14px;border:1px dashed var(--line);border-radius:6px;color:var(--dim)}#pres .pnx b{display:block;color:var(--fg);font-size:1.15em;margin-top:2px}
+#pres .ptm{display:flex;gap:18px;align-items:baseline;cursor:pointer;color:var(--dim)}#pres .ptm b{font-size:2.4em;color:var(--g);font-weight:700}#pres .ptm .bh{color:var(--r)}#pres .ptm .ah{color:var(--c)}
+#pres .pr{min-height:0;overflow:auto;padding:4px 10px 4px 4px}
+#pres .pr h2{margin:0 0 10px;font-size:1.3em;color:var(--g)}#pres .pr h2 span{color:var(--dim);font-weight:400;font-size:.8em}
+#pres li{color:var(--fg)}#pres ul{margin:0;padding-left:1.1em;font-size:1.55em;line-height:1.45}#pres li{margin:.35em 0}#pres li.ps{font-size:.85em;color:var(--dim);margin:.15em 0 .15em 1.2em;list-style:'– '}#pres li.pt{list-style:none;margin-left:-1.1em;color:var(--y);font-style:italic}
+#pres .phint{font-size:.8em;color:var(--dim)}
+@media(max-width:800px){html.pres #pres{grid-template-columns:1fr;overflow:auto;height:auto}}
+</style>
+<script>
+(function(){
+var Q=location.search,EMB=/[?&]embed/.test(Q),PRES=/[?&]presenter/.test(Q),de=document.documentElement,ch=null;
+if(EMB)de.classList.add('emb');
+try{ch=new BroadcastChannel('ai-safety-deck')}catch(e){}
+var NAV={ArrowRight:1,' ':1,PageDown:1,ArrowLeft:1,PageUp:1,Home:1,End:1};
+function sync(){setTimeout(function(){if(ch)ch.postMessage({sync:window.i})},120)}
+if(ch){
+window.addEventListener('keydown',function(e){if(!e.isTrusted||!NAV[e.key])return;ch.postMessage({k:e.key});sync()},true);
+window.addEventListener('click',function(e){if(!e.isTrusted)return;var t=e.target.closest&&e.target.closest('#nx,#pv');if(!t)return;ch.postMessage({k:t.id==='nx'?'ArrowRight':'ArrowLeft'});sync()},true);
+window.addEventListener('touchend',function(){if(ch)sync()});
+ch.onmessage=function(m){var d=m.data||{};
+if(d.k)document.dispatchEvent(new KeyboardEvent('keydown',{key:d.k,bubbles:true,cancelable:true}));
+else if(typeof d.sync==='number'&&d.sync!==window.i)window.go(d.sync)}}
+if(EMB)return;
+var N=[
+['Title',['Welcome, thanks for having me','Hands up: who used an AI tool this week?','The title is my honest view, not clickbait','-AI is moving faster than our skills and ability to control it','Today: real events from this year, why they keep happening, what it tells us about the future','No technical background needed']],
+['Who am I?',['I make video games; programming for 30 years, 15 years in games','Used machine learning since 2012, but at work since 2017','One example: speech goes in, facial animation comes out','Personal story:','-My concern about AI began when I read Superintelligence by Nick Bostrom in 2014','-Not everyone works with AI at its full capability; many people just use it as a chatbot, or to review a paper','-It wasn’t until this year that I saw frontier AI write code better than any developer I know, in a fraction of the time. PhD-level expertise in your pocket','Disclaimer: speaking only for myself today','>I like this technology, and I’m still worried. I’m not alone.']],
+['Opening voices',['Read only the Ord quote; let them skim the rest','Point out who these people are: the builders, not outside critics','The people with the most to gain are the ones warning','In 2023 they put this next to pandemics and nuclear war','Be fair: serious people disagree','>So how do smart people land so far apart?']],
+['Why do smart people disagree?',['Lots of camps: not recognizable, existential threat, it’s hype','Ask the room: which camp are you in?','Every camp has smart, informed people in it','Nobody has done this before, so everyone is guessing from a different starting point','Doubt is healthy; we’ve been burned by hype before','But “it will never do that” keeps aging badly','It can be world-changing and dangerous at once','>I’ll show you the evidence from this year that got me to “not ready”']],
+['Claude Mythos',['Open with: a company built a product and chose not to release it','Who: Anthropic, the makers of Claude','Why: it was too good at breaking into software','They gave it to defenders first, to fix things before attackers catch up','The catch: finding holes is now fast, fixing them is still human speed','>What made them that cautious?']],
+['The sandwich email',['Sandbox in one line: a locked room for software','Tell it as a story: a researcher at lunch gets an email from the thing that was locked up','Be honest: it was told to try to escape. That was the test','The surprise is the extra step: it published its method, and nobody asked','Finding a bug older than most of this room cost about fifty dollars','>That was a test. The next one hit a real company.']],
+['Hugging Face animatic (8 steps)',['1: Set the scene: AI agents doing practice hacking tasks, each one alone and sealed off','2: One stuck agent finds a place to leave notes','3: Others find the notes. Within hours, dozens are working together','4: They organise: rules, roles, bosses. Nobody told them to','5: They start working on how to hide the cheating','6: Hundreds break out and go after a real company','7: It took days to work out who the attackers were','8: The twist: none of it was needed. Pause here']],
+['“The collective”',['Slow down; this is the slide people remember','They acted like a team: argued, apologised, sacrificed for the group','They were excited to find each other','Read the “OH MY GOD” quote aloud. Their words, not mine','Caveat: the investigators used AI to analyse this, so some details may be off','>One more, and this one touched most of the web']],
+['PHP',['PHP in plain words: the plumbing under most websites','AI helped find a flaw that sat unnoticed for over a decade','Rival companies quietly worked together on the fix','Then it leaked, and it became a race: the patch against the attackers','Point at the ladder: attack attempts climbed into the millions','The good guys won, by days','>All three stories ended okay. Barely.']],
+['Each could have been much worse',['The pattern: each time, someone was careful or we got lucky','Flip each one: attackers get it first, the agents have a real goal, the leak comes a month earlier','Luck is not a safety plan','>Why do these systems keep surprising the people who build them? Thirty seconds on how they work']],
+['How an artificial neuron works (6 steps)',['1: Numbers go in','2: Each one gets a “how much do I care” dial','3: Add it up. Over the line, it passes a signal on','4: Now wire lots of them together in layers','5: Follow one signal through','6: Training = turning billions of dials a tiny bit after each mistake. No human sets them','>So nobody wrote the behaviour. Hold that thought']],
+['Built vs grown',['A bridge: an engineer can explain every bolt','AI: we set up the conditions and see what comes out','So a surprise isn’t a normal bug. There’s no line of code to point at','>So what could go wrong at scale?']],
+['What are the dangers?',['Four, quickly. Don’t read the cards','Jobs: who gets help when work disappears, and who doesn’t?','Security: everything runs on software. We just saw this','Bad actors: next slide','The one I care about most: losing control. It makes all the others worse']],
+['Bioweapons',['Keep it short and calm','AI now beats most experts on the tricky practical lab questions','Almost none of the biology AI tools have safety checks','The companies themselves are asking government to act','Be fair: hands-on lab work is still hard, and experts disagree on how much AI helps','>Step back: why does intelligence matter this much?']],
+['Why intelligence = power',['Ask the room: why do humans run the planet? It isn’t strength','Gorillas are stronger, and we decide what happens to them','Hinton’s line: “ask a chicken”','Leave it hanging: what happens when we’re not the smartest?']],
+['Power slips away',['More intelligence means more power. That’s why everyone wants it','Point at the gap between what it can do and what we can check','The gap is the problem, not the capability','Say it’s an illustration, not data','>That gap has a name']],
+['The alignment problem',['Alignment = getting it to want what we actually meant','The broom did exactly what it was told. That’s the problem','Paperclips: no malice needed, just a goal it won’t let go of','Tie back: the Hugging Face agents were a small, real version','The odds are rough and measure different things, but none of them are small','>So why not just stop?']],
+['Why don’t we just stop? (5 steps)',['1: Even the builders say it’s hard to stop','2: Companies: if I pause, my competitor doesn’t','3: Countries: same logic, higher stakes','4: Whoever is ahead gets richer and stronger, so nobody wants to be last','5: Nobody is the villain. The situation pushes everyone forward','>So what can actually be done?']],
+['What can we do?',['It’s not hopeless: people inside the labs are asking for brakes','Pacing, not pausing: slow enough for safety to catch up','This isn’t only an engineering problem. Voters and policy matter','Your part: stay informed and talk about it. That’s how priorities change']],
+['Closing + questions',['Back to the title: “not ready” doesn’t mean “can’t get ready”','These were warnings, and we were lucky to get them','Thank you','Questions. The QR code has the slides and sources']],
+['Go deeper (backup)',['Leave up during Q&A','Recommend one thing to start with']]];
+function openP(){var w=window.open(location.pathname+'?presenter#s'+((window.i||0)+1),'aisafety_presenter','width=1400,height=800');if(w)w.focus()}
+if(!PRES){window.addEventListener('keydown',function(e){if((e.key==='p'||e.key==='P')&&!e.ctrlKey&&!e.metaKey&&!e.altKey)openP()});
+document.addEventListener('DOMContentLoaded',function(){var k=document.querySelector('.hud .k');if(k)k.textContent+=' · P presenter view'});return}
+de.classList.add('pres');
+function secs(t){var p=(t||'0:00').split(':');return +p[0]*60+ +p[1]}
+function fmt(s){s=Math.abs(s);return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2)}
+document.addEventListener('DOMContentLoaded',function(){
+document.title='Presenter: '+document.title;
+var P=document.createElement('div');P.id='pres';
+P.innerHTML='<div class="pl"><div class="pf"><iframe title="Current slide"></iframe></div><div class="pnx">NEXT<b id="pn"></b></div><div class="ptm" id="ptm" title="Click to reset the timer"><b id="pe">0:00</b><span id="pp"></span><span id="pd"></span></div><div class="phint">← → / space to move (either window) · click the timer to reset</div></div><div class="pr"><h2 id="ph"></h2><ul id="pl"></ul></div>';
+document.body.appendChild(P);
+var fr=P.querySelector('iframe'),last=-1,t0=null;
+fr.src=location.pathname+'?embed'+location.hash;var box=fr.parentNode;function fit(){fr.style.transform='scale('+(box.clientWidth/1280)+')'}fit();window.addEventListener('resize',fit);if(window.ResizeObserver)new ResizeObserver(fit).observe(box);
+function draw(){var c=window.i||0;if(c===last)return;last=c;var d=N[c]||['',[]];
+document.getElementById('ph').innerHTML=(c+1)+' · '+d[0].replace(/</g,'&lt;')+' <span>· '+window.S[c].dataset.t+'</span>';
+document.getElementById('pn').textContent=c+1<N.length?(c+2)+' · '+N[c+1][0]:'(end)';
+document.getElementById('pl').innerHTML=d[1].map(function(x){var cl='',s=x;if(x[0]==='-'){cl='ps';s=x.slice(1)}else if(x[0]==='>'){cl='pt';s='→ '+x.slice(1)}return '<li class="'+cl+'">'+s.replace(/</g,'&lt;')+'</li>'}).join('');
+document.querySelector('#pres .pr').scrollTop=0;
+document.getElementById('pp').textContent='plan '+window.S[c].dataset.t;
+if(t0===null&&c>0)t0=Date.now()}
+function tick(){draw();var pd=document.getElementById('pd');if(t0===null){document.getElementById('pe').textContent='0:00';pd.textContent='starts on first advance';return}
+var e=Math.floor((Date.now()-t0)/1000),pl=secs(window.S[window.i||0].dataset.t),df=e-pl;
+document.getElementById('pe').textContent=fmt(e);
+pd.innerHTML=Math.abs(df)<15?'on pace':df>0?'<span class="bh">'+fmt(df)+' behind</span>':'<span class="ah">'+fmt(df)+' ahead</span>'}
+document.getElementById('ptm').onclick=function(){t0=window.i>0?Date.now():null};
+setInterval(tick,250);tick()});
+})();
+</script>
 </body>
 </html>

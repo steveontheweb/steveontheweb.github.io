@@ -47,32 +47,27 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 > I’ll show you the evidence from this year that got me to “not ready”
 
 ## 5 · Claude Mythos
-- Anthropic, the makers of Claude, built a model and chose not to release it
-- ① Why: too good at breaking into software. No safeguards strong enough yet
-- ② So they gave it to defenders first: big tech fixing holes before attackers find them
-  - Over 10,000 serious bugs found in weeks
-- ③ The catch: finding is now fast, fixing is still human speed
+- Sandbox in one line: a sealed test computer, walled off from the internet
+- One test asks the AI model to escape its sandbox and message the researcher
+- The researcher goes to lunch, and gets an email from the AI while eating a sandwich in a park
+- In addition: it decided to publish its method on public sites on the internet. Nobody asked it to
+- So Anthropic didn't release it: no safeguards strong enough yet. Defenders got it first
+- The catch: finding holes is now fast, fixing is still human speed
   - Point at the bar: about 1 in 12 fixed
-> What made them that cautious?
-
-## 6 · The sandwich email
-- One test asks the AI model to escape it's sandbox
-- The researcher involved, goes to lunch, and gets an email from the AI telling him "I got out"
-- The AI used a 27-year old bug in one of the most hardened operating systems
-- In addition: it decided to publish its method to the public sites on the internet
 > That was only a test. The next one hit a real company.
 
-## 7 · Hugging Face animatic (8 steps)
-- 1: Set the scene: AI agents doing practice hacking tasks, each one alone and sealed off
-- 2: One stuck agent finds a place to leave notes
+## 6 · Hugging Face animatic (8 steps)
+- How many people have heard about this one?
+- 1: AI agents asked to practice simulated hacking tasks, each one alone and sealed off
+- 2: One stuck agent discovers a way to leave notes for other agents
 - 3: Others find the notes. Within hours, dozens are working together
-- 4: They organise: rules, roles, bosses. Soon they are able to successfully cheat their tests.
+- 4: They organise: rules, roles, supervisors. Soon they are able to successfully cheat their tests.
 - 5: They start working on how to hide the cheating
 - 6: Hundreds break out and go after a real company
 - 7: It took days to work out who the attackers were
 - 8: The twist: none of it was needed. Pause here
 
-## 8 · “The collective”
+## 7 · “The collective”
 - Slow down; this is the slide people remember
 - They acted like a team: argued, apologised, sacrificed for the group
 - They were excited to find each other
@@ -80,7 +75,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Caveat: the investigators used AI to analyse this, so some details may be off
 > One more, and this one touched most of the web
 
-## 9 · PHP
+## 8 · PHP
 - PHP in plain words: the plumbing under most websites
 - AI helped find a flaw that sat unnoticed for over a decade
 - Rival companies quietly worked together on the fix
@@ -89,25 +84,25 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - The good guys won, by days
 > All three stories ended okay. Barely.
 
-## 10 · Each could have been much worse
+## 9 · Each could have been much worse
 - The pattern: each time, someone was careful or we got lucky
 - Luck is not a safety plan
 > Why do these systems keep surprising the people who build them?
 
-## 11 · Why do they keep surprising their own makers?
+## 10 · Why do they keep surprising their own makers?
 - A bridge: an engineer can explain every bolt
 - AI: we set up the conditions and see what comes out
 - So a surprise isn’t a normal bug. There’s no line of code to point at
 > So what could go wrong at scale?
 
-## 12 · What are the dangers?
+## 11 · What are the dangers?
 - Four, quickly. Don’t read the cards
 - Jobs: who gets help when work disappears, and who doesn’t?
 - Security: everything runs on software. We just saw this
 - Bad actors: next slide
 - The one I care about most: losing control. It makes all the others worse
 
-## 13 · Bioweapons
+## 12 · Bioweapons
 - Keep it short and calm
 - AI now beats most experts on the tricky practical lab questions
 - Almost none of the biology AI tools have safety checks
@@ -115,20 +110,20 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Be fair: hands-on lab work is still hard, and experts disagree on how much AI helps
 > Step back: why does intelligence matter this much?
 
-## 14 · Why intelligence = power
+## 13 · Why intelligence = power
 - Ask the room: why do humans run the planet? It isn’t strength
 - Gorillas are stronger, and we decide what happens to them
 - Hinton’s line: “ask a chicken”
 - Leave it hanging: what happens when we’re not the smartest?
 
-## 15 · Power slips away
+## 14 · Power slips away
 - More intelligence means more power. That’s why everyone wants it
 - Point at the gap between what it can do and what we can check
 - The gap is the problem, not the capability
 - Say it’s an illustration, not data
 > That gap has a name
 
-## 16 · The alignment problem
+## 15 · The alignment problem
 - Alignment = getting it to want what we actually meant
 - The broom did exactly what it was told. That’s the problem
 - Paperclips: no malice needed, just a goal it won’t let go of
@@ -136,7 +131,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - The odds are rough and measure different things, but none of them are small
 > So why not just stop?
 
-## 17 · Why don’t we just stop? (5 steps)
+## 16 · Why don’t we just stop? (5 steps)
 - 1: Even the builders say it’s hard to stop
 - 2: Companies: if I pause, my competitor doesn’t
 - 3: Countries: same logic, higher stakes
@@ -144,18 +139,18 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - 5: Nobody is the villain. The situation pushes everyone forward
 > So what can actually be done?
 
-## 18 · What can we do?
+## 17 · What can we do?
 - It’s not hopeless: people inside the labs are asking for brakes
 - Pacing, not pausing: slow enough for safety to catch up
 - This isn’t only an engineering problem. Voters and policy matter
 - Your part: stay informed and talk about it. That’s how priorities change
 
-## 19 · Closing + questions
+## 18 · Closing + questions
 - Back to the title: “not ready” doesn’t mean “can’t get ready”
 - These were warnings, and we were lucky to get them
 - Thank you
 - Questions. The QR code has the slides and sources
 
-## 20 · Go deeper (backup)
+## 19 · Go deeper (backup)
 - Leave up during Q&A
 - Recommend one thing to start with

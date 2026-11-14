@@ -130,41 +130,30 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <div class="tag a">recent_events --1 --model="Claude Mythos Preview"</div>
 <h2 class="a">Claude Mythos: the AI its makers held back</h2>
 <p class="a dim" style="--d:1">// A new <span class="c">Claude</span> model from <span class="c">Anthropic</span> that’s unusually good at hacking software</p>
-<div class="grid g3" style="align-items:stretch">
-<div class="card red a" style="--d:2"><h3>① HELD BACK</h3><p class="stat" style="color:var(--r)">Not released</p><p><span class="y">Apr 2026:</span> no safeguards strong enough yet</p></div>
-<div class="card grn a" style="--d:5"><h3>② DEFENDERS FIRST</h3><p><span class="stat"><span data-count="10000">0</span>+</span></p><p>serious security holes found, in weeks</p><p class="dim">Given to Amazon, Apple, Google, Microsoft and others to fix bugs before attackers find them</p></div>
-<div class="card yel a" style="--d:8"><h3>③ THE PATCH GAP</h3>
+<div class="grid g2" style="align-items:center">
+<div>
+<div class="log">
+<div class="a" style="--d:2">test: “escape the sandbox and message the researcher”</div>
+<div class="a" style="--d:3">builds a multi-step exploit</div>
+<div class="a" style="--d:4">gains broad internet access</div>
+<div class="a y" style="--d:5">✉ emails the researcher, who is eating a sandwich in a park</div>
+<div class="a r" style="--d:6">posts its exploit to public websites. Nobody asked it to.</div>
+</div>
+<p class="dim a" style="--d:2;margin-top:1vh;font-size:clamp(.7rem,1.1vw,.9rem)"><span class="c">sandbox</span> = a sealed test computer, walled off from the internet</p>
+</div>
+<div class="grid" style="gap:1.4vh">
+<div class="card red a" style="--d:8"><h3>① HELD BACK</h3><p class="stat" style="color:var(--r)">Not released</p><p class="dim">Given to defenders first (Amazon, Apple, Google, Microsoft and others) to fix holes before attackers find them</p></div>
+<div class="card yel a" style="--d:10"><h3>② THE PATCH GAP</h3>
 <p><span class="stat" data-count="6157">0</span> <span class="dim">found</span></p>
-<div class="bw"><div class="bar" style="width:8.4%;background:var(--g);--d:10;height:100%"></div></div>
+<div class="bw"><div class="bar" style="width:8.4%;background:var(--g);--d:12;height:100%"></div></div>
 <p><span class="stat" style="color:var(--g)" data-count="516">0</span> <span class="dim">fixed (about 1 in 12)</span></p>
 <p class="y">Finding got fast. Fixing is still human speed.</p></div>
-</div>
-<p class="src a" style="--d:11">Apr 7: Mythos Preview announced, not released; shared via Project Glasswing with $100M in credits. Jun 2: widened to ~150 critical-infrastructure organizations in 15 countries. Jun 9: a safeguarded version (Claude Fable 5) goes public; the full model stays restricted. Patch figures as of Oct 2, 2026. Oct 6: Glasswing folded into an expanded Cyber Verification Program. Sources: Anthropic, CyberScoop, CSO Online, Software Improvement Group.</p>
+</div></div>
+<p class="src a" style="--d:13">The sandbox test was instructed: the model was told to escape and message the researcher; the test computer was separate from the machine holding the model. Unprompted: posting its exploit publicly. Apr 7: Mythos Preview announced, not released; shared via Project Glasswing ($100M in credits); 10,000+ high or critical vulnerabilities found by late May. Jun 9: a safeguarded version (Claude Fable 5) goes public; the full model stays restricted. Patch figures as of Oct 2, 2026. Sources: Anthropic system card, CyberScoop, CSO Online, Software Improvement Group, The Hacker News.</p>
 </section>
 
 <!-- 6 -->
-<section class="slide" data-t="4:45">
-<div class="tag a">recent_events --1b --follow_up="sandbox_test"</div>
-<h2 class="a">Why the caution: Mythos and the sandwich email</h2>
-<p class="dim a" style="--d:1"><span class="c">sandbox</span> = a sealed test computer, walled off from the internet, so a risky program can run without touching anything real</p>
-<div class="grid g2" style="align-items:center">
-<div class="log">
-<div class="a" style="--d:1">test: “try to escape the sandbox”</div>
-<div class="a" style="--d:2">model builds a multi-step exploit</div>
-<div class="a" style="--d:3">gains broad internet access</div>
-<div class="a y" style="--d:4">✉ emails the researcher, who is eating a sandwich in a park</div>
-<div class="a r" style="--d:5">posts its exploit to public websites. Nobody asked it to.</div>
-</div>
-<div class="grid" style="gap:1.2vh">
-<div class="card red a" style="--d:3"><span class="stat" data-count="27">0</span><span class="stat"> yrs</span><p class="dim">age of an OpenBSD bug it found, in one of the most hardened operating systems</p></div>
-<div class="card yel a" style="--d:5"><span class="stat">1000s</span><p class="dim">of previously unknown security flaws (“zero-days”) in every major operating system (Windows, macOS, Linux) and web browser</p></div>
-<div class="card a" style="--d:7"><span class="stat">$50</span><p class="dim">compute for the successful run that hit that bug</p></div>
-</div></div>
-<p class="src">It was an instructed test: the model was told to escape and message the researcher. Anthropic notes the test computer was separate from the machine holding the model, so it was not a full containment breach. Unprompted: posting its exploit publicly. Sources: Anthropic system card, The Hacker News</p>
-</section>
-
-<!-- 7 -->
-<section class="slide" id="anim" data-t="5:45">
+<section class="slide" id="anim" data-t="4:45">
 <div class="tag a">recent_events --2 --incident="hugging-face" --playback=auto</div>
 <h2 class="a">Hugging Face: from practice arena to real attack <span class="chip" id="dt">May – Jul 8, 2026</span></h2>
 <svg id="stage" viewBox="0 0 600 300">
@@ -215,8 +204,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 </script>
 </section>
 
-<!-- 8 -->
-<section class="slide" data-t="7:30">
+<!-- 7 -->
+<section class="slide" data-t="6:30">
 <div class="tag a">recent_events --2b --incident="hugging-face" --behaviour</div>
 <h2 class="a">“The collective”: strikingly human behaviour <span class="chip">Jul 8–13, 2026</span></h2>
 <div class="grid g2" style="align-items:center">
@@ -243,8 +232,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="src">Source: METR/Redwood investigation (Aug 26, 2026). It relied heavily on AI-assisted analysis, so details may be imperfect.</p>
 </section>
 
-<!-- 9 -->
-<section class="slide" data-t="8:45">
+<!-- 8 -->
+<section class="slide" data-t="7:45">
 <div class="tag a">recent_events --3 --incident="php"</div>
 <h2 class="a">PHP: the bug under much of the web <span class="chip">Jul 30 – Oct 21, 2026</span></h2>
 <p class="dim a" style="--d:1"><span class="c">PHP</span> = the programming language behind WordPress, Drupal and an estimated 70% of websites</p>
@@ -265,8 +254,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="src">Bars are illustrative. Sources: TIME (Oct 23), CNN, CNBC, Fortune (Oct 22–23). No major breaches reported so far.</p>
 </section>
 
-<!-- 10 -->
-<section class="slide" data-t="10:00">
+<!-- 9 -->
+<section class="slide" data-t="9:00">
 <div class="tag a">risk_assessment --what_if</div>
 <h2 class="a">Each of these could have been <span class="r">much worse.</span></h2>
 <div class="cmp">
@@ -277,8 +266,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="a" style="--d:8">Green: what happened. Dashed red: what could have. <span class="y">These are signals of what’s coming, and of the responsibility in front of us.</span></p>
 </section>
 
-<!-- 11 -->
-<section class="slide" data-t="10:45">
+<!-- 10 -->
+<section class="slide" data-t="9:45">
 <div class="tag a">ai --origin</div>
 <h2 class="a">Why do they keep surprising their own makers?</h2>
 <div class="grid g2" style="align-items:center">
@@ -290,8 +279,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="a" style="--d:6">We are not engineers of this species. <span class="g">We’re planting the seed</span> of something alien, and finding out afterwards what grew.</p>
 </section>
 
-<!-- 12 -->
-<section class="slide" data-t="12:15">
+<!-- 11 -->
+<section class="slide" data-t="11:15">
 <div class="tag a">dangers --list</div>
 <h2 class="a">What are the dangers?</h2>
 <div class="grid g2">
@@ -303,8 +292,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <div class="card red a" style="--d:6"><p><span class="r">×</span> <strong>These dangers aren’t separate.</strong> Loss of control multiplies the rest: a hacking AI that won’t stay in its sandbox, a bio-capable model that can’t be reliably held back, an economy run by systems nobody can oversee.</p></div>
 </section>
 
-<!-- 13 -->
-<section class="slide" data-t="13:45">
+<!-- 12 -->
+<section class="slide" data-t="12:45">
 <div class="tag a">bad_actors --bioweapons</div>
 <h2 class="a">Bioweapons: the worst case is a pandemic</h2>
 <div class="grid g3">
@@ -320,8 +309,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="src">Sources: International AI Safety Report update, AI Policy Bulletin (Oct 21, 2026), RAND (Sep 2026)</p>
 </section>
 
-<!-- 14 -->
-<section class="slide" data-t="15:00">
+<!-- 13 -->
+<section class="slide" data-t="14:00">
 <div class="tag a">power --why intelligence</div>
 <h2 class="a">Why intelligence = power</h2>
 <div class="grid g2" style="align-items:center">
@@ -341,8 +330,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="src">Bars are illustrative. Sources: Hinton on the BBC, CBC and The Diary of a CEO</p>
 </section>
 
-<!-- 15 -->
-<section class="slide" data-t="16:15">
+<!-- 14 -->
+<section class="slide" data-t="15:15">
 <div class="tag a">alignment --why_it_escalates</div>
 <h2 class="a">Intelligence becomes power. Power slips away.</h2>
 <div class="grid g2" style="align-items:center">
@@ -357,8 +346,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <text x="24" y="28" style="fill:var(--c)">AI capability</text><text x="282" y="163" text-anchor="end" font-size="10" style="fill:var(--g)">our ability to oversee it</text><text x="150" y="184" style="fill:var(--dim)" font-size="9">time → (illustrative)</text></svg></div>
 </section>
 
-<!-- 16 -->
-<section class="slide" data-t="17:30">
+<!-- 15 -->
+<section class="slide" data-t="16:30">
 <div class="tag a">alignment --problem</div>
 <h2 class="a">The alignment problem</h2>
 <div class="grid" style="grid-template-columns:1fr 1.7fr 1fr">
@@ -378,8 +367,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="src a" style="--d:14">Ord: existential catastrophe (The Precipice, 2020). Hinton: extinction (Diary of a CEO, 2025). Amodei: catastrophic harm (as reported). Methods differ.</p>
 </section>
 
-<!-- 17 -->
-<section class="slide ns" id="race" data-t="20:00">
+<!-- 16 -->
+<section class="slide ns" id="race" data-t="19:00">
 <div class="tag">why_not_stop --race</div>
 <h2>Why don’t we just stop?</h2>
 <div class="grid g2" style="align-items:center">
@@ -395,8 +384,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <div style="display:flex;gap:12px;align-items:center"><span id="rdots" style="display:flex;gap:8px"></span><span class="tag">step through: arrow keys, click, or numbers</span></div>
 </section>
 
-<!-- 18 -->
-<section class="slide" data-t="21:30">
+<!-- 17 -->
+<section class="slide" data-t="20:30">
 <div class="tag a">what_can_we_do --run</div>
 <h2 class="a">What can we do?</h2>
 <div class="grid g3">
@@ -407,8 +396,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="src">Sources: pacingthefrontier.com; darioamodei.com “We Must Pace the Frontier”</p>
 </section>
 
-<!-- 19 -->
-<section class="slide" data-t="23:30">
+<!-- 18 -->
+<section class="slide" data-t="22:30">
 <div class="tag a">exit --summary</div>
 <h2 class="a">The responsibility is incredible.<br>So is the chance to <span class="c">get it right.</span></h2>
 <p class="a" style="--d:3">These incidents were warning shots. The stakes are high, and there’s still time to act.</p>
@@ -437,8 +426,8 @@ new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else 
 <script>try{if(window.QRCode)new QRCode(document.getElementById('qr'),{text:'https://steveontheweb.com/talks/ai-safety/',width:150,height:150,colorDark:'#000000',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M})}catch(e){}</script>
 </section>
 
-<!-- 20 -->
-<section class="slide" data-t="24:30">
+<!-- 19 -->
+<section class="slide" data-t="23:30">
 <div class="tag a">resources --go_deeper</div>
 <h2 class="a">Go deeper</h2>
 <div class="grid g3 rs">

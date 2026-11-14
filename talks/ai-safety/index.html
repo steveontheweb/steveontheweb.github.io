@@ -128,22 +128,18 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <!-- 5 -->
 <section class="slide" data-t="3:15">
 <div class="tag a">recent_events --1 --model="Claude Mythos Preview"</div>
-<h2 class="a">Claude Mythos: the AI model its makers held back <span class="chip">Apr 7 – Oct 6, 2026</span></h2>
-<div class="card grn a" style="--d:1"><h3>WHAT IS IT?</h3><p>A new AI model from <span class="c">Anthropic</span>, the company behind the Claude chatbot. It is unusually good at finding, and exploiting, security holes in software.</p></div>
-<div class="grid g2" style="align-items:center">
-<ul>
-<li class="a" style="--d:2"><span class="y">Apr 7:</span> Mythos Preview is announced and <span class="r">not released</span>. Reason given: no safeguards strong enough yet.</li>
-<li class="a" style="--d:3">Shared only with defenders (Project Glasswing): Amazon, Apple, Google, Microsoft, Nvidia and others, backed by $100M in credits</li>
-<li class="a" style="--d:4"><span class="y">Late May:</span> 10,000+ high or critical vulnerabilities found</li>
-<li class="a" style="--d:5"><span class="y">Jun 2:</span> access widened to ~150 more critical-infrastructure organizations in 15 countries</li>
-<li class="a" style="--d:6"><span class="y">Jun 9:</span> a safeguarded version (Claude Fable 5) goes public; the full model stays restricted</li>
-</ul>
-<div class="card red a" style="--d:7"><h3>THE PATCH GAP · as of Oct 2, 2026</h3>
-<p><span class="stat" data-count="6157">0</span> <span class="dim">vulnerabilities disclosed to open-source maintainers</span></p>
-<div class="bw"><div class="bar" style="width:8.4%;background:var(--g);--d:9;height:100%"></div></div>
-<p><span class="stat" data-count="516">0</span> <span class="dim">patched (about 8%)</span></p>
-<p class="y">Finding bugs got easy. Fixing them is the bottleneck.</p></div></div>
-<p class="src">Sources: Anthropic, CyberScoop, CSO Online, Software Improvement Group (Oct 2026). Oct 6: Glasswing folded into an expanded Cyber Verification Program.</p>
+<h2 class="a">Claude Mythos: the AI its makers held back</h2>
+<p class="a dim" style="--d:1">// A new <span class="c">Claude</span> model from <span class="c">Anthropic</span> that’s unusually good at hacking software</p>
+<div class="grid g3" style="align-items:stretch">
+<div class="card red a" style="--d:2"><h3>① HELD BACK</h3><p class="stat" style="color:var(--r)">Not released</p><p><span class="y">Apr 2026:</span> no safeguards strong enough yet</p></div>
+<div class="card grn a" style="--d:5"><h3>② DEFENDERS FIRST</h3><p><span class="stat"><span data-count="10000">0</span>+</span></p><p>serious security holes found, in weeks</p><p class="dim">Given to Amazon, Apple, Google, Microsoft and others to fix bugs before attackers find them</p></div>
+<div class="card yel a" style="--d:8"><h3>③ THE PATCH GAP</h3>
+<p><span class="stat" data-count="6157">0</span> <span class="dim">found</span></p>
+<div class="bw"><div class="bar" style="width:8.4%;background:var(--g);--d:10;height:100%"></div></div>
+<p><span class="stat" style="color:var(--g)" data-count="516">0</span> <span class="dim">fixed (about 1 in 12)</span></p>
+<p class="y">Finding got fast. Fixing is still human speed.</p></div>
+</div>
+<p class="src a" style="--d:11">Apr 7: Mythos Preview announced, not released; shared via Project Glasswing with $100M in credits. Jun 2: widened to ~150 critical-infrastructure organizations in 15 countries. Jun 9: a safeguarded version (Claude Fable 5) goes public; the full model stays restricted. Patch figures as of Oct 2, 2026. Oct 6: Glasswing folded into an expanded Cyber Verification Program. Sources: Anthropic, CyberScoop, CSO Online, Software Improvement Group.</p>
 </section>
 
 <!-- 6 -->
@@ -282,25 +278,9 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 </section>
 
 <!-- 11 -->
-<section class="slide ns" id="neuron" data-t="10:45">
-<div class="tag">ai --how_it_works --unit="neuron"</div>
-<h2>How an artificial neuron works</h2>
-<div class="grid g2" style="align-items:center">
-<div class="card" style="cursor:pointer"><svg viewBox="0 0 380 190"><g data-s="1,2,3"><circle cx="30" cy="35" r="14" fill="none" stroke="var(--c)"/><circle cx="30" cy="95" r="14" fill="none" stroke="var(--c)"/><circle cx="30" cy="155" r="14" fill="none" stroke="var(--c)"/><text x="30" y="39" text-anchor="middle">x1</text><text x="30" y="99" text-anchor="middle">x2</text><text x="30" y="159" text-anchor="middle">x3</text></g><path data-s="2,3" d="M44,38L186,88" fill="none" stroke="var(--c)"/><path data-s="2,3" d="M44,95L186,95" fill="none" stroke="var(--c)"/><path data-s="2,3" d="M44,152L186,102" fill="none" stroke="var(--c)"/><g data-s="2,3"><text x="100" y="52" style="fill:var(--y)">w1</text><text x="100" y="88" style="fill:var(--y)">w2</text><text x="100" y="140" style="fill:var(--y)">w3</text></g><g data-s="3"><circle cx="220" cy="95" r="34" fill="none" stroke="var(--g)" stroke-width="2"/><text x="220" y="101" text-anchor="middle" style="fill:var(--g);font-size:20px">Σ</text><path d="M254,95H340" fill="none" stroke="var(--g)" stroke-width="2"/><text x="300" y="85" text-anchor="middle" style="fill:var(--g)">fires?</text><text x="352" y="99" style="fill:var(--g);font-size:14px">→</text></g><g data-s="4,5,6"><path d="M40,35L140,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,35L140,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,35L140,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,35L140,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,95L140,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,95L140,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,95L140,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,95L140,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,155L140,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,155L140,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,155L140,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M40,155L140,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,20L240,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,20L240,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,20L240,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,20L240,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,70L240,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,70L240,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,70L240,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,70L240,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,120L240,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,120L240,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,120L240,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,120L240,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,170L240,20" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,170L240,70" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,170L240,120" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M140,170L240,170" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,20L340,65" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,20L340,125" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,70L340,65" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,70L340,125" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,120L340,65" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,120L340,125" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,170L340,65" fill="none" stroke="var(--c)" stroke-opacity=".35"/><path d="M240,170L340,125" fill="none" stroke="var(--c)" stroke-opacity=".35"/><circle cx="40" cy="35" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="40" cy="95" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="40" cy="155" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="140" cy="20" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="140" cy="70" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="140" cy="120" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="140" cy="170" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="240" cy="20" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="240" cy="70" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="240" cy="120" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="240" cy="170" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="340" cy="65" r="9" fill="var(--card)" stroke="var(--c)"/><circle cx="340" cy="125" r="9" fill="var(--card)" stroke="var(--c)"/><text x="40" y="188" text-anchor="middle" style="fill:var(--dim);font-size:10px">inputs</text><text x="190" y="188" text-anchor="middle" style="fill:var(--dim);font-size:10px">hidden layers</text><text x="340" y="188" text-anchor="middle" style="fill:var(--dim);font-size:10px">outputs</text></g><g data-s="5,6"><path d="M40,95L140,70L240,120L340,65" fill="none" stroke="var(--g)" stroke-width="2"/><circle cx="40" cy="95" r="9" fill="var(--card)" stroke="var(--g)"/><circle cx="140" cy="70" r="9" fill="var(--card)" stroke="var(--g)"/><circle cx="240" cy="120" r="9" fill="var(--card)" stroke="var(--g)"/><circle cx="340" cy="65" r="9" fill="var(--card)" stroke="var(--g)"/></g></svg></div>
-<ul>
-<li data-s="1,2,3,4,5,6"><span class="c">Inputs</span> arrive as numbers: pixels, words, signals</li>
-<li data-s="2,3,4,5,6">Each is multiplied by a <span class="y">weight</span> (how much it matters), then everything is added up</li>
-<li data-s="3,4,5,6">If the total is big enough, the neuron <span class="g">fires</span> and passes a signal on</li>
-<li data-s="4,5,6"><span class="c">Chain them in layers:</span> each layer’s outputs become the next layer’s inputs. Stack enough and you get today’s models</li>
-</ul></div>
-<div class="card grn" data-s="6"><p><span class="g">Learning</span> = nudging the weights after each mistake. Modern models have billions of them, and nobody writes the rules by hand.</p></div>
-<div style="display:flex;gap:12px;align-items:center"><span id="ndots" style="display:flex;gap:8px"></span><span class="tag">step through: arrow keys, click, or numbers</span></div>
-</section>
-
-<!-- 12 -->
-<section class="slide" data-t="11:15">
+<section class="slide" data-t="10:45">
 <div class="tag a">ai --origin</div>
-<h2 class="a">Why so many incidents, if AI is so good?</h2>
+<h2 class="a">Why do they keep surprising their own makers?</h2>
 <div class="grid g2" style="align-items:center">
 <div class="card a" style="--d:1"><h3>BUILT (a bridge)</h3><p>Engineers design every part and can explain every bolt.</p>
 <svg viewBox="0 0 200 60"><path class="draw" pathLength="1" style="--d:2" d="M5,50H195M5,50V30H195V50M35,30V50M65,30V50M95,30V50M125,30V50M155,30V50" fill="none" stroke="var(--c)"/></svg></div>
@@ -310,8 +290,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="a" style="--d:6">We are not engineers of this species. <span class="g">We’re planting the seed</span> of something alien, and finding out afterwards what grew.</p>
 </section>
 
-<!-- 13 -->
-<section class="slide" data-t="12:45">
+<!-- 12 -->
+<section class="slide" data-t="12:15">
 <div class="tag a">dangers --list</div>
 <h2 class="a">What are the dangers?</h2>
 <div class="grid g2">
@@ -323,8 +303,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <div class="card red a" style="--d:6"><p><span class="r">×</span> <strong>These dangers aren’t separate.</strong> Loss of control multiplies the rest: a hacking AI that won’t stay in its sandbox, a bio-capable model that can’t be reliably held back, an economy run by systems nobody can oversee.</p></div>
 </section>
 
-<!-- 14 -->
-<section class="slide" data-t="14:15">
+<!-- 13 -->
+<section class="slide" data-t="13:45">
 <div class="tag a">bad_actors --bioweapons</div>
 <h2 class="a">Bioweapons: the worst case is a pandemic</h2>
 <div class="grid g3">
@@ -340,8 +320,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="src">Sources: International AI Safety Report update, AI Policy Bulletin (Oct 21, 2026), RAND (Sep 2026)</p>
 </section>
 
-<!-- 15 -->
-<section class="slide" data-t="15:30">
+<!-- 14 -->
+<section class="slide" data-t="15:00">
 <div class="tag a">power --why intelligence</div>
 <h2 class="a">Why intelligence = power</h2>
 <div class="grid g2" style="align-items:center">
@@ -361,8 +341,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="src">Bars are illustrative. Sources: Hinton on the BBC, CBC and The Diary of a CEO</p>
 </section>
 
-<!-- 16 -->
-<section class="slide" data-t="16:45">
+<!-- 15 -->
+<section class="slide" data-t="16:15">
 <div class="tag a">alignment --why_it_escalates</div>
 <h2 class="a">Intelligence becomes power. Power slips away.</h2>
 <div class="grid g2" style="align-items:center">
@@ -377,8 +357,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <text x="24" y="28" style="fill:var(--c)">AI capability</text><text x="282" y="163" text-anchor="end" font-size="10" style="fill:var(--g)">our ability to oversee it</text><text x="150" y="184" style="fill:var(--dim)" font-size="9">time → (illustrative)</text></svg></div>
 </section>
 
-<!-- 17 -->
-<section class="slide" data-t="18:00">
+<!-- 16 -->
+<section class="slide" data-t="17:30">
 <div class="tag a">alignment --problem</div>
 <h2 class="a">The alignment problem</h2>
 <div class="grid" style="grid-template-columns:1fr 1.7fr 1fr">
@@ -398,8 +378,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="src a" style="--d:14">Ord: existential catastrophe (The Precipice, 2020). Hinton: extinction (Diary of a CEO, 2025). Amodei: catastrophic harm (as reported). Methods differ.</p>
 </section>
 
-<!-- 18 -->
-<section class="slide ns" id="race" data-t="20:30">
+<!-- 17 -->
+<section class="slide ns" id="race" data-t="20:00">
 <div class="tag">why_not_stop --race</div>
 <h2>Why don’t we just stop?</h2>
 <div class="grid g2" style="align-items:center">
@@ -415,8 +395,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <div style="display:flex;gap:12px;align-items:center"><span id="rdots" style="display:flex;gap:8px"></span><span class="tag">step through: arrow keys, click, or numbers</span></div>
 </section>
 
-<!-- 19 -->
-<section class="slide" data-t="22:00">
+<!-- 18 -->
+<section class="slide" data-t="21:30">
 <div class="tag a">what_can_we_do --run</div>
 <h2 class="a">What can we do?</h2>
 <div class="grid g3">
@@ -427,8 +407,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="src">Sources: pacingthefrontier.com; darioamodei.com “We Must Pace the Frontier”</p>
 </section>
 
-<!-- 20 -->
-<section class="slide" data-t="24:00">
+<!-- 19 -->
+<section class="slide" data-t="23:30">
 <div class="tag a">exit --summary</div>
 <h2 class="a">The responsibility is incredible.<br>So is the chance to <span class="c">get it right.</span></h2>
 <p class="a" style="--d:3">These incidents were warning shots. The stakes are high, and there’s still time to act.</p>
@@ -438,19 +418,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <div id="qr" style="background:#fff;padding:10px;border-radius:8px;display:inline-block;width:170px;height:170px"></div>
 <p class="src" style="margin-top:1vh">steveontheweb.com/talks/ai-safety</p></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-<script>
-(function(){var sec=document.getElementById('neuron'),els=[].slice.call(sec.querySelectorAll('[data-s]')),N=6,n=1,dots=document.getElementById('ndots'),db=[];
-function show(k){els.forEach(function(e){e.classList.toggle('on',k>0&&(','+e.getAttribute('data-s')+',').indexOf(','+k+',')>-1)})}
-function mark(){db.forEach(function(b,i){var on=i+1===n;b.style.background=on?'var(--g)':'none';b.style.color=on?'#000':'var(--g)'})}
-function go1(k){n=k;show(n);mark()}
-function step(d){var m=n+d;if(m<1||m>N)return false;go1(m);return true}
-for(var q=1;q<=N;q++)(function(q){var b=document.createElement('button');b.textContent=q;b.style.cssText='width:24px;height:24px;border-radius:50%;border:1px solid var(--g);font:inherit;font-size:11px;cursor:pointer;padding:0';b.onclick=function(){go1(q)};dots.appendChild(b);db.push(b)})(q);
-sec.querySelector('svg').parentNode.addEventListener('click',function(){step(1)});
-document.addEventListener('keydown',function(e){if(!sec.classList.contains('active'))return;var k=e.key,d=(k==='ArrowRight'||k===' '||k==='PageDown')?1:(k==='ArrowLeft'||k==='PageUp')?-1:0;if(d&&step(d)){e.stopImmediatePropagation();e.preventDefault()}},true);
-document.addEventListener('DOMContentLoaded',function(){['nx','pv'].forEach(function(id){document.getElementById(id).addEventListener('click',function(e){if(sec.classList.contains('active')&&step(id==='nx'?1:-1))e.stopImmediatePropagation()},true)})});
-new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else show(0)}).observe(sec,{attributes:true,attributeFilter:['class']});
-})();
-</script>
 <script>
 (function(){var sec=document.getElementById('race'),els=[].slice.call(sec.querySelectorAll('[data-s]')),N=5,n=1,dots=document.getElementById('rdots'),db=[];
 var L=[[0,0,0,0],[2,2,0,0],[2,2,2,2],[3,3,3,3],[4,4,4,4]],B=['ca','cb','na','nb'].map(function(c){return sec.querySelector('.bar2.'+c)});
@@ -470,8 +437,8 @@ new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else 
 <script>try{if(window.QRCode)new QRCode(document.getElementById('qr'),{text:'https://steveontheweb.com/talks/ai-safety/',width:150,height:150,colorDark:'#000000',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M})}catch(e){}</script>
 </section>
 
-<!-- 21 -->
-<section class="slide" data-t="25:00">
+<!-- 20 -->
+<section class="slide" data-t="24:30">
 <div class="tag a">resources --go_deeper</div>
 <h2 class="a">Go deeper</h2>
 <div class="grid g3 rs">
@@ -551,7 +518,7 @@ function fmt(s){s=Math.abs(s);return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2)
 document.addEventListener('DOMContentLoaded',function(){
 document.title='Presenter: '+document.title;
 var P=document.createElement('div');P.id='pres';
-P.innerHTML='<div class="pl"><div class="pf"><iframe title="Current slide"></iframe></div><div class="pnx">NEXT<b id="pn"></b></div><div class="ptm" id="ptm"><b id="pe">0:00</b><button id="pgo" class="on">▶ Start</button><button id="prs">Reset</button><span id="pp"></span><span id="pd"></span></div><div class="phint">← → / space to move (either window) · S to start/pause the timer</div></div><div class="pr"><div class="pbar"><h2 id="ph"></h2><span id="pbt"><button id="pedit">Edit</button><button id="pcopy">Copy notes.md</button><button id="preset" style="display:none">Reset to site</button></span></div><div id="pbadge" class="phint"></div><ul id="pl"></ul><textarea id="pta" style="display:none" spellcheck="true"></textarea></div>';
+P.innerHTML='<div class="pl"><div class="pf"><iframe title="Current slide"></iframe></div><div class="pnx">NEXT<b id="pn"></b></div><div class="ptm" id="ptm"><b id="pe">0:00</b><button id="pgo" class="on">▶ Start</button><button id="prs">Reset</button><button id="ptc">Copy timings</button><span id="pp"></span><span id="pd"></span></div><div class="phint" id="pst"></div><div class="phint">← → / space to move (either window) · S to start/pause the timer</div></div><div class="pr"><div class="pbar"><h2 id="ph"></h2><span id="pbt"><button id="pedit">Edit</button><button id="pcopy">Copy notes.md</button><button id="preset" style="display:none">Reset to site</button></span></div><div id="pbadge" class="phint"></div><ul id="pl"></ul><textarea id="pta" style="display:none" spellcheck="true"></textarea></div>';
 document.body.appendChild(P);
 var fr=P.querySelector('iframe'),last=-1,t0=null,acc=0,run=false;
 fr.src=location.pathname+'?embed'+location.hash;var box=fr.parentNode;function fit(){fr.style.transform='scale('+(box.clientWidth/1280)+')'}fit();window.addEventListener('resize',fit);if(window.ResizeObserver)new ResizeObserver(fit).observe(box);
@@ -574,16 +541,27 @@ document.getElementById('pcopy').onclick=function(){var b=this,t=toMD();function
 document.getElementById('preset').onclick=function(){if(!confirm('Discard your local edits and go back to the notes.md on the site?'))return;try{localStorage.removeItem(LS)}catch(e){}location.reload()};
 var loc=null;try{loc=localStorage.getItem(LS)}catch(e){}
 if(loc)N=parseMD(loc);badge();
-fetch('notes.md?t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(t){site=parseMD(t);if(!loc)N=site;last=-1;draw()}).catch(function(){draw()});
+var raw=null;function pull(first){fetch('notes.md?t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(t){if(t===raw)return;raw=t;site=parseMD(t);var l=null;try{l=localStorage.getItem(LS)}catch(e){}if(!l&&!edit){N=site;last=-1;draw()}}).catch(function(){if(first)draw()})}
+pull(true);if(/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname))setInterval(pull,1500);
 function el(){return acc+(run?Date.now()-t0:0)}
 function startStop(){if(run){acc+=Date.now()-t0;run=false}else{t0=Date.now();run=true}label()}
 function label(){var g=document.getElementById('pgo');g.textContent=run?'❚❚ Pause':(acc?'▶ Resume':'▶ Start');g.classList.toggle('on',!run)}
-function tick(){draw();var pd=document.getElementById('pd'),ms=el();if(!run&&!ms){document.getElementById('pe').textContent='0:00';pd.textContent='press Start when you begin';return}
+var RK='aisafety-rehearsal',D=[],lt=Date.now();try{D=JSON.parse(localStorage.getItem(RK)||'[]')||[]}catch(e){D=[]}
+acc=D.reduce(function(x,y){return x+(y||0)},0);label();
+function plan(c){var S=window.S;return c+1<S.length?secs(S[c+1].dataset.t)-secs(S[c].dataset.t):null}
+function acct(){var now=Date.now();if(run){var c=window.i||0;D[c]=(D[c]||0)+(now-lt);try{localStorage.setItem(RK,JSON.stringify(D))}catch(e){}}lt=now;
+var c2=window.i||0,a=Math.floor((D[c2]||0)/1000),p=plan(c2);document.getElementById('pst').innerHTML='this slide '+fmt(a)+(p!==null?' · plan '+fmt(p)+(a>p?' <span style="color:var(--r)">(over by '+fmt(a-p)+')</span>':''):'')}
+function pad(x,n){x=String(x);while(x.length<n)x+=' ';return x}
+function report(){var S=window.S,L=['Rehearsal timings, '+new Date().toLocaleString(),'',pad('#',4)+pad('actual',8)+pad('plan',7)+pad('starts',8)+'slide'],cum=0;
+for(var c=0;c<S.length;c++){var a=Math.round((D[c]||0)/1000),p=plan(c);L.push(pad(c+1,4)+pad(fmt(a),8)+pad(p===null?'-':fmt(p),7)+pad(fmt(cum),8)+(N[c]?N[c][0]:''));cum+=a}
+L.push('','Total: '+fmt(cum)+' (planned: last slide starts at '+S[S.length-1].dataset.t+')');return L.join('\n')}
+function tick(){acct();draw();var pd=document.getElementById('pd'),ms=el();if(!run&&!ms){document.getElementById('pe').textContent='0:00';pd.textContent='press Start when you begin';return}
 var e=Math.floor(ms/1000),pl=secs(window.S[window.i||0].dataset.t),df=e-pl;
 document.getElementById('pe').textContent=fmt(e);
 pd.innerHTML=!run?'<span class="bh">paused</span>':Math.abs(df)<15?'on pace':df>0?'<span class="bh">'+fmt(df)+' behind</span>':'<span class="ah">'+fmt(df)+' ahead</span>'}
 document.getElementById('pgo').onclick=function(){startStop();this.blur()};
-document.getElementById('prs').onclick=function(){if(el()&&!confirm('Reset the timer to 0:00?'))return;acc=0;run=false;label();this.blur()};
+document.getElementById('prs').onclick=function(){if(el()&&!confirm('Reset the timer to 0:00 and clear the rehearsal timings?'))return;acc=0;run=false;D=[];try{localStorage.removeItem(RK)}catch(e){}label();this.blur()};
+document.getElementById('ptc').onclick=function(){var b=this,t=report();function show(){var w=window.open('','_blank');if(w){w.document.title='Rehearsal timings';var pre=w.document.createElement('pre');pre.textContent=t;w.document.body.appendChild(pre)}}try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy timings'},1500)},show)}catch(e){show()}this.blur()};
 document.addEventListener('keydown',function(e){if((e.key==='s'||e.key==='S')&&!e.ctrlKey&&!e.metaKey&&!e.altKey)startStop()});
 setInterval(tick,250);tick()});
 })();

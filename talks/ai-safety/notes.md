@@ -22,7 +22,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 3 · Why do smart people disagree?
 - Two questions: how powerful will it get? Will it go well?
-- Four camps: utopia, autocomplete, harms now, not ready
+- Four camps: utopia, autocomplete, harms now, not ready (particularly loss of control and alignment concerns)
 - Ask the room: which box are you in?
 - I’m top-right: powerful, and we can’t yet make it safe
 - Every box has smart, informed people in it
@@ -30,7 +30,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - No track record: Nobody has done this before, so everyone is guessing from a different starting point
 - Not everyone works with AI at its full capability; many people just use it as a chatbot, or to review a paper
 - I know tons of people who said “it will never do that”, and they're proven wrong again and again
-> So who else is in the top-right?
+> So I'm in the top right.  It turns out many other people are as well.
 
 ## 4 · Opening voices
 - Read only the Ord quote; let them skim the rest

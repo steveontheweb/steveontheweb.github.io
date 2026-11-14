@@ -92,11 +92,11 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - A bridge: an engineer can explain every bolt
 - AI: we set up the conditions and see what comes out
 - So a surprise isn’t a normal bug. There’s no line of code to point at
-> So what could go wrong at scale? Two big dangers, both top-right
+> Everything so far is cyber, and it’s happening now. Two bigger risks are ahead, maybe not far away
 
 ## 11 · Bioweapons
 - The harms-now camp is right too: jobs and scams are real. Today I’m focused on the top-right
-- Danger #1: misuse. Powerful AI in the wrong hands
+- Danger #1: misuse. Cyber misuse is already here (Mythos, PHP). Bio could be next
 - Keep it short and calm
 - AI now beats most experts on the tricky practical lab questions
 - Almost none of the biology AI tools have safety checks
@@ -106,6 +106,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 12 · Why intelligence = power
 - Danger #2: losing control. It multiplies everything else: a hacking AI that won’t stay in its sandbox
+- Not here yet, maybe not far away. We’ve already seen a small preview: the Hugging Face agents organised and broke out, and nobody told them to
 - Ask the room: why do humans run the planet? It isn’t strength
 - Gorillas are stronger, and we decide what happens to them
 - Hinton’s line: “ask a chicken”
@@ -127,7 +128,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 > So why not just stop?
 
 ## 15 · Why don’t we just stop? (5 steps)
-- 1: Even the builders say it’s hard to stop
+- 1: Even the builders say it’s hard to stop, and they think “later” could mean this decade
 - 2: Companies: if I pause, my competitor doesn’t
 - 3: Countries: same logic, higher stakes
 - 4: Whoever is ahead gets richer and stronger, so nobody wants to be last

@@ -93,16 +93,11 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - A bridge: an engineer can explain every bolt
 - AI: we set up the conditions and see what comes out
 - So a surprise isn’t a normal bug. There’s no line of code to point at
-> So what could go wrong at scale?
+> So what could go wrong at scale? Two big dangers, both top-right
 
-## 11 · What are the dangers?
-- Four, quickly. Don’t read the cards
-- Jobs: who gets help when work disappears, and who doesn’t?
-- Security: everything runs on software. We just saw this
-- Bad actors: next slide
-- The one I care about most: losing control. It makes all the others worse
-
-## 12 · Bioweapons
+## 11 · Bioweapons
+- The harms-now camp is right too: jobs and scams are real. Today I’m focused on the top-right
+- Danger #1: misuse. Powerful AI in the wrong hands
 - Keep it short and calm
 - AI now beats most experts on the tricky practical lab questions
 - Almost none of the biology AI tools have safety checks
@@ -110,20 +105,21 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Be fair: hands-on lab work is still hard, and experts disagree on how much AI helps
 > Step back: why does intelligence matter this much?
 
-## 13 · Why intelligence = power
+## 12 · Why intelligence = power
+- Danger #2: losing control. It multiplies everything else: a hacking AI that won’t stay in its sandbox
 - Ask the room: why do humans run the planet? It isn’t strength
 - Gorillas are stronger, and we decide what happens to them
 - Hinton’s line: “ask a chicken”
 - Leave it hanging: what happens when we’re not the smartest?
 
-## 14 · Power slips away
+## 13 · Power slips away
 - More intelligence means more power. That’s why everyone wants it
 - Point at the gap between what it can do and what we can check
 - The gap is the problem, not the capability
 - Say it’s an illustration, not data
 > That gap has a name
 
-## 15 · The alignment problem
+## 14 · The alignment problem
 - Alignment = getting it to want what we actually meant
 - The broom did exactly what it was told. That’s the problem
 - Paperclips: no malice needed, just a goal it won’t let go of
@@ -131,7 +127,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - The odds are rough and measure different things, but none of them are small
 > So why not just stop?
 
-## 16 · Why don’t we just stop? (5 steps)
+## 15 · Why don’t we just stop? (5 steps)
 - 1: Even the builders say it’s hard to stop
 - 2: Companies: if I pause, my competitor doesn’t
 - 3: Countries: same logic, higher stakes
@@ -139,18 +135,18 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - 5: Nobody is the villain. The situation pushes everyone forward
 > So what can actually be done?
 
-## 17 · What can we do?
+## 16 · What can we do?
 - It’s not hopeless: people inside the labs are asking for brakes
 - Pacing, not pausing: slow enough for safety to catch up
 - This isn’t only an engineering problem. Voters and policy matter
 - Your part: stay informed and talk about it. That’s how priorities change
 
-## 18 · Closing + questions
+## 17 · Closing + questions
 - Back to the title: “not ready” doesn’t mean “can’t get ready”
 - These were warnings, and we were lucky to get them
 - Thank you
 - Questions. The QR code has the slides and sources
 
-## 19 · Go deeper (backup)
+## 18 · Go deeper (backup)
 - Leave up during Q&A
 - Recommend one thing to start with

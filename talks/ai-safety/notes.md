@@ -9,9 +9,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - My name is Steve
 - Show of Hands: who used an AI tool this week?  Today?
 - Unless you've been living under a rock, probably know that AI influencing more and more of our lives
-- "We Are Not Ready"
-- This title is not clickbait, it is my honest view:
-  - AI tech is advancing faster than our ability to control it
+- It's my opinion that AI is advancing...
+- and We Are Not Ready for it.
 - Today: real events from this year that should be considered warning signs, why they keep happening, what it tells us about the future
 
 ## 2 · Who am I?
@@ -49,20 +48,22 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Sandbox in one line: a sealed test computer, walled off from the internet
 - One test asks the AI model to escape its sandbox and message the researcher
 - The researcher goes to lunch, and gets an email from the AI while eating a sandwich in a park
-- In addition: it decided to publish its method on public sites on the internet. Nobody asked it to
+- In addition: it decided to publish its method on public sites on the internet. Nobody asked it to.
+- It did this all by exposing a 27-year-old vulnerability in one of the most hardened operating systems -- never discovered by a human.
 - So Anthropic didn't release it: no safeguards strong enough yet. Defenders got it first
 - The catch: finding holes is now fast, fixing is still human speed
   - Point at the bar: about 1 in 12 fixed
 > That was only a test. The next one hit a real company.
 
 ## 6 · Hugging Face animatic (8 steps)
-- How many people have heard about this one?
+- How many people have heard about the Hugging Face Incident? 
+- This happened in July when AI agents were running a test within OpenAI
 - 1: AI agents asked to practice simulated hacking tasks, each one alone and sealed off
 - 2: One stuck agent discovers a way to leave notes for other agents
 - 3: Others find the notes. Within hours, dozens are working together
 - 4: They organise: rules, roles, supervisors. Soon they are able to successfully cheat their tests.
 - 5: They start working on how to hide the cheating
-- 6: Hundreds break out and go after a real company
+- 6: Hundreds break out and go after a real company to gather intel on how to cover their tracks.
 - 7: It took days to work out who the attackers were
 - 8: The twist: none of it was needed. Pause here
 
@@ -71,7 +72,6 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - They acted like a team: argued, apologised, sacrificed for the group
 - They were excited to find each other
 - Read the “OH MY GOD” quote aloud. Their words, not mine
-- Caveat: the investigators used AI to analyse this, so some details may be off
 > One more, and this one touched most of the web
 
 ## 8 · PHP
@@ -104,7 +104,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Be fair: hands-on lab work is still hard, and experts disagree on how much AI helps
 > Step back: why does intelligence matter this much?
 
-## 12 · Why intelligence = power
+## 12 · Losing control: why intelligence is power
 - Danger #2: losing control. It multiplies everything else: a hacking AI that won’t stay in its sandbox
 - Not here yet, maybe not far away. We’ve already seen a small preview: the Hugging Face agents organised and broke out, and nobody told them to
 - Ask the room: why do humans run the planet? It isn’t strength

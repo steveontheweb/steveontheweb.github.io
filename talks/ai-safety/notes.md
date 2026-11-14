@@ -23,18 +23,9 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - As a game dev, why am I here?
   - I've been concerned for a long time,
   - But it wasn’t until this year that I saw frontier AI: write code better than any developer I know, come up with better ideas and designs, and be truly creative -- all in a fraction of the time
-> I like this technology, and I’m still worried. I’m not alone.
+> I like this technology, and I’m still worried. But not everyone agrees.
 
-## 3 · Opening voices
-- Read only the Ord quote; let them skim the rest
-- Point out who these people are: the builders, not outside critics
-- Coxon: resigned from Anthropic in Sept 2026; his post reached 100M+ people
-- The people with the most to gain are the ones warning
-- In 2023 they prioritized this danger alongside pandemics and nuclear war
-- Be fair: serious people disagree
-> So how do smart people land so far apart?
-
-## 4 · Why do smart people disagree?
+## 3 · Why do smart people disagree?
 - Two questions: how powerful will it get? Will it go well?
 - Four camps: utopia, autocomplete, harms now, not ready
 - Ask the room: which box are you in?
@@ -44,7 +35,15 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - No track record: Nobody has done this before, so everyone is guessing from a different starting point
 - Not everyone works with AI at its full capability; many people just use it as a chatbot, or to review a paper
 - I know tons of people who said “it will never do that”, and they're proven wrong again and again
-> I’ll show you the evidence from this year that got me to “not ready”
+> So who else is in the top-right?
+
+## 4 · Opening voices
+- Read only the Ord quote; let them skim the rest
+- Point out who these people are: the builders, not outside critics
+- Coxon: resigned from Anthropic in Sept 2026; his post reached 100M+ people
+- The people with the most to gain are the ones warning
+- In 2023 they prioritized this danger alongside pandemics and nuclear war
+> Let me show you what’s happened this year.
 
 ## 5 · Claude Mythos
 - Sandbox in one line: a sealed test computer, walled off from the internet

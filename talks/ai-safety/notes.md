@@ -41,6 +41,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Read only the Ord quote; let them skim the rest
 - Point out who these people are: the builders, not outside critics
 - Coxon: resigned from Anthropic in Sept 2026; his post reached 100M+ people
+- Neel Nanda still works at DeepMind, and said this on camera
 - The people with the most to gain are the ones warning
 - In 2023 they prioritized this danger alongside pandemics and nuclear war
 > Let me show you what’s happened this year.
@@ -123,12 +124,14 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Alignment = getting it to want what we actually meant
 - The broom did exactly what it was told. That’s the problem
 - Paperclips: no malice needed, just a goal it won’t let go of
+- Read Mary Phuong’s quote: she works at DeepMind today
 - Tie back: the Hugging Face agents were a small, real version
 - The odds are rough and measure different things, but none of them are small
 > So why not just stop?
 
 ## 15 · Why don’t we just stop? (5 steps)
 - 1: Even the builders say it’s hard to stop, and they think “later” could mean this decade
+  - Read the Schlatter quote: someone even sloppier will do it
 - 2: Companies: if I pause, my competitor doesn’t
 - 3: Countries: same logic, higher stakes
 - 4: Whoever is ahead gets richer and stronger, so nobody wants to be last

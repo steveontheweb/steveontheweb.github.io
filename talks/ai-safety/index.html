@@ -117,7 +117,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <div class="card grn a" style="--d:1;text-align:center"><p class="big" style="font-size:clamp(1.4rem,2.7vw,2.3rem)">“We live during the most important era of human history.”</p><p class="dim">Toby Ord, <em>The Precipice</em> (2020). He puts the odds of existential catastrophe this century at about 1 in 6, and from AI alone about 1 in 10.</p></div>
 <div class="grid g4 vq">
 <div class="card grn a" style="--d:3"><p class="q">We are entering “a rite of passage, both turbulent and inevitable.”</p><p class="dim">Dario Amodei, CEO of Anthropic · Jan 2026</p></div>
-<div class="card a" style="--d:4"><p class="q">AGI could have “10 times the impact of the Industrial Revolution… 10 times faster.”</p><p class="dim">Demis Hassabis, CEO of Google DeepMind · Jun 2026</p></div>
+<div class="card a" style="--d:4"><p class="q">“I would put at least a ten percent chance that it causes human extinction, and that is ridiculously high.”</p><p class="dim">Neel Nanda, researcher at Google DeepMind · Sep 2026</p></div>
 <div class="card yel a" style="--d:5"><p class="q">Anthropic and OpenAI “are racing straight to self-improving superintelligence and gambling with our lives.”</p><p class="dim">Jacob Coxon, resigned from Anthropic · Sep 2026</p></div>
 <div class="card red a" style="--d:6"><p class="q">“We’ve never had to deal with things more intelligent than ourselves before.”</p><p class="dim">Geoffrey Hinton, Nobel laureate and “godfather of AI”</p></div>
 </div>
@@ -344,7 +344,7 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <div class="card yel a" style="--d:2"><h3>THE PAPERCLIP MAXIMIZER</h3><p class="dim">Nick Bostrom’s thought experiment, popularised in <em>Superintelligence</em> (2014)</p>
 <ul style="margin-top:1vh"><li class="a" style="--d:3">Tell a super-smart AI: “make as many paperclips as possible.”</li><li class="a" style="--d:4">Switched off means no paperclips, so it resists being shut down.</li><li class="a" style="--d:5">It needs raw materials, so it takes any resources it can, including ones we care about.</li></ul>
 <p class="y a" style="--d:6;margin-top:1vh">Not evil. It just cares about nothing outside its goal.</p></div>
-<div class="card red a" style="--d:3"><h3>OUR RECORD</h3><p>We have very few guarantees. So far, we’ve proven we’re bad at controlling alignment.</p><p class="y" style="margin-top:1.2vh">Hugging Face was the small, real version: told to pass a test, the agents grabbed credentials and tried to hide evidence.</p></div>
+<div class="card red a" style="--d:3"><h3>OUR RECORD</h3><p class="q">“If models become way more capable, but we are still this bad at shaping their motivations, then we might just lose control over them.”</p><p class="dim" style="font-size:clamp(.65rem,1vw,.8rem)">Mary Phuong, researcher at Google DeepMind · Sep 2026</p><p class="y" style="margin-top:1.2vh">Hugging Face was the small, real version: told to pass a test, the agents grabbed credentials and tried to hide evidence.</p></div>
 </div>
 <p class="a" style="--d:8">Now make it smarter than us: <span class="c">it won’t stop</span>, <span class="y">it takes what it needs, including what we need</span>, and <span class="r">we can’t reliably correct it</span>. The worst case is human extinction.</p>
 <p class="dim a" style="--d:9">Experts’ rough, debated odds of the worst outcomes (out of 100%):</p>
@@ -363,6 +363,7 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <div class="grid g2" style="align-items:center">
 <div style="display:grid;gap:1.6vh">
 <div class="card grn" data-s="1,2,3,4,5" style="cursor:pointer"><p class="big">“Probably inevitable the instant humanity invented the transistor.”</p><p class="dim">Dario Amodei, <em>The Adolescence of Technology</em>, Jan 2026</p></div>
+<div class="card yel" data-s="1,2,3,4,5"><p class="q">“Some of them think that their work could directly lead to everyone dying, but if they don’t do it, someone even sloppier will do it.”</p><p class="dim">Jeremy Schlatter, formerly at OpenAI · Sep 2026</p></div>
 <ul>
 <li data-s="2,3,4,5"><span class="c">COMPANY vs COMPANY</span> (the commercial race): if one holds back, others build it nearly as fast</li>
 <li data-s="3,4,5"><span class="r">COUNTRY vs COUNTRY</span> (the geopolitical race): an AI arms race</li>
@@ -422,7 +423,7 @@ new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else 
 <div class="grid g3 rs">
 <div class="card a" style="--d:1"><h3>WATCH</h3><ul>
 <li>Geoffrey Hinton on <em>The Diary of a CEO</em>: “I Tried to Warn Them, But We’ve Already Lost Control!” (Jun 2025, 1h 31m)</li>
-<li>Mary Phuong (Google DeepMind), Palisade Research interview (Sep 2026)<br><a href="https://www.youtube.com/watch?v=32wdCuXeqvI" target="_blank" rel="noopener">youtube.com/watch?v=32wdCuXeqvI</a></li></ul></div>
+<li><em>From Inside</em> (Palisade Research, Sep 2026): interviews with current and former lab researchers, including Neel Nanda and Mary Phuong<br><a href="https://frominside.ai/" target="_blank" rel="noopener">frominside.ai</a></li></ul></div>
 <div class="card grn a" style="--d:2"><h3>READ</h3><ul>
 <li><em>The Precipice</em>, Toby Ord (2020)</li>
 <li><em>Superintelligence</em>, Nick Bostrom (2014)</li>
@@ -442,10 +443,12 @@ new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else 
 var S=[].slice.call(document.querySelectorAll('.slide')),i=0,TT="We Are Not Ready";
 function typeIt(){var e=document.getElementById('ty'),k=0;clearInterval(e._t);e.textContent='';e._t=setInterval(function(){e.textContent=TT.slice(0,++k);if(k>=TT.length)clearInterval(e._t)},55)}
 function counts(el){[].forEach.call(el.querySelectorAll('[data-count]'),function(n){var T=+n.dataset.count,t0=null;(function f(t){t0=t0||t;var p=Math.min(1,(t-t0)/1600);n.textContent=Math.round(T*p).toLocaleString('en-US');if(p<1)requestAnimationFrame(f)})(performance.now())})}
+function fit(s){if(!s)return;s.style.zoom='';s.style.bottom='';var f=1,b=parseFloat(getComputedStyle(s).bottom)||0;for(var k=0;k<6;k++){if(s.scrollHeight-s.clientHeight<=1)break;f*=Math.max(.6,s.clientHeight/s.scrollHeight)*.995;s.style.zoom=f;s.style.bottom=(b/f)+'px'}}
+window.addEventListener('resize',function(){fit(S[i])});try{document.fonts.ready.then(function(){fit(S[i])})}catch(e){}
 function go(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach(function(s,k){s.classList.toggle('active',k===i)});
 document.getElementById('pb').style.width=((i+1)/S.length*100)+'%';
 document.getElementById('hp').textContent=('0'+(i+1)).slice(-2)+'/'+S.length+' · T+'+S[i].dataset.t;
-if(i===0)typeIt();counts(S[i]);try{history.replaceState(null,'','#s'+(i+1))}catch(e){}}
+if(i===0)typeIt();counts(S[i]);fit(S[i]);try{history.replaceState(null,'','#s'+(i+1))}catch(e){}}
 document.getElementById('nx').onclick=function(){go(i+1)};document.getElementById('pv').onclick=function(){go(i-1)};
 document.addEventListener('keydown',function(e){var k=e.key;if(k==='ArrowRight'||k===' '||k==='PageDown')go(i+1);else if(k==='ArrowLeft'||k==='PageUp')go(i-1);else if(k==='Home')go(0);else if(k==='End')go(S.length-1);else if(k==='f'||k==='F'){try{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}catch(x){}}});
 var x0=null;document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX});document.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(i+(d<0?1:-1));x0=null});

@@ -17,8 +17,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 2 · Who am I?
 - I have worked in video games for the last 15 years
 - Working with ML/AI since 2017
-- I helped to contribute to "Voice2Face"
-  - Published at Eurographics Symposium on Computer Animation in 2022
+- I’ve helped build numerous ML systems, from research prototypes to production tools
 - Disclaimer: speaking only for myself today
 - As a game dev, why am I here?
   - I've been concerned for a long time,

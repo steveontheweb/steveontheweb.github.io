@@ -15,12 +15,9 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 2 · Who am I?
 - I have worked in video games for the last 15 years
-- Working with ML/AI since 2017
-- I’ve helped build numerous ML systems, from research prototypes to production tools
-- Disclaimer: speaking only for myself today
-- As a game dev, why am I here?
-  - I've been concerned for a long time,
-  - But it wasn’t until this year that I saw frontier AI: write code better than any developer I know, come up with better ideas and designs, and be truly creative -- all in a fraction of the time
+- Since 2017: helped build numerous ML systems, from research prototypes to production tools
+- I’ve been concerned about AI for a long time
+- But this year I saw frontier AI write code better than any developer I know, come up with better ideas and designs, and be truly creative, all in a fraction of the time
 > I like this technology, and I’m still worried. But not everyone agrees.
 
 ## 3 · Why do smart people disagree?
@@ -37,7 +34,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 4 · Opening voices
 - Read only the Ord quote; let them skim the rest
-- Point out who these people are: the builders, not outside critics
+- Point out who these people are: the people running and working at the AI labs, not outside critics
 - Coxon: resigned from Anthropic in Sept 2026; his post reached 100M+ people
 - Neel Nanda still works at DeepMind, and said this on camera
 - The people with the most to gain are the ones warning
@@ -79,7 +76,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - AI helped find a flaw that sat unnoticed for over a decade
 - Rival companies quietly worked together on the fix
 - Then it leaked, and it became a race: the patch against the attackers
-- Point at the ladder: attack attempts climbed into the millions
+- attack attempts climbed into the millions
 - The good guys won, by days
 > All three stories ended okay. Barely.
 
@@ -95,9 +92,6 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 > Everything so far is cyber, and it’s happening now. Two bigger risks are ahead, maybe not far away
 
 ## 11 · Bioweapons
-- The harms-now camp is right too: jobs and scams are real. Today I’m focused on the top-right
-- Danger #1: misuse. Cyber misuse is already here (Mythos, PHP). Bio could be next
-- Keep it short and calm
 - AI now beats most experts on the tricky practical lab questions
 - Almost none of the biology AI tools have safety checks
 - The companies themselves are asking government to act
@@ -116,7 +110,6 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - More intelligence means more power. That’s why everyone wants it
 - Point at the gap between what it can do and what we can check
 - The gap is the problem, not the capability
-- Say it’s an illustration, not data
 > That gap has a name
 
 ## 14 · The alignment problem
@@ -129,7 +122,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 > So why not just stop?
 
 ## 15 · Why don’t we just stop? (5 steps)
-- 1: Even the builders say it’s hard to stop, and they think “later” could mean this decade
+- 1: Even the AI companies say it’s hard to stop, and they think “later” could mean this decade
   - Read the Schlatter quote: someone even sloppier will do it
 - 2: Companies: if I pause, my competitor doesn’t
 - 3: Countries: same logic, higher stakes

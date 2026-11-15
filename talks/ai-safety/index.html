@@ -476,6 +476,10 @@ var Q=location.search,EMB=/[?&]embed/.test(Q),PRES=/[?&]presenter/.test(Q),de=do
 if(EMB)de.classList.add('emb');
 try{ch=new BroadcastChannel('ai-safety-deck')}catch(e){}
 var NAV={ArrowRight:1,' ':1,PageDown:1,ArrowLeft:1,PageUp:1,Home:1,End:1};
+if(/[?&]keys/.test(Q))window.addEventListener('keydown',function(e){if(!e.isTrusted)return;var d=document.getElementById('keyt');if(!d){d=document.createElement('div');d.id='keyt';d.style.cssText='position:fixed;top:12px;right:12px;z-index:99;background:#000;color:#ffd166;border:1px solid #ffd166;padding:8px 12px;font:16px monospace;border-radius:6px';document.body.appendChild(d)}d.textContent='key: '+(e.key===' '?'Space':e.key)+'  (code: '+e.code+')'},true);
+var ALT={ArrowDown:'ArrowRight',ArrowUp:'ArrowLeft',Enter:'ArrowRight'};
+window.addEventListener('keydown',function(e){var m=ALT[e.key];if(!e.isTrusted||!m||(e.target&&/TEXTAREA|INPUT|BUTTON|SELECT/.test(e.target.tagName)))return;e.stopImmediatePropagation();e.preventDefault();document.dispatchEvent(new KeyboardEvent('keydown',{key:m,bubbles:true,cancelable:true}));if(ch){ch.postMessage({k:m});sync()}},true);
+
 function sync(){setTimeout(function(){if(ch)ch.postMessage({sync:window.i})},120)}
 if(ch){
 window.addEventListener('keydown',function(e){if(!e.isTrusted||!NAV[e.key]||(e.target&&e.target.tagName==='TEXTAREA'))return;ch.postMessage({k:e.key});sync()},true);

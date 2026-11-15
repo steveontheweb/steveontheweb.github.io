@@ -10,8 +10,10 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Show of Hands: who used an AI tool this week?  Today?
 - Unless you've been living under a rock, probably know that AI influencing more and more of our lives
 - It's my opinion that AI is advancing...
-- and We Are Not Ready for it.
-- Today: real events from this year that should be considered warning signs, why they keep happening, what it tells us about the future
+- and I believe that "We Are Not Ready" for that.
+- Today: talk about why I feel this way, 
+  - we'll start with real events from this year that should be considered warning signs and 
+  - why they keep happening
 
 ## 2 · Who am I?
 - I have worked in video games for the last 15 years

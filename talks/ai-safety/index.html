@@ -73,7 +73,8 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 .card:has(>.emo){text-align:center}
 [data-r]{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}[data-r].on{opacity:1;transform:none}
 [data-r]:not(.on) .bar,[data-r]:not(.on) .draw{animation:none}
-.mxbig .card{padding:3vh 2vw}.mxbig h3{font-size:clamp(1rem,2vw,1.6rem)}.mxbig p{font-size:clamp(.95rem,1.8vw,1.4rem)}.mxbig .mxh,.mxbig .mxv{font-size:clamp(.75rem,1.2vw,1rem)}
+.mxbig .card{padding:3vh 2vw}
+.mxq{display:grid;grid-template-columns:auto 1fr;column-gap:1.4vw;align-content:center}.mxq>*:not(.mxe){grid-column:2}.mxq .mxtag{justify-self:start}.mxe{grid-row:1/span 3;align-self:center;font-size:clamp(2rem,6vh,3.6rem);line-height:1}.mxbig h3{font-size:clamp(1rem,2vw,1.6rem)}.mxbig p{font-size:clamp(.95rem,1.8vw,1.4rem)}.mxbig .mxh,.mxbig .mxv{font-size:clamp(.75rem,1.2vw,1rem)}
 .biglog{font-size:clamp(1rem,2vw,1.5rem)}
 .q2 p{font-size:clamp(1.05rem,2.1vw,1.7rem);line-height:1.4;font-weight:700}
 .tl{display:grid;gap:2.2vh}.tl>div{display:grid;grid-template-columns:auto 1fr;gap:1.4vw;align-items:center}.tl p{font-size:clamp(1rem,2vw,1.55rem)}
@@ -155,11 +156,11 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <div class="mx mxbig">
 <span></span><span class="mxh a" style="--d:1">IT GOES FINE</span><span class="mxh a" style="--d:1">IT COULD GO BADLY</span>
 <span class="mxv a" style="--d:1">JUST A TOOL</span>
-<div class="card" data-r="1"><h3>“RELAX, IT’S AUTOCOMPLETE”</h3><p>Overhyped. Keep using it.</p></div>
-<div class="card yel" data-r="2"><h3>“THE REAL HARMS ARE NOW”</h3><p>Jobs, scams, bias.</p></div>
+<div class="card mxq" data-r="1"><span class="mxe">🧰</span><h3>Overhyped</h3><p>Just fancy autocomplete.</p></div>
+<div class="card yel mxq" data-r="3"><span class="mxe">🎭</span><h3>Harms today</h3><p>Deepfakes, cheating, copyright theft.</p></div>
 <span class="mxv a" style="--d:1">WORLD-CHANGING</span>
-<div class="card grn" data-r="3"><h3>“UTOPIA’S COMING”</h3><p>Cure disease, end poverty.</p></div>
-<div class="card red mxme" data-r="4"><h3>“WE’RE NOT READY”</h3><p>Powerful, and we can’t yet make it safe.</p><span class="mxtag">◀ I’m here</span></div>
+<div class="card grn mxq" data-r="2"><span class="mxe">🌈</span><h3>A golden age</h3><p>Cure disease, end poverty.</p></div>
+<div class="card red mxme mxq" data-r="4"><span class="mxe">🚨</span><h3>We’re not ready</h3><p>Powerful, and we can’t yet make it safe.</p><span class="mxtag">◀ I’m here</span></div>
 </div>
 </section>
 

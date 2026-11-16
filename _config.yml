@@ -139,6 +139,7 @@ pwa:
   cache:
     enabled: true
     deny_paths:
+      - "/talks/" # slide decks: always load fresh, never from the offline cache
 
 paginate: 10
 

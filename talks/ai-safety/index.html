@@ -82,6 +82,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 .endg{display:grid;grid-template-columns:1fr auto;gap:4vw;align-items:center}.qrb{text-align:center;display:grid;gap:1.2vh;justify-items:center}#qr{background:#fff;padding:12px;border-radius:8px;width:204px;height:204px;box-sizing:border-box}#qr img,#qr canvas{display:block}
 @media(max-width:800px){.endg{grid-template-columns:1fr}}
 .sweep{animation:sw 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}@keyframes sw{50%{transform:translateY(-6px) rotate(4deg)}}
+.pic{width:100%;max-height:52vh;object-fit:contain;border-radius:8px;border:1px solid var(--line);filter:contrast(1.08) saturate(1.25)}
 .flood{animation:fl 6s ease-in-out infinite alternate}@keyframes fl{from{transform:translateY(10px)}to{transform:translateY(-28px)}}
 </style>
 </head>
@@ -516,17 +517,13 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <div class="tag a">alignment --be_careful_what_you_wish_for</div>
 <h2 class="a">The Sorcerer’s Apprentice</h2>
 <div class="grid g2" style="align-items:center">
-<svg viewBox="0 0 300 200" class="a" style="--d:1;max-height:48vh" aria-label="Enchanted brooms carrying buckets as the water rises">
-<g class="sweep"><line x1="70" y1="40" x2="70" y2="140" stroke="var(--y)" stroke-width="4"/><path d="M52,140 L88,140 L96,175 L44,175 Z" fill="var(--y)" opacity=".8"/><path d="M76,95 h26 l-4,26 h-18 z" fill="none" stroke="var(--c)" stroke-width="3"/></g>
-<g class="sweep" style="animation-delay:.4s"><line x1="150" y1="30" x2="150" y2="130" stroke="var(--y)" stroke-width="4"/><path d="M132,130 L168,130 L176,165 L124,165 Z" fill="var(--y)" opacity=".8"/><path d="M156,85 h26 l-4,26 h-18 z" fill="none" stroke="var(--c)" stroke-width="3"/></g>
-<g class="sweep" style="animation-delay:.8s"><line x1="230" y1="40" x2="230" y2="140" stroke="var(--y)" stroke-width="4"/><path d="M212,140 L248,140 L256,175 L204,175 Z" fill="var(--y)" opacity=".8"/><path d="M236,95 h26 l-4,26 h-18 z" fill="none" stroke="var(--c)" stroke-width="3"/></g>
-<path class="flood" d="M0,200 V178 Q25,170 50,178 T100,178 T150,178 T200,178 T250,178 T300,178 V200 Z" fill="var(--c)" opacity=".55"/>
-</svg>
+<img src="apprentice.jpg" class="a pic" style="--d:1" alt="Mickey Mouse in the sorcerer’s hat, knocked over in rising flood water while an enchanted broom carries buckets down the stairs">
 <div style="display:grid;gap:2vh">
 <p class="big a" style="--d:2">What did Mickey want?</p>
 <p class="big" data-r="1"><span class="g">He wanted the cauldron filled.</span></p>
 <p class="big" data-r="2"><span class="r">He got a flood.</span></p>
 </div></div>
+<p class="src">Frame from the original <em>Fantasia</em> trailer (Walt Disney Productions, 1940), public domain via Wikimedia Commons.</p>
 </section>
 
 <!-- 36 -->

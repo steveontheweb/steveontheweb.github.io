@@ -27,7 +27,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) come up with better ideas and designs
 - (click) and be truly creative, in a way I didn't think possible
 - (click) And it does in minutes what would take a person days
-> I like this technology, and I’m still worried. But not everyone agrees.
+> I'm excited about this technology, and at the same time I’m incredibly worried. But not everyone shares these concerns...
 
 ## 4 · Where do you stand?
 - Two questions: how powerful will it get? Will it go well?

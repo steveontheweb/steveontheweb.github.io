@@ -76,7 +76,6 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - First: Claude Mythos, from Anthropic, in April
 - A new AI model that’s unusually good at finding holes in software
 - Point at the code: it reads software and flags the holes, like the two red lines
-- That skill is what the next few slides are about
 > Before releasing a new model, AI companies test it for dangerous abilities. Here’s one of those tests.
 
 ## 11 · The test
@@ -97,7 +96,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Nobody asked it to
 
 ## 14 · Why should you care?
-- Why does this matter to you?
+- Why do security vulnerabilities like this matter to you?
 - (click) Your bank, your card payments, your medical records, your phone
 - (click) All of them run on software with holes that nobody has found yet
 - (click) Mythos finds them faster than any human team

@@ -11,10 +11,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Unless you've been living under a rock, probably know that AI influencing more and more of our lives
 - It's my opinion that AI is advancing...
 - and I believe that "We Are Not Ready" for it.
-- Today: talk about why I feel this way, 
-  - we'll start with real events from this year that should be considered warning signs and 
-  - why they keep happening
-
+- Today: talk about why I feel this way
+  
 ## 2 · Who am I?
 - I have worked in video games for the last 15 years
 - Since 2017: helped build numerous ML systems, from research prototypes to production tools

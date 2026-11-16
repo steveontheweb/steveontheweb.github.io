@@ -135,9 +135,9 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - Some government sites and parts of Wikipedia went offline as a precaution
 
 ## 19 · Attacks after the leak
-- And then the attackers came
-- (click) Thousands of attempts before it was even announced
-- (click) Tens of thousands within 45 minutes
+- Go back to the leak on October 20th: the moment word got out, the attackers came
+- (click) Thousands of attempts before the fix was even announced
+- (click) Then, once it was announced: tens of thousands within 45 minutes
 - (click) Hundreds of thousands within 2 hours
 - (click) Eventually millions
 

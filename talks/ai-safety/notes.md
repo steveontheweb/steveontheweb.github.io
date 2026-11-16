@@ -106,6 +106,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 15 · Not released
 - So Anthropic didn’t release it: no safeguards strong enough yet
 - (click) Defenders got it first, to fix the vulnerabilities before attackers find them
+  - If asked “is it still locked away?”: The full version is still limited to vetted organisations. A safeguarded version (Claude Fable) went public in June. It keeps improving: the latest, Mythos 5.2, came out Nov 9
+  - If asked “has it leaked?”: Yes. On announcement day a small group got in through a contractor’s systems by guessing where it was hosted. Even a model they deliberately locked down got out on day one
 
 ## 16 · The patch gap
 - The catch: finding vulnerabilities is now fast

@@ -7,7 +7,7 @@
 <meta name="author" content="Steve Middleton">
 <meta name="darkreader-lock">
 <meta name="color-scheme" content="dark">
-<meta name="description" content="A talk on AI safety: the warning signs (Mythos, Hugging Face, PHP), why they keep happening, and what we can do about it.">
+<meta name="description" content="A talk on AI safety: the warning signs (Mythos, PHP, Hugging Face), why they keep happening, and what we can do about it.">
 <meta property="og:title" content="We Are Not Ready: AI Safety">
 <meta property="og:description" content="AI is advancing faster than our ability to understand or control it.">
 <meta property="og:url" content="https://steveontheweb.com/talks/ai-safety/">
@@ -308,11 +308,80 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 <p class="src">Patch figures as of Oct 2, 2026. Sources: Anthropic system card and Project Glasswing, CyberScoop, CSO Online, The Hacker News.</p>
 </section>
 
+<!-- 26 -->
+<section class="slide ctr" data-d="15">
+<div class="tag a">recent_events --2 --incident="php"</div>
+<div class="yr a" style="--d:1" data-cur="2"></div>
+<span class="chip sign a" style="--d:1">warning sign 2 of 3</span>
+<img src="php-logo.svg" alt="PHP logo" class="phplogo a" style="--d:1">
+<p class="big a" style="--d:3">The plumbing under <span class="y">~70% of websites</span></p>
+<div class="sites a" style="--d:4" aria-hidden="true"><span class="on" style="--k:0"></span><span class="on" style="--k:1"></span><span class="on" style="--k:2"></span><span class="on" style="--k:3"></span><span class="on" style="--k:4"></span><span class="on" style="--k:5"></span><span class="on" style="--k:6"></span><span class="" style="--k:7"></span><span class="" style="--k:8"></span><span class="" style="--k:9"></span></div>
+<p class="mid dim a" style="--d:5">WordPress, Drupal, and much of the web</p>
+<p class="src">PHP logo by Colin Viebrock, CC BY-SA.</p>
+</section>
+
+<!-- 27 -->
+<section class="slide" data-d="40">
+<div class="tag a">php --timeline</div>
+<h2 class="a">A race against the clock <span class="chip">Jul 30 – Oct 21, 2026</span></h2>
+<div class="tl">
+<div data-r="1"><span class="emo2">🔍</span><p><span class="y">Summer:</span> two teams use AI and find a flaw hidden for over a decade</p></div>
+<div data-r="2"><span class="emo2">🤝</span><p><span class="y">Weeks:</span> ~15 people from rival firms quietly build a fix, “just based on trust”</p></div>
+<div data-r="3"><span class="emo2">💧</span><p class="r"><span class="y">Oct 20:</span> it leaks 2 days early</p></div>
+<div data-r="4"><span class="emo2">🚨</span><p><span class="y">Oct 21:</span> emergency alerts in 5 countries. Government sites and parts of Wikipedia go offline</p></div>
+</div>
+</section>
+
+<!-- 28 -->
+<section class="slide" data-d="15">
+<div class="tag a">php --exploit_attempts</div>
+<h2 class="a">Attacks after the leak</h2>
+<div class="card red" style="display:grid;gap:1.2vh">
+<p class="mid dim" data-r="1">thousands, before the announcement</p><div class="bw" data-r="1" style="height:30px"><div class="bar" style="width:8%;background:var(--y);height:100%"></div></div>
+<p class="mid dim" data-r="2">tens of thousands, within 45 minutes</p><div class="bw" data-r="2" style="height:30px"><div class="bar" style="width:30%;background:var(--y);height:100%"></div></div>
+<p class="mid dim" data-r="3">hundreds of thousands, within 2 hours</p><div class="bw" data-r="3" style="height:30px"><div class="bar" style="width:62%;background:var(--r);height:100%"></div></div>
+<p class="mid r" data-r="4">eventually millions</p><div class="bw" data-r="4" style="height:30px"><div class="bar" style="width:100%;background:var(--r);height:100%"></div></div>
+</div>
+<p class="src">Cloudflare figures; bars are illustrative. Sources: TIME (Oct 23), CNN, CNBC, Fortune (Oct 22–23).</p>
+</section>
+
+<!-- 29 -->
+<section class="slide ctr" data-d="10">
+<div class="tag a">php --outcome</div>
+<p class="huge a" style="--d:1">Defenders won by <span class="g">days.</span></p>
+<p class="big" data-r="1">“If it had leaked a month earlier…”</p>
+<p class="dim" data-r="1">a Wiz executive</p>
+</section>
+
+<!-- 31 -->
+<section class="slide" data-d="45">
+<div class="tag a">bad_actors --bioweapons</div>
+<h2 class="a">Next: bioweapons</h2>
+<p class="a dim" style="--d:1">// Cyberattacks are already here. Bioweapons could be next</p>
+<div class="grid g3">
+<div class="card red" data-r="1"><span class="stat huge" style="color:var(--r)" data-count="94">0</span><span class="stat huge" style="color:var(--r)">%</span><p class="mid">of expert virologists out-scored by AI on tricky lab questions</p></div>
+<div class="card yel" data-r="2"><p class="emo">🧬</p><p class="mid">AI models can now design novel viruses <span class="dim">(<em>Science</em>, Aug 2026)</span></p></div>
+<div class="card" data-r="3"><span class="stat huge" data-count="3">0</span><span class="stat huge">%</span><p class="mid">of 360+ biology AI tools have any safeguards</p></div>
+</div>
+<p class="src">Sources: 2025 SecureBio/MIT study; Epoch AI survey; International AI Safety Report update; AI Policy Bulletin (Oct 21, 2026); RAND (Sep 2026).</p>
+</section>
+
+<!-- two kinds -->
+<section class="slide ctr" data-d="20">
+<div class="tag a">risk_assessment --two_kinds</div>
+<h2 class="a">Two kinds of danger</h2>
+<div class="grid" style="grid-template-columns:1fr 1fr;gap:2.4vw;width:100%">
+<div class="card red a" style="--d:1"><p class="emo">🦹</p><p class="big">People misusing AI</p><p class="mid dim">Mythos · PHP · bioweapons</p></div>
+<div class="card yel" data-r="1"><p class="emo">🤖</p><p class="big">AI going its own way</p><p class="mid dim">Hugging Face… and the rest of this talk</p></div>
+</div>
+<p class="big" data-r="2">The second one is <span class="r">harder to fix.</span></p>
+</section>
+
 <!-- 17 -->
 <section class="slide" id="anim" data-d="105">
-<div class="tag a">recent_events --2 --incident="hugging-face" --playback=auto</div>
+<div class="tag a">recent_events --3 --incident="hugging-face" --playback=auto</div>
 <div class="yr a" style="--d:1" data-cur="1"></div>
-<span class="chip sign a" style="--d:1">warning sign 2 of 3</span>
+<span class="chip sign a" style="--d:1">warning sign 3 of 3</span>
 <h2 class="a">The Hugging Face incident <span class="chip" id="dt">May – Jul 8, 2026</span></h2>
 <svg id="stage" viewBox="0 0 600 300">
 <rect x="10" y="22" width="272" height="218" rx="8" fill="none" stroke="var(--line)" stroke-dasharray="4 3"/>
@@ -460,74 +529,16 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="big r" data-r="1">How many haven’t we?</p>
 </section>
 
-<!-- 26 -->
-<section class="slide ctr" data-d="15">
-<div class="tag a">recent_events --3 --incident="php"</div>
-<div class="yr a" style="--d:1" data-cur="2"></div>
-<span class="chip sign a" style="--d:1">warning sign 3 of 3</span>
-<img src="php-logo.svg" alt="PHP logo" class="phplogo a" style="--d:1">
-<p class="big a" style="--d:3">The plumbing under <span class="y">~70% of websites</span></p>
-<div class="sites a" style="--d:4" aria-hidden="true"><span class="on" style="--k:0"></span><span class="on" style="--k:1"></span><span class="on" style="--k:2"></span><span class="on" style="--k:3"></span><span class="on" style="--k:4"></span><span class="on" style="--k:5"></span><span class="on" style="--k:6"></span><span class="" style="--k:7"></span><span class="" style="--k:8"></span><span class="" style="--k:9"></span></div>
-<p class="mid dim a" style="--d:5">WordPress, Drupal, and much of the web</p>
-<p class="src">PHP logo by Colin Viebrock, CC BY-SA.</p>
-</section>
-
-<!-- 27 -->
-<section class="slide" data-d="40">
-<div class="tag a">php --timeline</div>
-<h2 class="a">A race against the clock <span class="chip">Jul 30 – Oct 21, 2026</span></h2>
-<div class="tl">
-<div data-r="1"><span class="emo2">🔍</span><p><span class="y">Summer:</span> two teams use AI and find a flaw hidden for over a decade</p></div>
-<div data-r="2"><span class="emo2">🤝</span><p><span class="y">Weeks:</span> ~15 people from rival firms quietly build a fix, “just based on trust”</p></div>
-<div data-r="3"><span class="emo2">💧</span><p class="r"><span class="y">Oct 20:</span> it leaks 2 days early</p></div>
-<div data-r="4"><span class="emo2">🚨</span><p><span class="y">Oct 21:</span> emergency alerts in 5 countries. Government sites and parts of Wikipedia go offline</p></div>
-</div>
-</section>
-
-<!-- 28 -->
-<section class="slide" data-d="15">
-<div class="tag a">php --exploit_attempts</div>
-<h2 class="a">Attacks after the leak</h2>
-<div class="card red" style="display:grid;gap:1.2vh">
-<p class="mid dim" data-r="1">thousands, before the announcement</p><div class="bw" data-r="1" style="height:30px"><div class="bar" style="width:8%;background:var(--y);height:100%"></div></div>
-<p class="mid dim" data-r="2">tens of thousands, within 45 minutes</p><div class="bw" data-r="2" style="height:30px"><div class="bar" style="width:30%;background:var(--y);height:100%"></div></div>
-<p class="mid dim" data-r="3">hundreds of thousands, within 2 hours</p><div class="bw" data-r="3" style="height:30px"><div class="bar" style="width:62%;background:var(--r);height:100%"></div></div>
-<p class="mid r" data-r="4">eventually millions</p><div class="bw" data-r="4" style="height:30px"><div class="bar" style="width:100%;background:var(--r);height:100%"></div></div>
-</div>
-<p class="src">Cloudflare figures; bars are illustrative. Sources: TIME (Oct 23), CNN, CNBC, Fortune (Oct 22–23).</p>
-</section>
-
-<!-- 29 -->
-<section class="slide ctr" data-d="10">
-<div class="tag a">php --outcome</div>
-<p class="huge a" style="--d:1">Defenders won by <span class="g">days.</span></p>
-<p class="big" data-r="1">“If it had leaked a month earlier…”</p>
-<p class="dim" data-r="1">a Wiz executive</p>
-</section>
-
 <!-- 30 -->
 <section class="slide" data-d="25">
 <div class="tag a">risk_assessment --what_if</div>
 <h2 class="a">Each of these could have been <span class="r">much worse.</span></h2>
 <div class="cmp lcmp">
 <p class="g mid ilab" data-r="1"><svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#d97757" d="m19.6 66.5 19.7-11 .3-1-.3-.5h-1l-3.3-.2-11.2-.3L14 53l-9.5-.5-2.4-.5L0 49l.2-1.5 2-1.3 2.9.2 6.3.5 9.5.6 6.9.4L38 49.1h1.6l.2-.7-.5-.4-.4-.4L29 41l-10.6-7-5.6-4.1-3-2-1.5-2-.6-4.2 2.7-3 3.7.3.9.2 3.7 2.9 8 6.1L37 36l1.5 1.2.6-.4.1-.3-.7-1.1L33 25l-6-10.4-2.7-4.3-.7-2.6c-.3-1-.4-2-.4-3l3-4.2L28 0l4.2.6L33.8 2l2.6 6 4.1 9.3L47 29.9l2 3.8 1 3.4.3 1h.7v-.5l.5-7.2 1-8.7 1-11.2.3-3.2 1.6-3.8 3-2L61 2.6l2 2.9-.3 1.8-1.1 7.7L59 27.1l-1.5 8.2h.9l1-1.1 4.1-5.4 6.9-8.6 3-3.5L77 13l2.3-1.8h4.3l3.1 4.7-1.4 4.9-4.4 5.6-3.7 4.7-5.3 7.1-3.2 5.7.3.4h.7l12-2.6 6.4-1.1 7.6-1.3 3.5 1.6.4 1.6-1.4 3.4-8.2 2-9.6 2-14.3 3.3-.2.1.2.3 6.4.6 2.8.2h6.8l12.6 1 3.3 2 1.9 2.7-.3 2-5.1 2.6-6.8-1.6-16-3.8-5.4-1.3h-.8v.4l4.6 4.5 8.3 7.5L89 80.1l.5 2.4-1.3 2-1.4-.2-9.2-7-3.6-3-8-6.8h-.5v.7l1.8 2.7 9.8 14.7.5 4.5-.7 1.4-2.6 1-2.7-.6-5.8-8-6-9-4.7-8.2-.5.4-2.9 30.2-1.3 1.5-3 1.2-2.5-2-1.4-3 1.4-6.2 1.6-8 1.3-6.4 1.2-7.9.7-2.6v-.2H49L43 72l-9 12.3-7.2 7.6-1.7.7-3-1.5.3-2.8L24 86l10-12.8 6-7.9 4-4.6-.1-.5h-.3L17.2 77.4l-4.7.6-2-2 .2-3 1-1 8-5.5Z"/></svg>MYTHOS</p><div data-r="1"><div class="bw"><div class="bar" style="width:22%;background:var(--g);height:100%"></div></div><p class="dim">Imagine it in attackers’ hands.</p></div>
-<p class="g mid ilab" data-r="2"><img src="hf-logo.svg" alt="">HUGGING FACE</p><div data-r="2"><div class="bw"><div class="bar" style="width:35%;background:var(--g);height:100%"></div></div><p class="dim">Agents chasing a test score. Imagine a real goal.</p></div>
-<p class="g mid ilab" data-r="3"><img src="php-logo.svg" alt="">PHP</p><div data-r="3"><div class="bw"><div class="bar" style="width:18%;background:var(--g);height:100%"></div></div><p class="dim">Imagine attackers got there first.</p></div>
+<p class="g mid ilab" data-r="2"><img src="php-logo.svg" alt="">PHP</p><div data-r="2"><div class="bw"><div class="bar" style="width:18%;background:var(--g);height:100%"></div></div><p class="dim">Imagine attackers got there first.</p></div>
+<p class="g mid ilab" data-r="3"><img src="hf-logo.svg" alt="">HUGGING FACE</p><div data-r="3"><div class="bw"><div class="bar" style="width:35%;background:var(--g);height:100%"></div></div><p class="dim">Agents chasing a test score. Imagine a real goal.</p></div>
 </div>
 <p class="big" data-r="4">Luck is <span class="r">not a safety plan.</span></p>
-</section>
-
-<!-- 31 -->
-<section class="slide" data-d="45">
-<div class="tag a">bad_actors --bioweapons</div>
-<h2 class="a">Next: bioweapons</h2>
-<p class="a dim" style="--d:1">// Cyberattacks are already here. Bioweapons could be next</p>
-<div class="grid g3">
-<div class="card red" data-r="1"><span class="stat huge" style="color:var(--r)" data-count="94">0</span><span class="stat huge" style="color:var(--r)">%</span><p class="mid">of expert virologists out-scored by AI on tricky lab questions</p></div>
-<div class="card yel" data-r="2"><p class="emo">🧬</p><p class="mid">AI models can now design novel viruses <span class="dim">(<em>Science</em>, Aug 2026)</span></p></div>
-<div class="card" data-r="3"><span class="stat huge" data-count="3">0</span><span class="stat huge">%</span><p class="mid">of 360+ biology AI tools have any safeguards</p></div>
-</div>
-<p class="src">Sources: 2025 SecureBio/MIT study; Epoch AI survey; International AI Safety Report update; AI Policy Bulletin (Oct 21, 2026); RAND (Sep 2026).</p>
 </section>
 
 <!-- 32 -->
@@ -712,8 +723,8 @@ new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else 
 var S=[].slice.call(document.querySelectorAll('.slide')),i=0,R=0,TT="We Are Not Ready";
 (function(){var E=[['Mythos revealed',4,4],['Hugging Face',7,7],['PHP',7,10]],M='JFMAMJJASOND';
 [].forEach.call(document.querySelectorAll('.yr'),function(el){var c=+el.dataset.cur,h='<div class="yl">2026</div>',lit={};
-E.forEach(function(e,k){if(k>c)return;for(var m=e[1];m<=e[2];m++)lit[m]=1;h+='<div class="ev '+(k===c?'cur':'past')+'" style="grid-row:'+(k+2)+';grid-column:'+e[1]+' / '+(e[2]+1)+'"><span>'+e[0]+'</span></div>'});
-for(var m=1;m<=12;m++)h+='<div class="m'+(lit[m]?' on':'')+'" style="grid-row:'+(c+3)+';grid-column:'+m+'">'+M[m-1]+'</div>';
+E.forEach(function(e,k){if(k===c)for(var m=e[1];m<=e[2];m++)lit[m]=1;h+='<div class="ev '+(k===c?'cur':'past')+'" style="grid-row:'+(k+2)+';grid-column:'+e[1]+' / '+(e[2]+1)+'"><span>'+e[0]+'</span></div>'});
+for(var m=1;m<=12;m++)h+='<div class="m'+(lit[m]?' on':'')+'" style="grid-row:'+(E.length+2)+';grid-column:'+m+'">'+M[m-1]+'</div>';
 el.innerHTML=h;el.setAttribute('aria-label','2026 timeline');})})();
 (function(){var c=0;S.forEach(function(s){s.dataset.t=Math.floor(c/60)+':'+('0'+c%60).slice(-2);c+=+(s.dataset.d||30)})})();
 function typeIt(){var e=document.getElementById('ty'),k=0;clearInterval(e._t);e.textContent='';e._t=setInterval(function(){e.textContent=TT.slice(0,++k);if(k>=TT.length)clearInterval(e._t)},55)}

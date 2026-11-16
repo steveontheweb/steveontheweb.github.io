@@ -295,9 +295,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Not evil. It just doesn’t care about anything else
   - Just a goal it won’t let go of
 
-## 40 · How does this relate to AI?
-- Ask the room: how do these relate to AI?
-- (click) We get what we asked for, not what we meant
+## 40 · Asked for vs meant
+- That’s the pattern in all three stories: we get what we asked for, not what we meant
 - (click) The Hugging Face agents were a small, real version
 - (click) Now make it smarter than us: it won’t stop, it takes what it needs, and we can’t reliably correct it
 - The worst case is human extinction

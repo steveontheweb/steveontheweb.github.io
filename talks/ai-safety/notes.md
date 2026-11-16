@@ -282,6 +282,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 42 · Closing + questions
 - Back to the title: “not ready” doesn’t mean “can’t get ready”
-- These were warnings, and we were lucky to get them
+- (click) These were warning shots, and we were lucky to get them
+- (click) The responsibility is incredible. So is the chance to get it right
 - Thank you
 - Questions. The QR code has the slides and sources

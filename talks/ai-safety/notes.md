@@ -258,7 +258,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 > So why not just stop?
 
 ## 39 · Why don’t we just stop? (5 steps)
-- 1: Read the Schlatter quote: someone even sloppier will do it
+- 1: Researchers: best way to contribute to safety is from inside
+  - Read the Schlatter quote: someone even sloppier will do it
 - 2: Companies: if I pause, my competitor doesn’t
 - 3: Countries: same logic, higher stakes
 - 4: Whoever is ahead gets richer and stronger, so nobody wants to be last
@@ -269,7 +270,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - It’s not hopeless: people inside the labs are asking for brakes
 - (click) Pace the frontier: slow enough for safety to catch up. Pacing, not pausing
   - In July, over 1,000 lab employees asked governments for tools to do this
-- (click) Make it a top priority. This isn’t only an engineering problem. Voters and policy matter
+- (click) Make it a top priority. This isn’t only an engineering problem. AI companies and governments need to treat it as a top priority, and they respond to public pressure
 - (click) Your part: stay informed and talk about it. That’s how priorities change
   - You might be well informed. But your parents’ generation, or your grandparents’, most likely have no grasp of what’s happening
 

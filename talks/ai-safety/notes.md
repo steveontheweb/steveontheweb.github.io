@@ -201,18 +201,17 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 > And it doesn’t stop at cyber.
 
 ## 31 · Bioweapons
-- People misusing AI: cyber is already here. Bio could be next
+- PHP was an example of people misusing AI: cybersecurity is experiencing this. Bioweapons could be next
 - (click) AI now beats 94% of expert virologists on tricky lab troubleshooting questions
 - (click) AI models can now design new viruses
 - (click) Almost none of the biology AI tools have any safety checks
 - The companies themselves are asking government to act
-- Be fair: hands-on lab work is still hard, and experts disagree on how much AI helps
-> Why do these systems keep surprising the people who make them?
+> Why not just make AI safe?  Why do these systems keep surprising the people who make them?
 
 ## 32 · Built vs grown
 - A bridge: an engineer can explain every bolt
 - (click) AI: we set up the conditions and see what comes out
-- So a surprise isn’t a normal bug. There’s no line of code to point at
+- So a surprise behaviour isn’t a normal bug. There’s no line of code to point at
 - (click) It’s less like building a machine, and more like growing a new species. An alien mind we’re only starting to understand
 > Here’s a question: why do humans run the planet?
 
@@ -227,8 +226,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 34 · Power slips away
 - More intelligence means more power. That’s why everyone wants it
 - But point at the gap between what it can do and what we can check
-- The gap is the problem, not the capability
-> That gap has a name: the alignment problem. Getting it to want what we actually meant.
+- The advancement of AI is not the problem.  This gap is the problem.
+> When we can’t check what it’s doing, we have to trust that it wants what we want. That’s the alignment problem.
 
 ## 35 · The Sorcerer’s Apprentice
 - Has anyone seen The Sorcerer’s Apprentice? Fantasia, Mickey and the brooms

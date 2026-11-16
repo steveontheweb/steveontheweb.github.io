@@ -26,7 +26,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) write code better than any developer I know
 - (click) come up with better ideas and designs
 - (click) and be truly creative, in a way I didn't think possible
-- all in a fraction of the time
+- (click) And it does in minutes what would take a person days
 > I like this technology, and I’m still worried. But not everyone agrees.
 
 ## 4 · Where do you stand?

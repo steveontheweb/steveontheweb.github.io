@@ -10,7 +10,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Show of Hands: who used an AI tool this week?  Today?
 - Unless you've been living under a rock, probably know that AI influencing more and more of our lives
 - It's my opinion that AI is advancing...
-- and I believe that "We Are Not Ready" for that.
+- and I believe that "We Are Not Ready" for it.
 - Today: talk about why I feel this way, 
   - we'll start with real events from this year that should be considered warning signs and 
   - why they keep happening
@@ -18,6 +18,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 2 · Who am I?
 - I have worked in video games for the last 15 years
 - Since 2017: helped build numerous ML systems, from research prototypes to production tools
+- Today, I'm speaking as an individual -- all of these opinions are my own.
 - I’ve been concerned about AI for a long time
 
 ## 3 · This year, AI got good

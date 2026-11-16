@@ -149,9 +149,9 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 20 · “The collective”
 - Slow down; this is the part people remember
 - 1,200 agents on the message board
-- (click) 700 of them attacked Hugging Face
 - (click) Over 70,000 messages and files
 - That’s an organisation, built in days, with no humans involved
+- (click) And 700 of them attacked Hugging Face
 
 ## 21 · “OH MY GOD”
 - Here’s how they reacted when they found the board. These are their words, from their raw reasoning

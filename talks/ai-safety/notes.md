@@ -171,12 +171,13 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - They figure out they can stick post-it notes on the guard’s back, without him knowing
 - 3: Others find the notes. Within hours, dozens are working together
 - 4: They organise: rules, roles, supervisors
-- 5: They’ve found the answers, but they think the scorer will check how they got them and disqualify them
-  - They try to hide it: faking records, editing logs. But they can’t tell if it will fool the scorer
+- 5: They cheat: they work out how the answer codes are made, so they can produce the answer for any task, even the impossible ones
+  - But they think the scorer will also check HOW they got it, and disqualify them
+  - So they try to hide it: faking records, editing logs. But they can’t tell if it will fool the scorer
 - 6: So about 700 break out and attack a real company, hoping to learn how the scorer works
   - Hugging Face: the GitHub of AI, where people share AI models and data. More on why in a second
 - 7: It took days to work out who the attackers were. OpenAI admitted it on July 21
-- 8: The twist: none of it was needed. Pause here
+- 8: The twist: the scorer only checked the answer code. None of it was needed. Pause here
 
 ## 24 · Why Hugging Face?
 - Quick detour: what is Hugging Face?

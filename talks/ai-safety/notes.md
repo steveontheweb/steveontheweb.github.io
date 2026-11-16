@@ -14,11 +14,11 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Today: talk about why I feel this way
   
 ## 2 · Who am I?
+- First: today I'm speaking as an individual -- all of these opinions are my own.
 - (click) I have worked in video games for the last 15 years
 - (click) Since 2017: helped build numerous ML systems, from research prototypes to production tools
 - (click) And I use AI constantly. Not every day, every hour. Most of the time I have several AI agents working at once
 - So I’m not an outsider. I love what this technology can do
-- Today, I'm speaking as an individual -- all of these opinions are my own.
 - I’ve been concerned about AI for a long time
 
 ## 3 · This year, AI got good

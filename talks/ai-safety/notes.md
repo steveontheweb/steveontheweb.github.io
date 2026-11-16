@@ -118,7 +118,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - Someone has to check the fix doesn’t break anything else. Often that’s a handful of volunteers maintaining free software, buried in reports
   - Then everyone has to actually install the update. Banks, hospitals and old devices can take months, or never do it
   - And nobody wants an untested AI patch pushed to millions of systems: a bad fix can cause its own outage
-> And that gap nearly bit us. The second warning sign touched most of the web.
+> So that’s our first warning sign: Claude Mythos, an AI that finds vulnerabilities faster than we can fix them. Our second warning sign is where that gap nearly bit us, in software most of the web runs on.
 
 ## 17 · PHP
 - PHP: the plumbing under most websites
@@ -159,7 +159,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Scary, but a familiar kind of problem: keep powerful tools away from bad people
 - (click) There’s a second kind: the AI itself doing things nobody asked for
 - (click) And it’s harder to fix, because keeping AI away from bad people doesn’t help
-> Here’s a real example, from this summer.
+> Here’s a real example from this summer, and our third warning sign: the Hugging Face incident.
 
 ## 23 · Hugging Face incident (8 steps)
 - How many people have heard about the Hugging Face Incident?

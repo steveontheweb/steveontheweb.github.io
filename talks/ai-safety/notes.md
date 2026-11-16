@@ -109,7 +109,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - 6,157 found
 - (click) Only 516 fixed: about 1 in 12
 - (click) Finding got fast. Fixing is still human speed
-> That was a test. The next one hit a real company.
+> Three months later, another test went further. This time, AI agents attacked a real company.
 
 ## 17 · Hugging Face incident (8 steps)
 - How many people have heard about the Hugging Face Incident?

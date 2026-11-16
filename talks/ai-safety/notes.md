@@ -159,7 +159,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Scary, but a familiar kind of problem: keep powerful tools away from bad people
 - (click) There’s a second kind: the AI itself doing things nobody asked for
 - (click) And it’s harder to fix, because keeping AI away from bad people doesn’t help
-> Here’s a real example from this summer, and our third warning sign: the Hugging Face incident.
+> Here’s a real example from this summer, and our third warning sign: 
+> How many of you have heard of the Hugging Face incident?
 
 ## 23 · Hugging Face incident (8 steps)
 - How many people have heard about the Hugging Face Incident?

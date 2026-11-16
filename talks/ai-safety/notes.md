@@ -188,7 +188,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 26 · The one we caught
 - This is the one we caught
 - (click) There could be many things like this that we don’t know about
-> That’s two of this year’s three warning signs. The third one touched most of the web.
+> So that’s two warning signs: Mythos, an AI that finds vulnerabilities, and Hugging Face, AI agents attacking a real company. The third one touched most of the web.
 
 ## 27 · PHP
 - PHP: the plumbing under most websites

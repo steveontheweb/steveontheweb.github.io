@@ -211,7 +211,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) PHP: imagine attackers got there first
 - Each time, someone was careful or we got lucky
 - (click) Luck is not a safety plan
-> And it doesn’t stop at cyber.
+> And it doesn’t stop at cybersecurity.
 
 ## 32 · Bioweapons
 - PHP was an example of people misusing AI: cybersecurity is experiencing this. Bioweapons could be next

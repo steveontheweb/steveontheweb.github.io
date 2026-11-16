@@ -33,7 +33,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Two questions: how powerful will it get? Will it go well?
 - (click) “Relax, it’s autocomplete”: overhyped, keep using it
 - (click) “The real harms are now”: jobs, scams, bias
-- (click) “Utopia’s coming”: cure disease, end scarcity
+- (click) “Utopia’s coming”: cure disease, end poverty
 - (click) “We’re not ready”: powerful, and we can’t yet make it safe (particularly loss of control and alignment)
 - Ask the room: which box are you in?
 - Every box has smart, informed people in it

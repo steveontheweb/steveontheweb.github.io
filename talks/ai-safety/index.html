@@ -120,6 +120,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 .race2 .rtrack .bar{position:absolute;top:0;height:100%}
 .race2 .rl{margin:0;font-weight:700;font-size:clamp(1rem,1.9vw,1.5rem);white-space:nowrap}
 .race2 .rcap{margin:0 0 1.6vh;font-size:clamp(.85rem,1.5vw,1.15rem)}
+.cmp.nowrap>p{white-space:nowrap;margin:0}
 .flood{animation:fl 6s ease-in-out infinite alternate}@keyframes fl{from{transform:translateY(10px)}to{transform:translateY(-28px)}}
 </style>
 </head>
@@ -564,8 +565,8 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <section class="slide" data-d="45">
 <div class="tag a">power --why_intelligence</div>
 <h2 class="a">Why do humans run the planet?</h2>
-<p class="a dim" style="--d:1">// Not here yet, but maybe not far away</p>
-<div class="cmp" style="grid-template-columns:13ch 1fr">
+<p class="a mid" style="--d:1;max-width:none">“AI is just software. <span class="dim">It has no body.</span> How could it ever have power over us?”</p>
+<div class="cmp nowrap" style="grid-template-columns:auto 1fr">
 <p class="dim mid" data-r="1">STRENGTH</p><span data-r="1"></span>
 <p class="mid" data-r="1">🐘 Elephant</p><div class="bw" data-r="1" style="border-color:var(--line)"><div class="bar" style="width:100%;background:var(--dim);height:100%"></div></div>
 <p class="mid" data-r="1">🦍 Gorilla</p><div class="bw" data-r="1" style="border-color:var(--line)"><div class="bar" style="width:55%;background:var(--dim);height:100%"></div></div>
@@ -575,6 +576,7 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <p class="mid" data-r="2">The rest</p><div class="bw" data-r="2" style="border-color:var(--line)"><div class="bar" style="width:5%;background:var(--dim);height:100%"></div></div>
 </div>
 <p class="big" data-r="3">Not the strongest. <span class="y">The smartest.</span></p>
+<p class="mid" data-r="4">🤖 Power comes from intelligence, <span class="y">not muscles.</span> AI doesn’t need a body.</p>
 <p class="src">Bars are illustrative.</p>
 </section>
 

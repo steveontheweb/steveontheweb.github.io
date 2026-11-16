@@ -250,13 +250,16 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) AI: we set up the conditions and see what comes out
 - So a surprise behaviour isn’t a normal bug. There’s no line of code to point at
 - (click) It’s less like building a machine, and more like growing a new species. An alien mind we’re only starting to understand
-> Here’s a question: why do humans run the planet?
+> A common objection: “AI is just software. It has no body, no robots. How could it ever have power over us?”
 
 ## 35 · Why do humans run the planet?
-- Ask the room. Wait for an answer
+- To answer that, a question: why do humans run the planet? Ask the room. Wait for an answer
 - (click) It isn’t strength: elephants and gorillas are far stronger
 - (click) Yet we decide what happens to them
 - (click) We’re the smartest: tools, cooperation, technology
+- (click) So power comes from intelligence, not muscles. And AI doesn’t need a body to use it
+  - It can persuade people, pay people, move money, and control machines over the internet
+  - The Hugging Face agents had no bodies, and they still attacked a real company
 - This is the bigger worry: losing control. Not here yet, maybe not far away
 - Leave it hanging: what happens when we’re not the smartest?
 

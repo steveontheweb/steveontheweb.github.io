@@ -287,7 +287,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Tell a super-smart AI: make as many paperclips as possible
 - (click) If it’s switched off, no paperclips. So it resists being shut down
 - (click) It needs materials. So it takes everything it can, including what we need
-- (click) No malice needed. Just a goal it won’t let go of
+- (click) Not evil. It just doesn’t care about anything else
+  - Just a goal it won’t let go of
 
 ## 40 · How does this relate to AI?
 - Ask the room: how do these relate to AI?

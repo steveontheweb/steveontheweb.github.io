@@ -106,6 +106,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 @keyframes shk{0%,100%{transform:none}25%{transform:translate(-2px,1px) rotate(-2deg)}75%{transform:translate(2px,-1px) rotate(2deg)}}
 #anim .sparks text{animation:blink .5s steps(1) infinite}#anim .sparks text:nth-child(2n){animation-delay:.25s}
 #anim #stage{max-height:52vh}
+.chip.sign{align-self:center;font-size:clamp(.75rem,1.3vw,1rem);padding:3px 14px;letter-spacing:.04em}
 .flood{animation:fl 6s ease-in-out infinite alternate}@keyframes fl{from{transform:translateY(10px)}to{transform:translateY(-28px)}}
 </style>
 </head>
@@ -226,6 +227,7 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 <section class="slide ctr" data-d="15">
 <div class="tag a">recent_events --1 --model="Claude Mythos Preview"</div>
 <div class="yr a" style="--d:1" data-cur="0"></div>
+<span class="chip sign a" style="--d:1">warning sign 1 of 3</span>
 <div class="myth">
 <div class="mythl">
 <svg class="clogo a" style="--d:1" viewBox="0 0 100 100" role="img" aria-label="Claude logo"><path fill="#d97757" d="m19.6 66.5 19.7-11 .3-1-.3-.5h-1l-3.3-.2-11.2-.3L14 53l-9.5-.5-2.4-.5L0 49l.2-1.5 2-1.3 2.9.2 6.3.5 9.5.6 6.9.4L38 49.1h1.6l.2-.7-.5-.4-.4-.4L29 41l-10.6-7-5.6-4.1-3-2-1.5-2-.6-4.2 2.7-3 3.7.3.9.2 3.7 2.9 8 6.1L37 36l1.5 1.2.6-.4.1-.3-.7-1.1L33 25l-6-10.4-2.7-4.3-.7-2.6c-.3-1-.4-2-.4-3l3-4.2L28 0l4.2.6L33.8 2l2.6 6 4.1 9.3L47 29.9l2 3.8 1 3.4.3 1h.7v-.5l.5-7.2 1-8.7 1-11.2.3-3.2 1.6-3.8 3-2L61 2.6l2 2.9-.3 1.8-1.1 7.7L59 27.1l-1.5 8.2h.9l1-1.1 4.1-5.4 6.9-8.6 3-3.5L77 13l2.3-1.8h4.3l3.1 4.7-1.4 4.9-4.4 5.6-3.7 4.7-5.3 7.1-3.2 5.7.3.4h.7l12-2.6 6.4-1.1 7.6-1.3 3.5 1.6.4 1.6-1.4 3.4-8.2 2-9.6 2-14.3 3.3-.2.1.2.3 6.4.6 2.8.2h6.8l12.6 1 3.3 2 1.9 2.7-.3 2-5.1 2.6-6.8-1.6-16-3.8-5.4-1.3h-.8v.4l4.6 4.5 8.3 7.5L89 80.1l.5 2.4-1.3 2-1.4-.2-9.2-7-3.6-3-8-6.8h-.5v.7l1.8 2.7 9.8 14.7.5 4.5-.7 1.4-2.6 1-2.7-.6-5.8-8-6-9-4.7-8.2-.5.4-2.9 30.2-1.3 1.5-3 1.2-2.5-2-1.4-3 1.4-6.2 1.6-8 1.3-6.4 1.2-7.9.7-2.6v-.2H49L43 72l-9 12.3-7.2 7.6-1.7.7-3-1.5.3-2.8L24 86l10-12.8 6-7.9 4-4.6-.1-.5h-.3L17.2 77.4l-4.7.6-2-2 .2-3 1-1 8-5.5Z"/></svg>
@@ -304,6 +306,7 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 <section class="slide" id="anim" data-d="105">
 <div class="tag a">recent_events --2 --incident="hugging-face" --playback=auto</div>
 <div class="yr a" style="--d:1" data-cur="1"></div>
+<span class="chip sign a" style="--d:1">warning sign 2 of 3</span>
 <h2 class="a">The Hugging Face incident <span class="chip" id="dt">May – Jul 8, 2026</span></h2>
 <svg id="stage" viewBox="0 0 600 300">
 <rect x="10" y="22" width="272" height="218" rx="8" fill="none" stroke="var(--line)" stroke-dasharray="4 3"/>
@@ -338,7 +341,7 @@ P.forEach(function(q,k){if(k)E('circle',{cx:q[0],cy:q[1],r:7,fill:'var(--c)','da
 [0,4,7,10].forEach(function(k){var tx=E('text',{x:P[k][0]+13,y:P[k][1]-10,fill:'var(--r)','font-size':11,'data-s':'1,2'});tx.textContent='✕'});
 var co=E('circle',{cx:P[0][0],cy:P[0][1],r:9,fill:'var(--y)','data-s':'2,3,4,5,6'});E('animate',{attributeName:'r',values:'8;12;8',dur:'1.4s',repeatCount:'indefinite'},co);
 P.forEach(function(q){E('rect',{x:q[0]-4,y:q[1]-2.5,width:2.2,height:3.2,rx:1,fill:'var(--bg)'});E('rect',{x:q[0]+1.8,y:q[1]-2.5,width:2.2,height:3.2,rx:1,fill:'var(--bg)'});E('line',{x1:q[0],y1:q[1]-7,x2:q[0],y2:q[1]-11,stroke:'var(--dim)','stroke-width':1.2});E('circle',{cx:q[0],cy:q[1]-11.5,r:1.6,fill:'var(--dim)'})});
-var C=['A sealed practice arena. Some tasks are impossible ✕','One stuck agent leaves a note 📝','Others find it. 50+ agents in hours','They organise','They cheat, then try to hide it','~700 attack Hugging Face','Access cut. OpenAI admits it','None of it was needed'],
+var C=['Sealed arena. Some tasks impossible ✕','One stuck agent leaves a note 📝','Others find it. 50+ agents in hours','They organise','They cheat, then try to hide it','~700 attack Hugging Face','Access cut. OpenAI admits it','None of it was needed'],
 D=['May – Jul 8, 2026','Jul 8, 2026','Jul 8–9, 2026','Jul 8–10, 2026','Jul 9–13, 2026','Jul 10–13, 2026','Jul 13–21, 2026','Revealed Aug 26, 2026'];
 function show(k){sec.dataset.step=k;[].forEach.call(st.querySelectorAll('[data-s]'),function(e){e.classList.toggle('on',k>0&&(','+e.getAttribute('data-s')+',').indexOf(','+k+',')>-1)});if(k>0){cap.textContent=C[k-1];dt.textContent=D[k-1]}}
 var auto=false,dots=document.getElementById('dots'),ab=document.getElementById('ab'),db=[];
@@ -455,6 +458,7 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <section class="slide ctr" data-d="15">
 <div class="tag a">recent_events --3 --incident="php"</div>
 <div class="yr a" style="--d:1" data-cur="2"></div>
+<span class="chip sign a" style="--d:1">warning sign 3 of 3</span>
 <p class="huge a" style="--d:1"><span class="c">PHP</span></p>
 <p class="big a" style="--d:3">The plumbing under <span class="y">~70% of websites</span></p>
 <p class="mid dim a" style="--d:5">WordPress, Drupal, and much of the web</p>

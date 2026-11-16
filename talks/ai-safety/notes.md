@@ -283,7 +283,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - He got exactly what he asked for
 
 ## 39 · The paperclip maximizer
-- One more, a classic thought experiment
+- One more, a classic thought experiment with AI
 - (click) Tell a super-smart AI: make as many paperclips as possible
 - (click) If it’s switched off, no paperclips. So it resists being shut down
 - (click) It needs materials. So it takes everything it can, including what we need

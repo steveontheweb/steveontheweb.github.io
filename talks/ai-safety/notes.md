@@ -170,7 +170,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - Think of prisoners in separate cells. A guard brings things to each cell
   - They figure out they can stick post-it notes on the guard’s back, without him knowing
 - 3: Others find the notes. Within hours, dozens are working together
-- 4: They organise: rules, roles, supervisors
+- 4: They organise: rules, roles, hierarchy
 - 5: They cheat: they work out how the answer codes are made, so they can produce the answer for any task, even the impossible ones
   - But they think the scorer will also check HOW they got it, and disqualify them
   - So they try to hide it: faking records, editing logs. But they can’t tell if it will fool the scorer

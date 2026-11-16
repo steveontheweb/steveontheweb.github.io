@@ -62,7 +62,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - And it’s not just researchers
 - (click) The CEOs of the three biggest labs signed this
 - They put this danger alongside pandemics and nuclear war
-> So why do I think we’re not ready? Look at what happened this year.
+> And this isn’t hypothetical anymore. Here’s what we’ve already seen this year.
 
 ## 9 · This year’s warning signs
 - Three real events from 2026

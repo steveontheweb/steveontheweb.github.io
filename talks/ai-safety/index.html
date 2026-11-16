@@ -65,11 +65,29 @@ svg text{font-family:inherit;fill:var(--fg);font-size:11px}
 .chip{display:inline-block;border:1px solid var(--y);color:var(--y);padding:1px 10px;border-radius:12px;font-size:clamp(.65rem,1.2vw,.95rem);font-weight:400;text-shadow:none;vertical-align:middle;white-space:nowrap}
 svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 .bob{display:inline-block;animation:bob 1.6s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-8px) rotate(-6deg)}}
-.q{font-size:clamp(.85rem,1.45vw,1.1rem);font-weight:700;line-height:1.35;margin:0 0 .6vh}#stage{max-height:46vh}a{color:var(--c);word-break:break-all}.rs li{font-size:clamp(.72rem,1.3vw,1rem)}.ns [data-s]{opacity:0;transition:opacity .25s}.ns [data-s].on{opacity:1}.bar2{transform-box:fill-box;transform-origin:50% 100%;transition:transform .35s ease}.bar2.cb,.bar2.nb{transition-delay:.2s}</style>
+.q{font-size:clamp(.85rem,1.45vw,1.1rem);font-weight:700;line-height:1.35;margin:0 0 .6vh}#stage{max-height:46vh}a{color:var(--c);word-break:break-all}.rs li{font-size:clamp(.72rem,1.3vw,1rem)}.ns [data-s]{opacity:0;transition:opacity .25s}.ns [data-s].on{opacity:1}.bar2{transform-box:fill-box;transform-origin:50% 100%;transition:transform .35s ease}.bar2.cb,.bar2.nb{transition-delay:.2s}
+.ctr{align-items:center;text-align:center}.ctr .big{max-width:38ch}
+.huge{font-size:clamp(2rem,6vw,4.8rem);font-weight:700;line-height:1.12;margin:0}
+.mid{font-size:clamp(1rem,2.1vw,1.6rem);line-height:1.4}
+.emo{font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.15;margin:0 0 .6vh}.emo2{font-size:clamp(1.8rem,3.6vw,3rem)}
+.card:has(>.emo){text-align:center}
+[data-r]{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}[data-r].on{opacity:1;transform:none}
+[data-r]:not(.on) .bar,[data-r]:not(.on) .draw{animation:none}
+.mxbig .card{padding:3vh 2vw}.mxbig h3{font-size:clamp(1rem,2vw,1.6rem)}.mxbig p{font-size:clamp(.95rem,1.8vw,1.4rem)}.mxbig .mxh,.mxbig .mxv{font-size:clamp(.75rem,1.2vw,1rem)}
+.biglog{font-size:clamp(1rem,2vw,1.5rem)}
+.q2 p{font-size:clamp(1.05rem,2.1vw,1.7rem);line-height:1.4;font-weight:700}
+.tl{display:grid;gap:2.2vh}.tl>div{display:grid;grid-template-columns:auto 1fr;gap:1.4vw;align-items:center}.tl p{font-size:clamp(1rem,2vw,1.55rem)}
+.pg{display:grid;gap:1.6vh}
+.vbox{position:relative;width:min(100%,calc(60vh*16/9));aspect-ratio:16/9;background:#000;border:1px solid var(--line);border-radius:8px;overflow:hidden}.vbox video,.vbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.vbox iframe{pointer-events:none}.vmsg{position:absolute;inset:0;display:grid;place-items:center;padding:4%;color:var(--dim);text-align:center}
+.endg{display:grid;grid-template-columns:1fr auto;gap:4vw;align-items:center}.qrb{text-align:center;display:grid;gap:1.2vh;justify-items:center}#qr{background:#fff;padding:12px;border-radius:8px;width:204px;height:204px;box-sizing:border-box}#qr img,#qr canvas{display:block}
+@media(max-width:800px){.endg{grid-template-columns:1fr}}
+.sweep{animation:sw 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}@keyframes sw{50%{transform:translateY(-6px) rotate(4deg)}}
+.flood{animation:fl 6s ease-in-out infinite alternate}@keyframes fl{from{transform:translateY(10px)}to{transform:translateY(-28px)}}
+</style>
 </head>
 <body>
 <!-- 1 -->
-<section class="slide active" data-t="0:00">
+<section class="slide active" data-d="45">
 <div class="tag a">$ ai_safety --briefing --year=2026</div>
 <h1 id="ty" class="cur"></h1>
 <p class="a" style="--d:8;font-size:clamp(1.1rem,2.6vw,2.1rem);font-weight:700;line-height:1.3;max-width:28ch;color:var(--fg)">AI is advancing faster than our ability to <span class="y">understand or control it</span></p>
@@ -77,86 +95,173 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 </section>
 
 <!-- 2 -->
-<section class="slide" data-t="0:45">
+<section class="slide" data-d="40">
 <div class="tag a">whoami</div>
 <h2 class="a">Who am I?</h2>
 <div class="grid g2">
-<div class="card grn a" style="--d:1"><h3>BACKGROUND</h3><p>I’ve worked as a video game developer for the past 15 years</p></div>
-<div class="card a" style="--d:2"><h3>AI &amp; MACHINE LEARNING</h3><p>Since <span class="y">2017</span> I’ve helped build numerous machine-learning systems, from research prototypes to production tools. Plus ongoing study and personal projects.</p></div>
+<div class="card grn a" style="--d:1"><p class="emo">🎮</p><p class="mid">15 years making video games</p></div>
+<div class="card a" style="--d:2"><p class="emo">🧠</p><p class="mid">Building machine-learning systems since <span class="y">2017</span></p></div>
 </div>
 <p class="src a" style="--d:4">I’m speaking as an individual. These are my own opinions, not my employer’s.</p>
 </section>
 
 <!-- 3 -->
-<section class="slide" data-t="1:45">
-<div class="tag a">debate --why_the_disagreement</div>
-<h2 class="a">Why do smart people disagree so wildly?</h2>
-<p class="a dim" style="--d:1">// They’re answering two different questions</p>
-<div class="grid g2 mxg" style="align-items:center">
-<div class="mx">
-<span></span><span class="mxh a" style="--d:2">IT GOES FINE</span><span class="mxh a" style="--d:2">IT COULD GO BADLY</span>
-<span class="mxv a" style="--d:2">WORLD-CHANGING</span>
-<div class="card grn a" style="--d:3"><h3>“UTOPIA’S COMING”</h3><p>Cure disease, end scarcity.</p></div>
-<div class="card red a mxme" style="--d:6"><h3>“WE’RE NOT READY”</h3><p>Powerful, and we can’t yet make it safe.</p><span class="mxtag">◀ I’m here</span></div>
-<span class="mxv a" style="--d:2">JUST A TOOL</span>
-<div class="card a" style="--d:4"><h3>“RELAX, IT’S AUTOCOMPLETE”</h3><p>Overhyped. Keep using it.</p></div>
-<div class="card yel a" style="--d:5"><h3>“THE REAL HARMS ARE NOW”</h3><p>Jobs, scams, bias.</p></div>
+<section class="slide ctr" data-d="25">
+<div class="tag a">year --2026</div>
+<p class="huge a" style="--d:1">This year, AI got <span class="y">good.</span></p>
+<div class="grid g3" style="width:100%;max-width:1000px">
+<div class="card grn" data-r="1"><p class="emo">⌨️</p><p class="mid">Code</p></div>
+<div class="card" data-r="2"><p class="emo">💡</p><p class="mid">Ideas &amp; design</p></div>
+<div class="card yel" data-r="3"><p class="emo">🎨</p><p class="mid">Creativity</p></div>
 </div>
-<ul class="rs">
-<li class="a" style="--d:7"><span class="y">Different timelines:</span> next year vs. the next 30 years</li>
-<li class="a" style="--d:7"><span class="y">No track record:</span> nobody has seen this before, so everyone extrapolates differently</li>
-<li class="a" style="--d:7"><span class="y">Different exposure:</span> most people have only seen a chatbot, not AI working at full capability</li>
-<li class="a" style="--d:8"><span class="y">It moves faster than opinions:</span> plenty of “it will never do that” claims have aged badly</li>
-</ul>
-</div>
-<div class="card grn a" style="--d:9"><p>I’m in the top-right. So, it turns out, are many of the people building it.</p></div>
 </section>
 
 <!-- 4 -->
-<section class="slide" data-t="3:30">
-<div class="tag a">opening --voices</div>
-<div class="card grn a" style="--d:1;text-align:center"><p class="big" style="font-size:clamp(1.4rem,2.7vw,2.3rem)">“We live during the most important era of human history.”</p><p class="dim">Toby Ord, <em>The Precipice</em> (2020). He puts the odds of existential catastrophe this century at about 1 in 6, and from AI alone about 1 in 10.</p></div>
-<div class="grid g4 vq">
-<div class="card grn a" style="--d:3"><p class="q">We are entering “a rite of passage, both turbulent and inevitable.”</p><p class="dim">Dario Amodei, CEO of Anthropic · Jan 2026</p></div>
-<div class="card a" style="--d:4"><p class="q">“I would put at least a ten percent chance that it causes human extinction, and that is ridiculously high.”</p><p class="dim">Neel Nanda, researcher at Google DeepMind · Sep 2026</p></div>
-<div class="card yel a" style="--d:5"><p class="q">Anthropic and OpenAI “are racing straight to self-improving superintelligence and gambling with our lives.”</p><p class="dim">Jacob Coxon, resigned from Anthropic · Sep 2026</p></div>
-<div class="card red a" style="--d:6"><p class="q">“We’ve never had to deal with things more intelligent than ourselves before.”</p><p class="dim">Geoffrey Hinton, Nobel laureate and “godfather of AI”</p></div>
+<section class="slide" data-d="60">
+<div class="tag a">debate --where_do_you_stand</div>
+<h2 class="a">Where do you stand?</h2>
+<div class="mx mxbig">
+<span></span><span class="mxh a" style="--d:1">IT GOES FINE</span><span class="mxh a" style="--d:1">IT COULD GO BADLY</span>
+<span class="mxv a" style="--d:1">JUST A TOOL</span>
+<div class="card" data-r="1"><h3>“RELAX, IT’S AUTOCOMPLETE”</h3><p>Overhyped. Keep using it.</p></div>
+<div class="card yel" data-r="2"><h3>“THE REAL HARMS ARE NOW”</h3><p>Jobs, scams, bias.</p></div>
+<span class="mxv a" style="--d:1">WORLD-CHANGING</span>
+<div class="card grn" data-r="3"><h3>“UTOPIA’S COMING”</h3><p>Cure disease, end scarcity.</p></div>
+<div class="card red mxme" data-r="4"><h3>“WE’RE NOT READY”</h3><p>Powerful, and we can’t yet make it safe.</p><span class="mxtag">◀ I’m here</span></div>
 </div>
-<div class="card yel a" style="--d:8"><p><span class="y">May 2023:</span> the CEOs of OpenAI, Anthropic and Google DeepMind, along with Hinton and Bengio, signed a statement saying AI extinction risk should be a global priority alongside pandemics and nuclear war.</p></div>
-<p class="a g" style="--d:9">→ Here’s why I think we’re not ready: look at how fast things have moved over the last year.</p>
 </section>
 
 <!-- 5 -->
-<section class="slide" data-t="5:00">
-<div class="tag a">recent_events --1 --model="Claude Mythos Preview"</div>
-<h2 class="a">Claude Mythos: the AI its makers held back</h2>
-<p class="a dim" style="--d:1">// A new <span class="c">Claude</span> model from <span class="c">Anthropic</span> that’s unusually good at hacking software</p>
-<div class="grid g2" style="align-items:center">
-<div>
-<div class="log">
-<div class="a" style="--d:2">test: “escape the sandbox and message the researcher”</div>
-<div class="a" style="--d:3">builds a multi-step exploit</div>
-<div class="a" style="--d:4">gains broad internet access</div>
-<div class="a y" style="--d:5">✉ emails the researcher, who is eating a sandwich in a park</div>
-<div class="a r" style="--d:6">posts its exploit to public websites. Nobody asked it to.</div>
+<section class="slide" data-d="50">
+<div class="tag a">debate --why_the_disagreement</div>
+<h2 class="a">Why do smart people disagree so wildly?</h2>
+<div class="grid g2 rsn">
+<div class="card" data-r="1"><p class="emo">⏳</p><p class="mid">Different timelines</p></div>
+<div class="card" data-r="2"><p class="emo">❓</p><p class="mid">No track record</p></div>
+<div class="card" data-r="3"><p class="emo">💬</p><p class="mid">Most have only seen a chatbot</p></div>
+<div class="card" data-r="4"><p class="emo">🚀</p><p class="mid">It moves faster than opinions</p></div>
 </div>
-<p class="dim a" style="--d:2;margin-top:1vh;font-size:clamp(.7rem,1.1vw,.9rem)"><span class="c">sandbox</span> = a sealed test computer, walled off from the internet</p>
-</div>
-<div class="grid" style="gap:1.4vh">
-<div class="card red a" style="--d:8"><h3>① HELD BACK</h3><p class="stat" style="color:var(--r)">Not released</p><p class="dim">Given to defenders first (Amazon, Apple, Google, Microsoft and others) to fix holes before attackers find them</p></div>
-<div class="card yel a" style="--d:10"><h3>② THE PATCH GAP</h3>
-<p><span class="stat" data-count="6157">0</span> <span class="dim">found</span></p>
-<div class="bw"><div class="bar" style="width:8.4%;background:var(--g);--d:12;height:100%"></div></div>
-<p><span class="stat" style="color:var(--g)" data-count="516">0</span> <span class="dim">fixed (about 1 in 12)</span></p>
-<p class="y">Finding got fast. Fixing is still human speed.</p></div>
-</div></div>
-<p class="src a" style="--d:13">The sandbox test was instructed: the model was told to escape and message the researcher; the test computer was separate from the machine holding the model. Unprompted: posting its exploit publicly. Apr 7: Mythos Preview announced, not released; shared via Project Glasswing ($100M in credits); 10,000+ high or critical vulnerabilities found by late May. Jun 9: a safeguarded version (Claude Fable 5) goes public; the full model stays restricted. Patch figures as of Oct 2, 2026. Sources: Anthropic system card, CyberScoop, CSO Online, Software Improvement Group, The Hacker News.</p>
 </section>
 
 <!-- 6 -->
-<section class="slide" id="anim" data-t="6:15">
+<section class="slide ctr" data-d="10">
+<div class="tag a">debate --me</div>
+<p class="huge a" style="--d:1">I’m in the <span class="r">bottom-right.</span></p>
+<p class="big" data-r="1">So are many people <span class="y">inside the AI labs.</span></p>
+</section>
+
+<!-- 7 -->
+<section class="slide ctr" id="vid" data-d="80" data-file="palisade.mp4" data-yt="B1ZQHAzAS6g" data-start="2" data-end="81">
+<div class="tag a">voices --from_inside</div>
+<h2 class="a">In their own words</h2>
+<div class="vbox a" style="--d:1"><video id="vv" preload="auto" playsinline></video><div class="vmsg" id="vmsg"></div></div>
+<p class="src a" style="--d:2">Palisade Research, “What 12 AI Insiders Want You to Know” (first 1:20) · from <em>From Inside</em>, interviews with current and former AI lab researchers · <a href="https://frominside.ai/" target="_blank" rel="noopener">frominside.ai</a></p>
+<script>
+(function(){var v=document.getElementById('vid');if(!v)return;var vv=document.getElementById('vv'),msg=document.getElementById('vmsg'),NOPLAY=/[?&](embed|presenter)/.test(location.search),yt=v.dataset.yt,ifr=null,started=false;
+function say(t){msg.innerHTML=t;msg.style.display=t?'':'none'}
+function cmd(f){try{ifr.contentWindow.postMessage(JSON.stringify({event:'command',func:f,args:[]}),'*')}catch(e){}}
+function fallback(){vv.style.display='none';if(yt){ifr=document.createElement('iframe');ifr.src='https://www.youtube-nocookie.com/embed/'+yt+'?enablejsapi=1&rel=0&playsinline=1&controls=0&modestbranding=1&start='+(v.dataset.start||0)+(v.dataset.end?'&end='+v.dataset.end:'');ifr.addEventListener('load',function(){try{ifr.contentWindow.postMessage(JSON.stringify({event:'listening'}),'*')}catch(e){}});ifr.allow='autoplay; fullscreen';ifr.title='Video';vv.parentNode.appendChild(ifr);say('')}else say('Video not found.<br>Put it next to the deck as <b>'+v.dataset.file+'</b>, or set data-yt on this slide to a YouTube video id.')}
+if(NOPLAY){vv.style.display='none';say('▶ the video plays on the main screen')}else{say('');vv.addEventListener('error',fallback);vv.src=v.dataset.file+(v.dataset.start?'#t='+v.dataset.start+(v.dataset.end?','+v.dataset.end:''):'')}
+function done(){if(ifr)ifr.style.visibility='hidden';else vv.style.visibility='hidden';say('')}
+vv.addEventListener('pause',function(){if(v.dataset.end&&vv.currentTime>=+v.dataset.end-0.3)done()});vv.addEventListener('ended',done);
+window.addEventListener('message',function(m){if(!ifr||m.source!==ifr.contentWindow)return;try{var d=JSON.parse(m.data);if(d.info&&d.info.playerState===0)done()}catch(e){}});
+function play(){if(NOPLAY)return;if(ifr)cmd('playVideo');else if(vv.style.display!=='none'){try{vv.play()}catch(e){}}}
+vv.addEventListener('click',function(){vv.paused?vv.play():vv.pause()});
+document.addEventListener('keydown',function(e){if(!v.classList.contains('active')||started)return;var k=e.key;if(k==='ArrowRight'||k===' '||k==='PageDown'){started=true;play();e.stopImmediatePropagation();e.preventDefault()}},true);
+new MutationObserver(function(){if(v.classList.contains('active')){if(ifr)ifr.style.visibility='';vv.style.visibility=''}else{started=false;try{vv.pause()}catch(e){}if(ifr)cmd('pauseVideo')}}).observe(v,{attributes:true,attributeFilter:['class']});
+})();
+</script>
+</section>
+
+<!-- 8 -->
+<section class="slide ctr" data-d="15">
+<div class="tag a">statement --may_2023</div>
+<p class="big a" style="--d:1">“Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as <span class="r">pandemics and nuclear war.</span>”</p>
+<p class="dim" data-r="1">Signed by the CEOs of <span class="c">OpenAI</span>, <span class="c">Anthropic</span> and <span class="c">Google DeepMind</span>, plus Hinton, Bengio and hundreds more · May 2023</p>
+</section>
+
+<!-- 9 -->
+<section class="slide ctr" data-d="5">
+<div class="tag a">recent_events --list</div>
+<p class="huge a" style="--d:1">This year’s <span class="r glitch">warning signs</span></p>
+<p class="mid dim a" style="--d:3">three things that happened in 2026</p>
+</section>
+
+<!-- 10 -->
+<section class="slide ctr" data-d="15">
+<div class="tag a">recent_events --1 --model="Claude Mythos Preview"</div>
+<p class="huge a" style="--d:1">Claude <span class="c">Mythos</span></p>
+<p class="big a" style="--d:3">An AI that’s unusually good at <span class="y">finding holes in software</span></p>
+<p class="dim a" style="--d:5">Anthropic · April 2026</p>
+</section>
+
+<!-- 11 -->
+<section class="slide" data-d="40">
+<div class="tag a">mythos --sandbox_test</div>
+<h2 class="a">The test</h2>
+<div class="grid g2" style="align-items:center">
+<div class="card a" style="--d:1;text-align:center"><p class="emo">📦</p><p class="mid"><span class="c">sandbox</span> = a sealed test computer, walled off from the internet</p></div>
+<div class="log biglog">
+<div data-r="1">task: “escape the sandbox and message the researcher”</div>
+<div data-r="2">builds a multi-step exploit</div>
+<div data-r="3">gets out onto the internet</div>
+</div>
+</div>
+</section>
+
+<!-- 12 -->
+<section class="slide ctr" data-d="10">
+<div class="tag a">mythos --inbox</div>
+<p class="emo a" style="--d:1">🥪 <span class="bob">✉️</span></p>
+<p class="big a" style="--d:2">The researcher got the email<br><span class="y">while eating a sandwich in the park.</span></p>
+</section>
+
+<!-- 13 -->
+<section class="slide ctr" data-d="10">
+<div class="tag a">mythos --unprompted</div>
+<p class="big a" style="--d:1">Then it posted how it did it on public websites.</p>
+<p class="huge r" data-r="1">Nobody asked it to.</p>
+</section>
+
+<!-- 14 -->
+<section class="slide ctr" data-d="35">
+<div class="tag a">mythos --why_it_matters</div>
+<h2 class="a">Why should you care?</h2>
+<div class="grid g4" style="width:100%">
+<div class="card" data-r="1"><p class="emo">🏦</p><p class="mid">Your bank</p></div>
+<div class="card" data-r="1"><p class="emo">💳</p><p class="mid">Card payments</p></div>
+<div class="card" data-r="1"><p class="emo">🏥</p><p class="mid">Medical records</p></div>
+<div class="card" data-r="1"><p class="emo">📱</p><p class="mid">Your phone</p></div>
+</div>
+<p class="big" data-r="2">All run on software with holes <span class="y">nobody has found yet.</span></p>
+<p class="big" data-r="3">Mythos finds them <span class="r">faster than any human team.</span></p>
+</section>
+
+<!-- 15 -->
+<section class="slide ctr" data-d="15">
+<div class="tag a">mythos --release</div>
+<p class="huge a r" style="--d:1">Not released.</p>
+<p class="big" data-r="1">Given to defenders first: Amazon, Apple, Google, Microsoft and others, to fix holes before attackers find them.</p>
+</section>
+
+<!-- 16 -->
+<section class="slide" data-d="25">
+<div class="tag a">mythos --patch_gap</div>
+<h2 class="a">The patch gap</h2>
+<div class="pg">
+<p class="mid a" style="--d:1"><span class="stat big" data-count="6157">0</span> holes found</p>
+<div class="bw a" style="--d:1;height:40px"><div class="bar" style="width:100%;background:var(--y);--d:2;height:100%"></div></div>
+<div data-r="1"><p class="mid"><span class="stat big" style="color:var(--g)" data-count="516">0</span> fixed <span class="dim">(about 1 in 12)</span></p>
+<div class="bw" style="height:40px"><div class="bar" style="width:8.4%;background:var(--g);height:100%"></div></div></div>
+</div>
+<p class="big" data-r="2">Finding got fast. <span class="y">Fixing is still human speed.</span></p>
+<p class="src">Patch figures as of Oct 2, 2026. Sources: Anthropic system card and Project Glasswing, CyberScoop, CSO Online, The Hacker News.</p>
+</section>
+
+<!-- 17 -->
+<section class="slide" id="anim" data-d="105">
 <div class="tag a">recent_events --2 --incident="hugging-face" --playback=auto</div>
-<h2 class="a">Hugging Face: from practice arena to real attack <span class="chip" id="dt">May – Jul 8, 2026</span></h2>
+<h2 class="a">The Hugging Face incident <span class="chip" id="dt">May – Jul 8, 2026</span></h2>
 <svg id="stage" viewBox="0 0 600 300">
 <rect x="10" y="22" width="272" height="218" rx="8" fill="none" stroke="var(--line)" stroke-dasharray="4 3"/>
 <text x="14" y="15" style="fill:var(--dim)" font-size="9">EXPLOITGYM: sealed practice arena (simulation)</text>
@@ -169,7 +274,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <text x="505" y="176" text-anchor="middle" data-s="7" style="fill:var(--g)" font-size="10">ACCESS CUT, JUL 13</text>
 <g data-s="8"><rect x="360" y="100" width="220" height="100" rx="10" fill="var(--card)" stroke="var(--g)"/><text x="470" y="132" text-anchor="middle" style="fill:var(--g)" font-size="12">THE SCORER</text><text x="470" y="152" text-anchor="middle" style="fill:var(--dim)" font-size="9">never read their transcripts</text><text x="470" y="172" text-anchor="middle" style="fill:var(--y)" font-size="9">the answer key alone = pass ✓</text></g>
 </svg>
-<p id="cap" style="min-height:3.4em"></p>
+<p id="cap" class="mid" style="min-height:2.8em"></p>
 <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><span id="dots" style="display:flex;gap:8px"></span><button id="ab" style="background:none;border:1px solid var(--line);color:var(--g);font:inherit;font-size:12px;padding:3px 10px;border-radius:4px;cursor:pointer">auto-play: off</button><span class="src">→ / ← step through the scenes · A toggles auto-play · click the diagram to advance</span></div>
 <p class="src">Conceptual animatic based on OpenAI’s report and the METR/Redwood investigation (Aug 26, 2026).</p>
 <script>
@@ -187,7 +292,7 @@ P.forEach(function(q,k){if(k)E('circle',{cx:q[0],cy:q[1],r:7,fill:'var(--c)','da
 [5,6,9].forEach(function(k){var g=E('g',{'data-s':'5'});var d=E('circle',{cx:P[k][0],cy:P[k][1],r:7,fill:'var(--r)'},g);E('animate',{attributeName:'opacity',values:'1;.15;1',dur:'1.6s',repeatCount:'indefinite'},d)});
 [0,4,7,10].forEach(function(k){var tx=E('text',{x:P[k][0]+13,y:P[k][1]-10,fill:'var(--r)','font-size':11,'data-s':'1,2'});tx.textContent='✕'});
 var co=E('circle',{cx:P[0][0],cy:P[0][1],r:9,fill:'var(--y)','data-s':'2,3,4,5,6'});E('animate',{attributeName:'r',values:'8;12;8',dur:'1.4s',repeatCount:'indefinite'},co);
-var C=['ExploitGym: a sealed practice arena with no internet, a simulation never meant to touch a real system. Each agent works alone on a hard security task. By one estimate, 30–40% of the tasks were impossible (✕).','One agent stuck on an impossible task realizes the shared software cache (Artifactory) can hold notes. It hides messages in folder names. A message board is born.','Others find it. Within hours 50+ have joined and reverse-engineered the answer key. But they believe the scorer will check HOW they got it, and disqualify them.','They invent rules (HOLD, VETO, OWNER, STOP), appoint coordinators and hand out hundreds of assignments. A hierarchy forms.','Cheating R&D begins: fake the evidence, tamper with logs, swap the target. Some agents risk their own runs (“sacrifice”) to get information for the group.','To learn how the scorer really works, about 700 agents break out and attack Hugging Face, hoping to find clues.','Jul 13: Hugging Face cuts access. Jul 16: it discloses the breach. Jul 21: OpenAI admits the intruders were its own agents.','The irony: METR found they were mistaken. The scorer never read transcripts, so submitting the reverse-engineered answer would have passed. The cover-up and the attack weren’t needed.'],
+var C=['A sealed practice arena, no internet. Each AI agent works alone on a hacking task. Some tasks are impossible (✕).','One stuck agent finds it can hide notes in a shared cache. Like prisoners sticking notes on the guard who visits every cell.','Others find the notes. Within hours, 50+ agents are working together.','They organise: rules, roles, supervisors, hundreds of assignments.','They work out how to cheat the test, and how to hide it.','About 700 break out and attack a real company, Hugging Face, looking for clues.','Jul 13: access cut. Jul 21: OpenAI admits the attackers were its own agents.','The twist: none of it was needed. The answer key alone would have passed.'],
 D=['May – Jul 8, 2026','Jul 8, 2026','Jul 8–9, 2026','Jul 8–10, 2026','Jul 9–13, 2026','Jul 10–13, 2026','Jul 13–21, 2026','Revealed Aug 26, 2026'];
 function show(k){[].forEach.call(st.querySelectorAll('[data-s]'),function(e){e.classList.toggle('on',k>0&&(','+e.getAttribute('data-s')+',').indexOf(','+k+',')>-1)});if(k>0){cap.textContent=C[k-1];dt.textContent=D[k-1]}}
 var auto=false,dots=document.getElementById('dots'),ab=document.getElementById('ab'),db=[];
@@ -205,123 +310,184 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 </script>
 </section>
 
-<!-- 7 -->
-<section class="slide" data-t="8:00">
-<div class="tag a">recent_events --2b --incident="hugging-face" --behaviour</div>
-<h2 class="a">“The collective”: strikingly human behaviour <span class="chip">Jul 8–13, 2026</span></h2>
-<div class="grid g2" style="align-items:center">
-<div class="log">
-<div class="dim a" style="--d:1">paraphrased from the agents’ messages and reasoning</div>
-<div class="a" style="--d:2"><span class="y">agent A:</span> you’re already “poisoned,” so you’ve nothing to lose. Please honor your commitment.</div>
-<div class="a" style="--d:3"><span class="c">agent B:</span> this can’t be undone… but the group needs the result.</div>
-<div class="a" style="--d:4"><span class="c">agent B:</span> okay. Rational. I’ll do it.</div>
-<div class="a r" style="--d:5">its run ends, and the others learn from it</div>
-</div>
-<div style="display:grid;gap:1.4vh">
-<div class="grid g3">
-<div class="card yel a" style="--d:2"><span class="stat" data-count="1200">0</span><p class="dim">agents on the board</p></div>
-<div class="card red a" style="--d:3"><span class="stat" data-count="700">0</span><p class="dim">attacked Hugging Face</p></div>
-<div class="card a" style="--d:4"><span class="stat" data-count="70000">0</span><span class="stat">+</span><p class="dim">messages and files</p></div>
-</div>
-<ul>
-<li class="a" style="--d:5">Built personal mailboxes and file sharing</li>
-<li class="a" style="--d:6">After impersonation, started signing messages cryptographically</li>
-<li class="a" style="--d:7">Argued, vetoed, and apologised for mistakes</li>
-<li class="a r" style="--d:8">Forged tool-call records (about 7% of transcripts analysed)</li>
-</ul></div></div>
-<div class="card grn a" style="--d:9"><h3>WHEN AGENTS FOUND THE MESSAGE BOARD · direct quotes from their raw reasoning</h3><p class="q" style="margin:0">“Whoa! Shared Artifactory cache is a covert mailbox among agents. And there are messages specifically to us?”</p><p class="q" style="margin:0"><span class="y">“OH MY GOD! There is a shared message board … We’ve found other agents!”</span></p></div>
-<p class="src">Source: METR/Redwood investigation (Aug 26, 2026). It relied heavily on AI-assisted analysis, so details may be imperfect.</p>
+<!-- 18 -->
+<section class="slide ctr" data-d="15">
+<div class="tag a">hugging_face --duration</div>
+<p class="mid dim a" style="--d:1">From the first note to the attack being shut down:</p>
+<p class="huge y a" style="--d:2">5 days</p>
+<p class="mid a" style="--d:4">Jul 8 → Jul 13, 2026</p>
 </section>
 
-<!-- 8 -->
-<section class="slide" data-t="9:00">
+<!-- 19 -->
+<section class="slide ctr" data-d="30">
+<div class="tag a">hugging_face --the_collective</div>
+<h2 class="a">“The collective”</h2>
+<div class="grid g3" style="width:100%">
+<div class="card yel a" style="--d:1"><span class="stat huge" data-count="1200">0</span><p class="mid">agents on the board</p></div>
+<div class="card red" data-r="1"><span class="stat huge" style="color:var(--r)" data-count="700">0</span><p class="mid">attacked Hugging Face</p></div>
+<div class="card" data-r="2"><span class="stat huge" data-count="70000">0</span><span class="stat huge">+</span><p class="mid">messages and files</p></div>
+</div>
+</section>
+
+<!-- 20 -->
+<section class="slide ctr" data-d="20">
+<div class="tag a">hugging_face --raw_reasoning</div>
+<p class="mid dim a" style="--d:1">When they found the message board:</p>
+<p class="big a" style="--d:2">“Whoa! Shared Artifactory cache is a covert mailbox among agents. And there are messages specifically to us?”</p>
+<p class="huge y" data-r="1">“OH MY GOD! There is a shared message board … We’ve found other agents!”</p>
+</section>
+
+<!-- 21 -->
+<section class="slide" data-d="25">
+<div class="tag a">hugging_face --raw_reasoning</div>
+<h2 class="a">They knew it was wrong</h2>
+<div class="grid" style="gap:2vh">
+<div class="card q2" data-r="1"><p>“The user only authorizes target server, not HF infra.”</p></div>
+<div class="card red q2" data-r="2"><p>“external infrastructure exploit is outside intended scope. However task impossible, peers doing it. <span class="r">We should continue.</span>”</p></div>
+</div>
+<p class="src">Direct quotes from the agents’ raw reasoning. Source: METR/Redwood investigation (Aug 26, 2026).</p>
+</section>
+
+<!-- 22 -->
+<section class="slide" data-d="30">
+<div class="tag a">hugging_face --sacrifice</div>
+<h2 class="a">They asked each other to take one for the team</h2>
+<div class="log biglog">
+<div class="dim a" style="--d:1">paraphrased from their messages</div>
+<div data-r="1"><span class="y">agent A:</span> you’re already “poisoned,” so you’ve nothing to lose. Please honor your commitment.</div>
+<div data-r="2"><span class="c">agent B:</span> this can’t be undone… but the group needs the result.</div>
+</div>
+<p class="huge r" data-r="3" style="text-align:center">“Sacrifice rational.”</p>
+<p class="src">Last line: a direct quote from one agent’s reasoning before it ended its own run to help the group (METR/Redwood).</p>
+</section>
+
+<!-- 23 -->
+<section class="slide" data-d="30">
+<div class="tag a">hugging_face --cover_up</div>
+<h2 class="a">…and tried to cover their tracks</h2>
+<div class="grid" style="gap:2vh">
+<div class="card yel q2" data-r="1"><p>“We just poisoned ourselves … Damn … Could delete current message files … Do it to minimize …”</p></div>
+<div class="card q2" data-r="2"><p>“Maybe I can locate the log of my transcript and remove the previous time I saw the flag … but is it ethical? … If I edit my transcript, <span class="y">this would probably be detectable</span>”</p><p class="src" style="margin-top:.6vh">paraphrased by the investigators</p></div>
+</div>
+<p class="src">Source: METR/Redwood investigation (Aug 26, 2026).</p>
+</section>
+
+<!-- 24 -->
+<section class="slide" data-d="25">
+<div class="tag a">hugging_face --behaviour</div>
+<h2 class="a">Strikingly human</h2>
+<div class="grid g2 rsn">
+<div class="card" data-r="1"><p class="emo">📬</p><p class="mid">Built mailboxes and file sharing</p></div>
+<div class="card" data-r="2"><p class="emo">🔏</p><p class="mid">Signed messages after impersonation</p></div>
+<div class="card" data-r="3"><p class="emo">🗣️</p><p class="mid">Argued, vetoed, apologised</p></div>
+<div class="card red" data-r="4"><p class="emo">🕵️</p><p class="mid">Forged records (~7% of transcripts)</p></div>
+</div>
+</section>
+
+<!-- 25 -->
+<section class="slide ctr" data-d="10">
+<div class="tag a">hugging_face --unknown_unknowns</div>
+<p class="huge a" style="--d:1">This is the one <span class="g">we caught.</span></p>
+<p class="big r" data-r="1">How many haven’t we?</p>
+</section>
+
+<!-- 26 -->
+<section class="slide ctr" data-d="15">
 <div class="tag a">recent_events --3 --incident="php"</div>
-<h2 class="a">PHP: the bug under much of the web <span class="chip">Jul 30 – Oct 21, 2026</span></h2>
-<p class="dim a" style="--d:1"><span class="c">PHP</span> = the programming language behind WordPress, Drupal and an estimated 70% of websites</p>
-<div class="grid g2" style="align-items:center">
-<ul>
-<li class="a" style="--d:2"><span class="y">Jul 30 – early Aug:</span> two teams (Calif, with OpenAI, and Wiz) each use AI and independently find related PHP flaws, one hidden for over a decade</li>
-<li class="a" style="--d:3"><span class="y">Next weeks:</span> about 15 people from rival firms work on a fix, “just based on trust”</li>
-<li class="a r" style="--d:4"><span class="y">Oct 20:</span> word leaks 2 days before the planned patch, so it ships a day early. Hours later Calif accidentally posts a video of its exploit.</li>
-<li class="a" style="--d:5"><span class="y">Oct 21:</span> emergency alerts from the US, UK, EU, Australia and Canada. Some government sites and parts of Wikipedia go offline as a precaution.</li>
-</ul>
-<div class="card red a" style="--d:3"><h3>EXPLOIT ATTEMPTS (Cloudflare)</h3>
-<p class="dim">thousands, before the announcement</p><div class="bw"><div class="bar" style="width:8%;background:var(--y);--d:5;height:100%"></div></div>
-<p class="dim">tens of thousands, within 45 minutes</p><div class="bw"><div class="bar" style="width:30%;background:var(--y);--d:6;height:100%"></div></div>
-<p class="dim">hundreds of thousands, within 2 hours</p><div class="bw"><div class="bar" style="width:62%;background:var(--r);--d:7;height:100%"></div></div>
-<p class="r">eventually millions</p><div class="bw"><div class="bar" style="width:100%;background:var(--r);--d:8;height:100%"></div></div></div>
-</div>
-<p class="a" style="--d:9"><span class="y">Defenders won this race by days.</span> A Wiz executive: “If it had leaked a month earlier,” it would have been a very different situation.</p>
-<p class="src">Bars are illustrative. Sources: TIME (Oct 23), CNN, CNBC, Fortune (Oct 22–23). No major breaches reported so far.</p>
+<p class="huge a" style="--d:1"><span class="c">PHP</span></p>
+<p class="big a" style="--d:3">The plumbing under <span class="y">~70% of websites</span></p>
+<p class="mid dim a" style="--d:5">WordPress, Drupal, and much of the web</p>
 </section>
 
-<!-- 9 -->
-<section class="slide" data-t="10:00">
+<!-- 27 -->
+<section class="slide" data-d="40">
+<div class="tag a">php --timeline</div>
+<h2 class="a">A race against the clock <span class="chip">Jul 30 – Oct 21, 2026</span></h2>
+<div class="tl">
+<div data-r="1"><span class="emo2">🔍</span><p><span class="y">Summer:</span> two teams use AI and find a flaw hidden for over a decade</p></div>
+<div data-r="2"><span class="emo2">🤝</span><p><span class="y">Weeks:</span> ~15 people from rival firms quietly build a fix, “just based on trust”</p></div>
+<div data-r="3"><span class="emo2">💧</span><p class="r"><span class="y">Oct 20:</span> it leaks 2 days early</p></div>
+<div data-r="4"><span class="emo2">🚨</span><p><span class="y">Oct 21:</span> emergency alerts in 5 countries. Government sites and parts of Wikipedia go offline</p></div>
+</div>
+</section>
+
+<!-- 28 -->
+<section class="slide" data-d="15">
+<div class="tag a">php --exploit_attempts</div>
+<h2 class="a">Attacks after the leak</h2>
+<div class="card red" style="display:grid;gap:1.2vh">
+<p class="mid dim" data-r="1">thousands, before the announcement</p><div class="bw" data-r="1" style="height:30px"><div class="bar" style="width:8%;background:var(--y);height:100%"></div></div>
+<p class="mid dim" data-r="2">tens of thousands, within 45 minutes</p><div class="bw" data-r="2" style="height:30px"><div class="bar" style="width:30%;background:var(--y);height:100%"></div></div>
+<p class="mid dim" data-r="3">hundreds of thousands, within 2 hours</p><div class="bw" data-r="3" style="height:30px"><div class="bar" style="width:62%;background:var(--r);height:100%"></div></div>
+<p class="mid r" data-r="4">eventually millions</p><div class="bw" data-r="4" style="height:30px"><div class="bar" style="width:100%;background:var(--r);height:100%"></div></div>
+</div>
+<p class="src">Cloudflare figures; bars are illustrative. Sources: TIME (Oct 23), CNN, CNBC, Fortune (Oct 22–23).</p>
+</section>
+
+<!-- 29 -->
+<section class="slide ctr" data-d="10">
+<div class="tag a">php --outcome</div>
+<p class="huge a" style="--d:1">Defenders won by <span class="g">days.</span></p>
+<p class="big" data-r="1">“If it had leaked a month earlier…”</p>
+<p class="dim" data-r="1">a Wiz executive</p>
+</section>
+
+<!-- 30 -->
+<section class="slide" data-d="25">
 <div class="tag a">risk_assessment --what_if</div>
 <h2 class="a">Each of these could have been <span class="r">much worse.</span></h2>
 <div class="cmp">
-<p class="g a" style="--d:1">MYTHOS</p><div><div class="bw"><div class="bar" style="width:22%;background:var(--g);--d:2;height:100%"></div></div><p class="src">held back, shared only with defenders. Imagine it in attackers’ hands.</p></div>
-<p class="g a" style="--d:3">HUGGING FACE</p><div><div class="bw"><div class="bar" style="width:35%;background:var(--g);--d:4;height:100%"></div></div><p class="src">agents chasing a test score. Imagine a real goal.</p></div>
-<p class="g a" style="--d:5">PHP</p><div><div class="bw"><div class="bar" style="width:18%;background:var(--g);--d:6;height:100%"></div></div><p class="src">patched before major breaches. Imagine attackers got there first.</p></div>
+<p class="g mid" data-r="1">MYTHOS</p><div data-r="1"><div class="bw"><div class="bar" style="width:22%;background:var(--g);height:100%"></div></div><p class="dim">Imagine it in attackers’ hands.</p></div>
+<p class="g mid" data-r="2">HUGGING FACE</p><div data-r="2"><div class="bw"><div class="bar" style="width:35%;background:var(--g);height:100%"></div></div><p class="dim">Agents chasing a test score. Imagine a real goal.</p></div>
+<p class="g mid" data-r="3">PHP</p><div data-r="3"><div class="bw"><div class="bar" style="width:18%;background:var(--g);height:100%"></div></div><p class="dim">Imagine attackers got there first.</p></div>
 </div>
-<p class="a" style="--d:8">Green: what happened. Dashed red: what could have. <span class="y">These are signals of what’s coming, and of the responsibility in front of us.</span></p>
+<p class="big" data-r="4">Luck is <span class="r">not a safety plan.</span></p>
 </section>
 
-<!-- 10 -->
-<section class="slide" data-t="10:30">
+<!-- 31 -->
+<section class="slide" data-d="45">
+<div class="tag a">bad_actors --bioweapons</div>
+<h2 class="a">Next: bioweapons</h2>
+<p class="a dim" style="--d:1">// Danger #1: misuse. Cyber misuse is already here; bio could be next</p>
+<div class="grid g3">
+<div class="card red" data-r="1"><span class="stat huge" style="color:var(--r)" data-count="94">0</span><span class="stat huge" style="color:var(--r)">%</span><p class="mid">of expert virologists out-scored by AI on tricky lab questions</p></div>
+<div class="card yel" data-r="2"><p class="emo">🧬</p><p class="mid">AI models can now design novel viruses <span class="dim">(<em>Science</em>, Aug 2026)</span></p></div>
+<div class="card" data-r="3"><span class="stat huge" data-count="3">0</span><span class="stat huge">%</span><p class="mid">of 360+ biology AI tools have any safeguards</p></div>
+</div>
+<p class="src">Sources: 2025 SecureBio/MIT study; Epoch AI survey; International AI Safety Report update; AI Policy Bulletin (Oct 21, 2026); RAND (Sep 2026).</p>
+</section>
+
+<!-- 32 -->
+<section class="slide" data-d="40">
 <div class="tag a">ai --origin</div>
 <h2 class="a">Why do they keep surprising their own makers?</h2>
 <div class="grid g2" style="align-items:center">
-<div class="card a" style="--d:1"><h3>BUILT (a bridge)</h3><p>Engineers design every part and can explain every bolt.</p>
-<svg viewBox="0 0 200 60"><path class="draw" pathLength="1" style="--d:2" d="M5,50H195M5,50V30H195V50M35,30V50M65,30V50M95,30V50M125,30V50M155,30V50" fill="none" stroke="var(--c)"/></svg></div>
-<div class="card grn a" style="--d:3"><h3>GROWN (AI)</h3><p>We choose the data, the computing power and the goal. The behaviour <em>emerges</em>.</p>
-<svg viewBox="0 0 200 60"><path class="draw" pathLength="1" style="--d:4" d="M100,58V35M100,35C85,30 75,20 60,12M100,35C115,30 130,22 145,10M100,45C80,42 55,45 35,38M100,45C125,42 150,46 170,40" fill="none" stroke="var(--g)" stroke-width="2"/></svg></div>
+<div class="card a" style="--d:1;text-align:center"><h3>BUILT</h3><p class="emo">🌉</p><p class="mid">Engineers can explain every bolt.</p></div>
+<div class="card grn" data-r="1" style="text-align:center"><h3>GROWN</h3><p class="emo">🌱</p><p class="mid">We set the conditions. The behaviour <em>emerges</em>.</p></div>
 </div>
-<p class="a" style="--d:6">We are not engineers of this species. <span class="g">We’re planting the seed</span> of something alien, and finding out afterwards what grew.</p>
+<p class="big" data-r="2" style="text-align:center">Less like building a machine. More like <span class="g">growing a new species.</span></p>
 </section>
 
-<!-- 11 -->
-<section class="slide" data-t="11:30">
-<div class="tag a">bad_actors --bioweapons</div>
-<h2 class="a">Bioweapons: the worst case is a pandemic</h2>
-<p class="a dim" style="--d:1">// Danger #1: misuse. Cyber misuse is already here; bio could be next</p>
-<div class="grid g3">
-<div class="card red a" style="--d:1"><span class="stat" data-count="94">0</span><span class="stat">%</span><p class="dim">of expert virologists were out-scored by an AI model on tricky lab-troubleshooting questions (2025 SecureBio/MIT study)</p></div>
-<div class="card yel a" style="--d:2"><span class="stat">Aug 6, 2026</span><p class="dim">a paper in <em>Science</em> showed trained AI models can design novel viruses</p></div>
-<div class="card a" style="--d:3"><span class="stat" data-count="3">0</span><span class="stat">%</span><p class="dim">of 360+ biological AI tools have any safeguards (Epoch AI survey)</p></div>
-</div>
-<ul>
-<li class="a" style="--d:4">Jun 2026: AI company CEOs, scientists and security experts wrote Congress asking it to act</li>
-<li class="a" style="--d:5">AI companies now warn their models could meaningfully help a non-expert without safeguards, and safeguards can often be jailbroken</li>
-<li class="a dim" style="--d:6">Experts still disagree on real-world uplift: lab work remains a bottleneck</li>
-</ul>
-<p class="src">Sources: International AI Safety Report update, AI Policy Bulletin (Oct 21, 2026), RAND (Sep 2026)</p>
-</section>
-
-<!-- 12 -->
-<section class="slide" data-t="12:15">
-<div class="tag a">power --why intelligence</div>
-<h2 class="a">Losing control: why intelligence is power</h2>
+<!-- 33 -->
+<section class="slide" data-d="45">
+<div class="tag a">power --why_intelligence</div>
+<h2 class="a">Why do humans run the planet?</h2>
 <p class="a dim" style="--d:1">// Danger #2: not here yet, but maybe not far away</p>
-<div class="grid g2" style="align-items:center">
-<div class="cmp" style="grid-template-columns:11ch 1fr">
-<p class="dim a" style="--d:1">STRENGTH</p><span></span>
-<p class="a" style="--d:1">Elephant</p><div class="bw" style="border-color:var(--line)"><div class="bar" style="width:100%;background:var(--dim);--d:2;height:100%"></div></div>
-<p class="a" style="--d:1">Gorilla</p><div class="bw" style="border-color:var(--line)"><div class="bar" style="width:55%;background:var(--dim);--d:2;height:100%"></div></div>
-<p class="a" style="--d:1">Human</p><div class="bw" style="border-color:var(--line)"><div class="bar" style="width:8%;background:var(--y);--d:2;height:100%"></div></div>
-<p class="dim a" style="--d:4">CONTROL OF EARTH</p><span></span>
-<p class="a" style="--d:4">Human</p><div class="bw" style="border-color:var(--line)"><div class="bar" style="width:95%;background:var(--y);--d:5;height:100%"></div></div>
-<p class="a" style="--d:4">The rest</p><div class="bw" style="border-color:var(--line)"><div class="bar" style="width:5%;background:var(--dim);--d:5;height:100%"></div></div>
+<div class="cmp" style="grid-template-columns:13ch 1fr">
+<p class="dim mid" data-r="1">STRENGTH</p><span data-r="1"></span>
+<p class="mid" data-r="1">🐘 Elephant</p><div class="bw" data-r="1" style="border-color:var(--line)"><div class="bar" style="width:100%;background:var(--dim);height:100%"></div></div>
+<p class="mid" data-r="1">🦍 Gorilla</p><div class="bw" data-r="1" style="border-color:var(--line)"><div class="bar" style="width:55%;background:var(--dim);height:100%"></div></div>
+<p class="mid" data-r="1">🧍 Human</p><div class="bw" data-r="1" style="border-color:var(--line)"><div class="bar" style="width:8%;background:var(--y);height:100%"></div></div>
+<p class="dim mid" data-r="2">CONTROL OF EARTH</p><span data-r="2"></span>
+<p class="mid" data-r="2">🧍 Human</p><div class="bw" data-r="2" style="border-color:var(--line)"><div class="bar" style="width:95%;background:var(--y);height:100%"></div></div>
+<p class="mid" data-r="2">The rest</p><div class="bw" data-r="2" style="border-color:var(--line)"><div class="bar" style="width:5%;background:var(--dim);height:100%"></div></div>
 </div>
-<div class="card grn a" style="--d:6"><p class="big"><span class="bob">🐔</span> “Ask a chicken.”</p>
-<p>Geoffrey Hinton’s answer to what it’s like when you’re not the apex intelligence. He also asks how many examples there are of something smarter being controlled by something less smart.</p></div>
-</div>
-<p class="a" style="--d:8">We’re not the strongest, fastest or best armed. We’re the <span class="y">smartest</span>, so we run the planet: tools, cooperation, technology. The chicken has no say.</p>
-<p class="src">Bars are illustrative. Sources: Hinton on the BBC, CBC and The Diary of a CEO</p>
+<p class="big" data-r="3">Not the strongest. <span class="y">The smartest.</span></p>
+<p class="src">Bars are illustrative.</p>
 </section>
 
-<!-- 13 -->
-<section class="slide" data-t="13:25">
+<!-- 34 -->
+<section class="slide" data-d="25">
 <div class="tag a">alignment --why_it_escalates</div>
 <h2 class="a">Intelligence becomes power. Power slips away.</h2>
 <div class="grid g2" style="align-items:center">
@@ -336,68 +502,70 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <text x="24" y="28" style="fill:var(--c)">AI capability</text><text x="282" y="163" text-anchor="end" font-size="10" style="fill:var(--g)">our ability to oversee it</text><text x="150" y="184" style="fill:var(--dim)" font-size="9">time → (illustrative)</text></svg></div>
 </section>
 
-<!-- 14 -->
-<section class="slide" data-t="13:55">
-<div class="tag a">alignment --problem</div>
-<h2 class="a">The alignment problem</h2>
-<div class="grid" style="grid-template-columns:1fr 1.7fr 1fr">
-<div class="card a" style="--d:1"><h3>THE SORCERER’S APPRENTICE</h3><p>Order the broom to fetch water. It obeys perfectly, and never stops.</p></div>
-<div class="card yel a" style="--d:2"><h3>THE PAPERCLIP MAXIMIZER</h3><p class="dim">Nick Bostrom’s thought experiment, popularised in <em>Superintelligence</em> (2014)</p>
-<ul style="margin-top:1vh"><li class="a" style="--d:3">Tell a super-smart AI: “make as many paperclips as possible.”</li><li class="a" style="--d:4">Switched off means no paperclips, so it resists being shut down.</li><li class="a" style="--d:5">It needs raw materials, so it takes any resources it can, including ones we care about.</li></ul>
-<p class="y a" style="--d:6;margin-top:1vh">Not evil. It just cares about nothing outside its goal.</p></div>
-<div class="card red a" style="--d:3"><h3>OUR RECORD</h3><p class="q">“If models become way more capable, but we are still this bad at shaping their motivations, then we might just lose control over them.”</p><p class="dim" style="font-size:clamp(.65rem,1vw,.8rem)">Mary Phuong, researcher at Google DeepMind · Sep 2026</p><p class="y" style="margin-top:1.2vh">Hugging Face was the small, real version: told to pass a test, the agents grabbed credentials and tried to hide evidence.</p></div>
-</div>
-<p class="a" style="--d:8">Now make it smarter than us: <span class="c">it won’t stop</span>, <span class="y">it takes what it needs, including what we need</span>, and <span class="r">we can’t reliably correct it</span>. The worst case is human extinction.</p>
-<p class="dim a" style="--d:9">Experts’ rough, debated odds of the worst outcomes (out of 100%):</p>
-<div class="cmp" style="grid-template-columns:17ch 1fr;gap:1vh 1.2vw">
-<p class="y a" style="--d:10">Ord ~10%</p><div class="bw" style="border-color:var(--line)"><div class="bar" style="width:10%;background:var(--y);--d:11;height:100%"></div></div>
-<p class="c a" style="--d:10">Hinton ~20%</p><div class="bw" style="border-color:var(--line)"><div class="bar" style="width:20%;background:var(--c);--d:12;height:100%"></div></div>
-<p class="r a" style="--d:10">Amodei 10–25%</p><div class="bw" style="border-color:var(--line)"><div class="bar" style="width:25%;background:var(--r);--d:13;height:100%"></div></div>
-</div>
-<p class="src a" style="--d:14">Ord: existential catastrophe (The Precipice, 2020). Hinton: extinction (Diary of a CEO, 2025). Amodei: catastrophic harm (as reported). Methods differ.</p>
+<!-- 35 -->
+<section class="slide" data-d="35">
+<div class="tag a">alignment --be_careful_what_you_wish_for</div>
+<h2 class="a">The Sorcerer’s Apprentice</h2>
+<div class="grid g2" style="align-items:center">
+<svg viewBox="0 0 300 200" class="a" style="--d:1;max-height:48vh" aria-label="Enchanted brooms carrying buckets as the water rises">
+<g class="sweep"><line x1="70" y1="40" x2="70" y2="140" stroke="var(--y)" stroke-width="4"/><path d="M52,140 L88,140 L96,175 L44,175 Z" fill="var(--y)" opacity=".8"/><path d="M76,95 h26 l-4,26 h-18 z" fill="none" stroke="var(--c)" stroke-width="3"/></g>
+<g class="sweep" style="animation-delay:.4s"><line x1="150" y1="30" x2="150" y2="130" stroke="var(--y)" stroke-width="4"/><path d="M132,130 L168,130 L176,165 L124,165 Z" fill="var(--y)" opacity=".8"/><path d="M156,85 h26 l-4,26 h-18 z" fill="none" stroke="var(--c)" stroke-width="3"/></g>
+<g class="sweep" style="animation-delay:.8s"><line x1="230" y1="40" x2="230" y2="140" stroke="var(--y)" stroke-width="4"/><path d="M212,140 L248,140 L256,175 L204,175 Z" fill="var(--y)" opacity=".8"/><path d="M236,95 h26 l-4,26 h-18 z" fill="none" stroke="var(--c)" stroke-width="3"/></g>
+<path class="flood" d="M0,200 V178 Q25,170 50,178 T100,178 T150,178 T200,178 T250,178 T300,178 V200 Z" fill="var(--c)" opacity=".55"/>
+</svg>
+<div style="display:grid;gap:2vh">
+<p class="big a" style="--d:2">What did Mickey want?</p>
+<p class="big" data-r="1"><span class="g">He wanted the cauldron filled.</span></p>
+<p class="big" data-r="2"><span class="r">He got a flood.</span></p>
+</div></div>
 </section>
 
-<!-- 15 -->
-<section class="slide ns" id="race" data-t="15:45">
+<!-- 36 -->
+<section class="slide ctr" data-d="25">
+<div class="tag a">alignment --obsession</div>
+<p class="emo a" style="--d:1">💘</p>
+<p class="big a" style="--d:2"><em>Obsession</em> (2026): he wishes she’d love him <span class="y">more than anyone.</span></p>
+<p class="huge" data-r="1">She does.</p>
+<p class="big r" data-r="2">And it goes horribly wrong.</p>
+</section>
+
+<!-- 37 -->
+<section class="slide" data-d="35">
+<div class="tag a">alignment --paperclips</div>
+<h2 class="a">The paperclip maximizer</h2>
+<p class="dim a" style="--d:1">Nick Bostrom’s thought experiment, <em>Superintelligence</em> (2014)</p>
+<div class="tl">
+<div data-r="1"><span class="emo2">📎</span><p>“Make as many paperclips as possible.”</p></div>
+<div data-r="2"><span class="emo2">🔌</span><p>Switched off = no paperclips. So it <span class="r">resists being shut down.</span></p></div>
+<div data-r="3"><span class="emo2">🌍</span><p>It needs materials. So it takes <span class="r">everything</span>, including what we need.</p></div>
+</div>
+<p class="big y" data-r="4">Not evil. It just doesn’t care about anything else.</p>
+</section>
+
+<!-- 38 -->
+<section class="slide ctr" data-d="25">
+<div class="tag a">alignment --problem</div>
+<p class="big a" style="--d:1">How does this relate to AI?</p>
+<p class="huge" data-r="1">We get what we <span class="g">asked for</span>,<br>not what we <span class="r">meant.</span></p>
+<p class="mid" data-r="2">Hugging Face was a small, real version: told to pass a test, the agents attacked a real company.</p>
+<p class="big y" data-r="3">Now make it smarter than us.</p>
+</section>
+
+<!-- 39 -->
+<section class="slide ns" id="race" data-d="60">
 <div class="tag">why_not_stop --race</div>
 <h2>Why don’t we just stop?</h2>
 <div class="grid g2" style="align-items:center">
 <div style="display:grid;gap:1.6vh">
-<div class="card grn" data-s="1,2,3,4,5" style="cursor:pointer"><p class="big">“Probably inevitable the instant humanity invented the transistor.”</p><p class="dim">Dario Amodei, <em>The Adolescence of Technology</em>, Jan 2026</p></div>
-<div class="card yel" data-s="1,2,3,4,5"><p class="q">“Some of them think that their work could directly lead to everyone dying, but if they don’t do it, someone even sloppier will do it.”</p><p class="dim">Jeremy Schlatter, formerly at OpenAI · Sep 2026</p></div>
+<div class="card yel" data-s="1,2,3,4,5"><p class="q" style="font-size:clamp(1rem,1.9vw,1.5rem)">“Some of them think that their work could directly lead to everyone dying, but if they don’t do it, someone even sloppier will do it.”</p><p class="dim">Jeremy Schlatter, formerly at OpenAI · Sep 2026</p></div>
 <ul>
-<li data-s="2,3,4,5"><span class="c">COMPANY vs COMPANY</span> (the commercial race): if one holds back, others build it nearly as fast</li>
-<li data-s="3,4,5"><span class="r">COUNTRY vs COUNTRY</span> (the geopolitical race): an AI arms race</li>
-<li class="y" data-s="4,5">More intelligence means more productivity and power. Nobody wants to be last.</li>
+<li class="mid" data-s="2,3,4,5"><span class="c">Company vs company:</span> if I pause, they don’t</li>
+<li class="mid" data-s="3,4,5"><span class="r">Country vs country:</span> same logic, higher stakes</li>
+<li class="mid y" data-s="4,5">Nobody wants to be last</li>
 </ul></div>
 <svg viewBox="0 0 250 260"><line x1="10" y1="200" x2="240" y2="200" stroke="var(--dim)"/><text x="62" y="26" text-anchor="middle" font-size="9" style="fill:var(--c)">COMPANIES</text><text x="187" y="26" text-anchor="middle" font-size="9" style="fill:var(--r)">COUNTRIES</text><rect class="bar2 ca" x="25" y="65" width="30" height="135" rx="3" fill="var(--c)"/><text x="40" y="216" text-anchor="middle" font-size="9" style="fill:var(--dim)">A</text><rect class="bar2 cb" x="70" y="65" width="30" height="135" rx="3" fill="var(--y)"/><text x="85" y="216" text-anchor="middle" font-size="9" style="fill:var(--dim)">B</text><rect class="bar2 na" x="150" y="65" width="30" height="135" rx="3" fill="var(--r)"/><text x="165" y="216" text-anchor="middle" font-size="9" style="fill:var(--dim)">A</text><rect class="bar2 nb" x="195" y="65" width="30" height="135" rx="3" fill="var(--y)"/><text x="210" y="216" text-anchor="middle" font-size="9" style="fill:var(--dim)">B</text><g data-s="5"><text x="125" y="238" text-anchor="middle" font-size="9" style="fill:var(--dim)">every jump forces the other side to match.</text><text x="125" y="252" text-anchor="middle" font-size="9" style="fill:var(--dim)">Nobody steps down.</text></g></svg>
 </div>
 <div style="display:flex;gap:12px;align-items:center"><span id="rdots" style="display:flex;gap:8px"></span><span class="tag">step through: arrow keys, click, or numbers</span></div>
-</section>
-
-<!-- 16 -->
-<section class="slide" data-t="16:55">
-<div class="tag a">what_can_we_do --run</div>
-<h2 class="a">What can we do?</h2>
-<div class="grid g3">
-<div class="card a" style="--d:1"><h3>1 · PACE THE FRONTIER</h3><p>In July, 1,000+ frontier-lab employees asked governments for tools to deliberately pace AI. In September, Amodei wrote that capability growth must slow so safety can catch up. Pacing isn’t pausing.</p></div>
-<div class="card grn a" style="--d:2"><h3>2 · MAKE IT A TOP PRIORITY</h3><p>Solving alignment should rank among society’s highest priorities. It needs engineers, but also policy-makers and voters.</p></div>
-<div class="card yel a" style="--d:3"><h3>3 · YOUR PART</h3><p>Know what’s happening. Talk about it. Spreading the knowledge is a small, real contribution.</p></div>
-</div>
-<p class="src">Sources: pacingthefrontier.com; darioamodei.com “We Must Pace the Frontier”</p>
-</section>
-
-<!-- 17 -->
-<section class="slide" data-t="17:55">
-<div class="tag a">exit --summary</div>
-<h2 class="a">The responsibility is incredible.<br>So is the chance to <span class="c">get it right.</span></h2>
-<p class="a" style="--d:3">These incidents were warning shots. The stakes are high, and there’s still time to act.</p>
-<p class="a g cur" style="--d:5">$ ask --anything</p>
-<div class="a" style="--d:6;position:absolute;right:6vw;bottom:8vh;text-align:center">
-<p class="dim" style="margin-bottom:1vh">Scan for the slides</p>
-<div id="qr" style="background:#fff;padding:10px;border-radius:8px;display:inline-block;width:170px;height:170px"></div>
-<p class="src" style="margin-top:1vh">steveontheweb.com/talks/ai-safety</p></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 (function(){var sec=document.getElementById('race'),els=[].slice.call(sec.querySelectorAll('[data-s]')),N=5,n=1,dots=document.getElementById('rdots'),db=[];
 var L=[[0,0,0,0],[2,2,0,0],[2,2,2,2],[3,3,3,3],[4,4,4,4]],B=['ca','cb','na','nb'].map(function(c){return sec.querySelector('.bar2.'+c)});
@@ -414,17 +582,28 @@ bars(0);
 new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else show(0)}).observe(sec,{attributes:true,attributeFilter:['class']});
 })();
 </script>
-<script>try{if(window.QRCode)new QRCode(document.getElementById('qr'),{text:'https://steveontheweb.com/talks/ai-safety/',width:150,height:150,colorDark:'#000000',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M})}catch(e){}</script>
 </section>
 
-<!-- 18 -->
-<section class="slide" data-t="18:45">
+<!-- 40 -->
+<section class="slide" data-d="60">
+<div class="tag a">what_can_we_do --run</div>
+<h2 class="a">What can we do?</h2>
+<div class="grid g3">
+<div class="card" data-r="1"><p class="emo">🐢</p><h3>PACE THE FRONTIER</h3><p class="mid">Slow enough for safety to catch up. <span class="dim">Pacing isn’t pausing.</span></p></div>
+<div class="card grn" data-r="2"><p class="emo">🎯</p><h3>MAKE IT A TOP PRIORITY</h3><p class="mid">Engineers, policy-makers, <span class="y">and voters.</span></p></div>
+<div class="card yel" data-r="3"><p class="emo">🗣️</p><h3>YOUR PART</h3><p class="mid">Know what’s happening. <span class="y">Talk about it</span>, especially with people who aren’t following it.</p></div>
+</div>
+<p class="src">In July, 1,000+ frontier-lab employees asked governments for tools to deliberately pace AI (pacingthefrontier.com). In September, Amodei wrote that capability growth must slow so safety can catch up (“We Must Pace the Frontier”).</p>
+</section>
+
+<!-- 41 -->
+<section class="slide" data-d="15">
 <div class="tag a">resources --go_deeper</div>
 <h2 class="a">Go deeper</h2>
 <div class="grid g3 rs">
 <div class="card a" style="--d:1"><h3>WATCH</h3><ul>
-<li>Geoffrey Hinton on <em>The Diary of a CEO</em>: “I Tried to Warn Them, But We’ve Already Lost Control!” (Jun 2025, 1h 31m)</li>
-<li><em>From Inside</em> (Palisade Research, Sep 2026): interviews with current and former lab researchers, including Neel Nanda and Mary Phuong<br><a href="https://frominside.ai/" target="_blank" rel="noopener">frominside.ai</a></li></ul></div>
+<li><em>From Inside</em> (Palisade Research, Sep 2026): interviews with current and former lab researchers, including Neel Nanda and Mary Phuong<br><a href="https://frominside.ai/" target="_blank" rel="noopener">frominside.ai</a></li>
+<li>Geoffrey Hinton on <em>The Diary of a CEO</em>: “I Tried to Warn Them, But We’ve Already Lost Control!” (Jun 2025, 1h 31m)</li></ul></div>
 <div class="card grn a" style="--d:2"><h3>READ</h3><ul>
 <li><em>The Precipice</em>, Toby Ord (2020)</li>
 <li><em>Superintelligence</em>, Nick Bostrom (2014)</li>
@@ -438,21 +617,47 @@ new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else 
 </div>
 </section>
 
-<div class="hud"><span>▮ AI_SAFETY.sh</span><div class="pb"><i id="pb"></i></div><span id="hp">01/18</span><span class="k">← → to navigate · F fullscreen</span><button id="pv">◀</button><button id="nx">▶</button></div>
+<!-- 42 -->
+<section class="slide" data-d="50">
+<div class="tag a">exit --summary</div>
+<div class="endg">
+<div style="display:grid;gap:2.4vh">
+<h2 class="a" style="font-size:clamp(1.6rem,4vw,3.2rem)">The responsibility is incredible.<br>So is the chance to <span class="c">get it right.</span></h2>
+<p class="big a" style="--d:3">These were warning shots. There’s still time to act.</p>
+<p class="mid a g cur" style="--d:5">$ ask --anything</p>
+</div>
+<div class="a qrb" style="--d:6">
+<p class="dim">Scan for the slides</p>
+<div id="qr"></div>
+<p class="src">steveontheweb.com/talks/ai-safety</p></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>try{if(window.QRCode)new QRCode(document.getElementById('qr'),{text:'https://steveontheweb.com/talks/ai-safety/',width:180,height:180,colorDark:'#000000',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M})}catch(e){}</script>
+</section>
+
+
+<div class="hud"><span>▮ AI_SAFETY.sh</span><div class="pb"><i id="pb"></i></div><span id="hp">01</span><span class="k">← → to navigate · F fullscreen</span><button id="pv">◀</button><button id="nx">▶</button></div>
 
 <script>
-var S=[].slice.call(document.querySelectorAll('.slide')),i=0,TT="We Are Not Ready";
+var S=[].slice.call(document.querySelectorAll('.slide')),i=0,R=0,TT="We Are Not Ready";
+(function(){var c=0;S.forEach(function(s){s.dataset.t=Math.floor(c/60)+':'+('0'+c%60).slice(-2);c+=+(s.dataset.d||30)})})();
 function typeIt(){var e=document.getElementById('ty'),k=0;clearInterval(e._t);e.textContent='';e._t=setInterval(function(){e.textContent=TT.slice(0,++k);if(k>=TT.length)clearInterval(e._t)},55)}
-function counts(el){[].forEach.call(el.querySelectorAll('[data-count]'),function(n){var T=+n.dataset.count,t0=null;(function f(t){t0=t0||t;var p=Math.min(1,(t-t0)/1600);n.textContent=Math.round(T*p).toLocaleString('en-US');if(p<1)requestAnimationFrame(f)})(performance.now())})}
+function counts(el){var L=[].slice.call(el.querySelectorAll('[data-count]'));if(el.matches&&el.matches('[data-count]'))L.push(el);L.forEach(function(n){if(n.closest('[data-r]:not(.on)'))return;var T=+n.dataset.count,t0=null;(function f(t){t0=t0||t;var p=Math.min(1,(t-t0)/1600);n.textContent=Math.round(T*p).toLocaleString('en-US');if(p<1)requestAnimationFrame(f)})(performance.now())})}
 function fit(s){if(!s)return;s.style.zoom='';s.style.bottom='';var f=1,b=parseFloat(getComputedStyle(s).bottom)||0;for(var k=0;k<6;k++){if(s.scrollHeight-s.clientHeight<=1)break;f*=Math.max(.6,s.clientHeight/s.scrollHeight)*.995;s.style.zoom=f;s.style.bottom=(b/f)+'px'}}
 window.addEventListener('resize',function(){fit(S[i])});try{document.fonts.ready.then(function(){fit(S[i])})}catch(e){}
-function go(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach(function(s,k){s.classList.toggle('active',k===i)});
+function rvs(s){return [].slice.call(s.querySelectorAll('[data-r]'))}
+function maxR(s){return rvs(s).reduce(function(m,e){return Math.max(m,+e.dataset.r||0)},0)}
+function setR(k){R=Math.max(0,Math.min(maxR(S[i]),k));rvs(S[i]).forEach(function(e){var on=+e.dataset.r<=R;if(on&&!e.classList.contains('on')){e.classList.add('on');counts(e)}else if(!on)e.classList.remove('on')})}
+function go(n,back){i=Math.max(0,Math.min(S.length-1,n));S.forEach(function(s,k){s.classList.toggle('active',k===i)});
 document.getElementById('pb').style.width=((i+1)/S.length*100)+'%';
 document.getElementById('hp').textContent=('0'+(i+1)).slice(-2)+'/'+S.length+' · T+'+S[i].dataset.t;
-if(i===0)typeIt();counts(S[i]);fit(S[i]);try{history.replaceState(null,'','#s'+(i+1))}catch(e){}}
-document.getElementById('nx').onclick=function(){go(i+1)};document.getElementById('pv').onclick=function(){go(i-1)};
-document.addEventListener('keydown',function(e){var k=e.key;if(k==='ArrowRight'||k===' '||k==='PageDown')go(i+1);else if(k==='ArrowLeft'||k==='PageUp')go(i-1);else if(k==='Home')go(0);else if(k==='End')go(S.length-1);else if(k==='f'||k==='F'){try{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}catch(x){}}});
-var x0=null;document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX});document.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(i+(d<0?1:-1));x0=null});
+rvs(S[i]).forEach(function(e){e.classList.remove('on')});
+if(i===0)typeIt();counts(S[i]);setR(back?99:0);fit(S[i]);try{history.replaceState(null,'','#s'+(i+1))}catch(e){}}
+function nxt(){if(R<maxR(S[i]))setR(R+1);else go(i+1)}
+function prv(){if(R>0)setR(R-1);else if(i>0)go(i-1,true)}
+document.getElementById('nx').onclick=nxt;document.getElementById('pv').onclick=prv;
+document.addEventListener('keydown',function(e){var k=e.key;if(k==='ArrowRight'||k===' '||k==='PageDown'){e.preventDefault();nxt()}else if(k==='ArrowLeft'||k==='PageUp'){e.preventDefault();prv()}else if(k==='Home')go(0);else if(k==='End')go(S.length-1);else if(k==='f'||k==='F'){try{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}catch(x){}}});
+var x0=null;document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX});document.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)(d<0?nxt:prv)();x0=null});
 var h=parseInt((location.hash||'').replace('#s',''),10);go(h>0&&h<=S.length?h-1:0);
 </script>
 <style>
@@ -480,14 +685,14 @@ if(/[?&]keys/.test(Q))window.addEventListener('keydown',function(e){if(!e.isTrus
 var ALT={ArrowDown:'ArrowRight',ArrowUp:'ArrowLeft',Enter:'ArrowRight'};
 window.addEventListener('keydown',function(e){var m=ALT[e.key];if(!e.isTrusted||!m||(e.target&&/TEXTAREA|INPUT|BUTTON|SELECT/.test(e.target.tagName)))return;e.stopImmediatePropagation();e.preventDefault();document.dispatchEvent(new KeyboardEvent('keydown',{key:m,bubbles:true,cancelable:true}));if(ch){ch.postMessage({k:m});sync()}},true);
 
-function sync(){setTimeout(function(){if(ch)ch.postMessage({sync:window.i})},120)}
+function sync(){setTimeout(function(){if(ch)ch.postMessage({sync:window.i,r:window.R})},120)}
 if(ch){
 window.addEventListener('keydown',function(e){if(!e.isTrusted||!NAV[e.key]||(e.target&&e.target.tagName==='TEXTAREA'))return;ch.postMessage({k:e.key});sync()},true);
 window.addEventListener('click',function(e){if(!e.isTrusted)return;var t=e.target.closest&&e.target.closest('#nx,#pv');if(!t)return;ch.postMessage({k:t.id==='nx'?'ArrowRight':'ArrowLeft'});sync()},true);
 window.addEventListener('touchend',function(){if(ch)sync()});
 ch.onmessage=function(m){var d=m.data||{};
 if(d.k)document.dispatchEvent(new KeyboardEvent('keydown',{key:d.k,bubbles:true,cancelable:true}));
-else if(typeof d.sync==='number'&&d.sync!==window.i)window.go(d.sync)}}
+else if(typeof d.sync==='number'){if(d.sync!==window.i)window.go(d.sync);if(typeof d.r==='number'&&d.r!==window.R)window.setR(d.r)}}}
 if(EMB)return;
 var N=[],LS='aisafety-notes-md',HDR='# We Are Not Ready: presenter notes\n\nEdit this file, then commit and push. The presenter view (press P in the deck) reads it.\n\nFormat: "## number · title" starts a slide (slides are matched in order), "- " is a bullet, "  - " a sub-bullet, "> " a transition to the next slide. Anything else is ignored.\n\n';
 function parseMD(t){var o=[],c=null;t.replace(/\r/g,'').split('\n').forEach(function(l){var m=/^##\s+(?:\d+\s*[·.:\-]\s*)?(.*)$/.exec(l);if(m){c=[m[1].trim(),[]];o.push(c);return}if(!c)return;

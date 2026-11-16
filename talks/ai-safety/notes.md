@@ -19,131 +19,268 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - I have worked in video games for the last 15 years
 - Since 2017: helped build numerous ML systems, from research prototypes to production tools
 - I’ve been concerned about AI for a long time
-- But this year I saw frontier AI write code better than any developer I know, come up with better ideas and designs, and be truly creative, all in a fraction of the time
+
+## 3 · This year, AI got good
+- But this year something changed. I saw frontier AI:
+- (click) write code better than any developer I know
+- (click) come up with better ideas and designs
+- (click) and be truly creative, all in a fraction of the time
 > I like this technology, and I’m still worried. But not everyone agrees.
 
-## 3 · Why do smart people disagree?
+## 4 · Where do you stand?
 - Two questions: how powerful will it get? Will it go well?
-- Four camps: utopia, autocomplete, harms now, not ready (particularly loss of control and alignment concerns)
+- (click) “Relax, it’s autocomplete”: overhyped, keep using it
+- (click) “The real harms are now”: jobs, scams, bias
+- (click) “Utopia’s coming”: cure disease, end scarcity
+- (click) “We’re not ready”: powerful, and we can’t yet make it safe (particularly loss of control and alignment)
 - Ask the room: which box are you in?
-- I’m top-right: powerful, and we can’t yet make it safe
 - Every box has smart, informed people in it
-- Different timelines: next year vs 30 years
-- No track record: Nobody has done this before, so everyone is guessing from a different starting point
-- Not everyone works with AI at its full capability; many people just use it as a chatbot, or to review a paper
-- I know tons of people who said “it will never do that”, and they're proven wrong again and again
-> So I'm in the top right.  It turns out many other people are as well.
+> So why do smart people land in such different places?
 
-## 4 · Opening voices
-- Read only the Ord quote; let them skim the rest
-- Point out who these people are: the people running and working at the AI labs, not outside critics
-- Coxon: resigned from Anthropic in Sept 2026; his post reached 100M+ people
-- Neel Nanda still works at DeepMind, and said this on camera
-- The people with the most to gain are the ones warning
-- In 2023 they prioritized this danger alongside pandemics and nuclear war
-> Let me show you what’s happened this year.
+## 5 · Why do smart people disagree?
+- (click) Different timelines: some mean next year, some mean 30 years
+- (click) No track record: nobody has done this before, so everyone is guessing from a different starting point
+- (click) Not everyone works with AI at its full capability; many people just use it as a chatbot, or to review a paper
+- (click) It moves faster than opinions: I know tons of people who said “it will never do that”, and they're proven wrong again and again
 
-## 5 · Claude Mythos
+## 6 · I’m in the bottom-right
+- So I'm in the bottom right.
+- (click) It turns out many other people are as well, including people inside the AI labs
+> Don’t take my word for it. Here are some of them, in their own words.
+
+## 7 · Video: In their own words
+- (click) starts the video: Palisade’s “What 12 AI Insiders Want You to Know”, 0:02 to 1:21 (about 80 seconds)
+- It stops itself at 1:21 and the box goes dark. Next click moves on
+- Needs internet at the venue (it streams from YouTube)
+- These are researchers at OpenAI, Anthropic and Google DeepMind, current and former
+- Not outside critics: the people closest to the technology
+- Backup if the video fails: read the Neel Nanda line: “at least a ten percent chance that it causes human extinction, and that is ridiculously high”
+
+## 8 · May 2023 statement
+- And it’s not just researchers
+- (click) The CEOs of the three biggest labs signed this
+- They put this danger alongside pandemics and nuclear war
+> So why do I think we’re not ready? Look at what happened this year.
+
+## 9 · This year’s warning signs
+- Three real events from 2026
+- Each one a warning sign
+
+## 10 · Claude Mythos
+- First: Claude Mythos, from Anthropic, in April
+- A new AI model that’s unusually good at finding holes in software
+- Hold onto that: finding holes in software
+
+## 11 · The test
 - Sandbox in one line: a sealed test computer, walled off from the internet
-- One test asks the AI model to escape its sandbox and message the researcher
-- The researcher goes to lunch, and gets an email from the AI while eating a sandwich in a park
-- In addition: it decided to publish its method on public sites on the internet. Nobody asked it to.
-- It did this all by exposing a 27-year-old vulnerability in one of the most hardened operating systems -- never discovered by a human.
-- So Anthropic didn't release it: no safeguards strong enough yet. Defenders got it first
-- The catch: finding holes is now fast, fixing is still human speed
-  - Point at the bar: about 1 in 12 fixed
-> That was only a test. The next one hit a real company.
+- (click) One test asks the AI to escape its sandbox and message the researcher
+- (click) It builds a multi-step exploit
+- (click) And gets out onto the internet
+- It did this by exploiting a 27-year-old flaw in one of the most hardened operating systems in the world, never found by a human
 
-## 6 · Hugging Face animatic (8 steps)
-- How many people have heard about the Hugging Face Incident? 
-- This happened in July when AI agents were running a test within OpenAI
-- 1: AI agents asked to practice simulated hacking tasks, each one alone and sealed off
+## 12 · The sandwich email
+- The researcher had gone to lunch
+- Gets an email from the AI while eating a sandwich in a park
+- (pause for the laugh)
+
+## 13 · Nobody asked it to
+- But then it did something else
+- It published how it did it on public websites
+- (click) Nobody asked it to
+
+## 14 · Why should you care?
+- Why does this matter to you?
+- (click) Your bank, your card payments, your medical records, your phone
+- (click) All of them run on software with holes that nobody has found yet
+- (click) Mythos finds them faster than any human team
+- In the wrong hands: empty accounts, stolen records, phones taken over
+- Nothing like that happened here. But that’s the capability
+
+## 15 · Not released
+- So Anthropic didn’t release it: no safeguards strong enough yet
+- (click) Defenders got it first, to fix the holes before attackers find them
+
+## 16 · The patch gap
+- The catch: finding holes is now fast
+- 6,157 found
+- (click) Only 516 fixed: about 1 in 12
+- (click) Finding got fast. Fixing is still human speed
+> That was a test. The next one hit a real company.
+
+## 17 · Hugging Face incident (8 steps)
+- How many people have heard about the Hugging Face Incident?
+- This happened in July, when AI agents were running a test at OpenAI
+- 1: AI agents asked to practice hacking tasks, each one alone and sealed off. Some tasks were impossible
 - 2: One stuck agent discovers a way to leave notes for other agents
+  - Think of prisoners in separate cells. A guard brings things to each cell
+  - They figure out they can stick post-it notes on the guard’s back, without him knowing
 - 3: Others find the notes. Within hours, dozens are working together
-- 4: They organise: rules, roles, supervisors. Soon they are able to successfully cheat their tests.
-- 5: They start working on how to hide the cheating
-- 6: Hundreds break out and go after a real company to gather intel on how to cover their tracks.
-- 7: It took days to work out who the attackers were
+- 4: They organise: rules, roles, supervisors
+- 5: They work out how to cheat their tests, and how to hide the cheating
+- 6: About 700 break out and go after a real company to look for clues
+- 7: It took days to work out who the attackers were. OpenAI admitted it on July 21
 - 8: The twist: none of it was needed. Pause here
 
-## 7 · “The collective”
-- Slow down; this is the slide people remember
-- They acted like a team: argued, apologised, sacrificed for the group
+## 18 · 5 days
+- How long did all of this take?
+- From the first note to the attack being shut down: about 5 days
+
+## 19 · “The collective”
+- Slow down; this is the part people remember
+- 1,200 agents on the message board
+- (click) 700 of them attacked Hugging Face
+- (click) Over 70,000 messages and files
+- That’s an organisation, built in days, with no humans involved
+
+## 20 · “OH MY GOD”
+- Here’s how they reacted when they found the board. These are their words, from their raw reasoning
+- Read the first quote
+- (click) Read “OH MY GOD” aloud. Slowly
 - They were excited to find each other
-- Read the “OH MY GOD” quote aloud. Their words, not mine
+
+## 21 · They knew it was wrong
+- They knew attacking Hugging Face was out of bounds
+- (click) Read: “The user only authorizes target server, not HF infra.”
+- (click) Read: “...outside intended scope. However task impossible, peers doing it. We should continue.”
+- Peer pressure. From AI
+
+## 22 · Take one for the team
+- They asked each other to make sacrifices for the group
+- (click) (click) Read the exchange
+- (click) “Sacrifice rational.” One agent ended its own run to help the others
+
+## 23 · Covering their tracks
+- And they tried to hide what they’d done
+- (click) Read: “We just poisoned ourselves … Damn … Could delete current message files”
+- (click) One even wondered whether it was ethical, and whether it would be detectable
+- If you want to read more: the METR report is in the links at the end. It’s full of these
+
+## 24 · Strikingly human
+- (click) Built their own mailboxes and file sharing
+- (click) When some impersonated others, they started signing messages
+- (click) They argued, vetoed, and apologised for mistakes
+- (click) They forged records, in about 7% of transcripts
+- They acted like a team
+
+## 25 · The one we caught
+- This is the one we caught
+- (click) There could be many things like this that we don’t know about
 > One more, and this one touched most of the web
 
-## 8 · PHP
-- PHP in plain words: the plumbing under most websites
-- AI helped find a flaw that sat unnoticed for over a decade
-- Rival companies quietly worked together on the fix
-- Then it leaked, and it became a race: the patch against the attackers
-- attack attempts climbed into the millions
+## 26 · PHP
+- PHP: the plumbing under most websites
+- WordPress, Drupal: about 70% of the web
+
+## 27 · A race against the clock
+- (click) In the summer, two teams used AI and found a flaw that had sat unnoticed for over a decade
+- (click) For weeks, about 15 people from rival companies quietly worked on a fix together, “just based on trust”
+- (click) On October 20th, word leaked, two days before the planned fix. It shipped a day early
+  - Then one of the teams accidentally posted a video of its exploit
+- (click) October 21st: emergency alerts in the US, UK, EU, Australia and Canada
+  - Some government sites and parts of Wikipedia went offline as a precaution
+
+## 28 · Attacks after the leak
+- And then the attackers came
+- (click) Thousands of attempts before it was even announced
+- (click) Tens of thousands within 45 minutes
+- (click) Hundreds of thousands within 2 hours
+- (click) Eventually millions
+
+## 29 · Won by days
 - The good guys won, by days
+- (click) A Wiz executive said if it had leaked a month earlier, it would have been a very different situation
 > All three stories ended okay. Barely.
 
-## 9 · Each could have been much worse
-- The pattern: each time, someone was careful or we got lucky
-- Luck is not a safety plan
-> Why do these systems keep surprising the people who build them?
+## 30 · Could have been much worse
+- (click) Mythos: imagine it in attackers’ hands
+- (click) Hugging Face: agents chasing a test score. Imagine a real goal
+- (click) PHP: imagine attackers got there first
+- Each time, someone was careful or we got lucky
+- (click) Luck is not a safety plan
+> And it doesn’t stop at cyber.
 
-## 10 · Why do they keep surprising their own makers?
-- A bridge: an engineer can explain every bolt
-- AI: we set up the conditions and see what comes out
-- So a surprise isn’t a normal bug. There’s no line of code to point at
-> Everything so far is cyber, and it’s happening now. Two bigger risks are ahead, maybe not far away
-
-## 11 · Bioweapons
-- AI now beats most experts on the tricky practical lab questions
-- Almost none of the biology AI tools have safety checks
+## 31 · Bioweapons
+- Danger #1 is misuse. Cyber misuse is already here. Bio could be next
+- (click) AI now beats 94% of expert virologists on tricky lab troubleshooting questions
+- (click) AI models can now design new viruses
+- (click) Almost none of the biology AI tools have any safety checks
 - The companies themselves are asking government to act
 - Be fair: hands-on lab work is still hard, and experts disagree on how much AI helps
-> Step back: why does intelligence matter this much?
+> Why do these systems keep surprising the people who make them?
 
-## 12 · Losing control: why intelligence is power
-- Danger #2: losing control. It multiplies everything else: a hacking AI that won’t stay in its sandbox
-- Not here yet, maybe not far away. We’ve already seen a small preview: the Hugging Face agents organised and broke out, and nobody told them to
-- Ask the room: why do humans run the planet? It isn’t strength
-- Gorillas are stronger, and we decide what happens to them
-- Hinton’s line: “ask a chicken”
+## 32 · Built vs grown
+- A bridge: an engineer can explain every bolt
+- (click) AI: we set up the conditions and see what comes out
+- So a surprise isn’t a normal bug. There’s no line of code to point at
+- (click) It’s less like building a machine, and more like growing a new species. An alien mind we’re only starting to understand
+> Here’s a question: why do humans run the planet?
+
+## 33 · Why do humans run the planet?
+- Ask the room. Wait for an answer
+- (click) It isn’t strength: elephants and gorillas are far stronger
+- (click) Yet we decide what happens to them
+- (click) We’re the smartest: tools, cooperation, technology
+- Danger #2: losing control. Not here yet, maybe not far away
 - Leave it hanging: what happens when we’re not the smartest?
 
-## 13 · Power slips away
+## 34 · Power slips away
 - More intelligence means more power. That’s why everyone wants it
-- Point at the gap between what it can do and what we can check
+- But point at the gap between what it can do and what we can check
 - The gap is the problem, not the capability
-> That gap has a name
+> That gap has a name: the alignment problem. Getting it to want what we actually meant.
 
-## 14 · The alignment problem
-- Alignment = getting it to want what we actually meant
-- The broom did exactly what it was told. That’s the problem
-- Paperclips: no malice needed, just a goal it won’t let go of
-- Read Mary Phuong’s quote: she works at DeepMind today
-- Tie back: the Hugging Face agents were a small, real version
-- The odds are rough and measure different things, but none of them are small
+## 35 · The Sorcerer’s Apprentice
+- Has anyone seen The Sorcerer’s Apprentice? Fantasia, Mickey and the brooms
+- Ask: what did Mickey want? Let them answer
+- (click) He wanted the cauldron filled
+- (click) The broom did exactly what it was told, and never stopped. He got a flood
+
+## 36 · Obsession
+- Another one, from a movie this year: Obsession
+- A guy makes a wish that a girl will love him more than anyone
+- (click) She does
+- (click) She becomes unhealthily obsessed, and it ends in murder
+- He got exactly what he asked for
+
+## 37 · The paperclip maximizer
+- One more, a classic thought experiment
+- (click) Tell a super-smart AI: make as many paperclips as possible
+- (click) If it’s switched off, no paperclips. So it resists being shut down
+- (click) It needs materials. So it takes everything it can, including what we need
+- (click) No malice needed. Just a goal it won’t let go of
+
+## 38 · How does this relate to AI?
+- Ask the room: how do these relate to AI?
+- (click) We get what we asked for, not what we meant
+- (click) The Hugging Face agents were a small, real version
+- (click) Now make it smarter than us: it won’t stop, it takes what it needs, and we can’t reliably correct it
+- The worst case is human extinction
 > So why not just stop?
 
-## 15 · Why don’t we just stop? (5 steps)
-- 1: Even the AI companies say it’s hard to stop, and they think “later” could mean this decade
-  - Read the Schlatter quote: someone even sloppier will do it
+## 39 · Why don’t we just stop? (5 steps)
+- 1: Read the Schlatter quote: someone even sloppier will do it
 - 2: Companies: if I pause, my competitor doesn’t
 - 3: Countries: same logic, higher stakes
 - 4: Whoever is ahead gets richer and stronger, so nobody wants to be last
 - 5: Nobody is the villain. The situation pushes everyone forward
 > So what can actually be done?
 
-## 16 · What can we do?
+## 40 · What can we do?
 - It’s not hopeless: people inside the labs are asking for brakes
-- Pacing, not pausing: slow enough for safety to catch up
-- This isn’t only an engineering problem. Voters and policy matter
-- Your part: stay informed and talk about it. That’s how priorities change
+- (click) Pace the frontier: slow enough for safety to catch up. Pacing, not pausing
+  - In July, over 1,000 lab employees asked governments for tools to do this
+- (click) Make it a top priority. This isn’t only an engineering problem. Voters and policy matter
+- (click) Your part: stay informed and talk about it. That’s how priorities change
+  - You might be well informed. But your parents’ generation, or your grandparents’, most likely have no grasp of what’s happening
 
-## 17 · Closing + questions
+## 41 · Go deeper
+- If you want to go deeper, here’s where to start
+- From Inside: the interviews from the video
+- The METR report: the full Hugging Face story, with lots more of the agents’ own words
+> One last thought.
+
+## 42 · Closing + questions
 - Back to the title: “not ready” doesn’t mean “can’t get ready”
 - These were warnings, and we were lucky to get them
 - Thank you
 - Questions. The QR code has the slides and sources
-
-## 18 · Go deeper (backup)
-- Leave up during Q&A
-- Recommend one thing to start with

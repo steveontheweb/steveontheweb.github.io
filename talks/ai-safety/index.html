@@ -113,6 +113,13 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 .sites{display:flex;gap:.8vw;justify-content:center;margin-top:1vh}.sites span{width:clamp(22px,3.4vw,44px);height:clamp(16px,2.5vw,32px);border:1px solid var(--line);border-top-width:4px;border-radius:4px;opacity:0;animation:hitf .3s ease forwards;animation-delay:calc(var(--k)*.12s + 2.2s)}
 .sites span.on{border-color:#777bb3;background:rgba(119,123,179,.35)}
 .lcmp{grid-template-columns:auto 1fr}.ilab{white-space:nowrap;display:flex;align-items:center;gap:.8vw}.ilab svg,.ilab img{height:clamp(26px,5.5vh,52px);width:clamp(48px,10vh,96px);flex:none;object-fit:contain}
+
+.race2{display:grid;grid-template-columns:auto 1fr;column-gap:1.6vw;row-gap:.5vh;width:min(100%,920px);align-items:center;text-align:left}
+.race2 .rax{position:relative;height:1.5em;font-size:clamp(.7rem,1.1vw,.9rem);color:var(--dim)}.race2 .rax span{position:absolute;top:0;transform:translateX(-50%);white-space:nowrap}
+.race2 .rtrack{position:relative;height:clamp(24px,4.6vh,40px);border-left:1px dashed var(--line);border-right:1px dashed var(--line);background:linear-gradient(90deg,transparent calc(38.46% - 1px),var(--line) calc(38.46% - 1px),var(--line) 38.46%,transparent 38.46%)}
+.race2 .rtrack .bar{position:absolute;top:0;height:100%}
+.race2 .rl{margin:0;font-weight:700;font-size:clamp(1rem,1.9vw,1.5rem);white-space:nowrap}
+.race2 .rcap{margin:0 0 1.6vh;font-size:clamp(.85rem,1.5vw,1.15rem)}
 .flood{animation:fl 6s ease-in-out infinite alternate}@keyframes fl{from{transform:translateY(10px)}to{transform:translateY(-28px)}}
 </style>
 </head>
@@ -444,11 +451,17 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 </section>
 
 <!-- 18 -->
-<section class="slide ctr" data-d="15">
+<section class="slide ctr" data-d="25">
 <div class="tag a">hugging_face --duration</div>
-<p class="mid dim a" style="--d:1">From the first note to the attack being shut down:</p>
-<p class="huge y a" style="--d:2">5 days</p>
-<p class="mid a" style="--d:4">Jul 8 → Jul 13, 2026</p>
+<h2 class="a">Who was faster?</h2>
+<div class="race2 a" style="--d:1">
+<span></span><div class="rax"><span style="left:0;transform:none">Jul 8</span><span style="left:38.46%">Jul 13</span><span style="left:100%;transform:translateX(-100%)">Jul 21</span></div>
+<p class="rl y">🤖 AI</p><div class="rtrack"><div class="bar" style="left:0;width:38.46%;background:var(--y);--d:3"></div></div>
+<span></span><p class="rcap y">5 days: one note → attacking a real company</p>
+<p class="rl r" data-r="1">🧑 Humans</p><div class="rtrack" data-r="1"><div class="bar" style="left:38.46%;width:61.54%;background:var(--r)"></div></div>
+<span data-r="1"></span><p class="rcap r" data-r="1">8 more days, just to work out who did it</p>
+</div>
+<p class="big" data-r="2">The AI moved faster than we could <span class="r">figure out what happened.</span></p>
 </section>
 
 <!-- 19 -->

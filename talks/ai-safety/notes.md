@@ -187,9 +187,12 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - Some got approved. Some got ignored. Some got rejected as bots
 - (click) When that didn’t work, hundreds of them switched to hacking in
 
-## 25 · 5 days
+## 25 · Who was faster?
 - How long did all of this take?
-- From the first note to the attack being shut down: about 5 days
+- From one agent leaving a note to hundreds attacking a real company: 5 days
+- (click) And how long did it take humans to work out what had happened? Another 8 days
+  - Hugging Face announced the attack on July 16 without knowing who it was. OpenAI only confirmed it was its own agents on July 21
+- (click) The AI built and ran the whole thing faster than we could even figure out who did it
 
 ## 26 · “The collective”
 - Slow down; this is the part people remember

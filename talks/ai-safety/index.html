@@ -121,6 +121,9 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 .race2 .rl{margin:0;font-weight:700;font-size:clamp(1rem,1.9vw,1.5rem);white-space:nowrap}
 .race2 .rcap{margin:0 0 1.6vh;font-size:clamp(.85rem,1.5vw,1.15rem)}
 .cmp.nowrap>p{white-space:nowrap;margin:0}
+.chain{display:flex;align-items:center;gap:1.2vw;padding:1.4vh 1.4vw;border-color:var(--line)!important}.chain h3{margin:0;color:var(--fg)}.chain .ci{font-size:clamp(1.6rem,4.4vh,2.6rem);line-height:1}
+.chv{margin:0;text-align:center}.flt{display:inline-block;animation:flt 3s ease-in-out 2s infinite}
+@keyframes flt{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-6px) rotate(4deg)}}
 .flood{animation:fl 6s ease-in-out infinite alternate}@keyframes fl{from{transform:translateY(10px)}to{transform:translateY(-28px)}}
 </style>
 </head>
@@ -586,9 +589,9 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <h2 class="a">Intelligence becomes power. Power slips away.</h2>
 <div class="grid g2" style="align-items:center">
 <div style="display:grid;gap:1.4vh">
-<div class="card a" style="--d:1"><h3>INTELLIGENCE</h3></div><p class="g a" style="--d:2">▼</p>
-<div class="card grn a" style="--d:3"><h3>PRODUCTIVITY &amp; POWER</h3></div><p class="r a" style="--d:4">▼</p>
-<div class="card red a" style="--d:5"><h3>LOSS OF CONTROL</h3></div></div>
+<div class="card chain a" style="--d:1"><span class="ci">🧠</span><h3>INTELLIGENCE</h3></div><p class="dim a chv" style="--d:2">▼</p>
+<div class="card chain a" style="--d:3"><span class="ci">👑</span><h3>POWER</h3></div><p class="dim a chv" style="--d:4">▼</p>
+<div class="card chain a" style="--d:5"><span class="ci flt">🎈</span><h3>LOSS OF CONTROL</h3></div></div>
 <svg viewBox="0 0 300 190" class="a" style="--d:2"><line x1="20" y1="170" x2="285" y2="170" stroke="var(--dim)"/><line x1="20" y1="10" x2="20" y2="170" stroke="var(--dim)"/>
 <path class="draw" pathLength="1" style="--d:3" d="M20,165 C100,155 160,100 280,20" fill="none" stroke="var(--c)" stroke-width="3"/>
 <path class="draw" pathLength="1" style="--d:3" d="M20,165 C120,158 200,140 280,115" fill="none" stroke="var(--g)" stroke-width="3"/>

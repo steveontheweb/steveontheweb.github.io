@@ -22,7 +22,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - ...and I’ve been concerned about AI for a long time
 
 ## 3 · This year, AI got good
-- But this year something changed. I saw frontier AI:
+- And this year, AI got even better. I saw frontier AI:
 - (click) write code better than any developer I know
 - (click) come up with better ideas and designs
 - (click) and be truly creative, in a way I didn't think possible

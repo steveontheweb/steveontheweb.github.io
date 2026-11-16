@@ -43,7 +43,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Different timelines: some mean next year, some mean 30 years
 - (click) No track record: nobody has done this before, so everyone is guessing from a different starting point
 - (click) Not everyone works with AI at its full capability; many people just use it as a chatbot, or to review a paper
-- (click) It moves faster than opinions: I know tons of people who said “it will never do that”, and they're proven wrong again and again
+- (click) The technology is moving very fast: you might have an opinion one day, and then next month change your mind
 
 ## 6 · I’m in the bottom-right
 - So I'm in the bottom right.

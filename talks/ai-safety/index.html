@@ -120,9 +120,9 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <!-- 1 -->
 <section class="slide active" data-d="45">
 <div class="tag a">$ ai_safety --briefing --year=2026</div>
-<h1 id="ty" class="cur"></h1>
-<p class="a" style="--d:8;font-size:clamp(1.1rem,2.6vw,2.1rem);font-weight:700;line-height:1.3;max-width:28ch;color:var(--fg)">AI is advancing faster than our ability to <span class="y">understand or control it</span></p>
-<p class="a" style="--d:10;margin-top:2vh">Steve Middleton · <span class="dim">steveontheweb.com</span></p>
+<h1 id="ty" class="cur" data-r="2"></h1>
+<p data-r="1" style="font-size:clamp(1.1rem,2.6vw,2.1rem);font-weight:700;line-height:1.3;max-width:28ch;color:var(--fg)">AI is advancing faster than our ability to <span class="y">understand or control it</span></p>
+<p class="a" style="--d:2;margin-top:2vh">Steve Middleton · <span class="dim">steveontheweb.com</span></p>
 </section>
 
 <!-- 2 -->
@@ -733,12 +733,12 @@ function fit(s){if(!s)return;s.style.zoom='';s.style.bottom='';var f=1,b=parseFl
 window.addEventListener('resize',function(){fit(S[i])});try{document.fonts.ready.then(function(){fit(S[i])})}catch(e){}
 function rvs(s){return [].slice.call(s.querySelectorAll('[data-r]'))}
 function maxR(s){return rvs(s).reduce(function(m,e){return Math.max(m,+e.dataset.r||0)},0)}
-function setR(k){R=Math.max(0,Math.min(maxR(S[i]),k));rvs(S[i]).forEach(function(e){var on=+e.dataset.r<=R;if(on&&!e.classList.contains('on')){e.classList.add('on');counts(e)}else if(!on)e.classList.remove('on')})}
+function setR(k){R=Math.max(0,Math.min(maxR(S[i]),k));rvs(S[i]).forEach(function(e){var on=+e.dataset.r<=R;if(on&&!e.classList.contains('on')){e.classList.add('on');counts(e);if(e.id==='ty')typeIt()}else if(!on){e.classList.remove('on');if(e.id==='ty'){clearInterval(e._t);e.textContent=''}}})}
 function go(n,back){i=Math.max(0,Math.min(S.length-1,n));S.forEach(function(s,k){s.classList.toggle('active',k===i)});
 document.getElementById('pb').style.width=((i+1)/S.length*100)+'%';
 document.getElementById('hp').textContent=('0'+(i+1)).slice(-2)+'/'+S.length+' · T+'+S[i].dataset.t;
 rvs(S[i]).forEach(function(e){e.classList.remove('on')});
-if(i===0)typeIt();counts(S[i]);setR(back?99:0);fit(S[i]);try{history.replaceState(null,'','#s'+(i+1))}catch(e){}}
+counts(S[i]);setR(back?99:0);fit(S[i]);try{history.replaceState(null,'','#s'+(i+1))}catch(e){}}
 function nxt(){if(R<maxR(S[i]))setR(R+1);else if(i<S.length-1)go(i+1)}
 function prv(){if(R>0)setR(R-1);else if(i>0)go(i-1,true)}
 document.getElementById('nx').onclick=nxt;document.getElementById('pv').onclick=prv;

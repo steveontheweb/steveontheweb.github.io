@@ -9,8 +9,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - My name is Steve
 - Show of Hands: who used an AI tool this week?  Today?
 - Unless you've been living under a rock, probably know that AI influencing more and more of our lives
-- It's my opinion that AI is advancing...
-- and I believe that "We Are Not Ready" for it.
+- (click) It's my opinion that AI is advancing...
+- (click) and I believe that "We Are Not Ready" for it.
 - Today: talk about why I feel this way
   
 ## 2 · Who am I?

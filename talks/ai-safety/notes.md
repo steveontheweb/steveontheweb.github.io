@@ -234,7 +234,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 32 · The one we caught
 - This is the one we caught
 - And we only caught it because they attacked a real company, and that company noticed. OpenAI didn’t spot it themselves
-- (click) There could be many things like this that we don’t know about
+- (click) How many have we missed? There could be many things like this that we don’t know about
 > That’s all three warning signs. And all three ended okay. Barely.
 
 ## 33 · Could have been much worse

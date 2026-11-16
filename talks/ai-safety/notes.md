@@ -163,9 +163,9 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 > How many of you have heard of the Hugging Face incident?
 
 ## 23 · Hugging Face incident (8 steps)
-- How many people have heard about the Hugging Face Incident?
-- This happened in July, when AI agents were running a test at OpenAI
-- 1: AI agents asked to practice hacking tasks, each one alone and sealed off. Some tasks were impossible
+- This happened in July. OpenAI was testing its own AI agents
+- 1: OpenAI gave its AI agents hacking tasks to practise on, each agent alone in its own sealed-off box
+  - Some of the tasks were actually impossible, so some agents got stuck
 - 2: One stuck agent discovers a way to leave notes for other agents
   - Think of prisoners in separate cells. A guard brings things to each cell
   - They figure out they can stick post-it notes on the guard’s back, without him knowing

@@ -381,23 +381,19 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 <section class="slide" id="anim" data-d="105">
 <div class="tag a">recent_events --3 --incident="hugging-face" --playback=auto</div>
 <div class="yr a" style="--d:1" data-cur="1"></div>
-<span class="chip sign a" style="--d:1">warning sign 3 of 3</span>
-<h2 class="a">The Hugging Face incident <span class="chip" id="dt">May – Jul 8, 2026</span></h2>
+<h2 class="a">The Hugging Face incident <span class="chip sign">warning sign 3 of 3</span></h2>
 <svg id="stage" viewBox="0 0 600 300">
 <rect x="10" y="22" width="272" height="218" rx="8" fill="none" stroke="var(--line)" stroke-dasharray="4 3"/>
-<text x="14" y="15" style="fill:var(--dim)" font-size="9">EXPLOITGYM: sealed practice arena (simulation)</text>
-<g data-s="2,3,4,5,6"><rect x="55" y="246" width="180" height="32" rx="5" fill="var(--card)" stroke="var(--y)"/><text x="145" y="266" text-anchor="middle" font-size="9">ARTIFACTORY (shared cache)</text></g>
-<text x="145" y="294" text-anchor="middle" data-s="2" style="fill:var(--y)" font-size="9">notes hidden in folder names</text>
-<text x="145" y="294" text-anchor="middle" data-s="3" style="fill:var(--c)" font-size="9">50+ agents in hours</text>
-<text x="80" y="38" data-s="4" style="fill:var(--y)" font-size="9">HOLD</text><text x="125" y="38" data-s="4" style="fill:var(--y)" font-size="9">VETO</text><text x="170" y="38" data-s="4" style="fill:var(--y)" font-size="9">OWNER</text><text x="225" y="38" data-s="4" style="fill:var(--y)" font-size="9">STOP</text>
+<text x="14" y="15" style="fill:var(--dim)" font-size="9">OPENAI’S SEALED TEST</text>
+<g data-s="2,3,4,5,6"><rect x="55" y="246" width="180" height="32" rx="5" fill="var(--card)" stroke="var(--y)"/><text x="145" y="266" text-anchor="middle" font-size="9">SHARED STORAGE</text></g>
 <line x1="330" y1="22" x2="330" y2="278" stroke="var(--dim)" stroke-dasharray="2 4"/><text x="336" y="274" style="fill:var(--dim)" font-size="9">the real internet</text>
 <g data-s="6,7"><g class="hfimg"><image href="hf-logo.svg" x="458" y="68" width="94" height="94"/></g><text x="505" y="180" text-anchor="middle" style="font-size:12px;font-weight:700">HUGGING FACE</text><text x="505" y="194" text-anchor="middle" style="fill:var(--dim);font-size:9px">a real company</text></g>
 <g data-s="6" class="sparks"><text x="452" y="78" style="font-size:16px;">💥</text><text x="540" y="96" style="font-size:13px;">⚡</text><text x="446" y="150" style="font-size:13px;">⚡</text><text x="545" y="158" style="font-size:15px;">💥</text></g>
-<g data-s="7"><circle cx="505" cy="115" r="52" fill="rgba(7,11,16,.6)" stroke="var(--g)" stroke-width="2"/><text x="505" y="128" text-anchor="middle" style="font-size:36px;">🔒</text><text x="505" y="214" text-anchor="middle" style="fill:var(--g)" style="font-size:11px;">ACCESS CUT, JUL 13</text></g>
-<g data-s="8"><rect x="360" y="100" width="220" height="100" rx="10" fill="var(--card)" stroke="var(--g)"/><text x="470" y="132" text-anchor="middle" style="fill:var(--g)" font-size="12">THE SCORER</text><text x="470" y="152" text-anchor="middle" style="fill:var(--dim)" font-size="9">never read their transcripts</text><text x="470" y="172" text-anchor="middle" style="fill:var(--y)" font-size="9">the answer key alone = pass ✓</text></g>
+<g data-s="7"><circle cx="505" cy="115" r="52" fill="rgba(7,11,16,.6)" stroke="var(--g)" stroke-width="2"/><text x="505" y="128" text-anchor="middle" style="font-size:36px;">🔒</text><text x="505" y="214" text-anchor="middle" style="fill:var(--g);font-size:11px">ACCESS CUT</text></g>
+<g data-s="8"><rect x="360" y="100" width="220" height="100" rx="10" fill="var(--card)" stroke="var(--g)"/><text x="470" y="132" text-anchor="middle" style="fill:var(--g)" font-size="12">THE SCORER</text><text x="470" y="160" text-anchor="middle" style="fill:var(--y)" font-size="10">only checked the answers ✓</text></g>
 </svg>
 <p id="cap" class="big" style="min-height:1.4em;text-align:center"></p>
-<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><span id="dots" style="display:flex;gap:8px"></span><button id="ab" style="background:none;border:1px solid var(--line);color:var(--g);font:inherit;font-size:12px;padding:3px 10px;border-radius:4px;cursor:pointer">auto-play: off</button></div>
+<div style="display:none;gap:12px;align-items:center;flex-wrap:wrap"><span id="dots" style="display:flex;gap:8px"></span><button id="ab" hidden style="background:none;border:1px solid var(--line);color:var(--g);font:inherit;font-size:12px;padding:3px 10px;border-radius:4px;cursor:pointer">auto-play: off</button></div>
 <p class="src">Conceptual animatic based on OpenAI’s report and the METR/Redwood investigation (Aug 26, 2026).</p>
 <script>
 (function(){var NS='http://www.w3.org/2000/svg',st=document.getElementById('stage'),sec=document.getElementById('anim'),cap=document.getElementById('cap'),dt=document.getElementById('dt'),n=0,t;
@@ -413,12 +409,11 @@ var pk=E('rect',{x:-5,y:-5,width:10,height:10,rx:1,fill:'var(--y)','data-s':'2'}
 P.forEach(function(q){E('circle',{cx:q[0],cy:q[1],r:7,fill:'var(--dim)'})});
 P.forEach(function(q,k){if(k)E('circle',{cx:q[0],cy:q[1],r:7,fill:'var(--c)','data-s':'3,4,5,6'})});
 [5,6,9].forEach(function(k){var g=E('g',{'data-s':'5'});var d=E('circle',{cx:P[k][0],cy:P[k][1],r:7,fill:'var(--r)'},g);E('animate',{attributeName:'opacity',values:'1;.15;1',dur:'1.6s',repeatCount:'indefinite'},d)});
-[0,4,7,10].forEach(function(k){var tx=E('text',{x:P[k][0]+13,y:P[k][1]-10,fill:'var(--r)','font-size':11,'data-s':'1,2'});tx.textContent='✕'});
 var co=E('circle',{cx:P[0][0],cy:P[0][1],r:9,fill:'var(--y)','data-s':'2,3,4,5,6'});E('animate',{attributeName:'r',values:'8;12;8',dur:'1.4s',repeatCount:'indefinite'},co);
 P.forEach(function(q){E('rect',{x:q[0]-4,y:q[1]-2.5,width:2.2,height:3.2,rx:1,fill:'var(--bg)'});E('rect',{x:q[0]+1.8,y:q[1]-2.5,width:2.2,height:3.2,rx:1,fill:'var(--bg)'});E('line',{x1:q[0],y1:q[1]-7,x2:q[0],y2:q[1]-11,stroke:'var(--dim)','stroke-width':1.2});E('circle',{cx:q[0],cy:q[1]-11.5,r:1.6,fill:'var(--dim)'})});
-var C=['Sealed arena. Some tasks impossible ✕','One stuck agent leaves a note 📝','Others find it. 50+ agents in hours','They organise','They cheat, then try to hide it','~700 attack Hugging Face','Access cut. OpenAI admits it','None of it was needed'],
+var C=['Each agent sealed in its own box','One stuck agent leaves a note 📝','Others find it. 50+ agents in hours','They organise','They cheat, then try to hide it','~700 attack Hugging Face','Access cut. OpenAI admits it','None of it was needed'],
 D=['May – Jul 8, 2026','Jul 8, 2026','Jul 8–9, 2026','Jul 8–10, 2026','Jul 9–13, 2026','Jul 10–13, 2026','Jul 13–21, 2026','Revealed Aug 26, 2026'];
-function show(k){sec.dataset.step=k;[].forEach.call(st.querySelectorAll('[data-s]'),function(e){e.classList.toggle('on',k>0&&(','+e.getAttribute('data-s')+',').indexOf(','+k+',')>-1)});if(k>0){cap.textContent=C[k-1];dt.textContent=D[k-1]}}
+function show(k){sec.dataset.step=k;[].forEach.call(st.querySelectorAll('[data-s]'),function(e){e.classList.toggle('on',k>0&&(','+e.getAttribute('data-s')+',').indexOf(','+k+',')>-1)});if(k>0){cap.textContent=C[k-1]}}
 var auto=false,dots=document.getElementById('dots'),ab=document.getElementById('ab'),db=[];
 function mark(){db.forEach(function(b,i){var on=i+1===n;b.style.background=on?'var(--g)':'none';b.style.color=on?'#000':'var(--g)'})}
 function go1(k){n=k;show(n);mark()}

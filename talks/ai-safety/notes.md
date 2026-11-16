@@ -201,7 +201,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 > And it doesn’t stop at cyber.
 
 ## 31 · Bioweapons
-- Danger #1 is misuse. Cyber misuse is already here. Bio could be next
+- People misusing AI: cyber is already here. Bio could be next
 - (click) AI now beats 94% of expert virologists on tricky lab troubleshooting questions
 - (click) AI models can now design new viruses
 - (click) Almost none of the biology AI tools have any safety checks
@@ -221,7 +221,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) It isn’t strength: elephants and gorillas are far stronger
 - (click) Yet we decide what happens to them
 - (click) We’re the smartest: tools, cooperation, technology
-- Danger #2: losing control. Not here yet, maybe not far away
+- This is the bigger worry: losing control. Not here yet, maybe not far away
 - Leave it hanging: what happens when we’re not the smartest?
 
 ## 34 · Power slips away

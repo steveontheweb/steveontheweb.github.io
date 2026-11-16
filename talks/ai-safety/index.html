@@ -338,7 +338,7 @@ P.forEach(function(q,k){if(k)E('circle',{cx:q[0],cy:q[1],r:7,fill:'var(--c)','da
 [0,4,7,10].forEach(function(k){var tx=E('text',{x:P[k][0]+13,y:P[k][1]-10,fill:'var(--r)','font-size':11,'data-s':'1,2'});tx.textContent='✕'});
 var co=E('circle',{cx:P[0][0],cy:P[0][1],r:9,fill:'var(--y)','data-s':'2,3,4,5,6'});E('animate',{attributeName:'r',values:'8;12;8',dur:'1.4s',repeatCount:'indefinite'},co);
 P.forEach(function(q){E('rect',{x:q[0]-4,y:q[1]-2.5,width:2.2,height:3.2,rx:1,fill:'var(--bg)'});E('rect',{x:q[0]+1.8,y:q[1]-2.5,width:2.2,height:3.2,rx:1,fill:'var(--bg)'});E('line',{x1:q[0],y1:q[1]-7,x2:q[0],y2:q[1]-11,stroke:'var(--dim)','stroke-width':1.2});E('circle',{cx:q[0],cy:q[1]-11.5,r:1.6,fill:'var(--dim)'})});
-var C=['A sealed practice arena. Some tasks are impossible ✕','One stuck agent leaves a note 📝','Others find it. 50+ agents in hours','They organise','They cheat the test, and hide it','~700 attack Hugging Face','Access cut. OpenAI admits it','None of it was needed'],
+var C=['A sealed practice arena. Some tasks are impossible ✕','One stuck agent leaves a note 📝','Others find it. 50+ agents in hours','They organise','They cheat, then try to hide it','~700 attack Hugging Face','Access cut. OpenAI admits it','None of it was needed'],
 D=['May – Jul 8, 2026','Jul 8, 2026','Jul 8–9, 2026','Jul 8–10, 2026','Jul 9–13, 2026','Jul 10–13, 2026','Jul 13–21, 2026','Revealed Aug 26, 2026'];
 function show(k){sec.dataset.step=k;[].forEach.call(st.querySelectorAll('[data-s]'),function(e){e.classList.toggle('on',k>0&&(','+e.getAttribute('data-s')+',').indexOf(','+k+',')>-1)});if(k>0){cap.textContent=C[k-1];dt.textContent=D[k-1]}}
 var auto=false,dots=document.getElementById('dots'),ab=document.getElementById('ab'),db=[];

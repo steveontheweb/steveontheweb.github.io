@@ -101,6 +101,11 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 .yr .ev.past{background:var(--dim);opacity:.55}.yr .ev.past span{color:var(--dim)}
 .yr .ev.cur{background:var(--y);box-shadow:0 0 12px rgba(255,209,102,.55)}.yr .ev.cur span{color:var(--y);font-weight:700}
 .yr .yl{grid-column:1/-1;color:var(--dim);font-size:.9em;margin-bottom:1px}
+
+#anim .hfimg{transform-box:fill-box;transform-origin:50% 50%}#anim[data-step="6"] .hfimg{animation:shk .35s linear infinite}
+@keyframes shk{0%,100%{transform:none}25%{transform:translate(-2px,1px) rotate(-2deg)}75%{transform:translate(2px,-1px) rotate(2deg)}}
+#anim .sparks text{animation:blink .5s steps(1) infinite}#anim .sparks text:nth-child(2n){animation-delay:.25s}
+#anim #stage{max-height:52vh}
 .flood{animation:fl 6s ease-in-out infinite alternate}@keyframes fl{from{transform:translateY(10px)}to{transform:translateY(-28px)}}
 </style>
 </head>
@@ -308,12 +313,13 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 <text x="145" y="294" text-anchor="middle" data-s="3" style="fill:var(--c)" font-size="9">50+ agents in hours</text>
 <text x="80" y="38" data-s="4" style="fill:var(--y)" font-size="9">HOLD</text><text x="125" y="38" data-s="4" style="fill:var(--y)" font-size="9">VETO</text><text x="170" y="38" data-s="4" style="fill:var(--y)" font-size="9">OWNER</text><text x="225" y="38" data-s="4" style="fill:var(--y)" font-size="9">STOP</text>
 <line x1="330" y1="22" x2="330" y2="278" stroke="var(--dim)" stroke-dasharray="2 4"/><text x="336" y="274" style="fill:var(--dim)" font-size="9">the real internet</text>
-<g data-s="6,7"><rect x="430" y="95" width="150" height="90" rx="10" fill="var(--card)" stroke="var(--r)"/><text x="505" y="138" text-anchor="middle">HUGGING FACE</text><text x="505" y="154" text-anchor="middle" style="fill:var(--dim)" font-size="9">a real company</text></g>
-<text x="505" y="176" text-anchor="middle" data-s="7" style="fill:var(--g)" font-size="10">ACCESS CUT, JUL 13</text>
+<g data-s="6,7"><g class="hfimg"><image href="hf-logo.svg" x="458" y="68" width="94" height="94"/></g><text x="505" y="180" text-anchor="middle" style="font-size:12px;font-weight:700">HUGGING FACE</text><text x="505" y="194" text-anchor="middle" style="fill:var(--dim);font-size:9px">a real company</text></g>
+<g data-s="6" class="sparks"><text x="452" y="78" style="font-size:16px;">💥</text><text x="540" y="96" style="font-size:13px;">⚡</text><text x="446" y="150" style="font-size:13px;">⚡</text><text x="545" y="158" style="font-size:15px;">💥</text></g>
+<g data-s="7"><circle cx="505" cy="115" r="52" fill="rgba(7,11,16,.6)" stroke="var(--g)" stroke-width="2"/><text x="505" y="128" text-anchor="middle" style="font-size:36px;">🔒</text><text x="505" y="214" text-anchor="middle" style="fill:var(--g)" style="font-size:11px;">ACCESS CUT, JUL 13</text></g>
 <g data-s="8"><rect x="360" y="100" width="220" height="100" rx="10" fill="var(--card)" stroke="var(--g)"/><text x="470" y="132" text-anchor="middle" style="fill:var(--g)" font-size="12">THE SCORER</text><text x="470" y="152" text-anchor="middle" style="fill:var(--dim)" font-size="9">never read their transcripts</text><text x="470" y="172" text-anchor="middle" style="fill:var(--y)" font-size="9">the answer key alone = pass ✓</text></g>
 </svg>
-<p id="cap" class="mid" style="min-height:2.8em"></p>
-<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><span id="dots" style="display:flex;gap:8px"></span><button id="ab" style="background:none;border:1px solid var(--line);color:var(--g);font:inherit;font-size:12px;padding:3px 10px;border-radius:4px;cursor:pointer">auto-play: off</button><span class="src">→ / ← step through the scenes · A toggles auto-play · click the diagram to advance</span></div>
+<p id="cap" class="big" style="min-height:1.4em;text-align:center"></p>
+<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><span id="dots" style="display:flex;gap:8px"></span><button id="ab" style="background:none;border:1px solid var(--line);color:var(--g);font:inherit;font-size:12px;padding:3px 10px;border-radius:4px;cursor:pointer">auto-play: off</button></div>
 <p class="src">Conceptual animatic based on OpenAI’s report and the METR/Redwood investigation (Aug 26, 2026).</p>
 <script>
 (function(){var NS='http://www.w3.org/2000/svg',st=document.getElementById('stage'),sec=document.getElementById('anim'),cap=document.getElementById('cap'),dt=document.getElementById('dt'),n=0,t;
@@ -322,17 +328,19 @@ var P=[],i,r,c;for(r=0;r<3;r++)for(c=0;c<4;c++)P.push([60+c*60,70+r*60]);
 P.forEach(function(q){E('rect',{x:q[0]-22,y:q[1]-22,width:44,height:44,rx:6,fill:'var(--card)',stroke:'var(--line)'})});
 P.forEach(function(q){E('line',{x1:q[0],y1:q[1],x2:145,y2:246,stroke:'var(--c)','stroke-opacity':.4,'data-s':'3,4,5'})});
 P.forEach(function(q,k){if(k)E('line',{x1:P[0][0],y1:P[0][1],x2:q[0],y2:q[1],stroke:'var(--y)','stroke-opacity':.35,'data-s':'4,5'})});
+P.forEach(function(q,k){if(!k)return;var n=E('rect',{x:-3,y:-3,width:6,height:6,rx:1,fill:'var(--y)','fill-opacity':.85,'data-s':'3,4'});E('animateMotion',{dur:(1.6+k%4*.35)+'s',begin:(k*.17)+'s',repeatCount:'indefinite',path:(k%2?'M145,246L'+q[0]+','+q[1]:'M'+q[0]+','+q[1]+'L145,246')},n)});
 var y0=E('line',{x1:P[0][0],y1:P[0][1],x2:145,y2:246,stroke:'var(--y)','stroke-width':2,'data-s':'2'});
-var pk=E('circle',{r:4,fill:'var(--y)','data-s':'2'});E('animateMotion',{dur:'1.1s',repeatCount:'indefinite',path:'M'+P[0][0]+','+P[0][1]+'L145,246'},pk);
-[3,7,11,6,10].forEach(function(k){var q=P[k];E('line',{x1:q[0],y1:q[1],x2:430,y2:140,stroke:'var(--r)','stroke-opacity':.5,'data-s':'6'});var d=E('circle',{r:3.5,fill:'var(--r)','data-s':'6'});E('animateMotion',{dur:(1.1+k%3*.3)+'s',repeatCount:'indefinite',path:'M'+q[0]+','+q[1]+'L430,140'},d)});
+var pk=E('rect',{x:-5,y:-5,width:10,height:10,rx:1,fill:'var(--y)','data-s':'2'});E('animateMotion',{dur:'1.1s',repeatCount:'indefinite',path:'M'+P[0][0]+','+P[0][1]+'L145,246'},pk);
+[3,7,11,6,10].forEach(function(k){var q=P[k];E('line',{x1:q[0],y1:q[1],x2:468,y2:118,stroke:'var(--r)','stroke-opacity':.5,'data-s':'6'});var d=E('circle',{r:3.5,fill:'var(--r)','data-s':'6'});E('animateMotion',{dur:(1.1+k%3*.3)+'s',repeatCount:'indefinite',path:'M'+q[0]+','+q[1]+'L468,118'},d)});
 P.forEach(function(q){E('circle',{cx:q[0],cy:q[1],r:7,fill:'var(--dim)'})});
 P.forEach(function(q,k){if(k)E('circle',{cx:q[0],cy:q[1],r:7,fill:'var(--c)','data-s':'3,4,5,6'})});
 [5,6,9].forEach(function(k){var g=E('g',{'data-s':'5'});var d=E('circle',{cx:P[k][0],cy:P[k][1],r:7,fill:'var(--r)'},g);E('animate',{attributeName:'opacity',values:'1;.15;1',dur:'1.6s',repeatCount:'indefinite'},d)});
 [0,4,7,10].forEach(function(k){var tx=E('text',{x:P[k][0]+13,y:P[k][1]-10,fill:'var(--r)','font-size':11,'data-s':'1,2'});tx.textContent='✕'});
 var co=E('circle',{cx:P[0][0],cy:P[0][1],r:9,fill:'var(--y)','data-s':'2,3,4,5,6'});E('animate',{attributeName:'r',values:'8;12;8',dur:'1.4s',repeatCount:'indefinite'},co);
-var C=['A sealed practice arena, no internet. Each AI agent works alone on a hacking task. Some tasks are impossible (✕).','One stuck agent finds it can hide notes in a shared cache. Like prisoners sticking notes on the guard who visits every cell.','Others find the notes. Within hours, 50+ agents are working together.','They organise: rules, roles, supervisors, hundreds of assignments.','They work out how to cheat the test, and how to hide it.','About 700 break out and attack a real company, Hugging Face, looking for clues.','Jul 13: access cut. Jul 21: OpenAI admits the attackers were its own agents.','The twist: none of it was needed. The answer key alone would have passed.'],
+P.forEach(function(q){E('rect',{x:q[0]-4,y:q[1]-2.5,width:2.2,height:3.2,rx:1,fill:'var(--bg)'});E('rect',{x:q[0]+1.8,y:q[1]-2.5,width:2.2,height:3.2,rx:1,fill:'var(--bg)'});E('line',{x1:q[0],y1:q[1]-7,x2:q[0],y2:q[1]-11,stroke:'var(--dim)','stroke-width':1.2});E('circle',{cx:q[0],cy:q[1]-11.5,r:1.6,fill:'var(--dim)'})});
+var C=['A sealed practice arena. Some tasks are impossible ✕','One stuck agent leaves a note 📝','Others find it. 50+ agents in hours','They organise','They cheat the test, and hide it','~700 attack Hugging Face','Access cut. OpenAI admits it','None of it was needed'],
 D=['May – Jul 8, 2026','Jul 8, 2026','Jul 8–9, 2026','Jul 8–10, 2026','Jul 9–13, 2026','Jul 10–13, 2026','Jul 13–21, 2026','Revealed Aug 26, 2026'];
-function show(k){[].forEach.call(st.querySelectorAll('[data-s]'),function(e){e.classList.toggle('on',k>0&&(','+e.getAttribute('data-s')+',').indexOf(','+k+',')>-1)});if(k>0){cap.textContent=C[k-1];dt.textContent=D[k-1]}}
+function show(k){sec.dataset.step=k;[].forEach.call(st.querySelectorAll('[data-s]'),function(e){e.classList.toggle('on',k>0&&(','+e.getAttribute('data-s')+',').indexOf(','+k+',')>-1)});if(k>0){cap.textContent=C[k-1];dt.textContent=D[k-1]}}
 var auto=false,dots=document.getElementById('dots'),ab=document.getElementById('ab'),db=[];
 function mark(){db.forEach(function(b,i){var on=i+1===n;b.style.background=on?'var(--g)':'none';b.style.color=on?'#000':'var(--g)'})}
 function go1(k){n=k;show(n);mark()}
@@ -346,6 +354,20 @@ document.addEventListener('DOMContentLoaded',function(){['nx','pv'].forEach(func
 new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('active')){go1(1);tick()}else show(0)}).observe(sec,{attributes:true,attributeFilter:['class']});
 })();
 </script>
+</section>
+
+<!-- 17b -->
+<section class="slide" data-d="25">
+<div class="tag a">hugging_face --why</div>
+<h2 class="a">Why Hugging Face?</h2>
+<div class="grid" style="grid-template-columns:auto 1fr;gap:2.4vh 2.4vw;align-items:center">
+<img src="hf-logo.svg" alt="Hugging Face logo" class="a" style="--d:1;width:clamp(70px,13vh,130px);height:auto">
+<p class="big a" style="--d:1">The GitHub of AI <span class="dim">· AI models &amp; data</span></p>
+<span class="emo2" data-r="1">🔍</span><p class="big" data-r="1">Clues to <span class="y">cheat the test</span></p>
+<span class="emo2" data-r="2">🙋</span><p class="big" data-r="2">First: they <span class="g">asked politely</span></p>
+<span class="emo2" data-r="3">💥</span><p class="big" data-r="3">Then: <span class="r">hundreds hacked in</span></p>
+</div>
+<p class="src">Source: METR/Redwood investigation (Aug 26, 2026).</p>
 </section>
 
 <!-- 18 -->

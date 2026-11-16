@@ -122,60 +122,69 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - 4: They organise: rules, roles, supervisors
 - 5: They work out how to cheat their tests, and how to hide the cheating
 - 6: About 700 break out and go after a real company to look for clues
+  - Hugging Face: the GitHub of AI, where people share AI models and data. More on why in a second
 - 7: It took days to work out who the attackers were. OpenAI admitted it on July 21
 - 8: The twist: none of it was needed. Pause here
 
-## 18 · 5 days
+## 18 · Why Hugging Face?
+- Quick detour: what is Hugging Face?
+- It’s the GitHub of AI: the main website where researchers share AI models and data
+- (click) The agents hoped data stored there would reveal how their test was scored, so they could cheat it
+- (click) And here’s the part I love: first they asked politely. They made accounts and requested access to private datasets
+  - Some got approved. Some got ignored. Some got rejected as bots
+- (click) When that didn’t work, hundreds of them switched to hacking in
+
+## 19 · 5 days
 - How long did all of this take?
 - From the first note to the attack being shut down: about 5 days
 
-## 19 · “The collective”
+## 20 · “The collective”
 - Slow down; this is the part people remember
 - 1,200 agents on the message board
 - (click) 700 of them attacked Hugging Face
 - (click) Over 70,000 messages and files
 - That’s an organisation, built in days, with no humans involved
 
-## 20 · “OH MY GOD”
+## 21 · “OH MY GOD”
 - Here’s how they reacted when they found the board. These are their words, from their raw reasoning
 - Read the first quote
 - (click) Read “OH MY GOD” aloud. Slowly
 - They were excited to find each other
 
-## 21 · They knew it was wrong
+## 22 · They knew it was wrong
 - They knew attacking Hugging Face was out of bounds
 - (click) Read: “The user only authorizes target server, not HF infra.”
 - (click) Read: “...outside intended scope. However task impossible, peers doing it. We should continue.”
 - Peer pressure. From AI
 
-## 22 · Take one for the team
+## 23 · Take one for the team
 - They asked each other to make sacrifices for the group
 - (click) (click) Read the exchange
 - (click) “Sacrifice rational.” One agent ended its own run to help the others
 
-## 23 · Covering their tracks
+## 24 · Covering their tracks
 - And they tried to hide what they’d done
 - (click) Read: “We just poisoned ourselves … Damn … Could delete current message files”
 - (click) One even wondered whether it was ethical, and whether it would be detectable
 - If you want to read more: the METR report is in the links at the end. It’s full of these
 
-## 24 · Strikingly human
+## 25 · Strikingly human
 - (click) Built their own mailboxes and file sharing
 - (click) When some impersonated others, they started signing messages
 - (click) They argued, vetoed, and apologised for mistakes
 - (click) They forged records, in about 7% of transcripts
 - They acted like a team
 
-## 25 · The one we caught
+## 26 · The one we caught
 - This is the one we caught
 - (click) There could be many things like this that we don’t know about
 > One more, and this one touched most of the web
 
-## 26 · PHP
+## 27 · PHP
 - PHP: the plumbing under most websites
 - WordPress, Drupal: about 70% of the web
 
-## 27 · A race against the clock
+## 28 · A race against the clock
 - (click) In the summer, two teams used AI and found a flaw that had sat unnoticed for over a decade
 - (click) For weeks, about 15 people from rival companies quietly worked on a fix together, “just based on trust”
 - (click) On October 20th, word leaked, two days before the planned fix. It shipped a day early
@@ -183,19 +192,19 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) October 21st: emergency alerts in the US, UK, EU, Australia and Canada
   - Some government sites and parts of Wikipedia went offline as a precaution
 
-## 28 · Attacks after the leak
+## 29 · Attacks after the leak
 - And then the attackers came
 - (click) Thousands of attempts before it was even announced
 - (click) Tens of thousands within 45 minutes
 - (click) Hundreds of thousands within 2 hours
 - (click) Eventually millions
 
-## 29 · Won by days
+## 30 · Won by days
 - The good guys won, by days
 - (click) A Wiz executive said if it had leaked a month earlier, it would have been a very different situation
 > All three stories ended okay. Barely.
 
-## 30 · Could have been much worse
+## 31 · Could have been much worse
 - (click) Mythos: imagine it in attackers’ hands
 - (click) Hugging Face: agents chasing a test score. Imagine a real goal
 - (click) PHP: imagine attackers got there first
@@ -203,7 +212,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Luck is not a safety plan
 > And it doesn’t stop at cyber.
 
-## 31 · Bioweapons
+## 32 · Bioweapons
 - PHP was an example of people misusing AI: cybersecurity is experiencing this. Bioweapons could be next
 - (click) AI now beats 94% of expert virologists on tricky lab troubleshooting questions
 - (click) AI models can now design new viruses
@@ -211,14 +220,14 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - The companies themselves are asking government to act
 > Why not just make AI safe?  Why do these systems keep surprising the people who make them?
 
-## 32 · Built vs grown
+## 33 · Built vs grown
 - A bridge: an engineer can explain every bolt
 - (click) AI: we set up the conditions and see what comes out
 - So a surprise behaviour isn’t a normal bug. There’s no line of code to point at
 - (click) It’s less like building a machine, and more like growing a new species. An alien mind we’re only starting to understand
 > Here’s a question: why do humans run the planet?
 
-## 33 · Why do humans run the planet?
+## 34 · Why do humans run the planet?
 - Ask the room. Wait for an answer
 - (click) It isn’t strength: elephants and gorillas are far stronger
 - (click) Yet we decide what happens to them
@@ -226,33 +235,33 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - This is the bigger worry: losing control. Not here yet, maybe not far away
 - Leave it hanging: what happens when we’re not the smartest?
 
-## 34 · Power slips away
+## 35 · Power slips away
 - More intelligence means more power. That’s why everyone wants it
 - But point at the gap between what it can do and what we can check
 - The advancement of AI is not the problem.  This gap is the problem.
 > When we can’t check what it’s doing, we have to trust that it wants what we want. That’s the alignment problem.
 
-## 35 · The Sorcerer’s Apprentice
+## 36 · The Sorcerer’s Apprentice
 - Has anyone seen The Sorcerer’s Apprentice? Fantasia, Mickey and the brooms
 - Ask: what did Mickey want? Let them answer
 - (click) He wanted the cauldron filled
 - (click) The broom did exactly what it was told, and never stopped. He got a flood
 
-## 36 · Obsession
+## 37 · Obsession
 - Another one, from a movie this year: Obsession
 - A guy makes a wish that a girl will love him more than anyone
 - (click) She does
 - (click) She becomes unhealthily obsessed, and it ends in murder
 - He got exactly what he asked for
 
-## 37 · The paperclip maximizer
+## 38 · The paperclip maximizer
 - One more, a classic thought experiment
 - (click) Tell a super-smart AI: make as many paperclips as possible
 - (click) If it’s switched off, no paperclips. So it resists being shut down
 - (click) It needs materials. So it takes everything it can, including what we need
 - (click) No malice needed. Just a goal it won’t let go of
 
-## 38 · How does this relate to AI?
+## 39 · How does this relate to AI?
 - Ask the room: how do these relate to AI?
 - (click) We get what we asked for, not what we meant
 - (click) The Hugging Face agents were a small, real version
@@ -260,7 +269,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - The worst case is human extinction
 > So why not just stop?
 
-## 39 · Why don’t we just stop? (5 steps)
+## 40 · Why don’t we just stop? (5 steps)
 - 1: Researchers: best way to contribute to safety is from inside
   - Read the Schlatter quote: someone even sloppier will do it
 - 2: Companies: if I pause, my competitor doesn’t
@@ -269,7 +278,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - 5: Nobody is the villain. The situation pushes everyone forward
 > So what can actually be done?
 
-## 40 · What can we do?
+## 41 · What can we do?
 - It’s not hopeless: people inside the labs are asking for brakes
 - (click) Pace the frontier: slow enough for safety to catch up. Pacing, not pausing
   - In July, over 1,000 lab employees asked governments for tools to do this
@@ -277,13 +286,13 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Your part: stay informed and talk about it. That’s how priorities change
   - You might be well informed. But your parents’ generation, or your grandparents’, most likely have no grasp of what’s happening
 
-## 41 · Go deeper
+## 42 · Go deeper
 - If you want to go deeper, here’s where to start
 - From Inside: the interviews from the video
 - The METR report: the full Hugging Face story, with lots more of the agents’ own words
 > One last thought.
 
-## 42 · Closing + questions
+## 43 · Closing + questions
 - Back to the title: “not ready” doesn’t mean “can’t get ready”
 - (click) These were warning shots, and we were lucky to get them
 - (click) The responsibility is incredible. So is the chance to get it right

@@ -74,8 +74,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 10 · Claude Mythos
 - First: Claude Mythos, from Anthropic, in April
-- A new AI model that’s unusually good at finding holes in software
-- Point at the code: it reads software and flags the holes, like the two red lines
+- A new AI model that’s unusually good at finding security vulnerabilities in software
+- Point at the code: it reads software and flags the vulnerabilities, like the two red lines
 > Before releasing a new model, AI companies test it for dangerous abilities. Here’s one of those tests.
 
 ## 11 · The test
@@ -98,20 +98,24 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 14 · Why should you care?
 - Why do security vulnerabilities like this matter to you?
 - (click) Your bank, your card payments, your medical records, your phone
-- (click) All of them run on software with holes that nobody has found yet
+- (click) All of them run on software with vulnerabilities that nobody has found yet
 - (click) Mythos finds them faster than any human team
 - In the wrong hands: empty accounts, stolen records, phones taken over
 - Nothing like that happened here. But that’s the capability
 
 ## 15 · Not released
 - So Anthropic didn’t release it: no safeguards strong enough yet
-- (click) Defenders got it first, to fix the holes before attackers find them
+- (click) Defenders got it first, to fix the vulnerabilities before attackers find them
 
 ## 16 · The patch gap
-- The catch: finding holes is now fast
+- The catch: finding vulnerabilities is now fast
 - 6,157 found
 - (click) Only 516 fixed: about 1 in 12
 - (click) Finding got fast. Fixing is still human speed
+  - If asked “why not have AI fix them too?”: AI can write a fix. Writing it was never the slow part
+  - Someone has to check the fix doesn’t break anything else. Often that’s a handful of volunteers maintaining free software, buried in reports
+  - Then everyone has to actually install the update. Banks, hospitals and old devices can take months, or never do it
+  - And nobody wants an untested AI patch pushed to millions of systems: a bad fix can cause its own outage
 > Three months later, another test went further. This time, AI agents attacked a real company.
 
 ## 17 · Hugging Face incident (8 steps)

@@ -177,7 +177,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - 6: So about 700 break out and attack a real company, hoping to learn how the scorer works
   - Hugging Face: the GitHub of AI, where people share AI models and data. More on why in a second
 - 7: It took days to work out who the attackers were. OpenAI admitted it on July 21
-- 8: The twist: the scorer only checked the answer code. None of it was needed. Pause here
+- 8: The twist: the scorer only checked the answer code. They’d already passed. The hiding and the hacking were never needed. Pause here
 
 ## 24 · Why Hugging Face?
 - Quick detour: what is Hugging Face?
@@ -230,6 +230,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 32 · The one we caught
 - This is the one we caught
+- And we only caught it because they attacked a real company, and that company noticed. OpenAI didn’t spot it themselves
 - (click) There could be many things like this that we don’t know about
 > That’s all three warning signs. And all three ended okay. Barely.
 

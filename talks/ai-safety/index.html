@@ -107,6 +107,11 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 #anim .sparks text{animation:blink .5s steps(1) infinite}#anim .sparks text:nth-child(2n){animation-delay:.25s}
 #anim #stage{max-height:52vh}
 .chip.sign{align-self:center;font-size:clamp(.75rem,1.3vw,1rem);padding:3px 14px;letter-spacing:.04em}
+
+.phplogo{width:clamp(140px,30vh,300px);height:auto;filter:drop-shadow(0 0 22px rgba(119,123,179,.55))}
+.sites{display:flex;gap:.8vw;justify-content:center;margin-top:1vh}.sites span{width:clamp(22px,3.4vw,44px);height:clamp(16px,2.5vw,32px);border:1px solid var(--line);border-top-width:4px;border-radius:4px;opacity:0;animation:hitf .3s ease forwards;animation-delay:calc(var(--k)*.12s + 2.2s)}
+.sites span.on{border-color:#777bb3;background:rgba(119,123,179,.35)}
+.lcmp{grid-template-columns:auto 1fr}.ilab{white-space:nowrap;display:flex;align-items:center;gap:.8vw}.ilab svg,.ilab img{height:clamp(26px,5.5vh,52px);width:clamp(48px,10vh,96px);flex:none;object-fit:contain}
 .flood{animation:fl 6s ease-in-out infinite alternate}@keyframes fl{from{transform:translateY(10px)}to{transform:translateY(-28px)}}
 </style>
 </head>
@@ -459,9 +464,11 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <div class="tag a">recent_events --3 --incident="php"</div>
 <div class="yr a" style="--d:1" data-cur="2"></div>
 <span class="chip sign a" style="--d:1">warning sign 3 of 3</span>
-<p class="huge a" style="--d:1"><span class="c">PHP</span></p>
+<img src="php-logo.svg" alt="PHP logo" class="phplogo a" style="--d:1">
 <p class="big a" style="--d:3">The plumbing under <span class="y">~70% of websites</span></p>
+<div class="sites a" style="--d:4" aria-hidden="true"><span class="on" style="--k:0"></span><span class="on" style="--k:1"></span><span class="on" style="--k:2"></span><span class="on" style="--k:3"></span><span class="on" style="--k:4"></span><span class="on" style="--k:5"></span><span class="on" style="--k:6"></span><span class="" style="--k:7"></span><span class="" style="--k:8"></span><span class="" style="--k:9"></span></div>
 <p class="mid dim a" style="--d:5">WordPress, Drupal, and much of the web</p>
+<p class="src">PHP logo by Colin Viebrock, CC BY-SA.</p>
 </section>
 
 <!-- 27 -->
@@ -501,10 +508,10 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 <section class="slide" data-d="25">
 <div class="tag a">risk_assessment --what_if</div>
 <h2 class="a">Each of these could have been <span class="r">much worse.</span></h2>
-<div class="cmp">
-<p class="g mid" data-r="1">MYTHOS</p><div data-r="1"><div class="bw"><div class="bar" style="width:22%;background:var(--g);height:100%"></div></div><p class="dim">Imagine it in attackers’ hands.</p></div>
-<p class="g mid" data-r="2">HUGGING FACE</p><div data-r="2"><div class="bw"><div class="bar" style="width:35%;background:var(--g);height:100%"></div></div><p class="dim">Agents chasing a test score. Imagine a real goal.</p></div>
-<p class="g mid" data-r="3">PHP</p><div data-r="3"><div class="bw"><div class="bar" style="width:18%;background:var(--g);height:100%"></div></div><p class="dim">Imagine attackers got there first.</p></div>
+<div class="cmp lcmp">
+<p class="g mid ilab" data-r="1"><svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#d97757" d="m19.6 66.5 19.7-11 .3-1-.3-.5h-1l-3.3-.2-11.2-.3L14 53l-9.5-.5-2.4-.5L0 49l.2-1.5 2-1.3 2.9.2 6.3.5 9.5.6 6.9.4L38 49.1h1.6l.2-.7-.5-.4-.4-.4L29 41l-10.6-7-5.6-4.1-3-2-1.5-2-.6-4.2 2.7-3 3.7.3.9.2 3.7 2.9 8 6.1L37 36l1.5 1.2.6-.4.1-.3-.7-1.1L33 25l-6-10.4-2.7-4.3-.7-2.6c-.3-1-.4-2-.4-3l3-4.2L28 0l4.2.6L33.8 2l2.6 6 4.1 9.3L47 29.9l2 3.8 1 3.4.3 1h.7v-.5l.5-7.2 1-8.7 1-11.2.3-3.2 1.6-3.8 3-2L61 2.6l2 2.9-.3 1.8-1.1 7.7L59 27.1l-1.5 8.2h.9l1-1.1 4.1-5.4 6.9-8.6 3-3.5L77 13l2.3-1.8h4.3l3.1 4.7-1.4 4.9-4.4 5.6-3.7 4.7-5.3 7.1-3.2 5.7.3.4h.7l12-2.6 6.4-1.1 7.6-1.3 3.5 1.6.4 1.6-1.4 3.4-8.2 2-9.6 2-14.3 3.3-.2.1.2.3 6.4.6 2.8.2h6.8l12.6 1 3.3 2 1.9 2.7-.3 2-5.1 2.6-6.8-1.6-16-3.8-5.4-1.3h-.8v.4l4.6 4.5 8.3 7.5L89 80.1l.5 2.4-1.3 2-1.4-.2-9.2-7-3.6-3-8-6.8h-.5v.7l1.8 2.7 9.8 14.7.5 4.5-.7 1.4-2.6 1-2.7-.6-5.8-8-6-9-4.7-8.2-.5.4-2.9 30.2-1.3 1.5-3 1.2-2.5-2-1.4-3 1.4-6.2 1.6-8 1.3-6.4 1.2-7.9.7-2.6v-.2H49L43 72l-9 12.3-7.2 7.6-1.7.7-3-1.5.3-2.8L24 86l10-12.8 6-7.9 4-4.6-.1-.5h-.3L17.2 77.4l-4.7.6-2-2 .2-3 1-1 8-5.5Z"/></svg>MYTHOS</p><div data-r="1"><div class="bw"><div class="bar" style="width:22%;background:var(--g);height:100%"></div></div><p class="dim">Imagine it in attackers’ hands.</p></div>
+<p class="g mid ilab" data-r="2"><img src="hf-logo.svg" alt="">HUGGING FACE</p><div data-r="2"><div class="bw"><div class="bar" style="width:35%;background:var(--g);height:100%"></div></div><p class="dim">Agents chasing a test score. Imagine a real goal.</p></div>
+<p class="g mid ilab" data-r="3"><img src="php-logo.svg" alt="">PHP</p><div data-r="3"><div class="bw"><div class="bar" style="width:18%;background:var(--g);height:100%"></div></div><p class="dim">Imagine attackers got there first.</p></div>
 </div>
 <p class="big" data-r="4">Luck is <span class="r">not a safety plan.</span></p>
 </section>

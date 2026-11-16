@@ -197,8 +197,10 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 28 · A race against the clock
 - (click) In the summer, two teams used AI and found a flaw that had sat unnoticed for over a decade
 - (click) For weeks, about 15 people from rival companies quietly worked on a fix together, “just based on trust”
-- (click) On October 20th, word leaked, two days before the planned fix. It shipped a day early
-  - Then one of the teams accidentally posted a video of its exploit
+- (click) October 20th, two days before the planned fix, two things leaked
+  - Someone posted on a tech forum that a critical PHP flaw was about to be announced
+  - And one of the teams that found it accidentally posted a video of their working attack
+  - So the fix was rushed out a day early
 - (click) October 21st: emergency alerts in the US, UK, EU, Australia and Canada
   - Some government sites and parts of Wikipedia went offline as a precaution
 

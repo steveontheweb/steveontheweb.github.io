@@ -286,7 +286,12 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - One more, a classic thought experiment with AI
 - (click) Tell a super-smart AI: make as many paperclips as possible
 - (click) If it’s switched off, no paperclips. So it resists being shut down
-- (click) It needs materials. So it takes everything it can, including what we need
+- (click) It needs materials and energy, and it never has enough. So it keeps going
+  - First steel and factories. Then mines, power plants, farmland. Then cities
+  - Bostrom’s picture: it turns the whole Earth, and then space, into paperclip factories
+  - But we need that farmland, that energy, those cities to survive. And our bodies are made of atoms it could use too
+  - And we’re the one thing that might switch it off. So getting rid of us isn’t hatred. It’s just efficient
+  - Optional quote, from AI researcher Eliezer Yudkowsky: “The AI does not hate you, nor does it love you, but you are made out of atoms which it can use for something else”
 - (click) Not evil. It just doesn’t care about anything else
   - Just a goal it won’t let go of
 

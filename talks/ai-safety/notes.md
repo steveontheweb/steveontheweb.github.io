@@ -42,6 +42,10 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 5 · Why do smart people disagree?
 - (click) Different timelines: some mean next year, some mean 30 years
 - (click) No track record: nobody has done this before, so everyone is guessing from a different starting point
+  - Some people compare it to the Industrial Revolution: big change, and we adapted. But it's different:
+  - Speed: that took generations. This is taking years
+  - Machines replaced our muscles. AI is starting to replace our thinking, the thing that kept us in charge
+  - A steam engine never made its own plans. AI agents do (you'll see that soon)
 - (click) Not everyone works with AI at its full capability; many people just use it as a chatbot, or to review a paper
 - (click) The technology is moving very fast: you might have an opinion one day, and then next month change your mind
 

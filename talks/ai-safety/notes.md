@@ -73,9 +73,10 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - A new AI model that’s unusually good at finding holes in software
 - Point at the code: it reads software and flags the holes, like the two red lines
 - That skill is what the next few slides are about
+> Before releasing a new model, AI companies test it for dangerous abilities. Here’s one of those tests.
 
 ## 11 · The test
-- Sandbox in one line: a sealed test computer, walled off from the internet
+- To keep it safe, they run it in a sandbox: a sealed test computer, walled off from the internet
 - (click) One test asks the AI to escape its sandbox and message the researcher
 - (click) It builds a multi-step exploit
 - (click) And gets out onto the internet

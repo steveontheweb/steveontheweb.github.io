@@ -71,7 +71,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 10 · Claude Mythos
 - First: Claude Mythos, from Anthropic, in April
 - A new AI model that’s unusually good at finding holes in software
-- Hold onto that: finding holes in software
+- Point at the code: it reads software and flags the holes, like the two red lines
+- That skill is what the next few slides are about
 
 ## 11 · The test
 - Sandbox in one line: a sealed test computer, walled off from the internet

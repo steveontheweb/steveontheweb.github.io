@@ -192,9 +192,10 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Over 70,000 messages and files
 - That’s an organisation, built in days, with no humans involved
 - (click) And 700 of them attacked Hugging Face
+> We can read their private reasoning, and what’s striking is how human it sounds. They get excited. They feel peer pressure. They make sacrifices. They cover their tracks.
 
 ## 25 · “OH MY GOD”
-- Here’s how they reacted when they found the board. These are their words, from their raw reasoning
+- First, when they found the board. These are their own words
 - Read the first quote
 - (click) Read “OH MY GOD” aloud. Slowly
 - They were excited to find each other

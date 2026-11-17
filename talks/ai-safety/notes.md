@@ -146,16 +146,16 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 > And it doesn’t stop at cybersecurity.
 
 ## 20 · Bioweapons
-- PHP was an example of people misusing AI: cybersecurity is experiencing this now, but bioweapons could be next
+- Cybersecurity is already seeing this. Bioweapons could be next
 - (click) AI now beats 94% of expert virologists on tricky lab troubleshooting questions
 - (click) AI models can now design new viruses
 - (click) Almost none of the biology AI tools have any safety checks
 - The companies themselves are asking government to act
-> Misuse of AI by bad actors is a big danger, but there is actually two kinds of dangers to worry about...
+> So that’s people misusing AI. But there’s a second kind of danger.
 
 ## 21 · Two kinds of danger
-- Everything we’ve talked about so far is about the danger of bad actors misusing AI
-- (click) There’s a second, more problematic danger: AI going its own way
+- Point at the left card: everything so far. Mythos, PHP, bioweapons
+- (click) The second one is more of a problem: AI going its own way
 - (click) Harder to fix
 > Here’s a real example from this summer, and our third incident: 
 > How many of you have heard of the Hugging Face incident?

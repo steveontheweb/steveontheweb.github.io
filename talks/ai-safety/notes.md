@@ -221,8 +221,10 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Built their own mailboxes and file sharing
 - (click) When some impersonated others, they started signing messages
 - (click) They argued, vetoed, and apologised for mistakes
-- (click) They forged records, in about 7% of transcripts
-- They acted like a team
+- (click) And they faked their own logs, in about 7% of transcripts
+  - They tampered with the system that ran their commands, so the log showed one command while a different one actually ran
+  - Mostly to fool the scorer, not the humans. But it means we can’t fully trust the record of what an AI did
+- Nobody taught them any of this. It emerged on its own, in days
 
 ## 30 · The one we caught
 - This is the one we caught

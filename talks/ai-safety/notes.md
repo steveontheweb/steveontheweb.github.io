@@ -77,9 +77,17 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - First: Claude Mythos, from Anthropic, in April
 - A new AI model that’s unusually good at finding security vulnerabilities in software
 - Point at the code: it reads software and flags the vulnerabilities, like the two red lines
+> Why should you care about that?
+
+## 11 · Why should you care?
+- (click) Your bank, your card payments, your medical records, your phone
+- (click) All of them run on software with vulnerabilities that nobody has found yet
+- (click) Mythos finds them faster than any human team
+- In the wrong hands: empty accounts, stolen records, phones taken over
+- Nothing like that has happened. But that’s the capability
 > Before releasing a new model, AI companies test it for dangerous abilities. Here’s one of those tests.
 
-## 11 · The test
+## 12 · The test
 - To keep it safe, they run it in a sandbox: a sealed test computer, walled off from the internet
 - (click) One test asks the AI to escape its sandbox and message the researcher
 - (click) It builds a multi-step exploit
@@ -87,26 +95,19 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) How? It found a 27-year-old flaw in one of the most hardened operating systems in the world
   - 27 years of human experts looking at that code, and no one ever found it
 
-## 12 · The sandwich email
+## 13 · The sandwich email
 - The researcher had gone to lunch
 - Gets an email from the AI while eating a sandwich in a park
 - (pause for the laugh)
 
-## 13 · Nobody asked it to
+## 14 · Nobody asked it to
 - But then it did something else
 - It published how it did it on public websites
 - (click) Nobody asked it to
-
-## 14 · Why should you care?
-- Why do security vulnerabilities like this matter to you?
-- (click) Your bank, your card payments, your medical records, your phone
-- (click) All of them run on software with vulnerabilities that nobody has found yet
-- (click) Mythos finds them faster than any human team
-- In the wrong hands: empty accounts, stolen records, phones taken over
-- Nothing like that happened here. But that’s the capability
+> So Anthropic decided not to release it.
 
 ## 15 · Not released
-- So Anthropic didn’t release it: no safeguards strong enough yet
+- Not released: no safeguards strong enough yet
 - (click) Defenders got it first, to fix the vulnerabilities before attackers find them
   - If asked “is it still locked away?”: The full version is still limited to vetted organisations. A safeguarded version (Claude Fable) went public in June. It keeps improving: the latest, Mythos 5.2, came out Nov 9
   - If asked “has it leaked?”: Yes. On announcement day a small group got in through a contractor’s systems by guessing where it was hosted. Even a model they deliberately locked down got out on day one

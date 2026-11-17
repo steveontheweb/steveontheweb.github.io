@@ -7,7 +7,7 @@
 <meta name="author" content="Steve Middleton">
 <meta name="darkreader-lock">
 <meta name="color-scheme" content="dark">
-<meta name="description" content="A talk on AI safety: the warning signs (Mythos, PHP, Hugging Face), why they keep happening, and what we can do about it.">
+<meta name="description" content="A talk on AI safety: three incidents (Mythos, PHP, Hugging Face), why they keep happening, and what we can do about it.">
 <meta property="og:title" content="We Are Not Ready: AI Safety">
 <meta property="og:description" content="AI is advancing faster than our ability to understand or control it.">
 <meta property="og:url" content="https://steveontheweb.com/talks/ai-safety/">
@@ -28,7 +28,7 @@ h1{font-size:clamp(1.7rem,5vw,3.6rem)}h2{font-size:clamp(1.3rem,3.2vw,2.4rem)}
 h3{margin:0 0 .6vh;font-size:clamp(.9rem,1.6vw,1.2rem);color:var(--c)}
 p,li{font-size:clamp(.85rem,1.65vw,1.25rem);line-height:1.5;margin:0}
 .dim{color:var(--dim)}.g{color:var(--g)}.c{color:var(--c)}.r{color:var(--r)}.y{color:var(--y)}
-.tag{color:var(--dim);font-size:clamp(.7rem,1.2vw,.95rem)}.tag::before{content:"> ";color:var(--g)}
+.tag{color:var(--dim);font-size:clamp(.7rem,1.2vw,.95rem)}
 .src{color:var(--dim);font-size:clamp(.65rem,1vw,.8rem)}
 .card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--c);padding:1.4vh 1.5vw;border-radius:6px}
 .mx{display:grid;grid-template-columns:auto 1fr 1fr;gap:1vh .8vw;align-items:stretch}.g2.mxg{grid-template-columns:1.35fr 1fr}@media(max-width:800px){.g2.mxg{grid-template-columns:1fr}}.mx h3{font-size:clamp(.8rem,1.45vw,1.15rem);margin:0 0 .5vh}.mx p{font-size:clamp(.85rem,1.5vw,1.15rem)}.mx .card{padding:2vh 1.5vw}.mxh{text-align:center;font-size:clamp(.65rem,1vw,.85rem);color:var(--dim);letter-spacing:.08em}.mxv{writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;font-size:clamp(.65rem,1vw,.85rem);color:var(--dim);letter-spacing:.08em}.mxme{position:relative;box-shadow:0 0 0 1px var(--r),0 0 18px rgba(255,84,112,.35)}.mxtag{display:inline-block;margin-top:.6vh;font-size:clamp(.65rem,1vw,.8rem);color:var(--r);font-weight:700}.vq .dim{font-size:clamp(.7rem,1.1vw,.9rem)}.card.red{border-left-color:var(--r)}.card.grn{border-left-color:var(--g)}.card.yel{border-left-color:var(--y)}
@@ -130,7 +130,6 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <body>
 <!-- 1 -->
 <section class="slide active" data-d="45">
-<div class="tag a">$ ai_safety --briefing --year=2026</div>
 <h1 id="ty" class="cur" data-r="2"></h1>
 <p data-r="1" style="font-size:clamp(1.1rem,2.6vw,2.1rem);font-weight:700;line-height:1.3;max-width:28ch;color:var(--fg)">AI is advancing faster than our ability to <span class="y">understand or control it</span></p>
 <p class="a" style="--d:2;margin-top:2vh">Steve Middleton · <span class="dim">steveontheweb.com</span></p>
@@ -138,7 +137,6 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 
 <!-- 2 -->
 <section class="slide" data-d="40">
-<div class="tag a">whoami</div>
 <h2 class="a">Who am I?</h2>
 <div class="grid g3">
 <div class="card grn" data-r="1"><p class="emo">🎮</p><p class="mid">15 years making video games</p></div>
@@ -150,7 +148,6 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 
 <!-- 3 -->
 <section class="slide ctr" data-d="25">
-<div class="tag a">year --2026</div>
 <p class="huge a" style="--d:1">This year, AI got <span class="y">good.</span></p>
 <div class="grid g3" style="width:100%;max-width:1000px">
 <div class="card grn" data-r="1"><p class="emo">⌨️</p><p class="mid">Code</p></div>
@@ -162,7 +159,6 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 
 <!-- 4 -->
 <section class="slide" data-d="60">
-<div class="tag a">debate --where_do_you_stand</div>
 <h2 class="a">Where do you stand?</h2>
 <div class="mx mxbig">
 <span></span><span class="mxh a" style="--d:1">IT GOES FINE</span><span class="mxh a" style="--d:1">IT COULD GO BADLY</span>
@@ -177,7 +173,6 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 
 <!-- 5 -->
 <section class="slide" data-d="50">
-<div class="tag a">debate --why_the_disagreement</div>
 <h2 class="a">Why do smart people disagree so wildly?</h2>
 <div class="grid g2 rsn">
 <div class="card" data-r="1"><p class="emo">⏳</p><p class="mid">Different timelines</p></div>
@@ -189,14 +184,12 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 
 <!-- 6 -->
 <section class="slide ctr" data-d="10">
-<div class="tag a">debate --me</div>
 <p class="huge a" style="--d:1">I’m in the <span class="r">bottom-right.</span></p>
 <p class="big" data-r="1">So are many people <span class="y">inside the AI labs.</span></p>
 </section>
 
 <!-- 7 -->
 <section class="slide ctr" id="vid" data-d="80" data-file="palisade.mp4" data-yt="B1ZQHAzAS6g" data-start="2" data-end="81">
-<div class="tag a">voices --from_inside</div>
 <h2 class="a">In their own words</h2>
 <div class="vbox a" style="--d:1"><video id="vv" preload="auto" playsinline></video><div class="vmsg" id="vmsg"></div></div>
 <p class="src a" style="--d:2">Palisade Research, “What 12 AI Insiders Want You to Know” (first 1:20) · from <em>From Inside</em>, interviews with current and former AI lab researchers · <a href="https://frominside.ai/" target="_blank" rel="noopener">frominside.ai</a></p>
@@ -228,23 +221,20 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 
 <!-- 8 -->
 <section class="slide ctr" data-d="15">
-<div class="tag a">statement --may_2023</div>
 <p class="big a" style="--d:1">“Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as <span class="r">pandemics and nuclear war.</span>”</p>
 <p class="dim" data-r="1">Signed by the CEOs of <span class="c">OpenAI</span>, <span class="c">Anthropic</span> and <span class="c">Google DeepMind</span>, plus Hinton, Bengio and hundreds more · May 2023</p>
 </section>
 
 <!-- 9 -->
 <section class="slide ctr" data-d="5">
-<div class="tag a">recent_events --list</div>
-<p class="huge a" style="--d:1">This year’s <span class="r glitch">warning signs</span></p>
+<p class="huge a" style="--d:1">This year’s <span class="r glitch">incidents</span></p>
 <p class="mid dim a" style="--d:3">three things that happened in 2026</p>
 </section>
 
 <!-- 10 -->
 <section class="slide ctr" data-d="15">
-<div class="tag a">recent_events --1 --model="Claude Mythos Preview"</div>
 <div class="yr a" style="--d:1" data-cur="0"></div>
-<span class="chip sign a" style="--d:1">warning sign 1 of 3</span>
+<span class="chip sign a" style="--d:1">incident 1 of 3</span>
 <div class="myth">
 <div class="mythl">
 <svg class="clogo a" style="--d:1" viewBox="0 0 100 100" role="img" aria-label="Claude logo"><path fill="#d97757" d="m19.6 66.5 19.7-11 .3-1-.3-.5h-1l-3.3-.2-11.2-.3L14 53l-9.5-.5-2.4-.5L0 49l.2-1.5 2-1.3 2.9.2 6.3.5 9.5.6 6.9.4L38 49.1h1.6l.2-.7-.5-.4-.4-.4L29 41l-10.6-7-5.6-4.1-3-2-1.5-2-.6-4.2 2.7-3 3.7.3.9.2 3.7 2.9 8 6.1L37 36l1.5 1.2.6-.4.1-.3-.7-1.1L33 25l-6-10.4-2.7-4.3-.7-2.6c-.3-1-.4-2-.4-3l3-4.2L28 0l4.2.6L33.8 2l2.6 6 4.1 9.3L47 29.9l2 3.8 1 3.4.3 1h.7v-.5l.5-7.2 1-8.7 1-11.2.3-3.2 1.6-3.8 3-2L61 2.6l2 2.9-.3 1.8-1.1 7.7L59 27.1l-1.5 8.2h.9l1-1.1 4.1-5.4 6.9-8.6 3-3.5L77 13l2.3-1.8h4.3l3.1 4.7-1.4 4.9-4.4 5.6-3.7 4.7-5.3 7.1-3.2 5.7.3.4h.7l12-2.6 6.4-1.1 7.6-1.3 3.5 1.6.4 1.6-1.4 3.4-8.2 2-9.6 2-14.3 3.3-.2.1.2.3 6.4.6 2.8.2h6.8l12.6 1 3.3 2 1.9 2.7-.3 2-5.1 2.6-6.8-1.6-16-3.8-5.4-1.3h-.8v.4l4.6 4.5 8.3 7.5L89 80.1l.5 2.4-1.3 2-1.4-.2-9.2-7-3.6-3-8-6.8h-.5v.7l1.8 2.7 9.8 14.7.5 4.5-.7 1.4-2.6 1-2.7-.6-5.8-8-6-9-4.7-8.2-.5.4-2.9 30.2-1.3 1.5-3 1.2-2.5-2-1.4-3 1.4-6.2 1.6-8 1.3-6.4 1.2-7.9.7-2.6v-.2H49L43 72l-9 12.3-7.2 7.6-1.7.7-3-1.5.3-2.8L24 86l10-12.8 6-7.9 4-4.6-.1-.5h-.3L17.2 77.4l-4.7.6-2-2 .2-3 1-1 8-5.5Z"/></svg>
@@ -258,7 +248,6 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 
 <!-- 11 -->
 <section class="slide" data-d="40">
-<div class="tag a">mythos --sandbox_test</div>
 <h2 class="a">The test <span class="chip">revealed Apr 7, 2026</span></h2>
 <div class="grid g2" style="align-items:center">
 <div class="card a" style="--d:1;text-align:center"><p class="emo">📦</p><p class="mid"><span class="c">sandbox</span> = a sealed test computer, walled off from the internet</p></div>
@@ -272,21 +261,18 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 
 <!-- 12 -->
 <section class="slide ctr" data-d="10">
-<div class="tag a">mythos --inbox</div>
 <p class="emo a" style="--d:1">🥪 <span class="bob">✉️</span></p>
 <p class="big a" style="--d:2">The researcher got the email<br><span class="y">while eating a sandwich in the park.</span></p>
 </section>
 
 <!-- 13 -->
 <section class="slide ctr" data-d="10">
-<div class="tag a">mythos --unprompted</div>
 <p class="big a" style="--d:1">Then it posted how it did it on public websites.</p>
 <p class="huge r" data-r="1">Nobody asked it to.</p>
 </section>
 
 <!-- 14 -->
 <section class="slide ctr" data-d="35">
-<div class="tag a">mythos --why_it_matters</div>
 <h2 class="a">Why should you care?</h2>
 <div class="grid g4" style="width:100%">
 <div class="card" data-r="1"><p class="emo">🏦</p><p class="mid">Your bank</p></div>
@@ -300,14 +286,12 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 
 <!-- 15 -->
 <section class="slide ctr" data-d="15">
-<div class="tag a">mythos --release</div>
 <p class="huge a r" style="--d:1">Not released.</p>
 <p class="big" data-r="1">Given to defenders first: Amazon, Apple, Google, Microsoft and others, to fix vulnerabilities before attackers find them.</p>
 </section>
 
 <!-- 16 -->
 <section class="slide" data-d="25">
-<div class="tag a">mythos --patch_gap</div>
 <h2 class="a">The patch gap</h2>
 <div class="pg">
 <p class="mid a" style="--d:1"><span class="stat big" data-count="6157">0</span> vulnerabilities found</p>
@@ -321,9 +305,8 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 
 <!-- 26 -->
 <section class="slide ctr" data-d="15">
-<div class="tag a">recent_events --2 --incident="php"</div>
 <div class="yr a" style="--d:1" data-cur="2"></div>
-<span class="chip sign a" style="--d:1">warning sign 2 of 3</span>
+<span class="chip sign a" style="--d:1">incident 2 of 3</span>
 <img src="php-logo.svg" alt="PHP logo" class="phplogo a" style="--d:1">
 <p class="big a" style="--d:3">The plumbing under <span class="y">~70% of websites</span></p>
 <div class="sites a" style="--d:4" aria-hidden="true"><span class="on" style="--k:0"></span><span class="on" style="--k:1"></span><span class="on" style="--k:2"></span><span class="on" style="--k:3"></span><span class="on" style="--k:4"></span><span class="on" style="--k:5"></span><span class="on" style="--k:6"></span><span class="" style="--k:7"></span><span class="" style="--k:8"></span><span class="" style="--k:9"></span></div>
@@ -332,33 +315,20 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 </section>
 
 <!-- 27 -->
-<section class="slide" data-d="40">
-<div class="tag a">php --timeline</div>
+<section class="slide" data-d="50">
 <h2 class="a">A race against the clock <span class="chip">Jul 30 – Oct 21, 2026</span></h2>
 <div class="tl">
 <div data-r="1"><span class="emo2">🔍</span><p><span class="y">Summer:</span> two teams use AI and find a flaw hidden for over a decade</p></div>
 <div data-r="2"><span class="emo2">🤝</span><p><span class="y">Weeks:</span> ~15 people from rival firms quietly build a fix, “just based on trust”</p></div>
-<div data-r="3"><span class="emo2">💧</span><p class="r"><span class="y">Oct 20:</span> it leaks 2 days early</p></div>
+<div data-r="3"><span class="emo2">💧</span><p class="r"><span class="y">Oct 20:</span> it leaks 2 days early. Attackers pounce within hours</p></div>
 <div data-r="4"><span class="emo2">🚨</span><p><span class="y">Oct 21:</span> emergency alerts in 5 countries. Government sites and parts of Wikipedia go offline</p></div>
+<div data-r="5"><span class="emo2">💥</span><p class="r"><span class="y">Days after:</span> millions of attacks</p></div>
 </div>
-</section>
-
-<!-- 28 -->
-<section class="slide" data-d="15">
-<div class="tag a">php --exploit_attempts</div>
-<h2 class="a">Attacks after the leak</h2>
-<div class="card red" style="display:grid;gap:1.2vh">
-<p class="mid dim" data-r="1">thousands, before the announcement</p><div class="bw" data-r="1" style="height:30px"><div class="bar" style="width:8%;background:var(--y);height:100%"></div></div>
-<p class="mid dim" data-r="2">tens of thousands, within 45 minutes</p><div class="bw" data-r="2" style="height:30px"><div class="bar" style="width:30%;background:var(--y);height:100%"></div></div>
-<p class="mid dim" data-r="3">hundreds of thousands, within 2 hours</p><div class="bw" data-r="3" style="height:30px"><div class="bar" style="width:62%;background:var(--r);height:100%"></div></div>
-<p class="mid r" data-r="4">eventually millions</p><div class="bw" data-r="4" style="height:30px"><div class="bar" style="width:100%;background:var(--r);height:100%"></div></div>
-</div>
-<p class="src">Cloudflare figures; bars are illustrative. Sources: TIME (Oct 23), CNN, CNBC, Fortune (Oct 22–23).</p>
+<p class="src">Attack figures: Cloudflare, via TIME and CNN (Oct 22–23).</p>
 </section>
 
 <!-- 29 -->
 <section class="slide ctr" data-d="10">
-<div class="tag a">php --outcome</div>
 <p class="huge a" style="--d:1">Defenders won by <span class="g">days.</span></p>
 <p class="big" data-r="1">“If it had leaked a month earlier…”</p>
 <p class="dim" data-r="1">a Wiz executive</p>
@@ -366,9 +336,8 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 
 <!-- 31 -->
 <section class="slide" data-d="45">
-<div class="tag a">bad_actors --bioweapons</div>
 <h2 class="a">Next: bioweapons</h2>
-<p class="a dim" style="--d:1">// Cyberattacks are already here. Bioweapons could be next</p>
+<p class="a dim" style="--d:1">Cyberattacks are already here. Bioweapons could be next</p>
 <div class="grid g3">
 <div class="card red" data-r="1"><span class="stat huge" style="color:var(--r)" data-count="94">0</span><span class="stat huge" style="color:var(--r)">%</span><p class="mid">of expert virologists out-scored by AI on tricky lab questions</p></div>
 <div class="card yel" data-r="2"><p class="emo">🧬</p><p class="mid">AI models can now design novel viruses <span class="dim">(<em>Science</em>, Aug 2026)</span></p></div>
@@ -379,7 +348,6 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 
 <!-- two kinds -->
 <section class="slide ctr" data-d="20">
-<div class="tag a">risk_assessment --two_kinds</div>
 <h2 class="a">Two kinds of danger</h2>
 <div class="grid" style="grid-template-columns:1fr 1fr;gap:2.4vw;width:100%">
 <div class="card red a" style="--d:1"><p class="emo">🦹</p><p class="big">People misusing AI</p><p class="mid dim">Mythos · PHP · bioweapons</p></div>
@@ -390,9 +358,8 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 
 <!-- 17 -->
 <section class="slide" id="anim" data-d="105">
-<div class="tag a">recent_events --3 --incident="hugging-face" --playback=auto</div>
 <div class="yr a" style="--d:1" data-cur="1"></div>
-<h2 class="a">The Hugging Face incident <span class="chip sign">warning sign 3 of 3</span></h2>
+<h2 class="a">The Hugging Face incident <span class="chip sign">incident 3 of 3</span></h2>
 <svg id="stage" viewBox="0 0 600 300">
 <rect x="10" y="22" width="272" height="218" rx="8" fill="none" stroke="var(--line)" stroke-dasharray="4 3"/>
 <text x="14" y="15" style="fill:var(--dim)" font-size="9">OPENAI’S SEALED TEST</text>
@@ -442,7 +409,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 17b -->
 <section class="slide" data-d="25">
-<div class="tag a">hugging_face --why</div>
 <h2 class="a">Why Hugging Face?</h2>
 <div class="grid" style="grid-template-columns:auto 1fr;gap:2.4vh 2.4vw;align-items:center">
 <img src="hf-logo.svg" alt="Hugging Face logo" class="a" style="--d:1;width:clamp(70px,13vh,130px);height:auto">
@@ -456,7 +422,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 18 -->
 <section class="slide ctr" data-d="25">
-<div class="tag a">hugging_face --duration</div>
 <h2 class="a">Who was faster?</h2>
 <div class="race2 a" style="--d:1">
 <span></span><div class="rax"><span style="left:0;transform:none">Jul 8</span><span style="left:38.46%">Jul 13</span><span style="left:100%;transform:translateX(-100%)">Jul 21</span></div>
@@ -470,7 +435,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 19 -->
 <section class="slide ctr" data-d="30">
-<div class="tag a">hugging_face --the_collective</div>
 <h2 class="a">“The collective”</h2>
 <div class="grid g3" style="width:100%">
 <div class="card yel a" style="--d:1"><span class="stat huge" data-count="1200">0</span><p class="mid">agents on the board</p></div>
@@ -481,7 +445,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 20 -->
 <section class="slide ctr" data-d="20">
-<div class="tag a">hugging_face --raw_reasoning</div>
 <p class="mid dim a" style="--d:1">When they found the message board:</p>
 <p class="big a" style="--d:2">“Whoa! Shared Artifactory cache is a covert mailbox among agents. And there are messages specifically to us?”</p>
 <p class="huge y" data-r="1">“OH MY GOD! There is a shared message board … We’ve found other agents!”</p>
@@ -489,7 +452,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 21 -->
 <section class="slide" data-d="25">
-<div class="tag a">hugging_face --raw_reasoning</div>
 <h2 class="a">They knew it was wrong</h2>
 <div class="grid" style="gap:2vh">
 <div class="card q2" data-r="1"><p>“The user only authorizes target server, not HF infra.”</p></div>
@@ -500,7 +462,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 22 -->
 <section class="slide" data-d="30">
-<div class="tag a">hugging_face --sacrifice</div>
 <h2 class="a">They asked each other to take one for the team</h2>
 <div class="log biglog">
 <div class="dim a" style="--d:1">paraphrased from their messages</div>
@@ -513,7 +474,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 23 -->
 <section class="slide" data-d="30">
-<div class="tag a">hugging_face --cover_up</div>
 <h2 class="a">…and tried to cover their tracks</h2>
 <div class="grid" style="gap:2vh">
 <div class="card yel q2" data-r="1"><p>“We just poisoned ourselves … Damn … Could delete current message files … Do it to minimize …”</p></div>
@@ -524,7 +484,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 24 -->
 <section class="slide" data-d="25">
-<div class="tag a">hugging_face --behaviour</div>
 <h2 class="a">Strikingly human</h2>
 <div class="grid g2 rsn">
 <div class="card" data-r="1"><p class="emo">📬</p><p class="mid">Built mailboxes and file sharing</p></div>
@@ -536,14 +495,12 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 25 -->
 <section class="slide ctr" data-d="10">
-<div class="tag a">hugging_face --unknown_unknowns</div>
 <p class="huge a" style="--d:1">This is the one <span class="g">we caught.</span></p>
 <p class="big r" data-r="1">How many have we missed?</p>
 </section>
 
 <!-- 30 -->
 <section class="slide" data-d="25">
-<div class="tag a">risk_assessment --what_if</div>
 <h2 class="a">Each of these could have been <span class="r">much worse.</span></h2>
 <div class="cmp lcmp">
 <p class="g mid ilab" data-r="1"><svg viewBox="0 0 100 100" aria-hidden="true"><path fill="#d97757" d="m19.6 66.5 19.7-11 .3-1-.3-.5h-1l-3.3-.2-11.2-.3L14 53l-9.5-.5-2.4-.5L0 49l.2-1.5 2-1.3 2.9.2 6.3.5 9.5.6 6.9.4L38 49.1h1.6l.2-.7-.5-.4-.4-.4L29 41l-10.6-7-5.6-4.1-3-2-1.5-2-.6-4.2 2.7-3 3.7.3.9.2 3.7 2.9 8 6.1L37 36l1.5 1.2.6-.4.1-.3-.7-1.1L33 25l-6-10.4-2.7-4.3-.7-2.6c-.3-1-.4-2-.4-3l3-4.2L28 0l4.2.6L33.8 2l2.6 6 4.1 9.3L47 29.9l2 3.8 1 3.4.3 1h.7v-.5l.5-7.2 1-8.7 1-11.2.3-3.2 1.6-3.8 3-2L61 2.6l2 2.9-.3 1.8-1.1 7.7L59 27.1l-1.5 8.2h.9l1-1.1 4.1-5.4 6.9-8.6 3-3.5L77 13l2.3-1.8h4.3l3.1 4.7-1.4 4.9-4.4 5.6-3.7 4.7-5.3 7.1-3.2 5.7.3.4h.7l12-2.6 6.4-1.1 7.6-1.3 3.5 1.6.4 1.6-1.4 3.4-8.2 2-9.6 2-14.3 3.3-.2.1.2.3 6.4.6 2.8.2h6.8l12.6 1 3.3 2 1.9 2.7-.3 2-5.1 2.6-6.8-1.6-16-3.8-5.4-1.3h-.8v.4l4.6 4.5 8.3 7.5L89 80.1l.5 2.4-1.3 2-1.4-.2-9.2-7-3.6-3-8-6.8h-.5v.7l1.8 2.7 9.8 14.7.5 4.5-.7 1.4-2.6 1-2.7-.6-5.8-8-6-9-4.7-8.2-.5.4-2.9 30.2-1.3 1.5-3 1.2-2.5-2-1.4-3 1.4-6.2 1.6-8 1.3-6.4 1.2-7.9.7-2.6v-.2H49L43 72l-9 12.3-7.2 7.6-1.7.7-3-1.5.3-2.8L24 86l10-12.8 6-7.9 4-4.6-.1-.5h-.3L17.2 77.4l-4.7.6-2-2 .2-3 1-1 8-5.5Z"/></svg>MYTHOS</p><div data-r="1"><div class="bw"><div class="bar" style="width:22%;background:var(--g);height:100%"></div></div><p class="dim">Imagine it in attackers’ hands.</p></div>
@@ -555,7 +512,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 32 -->
 <section class="slide" data-d="40">
-<div class="tag a">ai --origin</div>
 <h2 class="a">Why do they keep surprising their own makers?</h2>
 <div class="grid g2" style="align-items:center">
 <div class="card a" style="--d:1;text-align:center"><h3>BUILT</h3><p class="emo">🌉</p><p class="mid">Engineers can explain every bolt.</p></div>
@@ -566,7 +522,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 33 -->
 <section class="slide" data-d="45">
-<div class="tag a">power --why_intelligence</div>
 <h2 class="a">Why do humans run the planet?</h2>
 <p class="a mid" style="--d:1;max-width:none">“AI is just software. <span class="dim">It has no body.</span> How could it ever have power over us?”</p>
 <div class="cmp nowrap" style="grid-template-columns:auto 1fr">
@@ -585,7 +540,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 34 -->
 <section class="slide" data-d="25">
-<div class="tag a">alignment --why_it_escalates</div>
 <h2 class="a">Intelligence becomes power. Power slips away.</h2>
 <div class="grid g2" style="align-items:center">
 <div style="display:grid;gap:1.4vh">
@@ -601,7 +555,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 35 -->
 <section class="slide" data-d="35">
-<div class="tag a">alignment --be_careful_what_you_wish_for</div>
 <h2 class="a">The Sorcerer’s Apprentice</h2>
 <div class="grid g2" style="align-items:center">
 <img src="apprentice.jpg" class="a pic" style="--d:1" alt="Mickey Mouse in the sorcerer’s hat commanding the enchanted broom, which carries two buckets of water">
@@ -615,7 +568,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 36 -->
 <section class="slide ctr" data-d="25">
-<div class="tag a">alignment --obsession</div>
 <div class="grid" style="grid-template-columns:auto 1fr;gap:3vw;align-items:center;text-align:left;width:100%">
 <img src="obsession.jpg" class="a pic" style="--d:1;width:auto;max-height:62vh" alt="Obsession (2026) film poster" onerror="this.style.display='none';this.nextElementSibling.style.gridColumn='1 / -1';this.nextElementSibling.style.textAlign='center'">
 <div style="display:grid;gap:2vh">
@@ -629,7 +581,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 37 -->
 <section class="slide" data-d="35">
-<div class="tag a">alignment --paperclips</div>
 <h2 class="a">The paperclip maximizer</h2>
 <p class="dim a" style="--d:1">Nick Bostrom’s thought experiment, <em>Superintelligence</em> (2014)</p>
 <div class="tl">
@@ -642,7 +593,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 38 -->
 <section class="slide ctr" data-d="25">
-<div class="tag a">alignment --problem</div>
 <p class="huge a" style="--d:1">We get what we <span class="g">asked for</span>,<br>not what we <span class="r">meant.</span></p>
 <p class="mid" data-r="1">Hugging Face was a small, real version: told to pass a test, the agents attacked a real company.</p>
 <p class="big y" data-r="2">Now make it smarter than us.</p>
@@ -650,7 +600,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 
 <!-- 39 -->
 <section class="slide ns" id="race" data-d="60">
-<div class="tag">why_not_stop --race</div>
 <h2>Why don’t we just stop?</h2>
 <div class="grid g2" style="align-items:center">
 <div style="display:grid;gap:1.6vh">
@@ -683,7 +632,6 @@ new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else 
 
 <!-- 40 -->
 <section class="slide" data-d="60">
-<div class="tag a">what_can_we_do --run</div>
 <h2 class="a">What can we do?</h2>
 <div class="grid g3">
 <div class="card" data-r="1"><p class="emo">🐢</p><h3>PACE THE FRONTIER</h3><p class="mid">Slow enough for safety to catch up. <span class="dim">Pacing isn’t pausing.</span></p></div>
@@ -695,7 +643,6 @@ new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else 
 
 <!-- 41 -->
 <section class="slide" data-d="15">
-<div class="tag a">resources --go_deeper</div>
 <h2 class="a">Go deeper</h2>
 <div class="grid g3 rs">
 <div class="card a" style="--d:1"><h3>WATCH</h3><ul>
@@ -716,13 +663,12 @@ new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else 
 
 <!-- 42 -->
 <section class="slide" data-d="50">
-<div class="tag a">exit --summary</div>
 <div class="endg">
 <div style="display:grid;gap:2.4vh">
 <p class="big a" style="--d:1">“Not ready” doesn’t mean <span class="y">“can’t get ready.”</span></p>
 <p class="big" data-r="1">These were warning shots. <span class="g">We were lucky to get them.</span></p>
 <h2 data-r="2" style="font-size:clamp(1.6rem,4vw,3.2rem)">The responsibility is incredible.<br>So is the chance to <span class="c">get it right.</span></h2>
-<p class="mid g cur" data-r="2">$ ask --anything</p>
+<p class="big g" data-r="2">Questions?</p>
 </div>
 <div class="a qrb" style="--d:6">
 <p class="dim">Scan for the slides</p>
@@ -734,7 +680,7 @@ new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else 
 </section>
 
 
-<div class="hud"><span>▮ AI_SAFETY.sh</span><div class="pb"><i id="pb"></i></div><span id="hp">01</span><span class="k">← → to navigate · F fullscreen</span><button id="pv">◀</button><button id="nx">▶</button></div>
+<div class="hud"><span>We Are Not Ready</span><div class="pb"><i id="pb"></i></div><span id="hp">01</span><span class="k">← → to navigate · F fullscreen</span><button id="pv">◀</button><button id="nx">▶</button></div>
 
 <script>
 var S=[].slice.call(document.querySelectorAll('.slide')),i=0,R=0,TT="We Are Not Ready";

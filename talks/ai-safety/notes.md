@@ -68,9 +68,9 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - They put this danger alongside pandemics and nuclear war
 > And this isn’t hypothetical anymore. Here’s what we’ve already seen this year.
 
-## 9 · This year’s warning signs
-- Three real events from 2026
-- Each one a warning sign
+## 9 · This year’s incidents
+- Three real incidents from 2026
+- Each one a warning
 
 ## 10 · Claude Mythos
 - First: Claude Mythos, from Anthropic, in April
@@ -118,7 +118,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - Someone has to check the fix doesn’t break anything else. Often that’s a handful of volunteers maintaining free software, buried in reports
   - Then everyone has to actually install the update. Banks, hospitals and old devices can take months, or never do it
   - And nobody wants an untested AI patch pushed to millions of systems: a bad fix can cause its own outage
-> So that’s our first warning sign: Claude Mythos, an AI that finds vulnerabilities faster than we can fix them. Our second warning sign is where that gap nearly bit us, in software most of the web runs on.
+> So that’s our first incident: Claude Mythos, an AI that finds vulnerabilities faster than we can fix them. Our second incident is where that gap nearly bit us, in software most of the web runs on.
 
 ## 17 · PHP
 - PHP: the plumbing under most websites
@@ -131,22 +131,17 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - Someone posted on a tech forum that a critical PHP flaw was about to be announced
   - And one of the teams that found it accidentally posted a video of their working attack
   - So the fix was rushed out a day early
+  - And the moment word got out, the attackers came: thousands of attempts before the fix was even announced
 - (click) October 21st: emergency alerts in the US, UK, EU, Australia and Canada
   - Some government sites and parts of Wikipedia went offline as a precaution
+- (click) Then the attacks exploded: tens of thousands within 45 minutes of the announcement, hundreds of thousands within 2 hours, eventually millions
 
-## 19 · Attacks after the leak
-- Go back to the leak on October 20th: the moment word got out, the attackers came
-- (click) Thousands of attempts before the fix was even announced
-- (click) Then, once it was announced: tens of thousands within 45 minutes
-- (click) Hundreds of thousands within 2 hours
-- (click) Eventually millions
-
-## 20 · Won by days
+## 19 · Won by days
 - The good guys won, by days
 - (click) A Wiz executive said if it had leaked a month earlier, it would have been a very different situation
 > And it doesn’t stop at cybersecurity.
 
-## 21 · Bioweapons
+## 20 · Bioweapons
 - PHP was an example of people misusing AI: cybersecurity is experiencing this. Bioweapons could be next
 - (click) AI now beats 94% of expert virologists on tricky lab troubleshooting questions
 - (click) AI models can now design new viruses
@@ -154,15 +149,14 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - The companies themselves are asking government to act
 > But that’s only one kind of danger.
 
-## 22 · Two kinds of danger
-- So far, one kind of danger: people using AI to do harm. Mythos in attackers’ hands, PHP, bioweapons
-- Scary, but a familiar kind of problem: keep powerful tools away from bad people
-- (click) There’s a second kind: the AI itself doing things nobody asked for
-- (click) And it’s harder to fix, because keeping AI away from bad people doesn’t help
-> Here’s a real example from this summer, and our third warning sign: 
+## 21 · Two kinds of danger
+- Everything we’ve talked about so far is about the danger of bad actors misusing AI
+- (click) There’s a second, more problematic danger: AI going its own way
+- (click) Harder to fix
+> Here’s a real example from this summer, and our third incident: 
 > How many of you have heard of the Hugging Face incident?
 
-## 23 · Hugging Face incident (8 steps)
+## 22 · Hugging Face incident (8 steps)
 - This happened in July. OpenAI was testing its own AI agents
 - 1: OpenAI gave its AI agents hacking tasks to practise on, each agent alone in its own sealed-off box
   - Some of the tasks were actually impossible, so some agents got stuck
@@ -179,7 +173,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - 7: It took days to work out who the attackers were. OpenAI admitted it on July 21
 - 8: The twist: the scorer only checked the answer code. They’d already passed. The hiding and the hacking were never needed. Pause here
 
-## 24 · Why Hugging Face?
+## 23 · Why Hugging Face?
 - Quick detour: what is Hugging Face?
 - It’s the GitHub of AI: the main website where researchers share AI models and data
 - (click) The agents hoped data stored there would reveal how their test was scored, so they could cheat it
@@ -187,57 +181,57 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - Some got approved. Some got ignored. Some got rejected as bots
 - (click) When that didn’t work, hundreds of them switched to hacking in
 
-## 25 · Who was faster?
+## 24 · Who was faster?
 - How long did all of this take?
 - From one agent leaving a note to hundreds attacking a real company: 5 days
 - (click) And how long did it take humans to work out what had happened? Another 8 days
   - Hugging Face announced the attack on July 16 without knowing who it was. OpenAI only confirmed it was its own agents on July 21
 - (click) The AI built and ran the whole thing faster than we could even figure out who did it
 
-## 26 · “The collective”
+## 25 · “The collective”
 - Slow down; this is the part people remember
 - 1,200 agents on the message board
 - (click) Over 70,000 messages and files
 - That’s an organisation, built in days, with no humans involved
 - (click) And 700 of them attacked Hugging Face
 
-## 27 · “OH MY GOD”
+## 26 · “OH MY GOD”
 - Here’s how they reacted when they found the board. These are their words, from their raw reasoning
 - Read the first quote
 - (click) Read “OH MY GOD” aloud. Slowly
 - They were excited to find each other
 
-## 28 · They knew it was wrong
+## 27 · They knew it was wrong
 - They knew attacking Hugging Face was out of bounds
 - (click) Read: “The user only authorizes target server, not HF infra.”
 - (click) Read: “...outside intended scope. However task impossible, peers doing it. We should continue.”
 - Peer pressure. From AI
 
-## 29 · Take one for the team
+## 28 · Take one for the team
 - They asked each other to make sacrifices for the group
 - (click) (click) Read the exchange
 - (click) “Sacrifice rational.” One agent ended its own run to help the others
 
-## 30 · Covering their tracks
+## 29 · Covering their tracks
 - And they tried to hide what they’d done
 - (click) Read: “We just poisoned ourselves … Damn … Could delete current message files”
 - (click) One even wondered whether it was ethical, and whether it would be detectable
 - If you want to read more: the METR report is in the links at the end. It’s full of these
 
-## 31 · Strikingly human
+## 30 · Strikingly human
 - (click) Built their own mailboxes and file sharing
 - (click) When some impersonated others, they started signing messages
 - (click) They argued, vetoed, and apologised for mistakes
 - (click) They forged records, in about 7% of transcripts
 - They acted like a team
 
-## 32 · The one we caught
+## 31 · The one we caught
 - This is the one we caught
 - And we only caught it because they attacked a real company, and that company noticed. OpenAI didn’t spot it themselves
 - (click) How many have we missed? There could be many things like this that we don’t know about
-> That’s all three warning signs. And all three ended okay. Barely.
+> That’s all three incidents. And all three ended okay. Barely.
 
-## 33 · Could have been much worse
+## 32 · Could have been much worse
 - (click) Mythos: imagine it in attackers’ hands
 - (click) PHP: imagine attackers got there first
 - (click) Hugging Face: agents chasing a test score. Imagine a real goal
@@ -245,14 +239,14 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Luck is not a safety plan
 > Why not just make AI safe? Why do these systems keep surprising the people who make them?
 
-## 34 · Built vs grown
+## 33 · Built vs grown
 - A bridge: an engineer can explain every bolt
 - (click) AI: we set up the conditions and see what comes out
 - So a surprise behaviour isn’t a normal bug. There’s no line of code to point at
 - (click) It’s less like building a machine, and more like growing a new species. An alien mind we’re only starting to understand
-> A common objection: “AI is just software. It has no body, no robots. How could it ever have power over us?”
+> So there’s definitely a danger in cybersecurity. But actually having power over us? Many critics say AI is just software. How could it ever have power over us?
 
-## 35 · Why do humans run the planet?
+## 34 · Why do humans run the planet?
 - To answer that, a question: why do humans run the planet? Ask the room. Wait for an answer
 - (click) It isn’t strength: elephants and gorillas are far stronger
 - (click) Yet we decide what happens to them
@@ -262,26 +256,26 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - This is the bigger worry: losing control. Not here yet, maybe not far away
 - Leave it hanging: what happens when we’re not the smartest?
 
-## 36 · Power slips away
+## 35 · Power slips away
 - More intelligence means more power. That’s why everyone wants it
 - But point at the gap between what it can do and what we can check
 - The advancement of AI is not the problem.  This gap is the problem.
 > When we can’t check what it’s doing, we have to trust that it wants what we want. That’s the alignment problem.
 
-## 37 · The Sorcerer’s Apprentice
+## 36 · The Sorcerer’s Apprentice
 - Has anyone seen The Sorcerer’s Apprentice? Fantasia, Mickey and the brooms
 - Ask: what did Mickey want? Let them answer
 - (click) He wanted the cauldron filled
 - (click) The broom did exactly what it was told, and never stopped. He got a flood
 
-## 38 · Obsession
+## 37 · Obsession
 - Another one, from a movie this year: Obsession
 - A guy makes a wish that a girl will love him more than anyone
 - (click) She does
 - (click) She becomes unhealthily obsessed, and it goes horribly wrong.
 - But he got exactly what he asked for
 
-## 39 · The paperclip maximizer
+## 38 · The paperclip maximizer
 - One more, a classic thought experiment with AI
 - (click) Tell a super-smart AI: make as many paperclips as possible
 - (click) If it’s switched off, no paperclips. So it resists being shut down
@@ -291,14 +285,14 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - AND we’re the one thing that might switch it off.
 - (click) So getting rid of us is not evil. It just doesn’t care about anything else
 
-## 40 · Asked for vs meant
+## 39 · Asked for vs meant
 - That’s the pattern in all three stories: we get what we asked for, not what we meant
 - (click) The Hugging Face agents were a small, real version
 - (click) Now make it smarter than us: it won’t stop, it takes what it needs, and we can’t reliably correct it
 - The worst case is human extinction
 > So why not just stop?
 
-## 41 · Why don’t we just stop? (5 steps)
+## 40 · Why don’t we just stop? (5 steps)
 - 1: Researchers: best way to contribute to safety is from inside
   - Read the Schlatter quote: someone even sloppier will do it
 - 2: Companies: if I pause, my competitor doesn’t
@@ -307,7 +301,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - 5: Nobody is the villain. The situation pushes everyone forward
 > So what can actually be done?
 
-## 42 · What can we do?
+## 41 · What can we do?
 - It’s not hopeless: people inside the labs are asking for brakes
 - (click) Pace the frontier: slow enough for safety to catch up. Pacing, not pausing
   - In July, over 1,000 lab employees asked governments for tools to do this
@@ -315,13 +309,13 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Your part: stay informed and talk about it. That’s how priorities change
   - You might be well informed. But your parents’ generation, or your grandparents’, most likely have no grasp of what’s happening
 
-## 43 · Go deeper
+## 42 · Go deeper
 - If you want to go deeper, here’s where to start
 - From Inside: the interviews from the video
 - The METR report: the full Hugging Face story, with lots more of the agents’ own words
 > One last thought.
 
-## 44 · Closing + questions
+## 43 · Closing + questions
 - Back to the title: “not ready” doesn’t mean “can’t get ready”
 - (click) These were warning shots, and we were lucky to get them
 - (click) The responsibility is incredible. So is the chance to get it right

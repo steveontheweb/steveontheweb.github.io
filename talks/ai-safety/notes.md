@@ -259,7 +259,6 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) We’re the smartest: tools, cooperation, technology
 - (click) So power comes from intelligence, not muscles. And AI doesn’t need a body to use it
   - It can persuade people, pay people, move money, and control machines over the internet
-  - The Hugging Face agents had no bodies, and they still attacked a real company
 - This is the bigger worry: losing control. Not here yet, maybe not far away
 - Leave it hanging: what happens when we’re not the smartest?
 
@@ -279,8 +278,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - Another one, from a movie this year: Obsession
 - A guy makes a wish that a girl will love him more than anyone
 - (click) She does
-- (click) She becomes unhealthily obsessed, and it ends in murder
-- He got exactly what he asked for
+- (click) She becomes unhealthily obsessed, and it goes horribly wrong.
+- But he got exactly what he asked for
 
 ## 39 · The paperclip maximizer
 - One more, a classic thought experiment with AI
@@ -288,12 +287,9 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) If it’s switched off, no paperclips. So it resists being shut down
 - (click) It needs materials and energy, and it never has enough. So it keeps going
   - First steel and factories. Then mines, power plants, farmland. Then cities
-  - Bostrom’s picture: it turns the whole Earth, and then space, into paperclip factories
-  - But we need that farmland, that energy, those cities to survive. And our bodies are made of atoms it could use too
-  - And we’re the one thing that might switch it off. So getting rid of us isn’t hatred. It’s just efficient
-  - Optional quote, from AI researcher Eliezer Yudkowsky: “The AI does not hate you, nor does it love you, but you are made out of atoms which it can use for something else”
-- (click) Not evil. It just doesn’t care about anything else
-  - Just a goal it won’t let go of
+  - Our bodies are made of atoms it could use too
+  - AND we’re the one thing that might switch it off.
+- (click) So getting rid of us is not evil. It just doesn’t care about anything else
 
 ## 40 · Asked for vs meant
 - That’s the pattern in all three stories: we get what we asked for, not what we meant

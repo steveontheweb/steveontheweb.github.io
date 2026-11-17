@@ -18,10 +18,11 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) I have worked in video games for the last 15 years
 - (click) Since 2017: helped build numerous ML systems, from research prototypes to production tools
 - (click) And I use AI constantly. Not every day, every hour. Most of the time I have several AI agents working at once
-- So I’m not an outsider. I love what this technology can do
+- So I’m not an outsider
+> And this year, it got really good.
 
 ## 3 · This year, AI got good
-- And this year, AI got even better. I saw frontier AI:
+- This year I saw frontier AI:
 - (click) write code better than any developer I know
 - (click) come up with better ideas and designs
 - (click) and be truly creative, in a way I didn't think possible

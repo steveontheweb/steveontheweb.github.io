@@ -7,7 +7,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 1 · Title
 - Welcome, thanks for having me
 - My name is Steve
-- Show of Hands: who used an AI tool this week?  Today?
+- Show of Hands: who used an AI tool this week?
 - Unless you've been living under a rock, probably know that AI influencing more and more of our lives
 - (click) It's my opinion that AI is advancing...
 - (click) and I believe that "We Are Not Ready" for it.
@@ -19,7 +19,6 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Since 2017: helped build numerous ML systems, from research prototypes to production tools
 - (click) And I use AI constantly. Not every day, every hour. Most of the time I have several AI agents working at once
 - So I’m not an outsider. I love what this technology can do
-- ...and I’ve been concerned about AI for a long time
 
 ## 3 · This year, AI got good
 - And this year, AI got even better. I saw frontier AI:
@@ -27,7 +26,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) come up with better ideas and designs
 - (click) and be truly creative, in a way I didn't think possible
 - (click) And it does in minutes what would take a person days
-> I'm excited about this technology, and at the same time I’m incredibly worried. But not everyone shares these concerns...
+> I'm excited about this technology, and at the same time I’m incredibly worried. 
+> And I realize not everyone shares these concerns...
 
 ## 4 · Where do you stand?
 - Two questions: how powerful will it get? Will it go well?
@@ -41,13 +41,11 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 5 · Why do smart people disagree?
 - (click) Different timelines: some mean next year, some mean 30 years
-- (click) No track record: nobody has done this before, so everyone is guessing from a different starting point
+- (click) No track record: nobody has done this before
   - Some people compare it to the Industrial Revolution: big change, and we adapted. But it's different:
-  - Speed: that took generations. This is taking years
-  - Machines replaced our muscles. AI is starting to replace our thinking, the thing that kept us in charge
-  - A steam engine never made its own plans. AI agents do (you'll see that soon)
+  - that took generations.
 - (click) Not everyone works with AI at its full capability; many people just use it as a chatbot, or to review a paper
-- (click) The technology is moving very fast: you might have an opinion one day, and then next month change your mind
+- (click) The technology is moving very fast: I often find myself saying "AI will never be able to do X", and only months after I'm proven wrong.
 
 ## 6 · I’m in the bottom-right
 - So I'm in the bottom right.

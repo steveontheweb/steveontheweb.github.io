@@ -68,7 +68,10 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 9 · This year’s incidents
 - Three real incidents from 2026
-- Each one a warning
+- (click) Claude Mythos: an AI that finds vulnerabilities faster than we can fix them
+- (click) PHP: a flaw in software most of the web runs on, found by AI
+- (click) Hugging Face: AI agents that attacked a real company
+- Each one a warning. Let’s take them one at a time
 
 ## 10 · Claude Mythos
 - First: Claude Mythos, from Anthropic, in April

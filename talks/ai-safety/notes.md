@@ -304,9 +304,9 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 40 · What can we do?
 - It’s not hopeless: people inside the labs are asking for brakes
-- (click) Pace the frontier: slow enough for safety to catch up. Pacing, not pausing
-  - In July, over 1,000 lab employees asked governments for tools to do this
-- (click) Make it a top priority. This isn’t only an engineering problem. AI companies and governments need to treat it as a top priority, and they respond to public pressure
+- (click) In July, over 1,000 lab employees asked governments for tools to Pace the frontier: 
+  - slow enough for safety to catch up. Pacing, not pausing
+- (click) We should also make it a top priority. This isn’t only an engineering problem. AI companies and governments need to treat it as a top priority, and they respond to public pressure
 - (click) Your part: stay informed and talk about it. That’s how priorities change
   - You might be well informed. But your parents’ generation, or your grandparents’, most likely have no grasp of what’s happening
 

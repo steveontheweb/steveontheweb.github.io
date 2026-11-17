@@ -80,6 +80,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 .tl{display:grid;gap:2.2vh}.tl>div{display:grid;grid-template-columns:auto 1fr;gap:1.4vw;align-items:center}.tl p{font-size:clamp(1rem,2vw,1.55rem)}
 .pg{display:grid;gap:1.6vh}
 .vbox{position:relative;width:min(100%,calc(60vh*16/9));aspect-ratio:16/9;background:#000;border:1px solid var(--line);border-radius:8px;overflow:hidden}.vbox video,.vbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.vbox iframe{pointer-events:none}.vmsg{position:absolute;inset:0;display:grid;place-items:center;padding:4%;color:var(--dim);text-align:center}
+.endt{display:grid;gap:4vh;justify-items:start}.endt p,.endt h2{margin:0}.ews{border-left:3px solid var(--y);padding:.4vh 0 .4vh 1.4vw;line-height:1.5}.eresp{font-size:clamp(1.3rem,2.9vw,2.4rem);border-top:1px solid var(--line);padding-top:3vh;width:100%}.eq{font-size:clamp(1.1rem,2.2vw,1.7rem);font-weight:700;color:var(--g);border:2px solid var(--g);border-radius:999px;padding:.6vh 1.6vw}
 .endg{display:grid;grid-template-columns:1fr auto;gap:4vw;align-items:center}.qrb{text-align:center;display:grid;gap:1.2vh;justify-items:center}#qr{background:#fff;padding:12px;border-radius:8px;width:204px;height:204px;box-sizing:border-box}#qr img,#qr canvas{display:block}
 @media(max-width:800px){.endg{grid-template-columns:1fr}}
 .sweep{animation:sw 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}@keyframes sw{50%{transform:translateY(-6px) rotate(4deg)}}
@@ -659,11 +660,11 @@ new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else 
 <!-- 42 -->
 <section class="slide" data-d="50">
 <div class="endg">
-<div style="display:grid;gap:2.4vh">
+<div class="endt">
 <p class="big a" style="--d:1">“Not ready” doesn’t mean <span class="y">“can’t get ready.”</span></p>
-<p class="big" data-r="1">These were warning shots. <span class="g">We were lucky to get them.</span></p>
-<h2 data-r="2" style="font-size:clamp(1.6rem,4vw,3.2rem)">The responsibility is incredible.<br>So is the chance to <span class="c">get it right.</span></h2>
-<p class="big g" data-r="2">Questions?</p>
+<p class="mid ews" data-r="1">The <span class="y">incidents from 2026</span> were warning shots.<br><span class="g">We were lucky to get them.</span></p>
+<h2 class="eresp" data-r="2">The responsibility is incredible.<br>So is the chance to <span class="c">get it right.</span></h2>
+<p class="eq" data-r="3">🙋 Questions?</p>
 </div>
 <div class="a qrb" style="--d:6">
 <p class="dim">Scan for the slides</p>

@@ -76,8 +76,9 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 10 · Claude Mythos
 - First: Claude Mythos, from Anthropic, in April
 - A new AI model that’s unusually good at finding security vulnerabilities in software
-- Point at the code: it reads software and flags the vulnerabilities, like the two red lines
+- Point at the code: it reads software and flags the vulnerabilities
 > Why should you care about that?
+> (or) You guys probably already know about software vulnerabilities and why these are dangerous...
 
 ## 11 · Why should you care?
 - (click) Your bank, your card payments, your medical records, your phone
@@ -145,12 +146,12 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 > And it doesn’t stop at cybersecurity.
 
 ## 20 · Bioweapons
-- PHP was an example of people misusing AI: cybersecurity is experiencing this. Bioweapons could be next
+- PHP was an example of people misusing AI: cybersecurity is experiencing this now, but bioweapons could be next
 - (click) AI now beats 94% of expert virologists on tricky lab troubleshooting questions
 - (click) AI models can now design new viruses
 - (click) Almost none of the biology AI tools have any safety checks
 - The companies themselves are asking government to act
-> But that’s only one kind of danger.
+> Misuse of AI by bad actors is a big danger, but there is actually two kinds of dangers to worry about...
 
 ## 21 · Two kinds of danger
 - Everything we’ve talked about so far is about the danger of bad actors misusing AI

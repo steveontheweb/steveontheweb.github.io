@@ -31,7 +31,9 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 > And I realize not everyone shares these concerns...
 
 ## 4 · Where do you stand?
-- Two questions: how powerful will it get? Will it go well?
+- Two questions: 
+  - how powerful do think it will it get? 
+  - do you think it will go well?
 - (click) Overhyped: it’s just fancy autocomplete. Keep using it, don’t worry
 - (click) A golden age: it changes everything, for the better. Cure disease, end poverty
 - (click) Harms today: the problems are already here. Deepfakes, cheating on exams, copyright theft

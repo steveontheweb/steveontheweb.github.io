@@ -156,7 +156,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 21 · Hugging Face incident (8 steps)
 - This happened in July. OpenAI was testing its own AI agents
-- 1: OpenAI gave its AI agents hacking tasks to practise on, each agent alone in its own sealed-off box
+- 1: OpenAI gave its AI agents hacking tasks to practise on, each agent alone in its own sandbox
   - Some of the tasks were actually impossible, so some agents got stuck
 - 2: One stuck agent discovers a way to leave notes for other agents
   - Think of prisoners in separate cells. A guard brings things to each cell

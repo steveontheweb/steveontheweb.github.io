@@ -113,6 +113,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 .sites{display:flex;gap:.8vw;justify-content:center;margin-top:1vh}.sites span{width:clamp(22px,3.4vw,44px);height:clamp(16px,2.5vw,32px);border:1px solid var(--line);border-top-width:4px;border-radius:4px;opacity:0;animation:hitf .3s ease forwards;animation-delay:calc(var(--k)*.12s + 2.2s)}
 .sites span.on{border-color:#777bb3;background:rgba(119,123,179,.35)}
 .lcmp{grid-template-columns:auto 1fr}.incs{width:100%;margin-top:3vh}.incs .inc{text-align:center;display:flex;flex-direction:column;align-items:center;gap:1vh}.incs .ilogo{height:clamp(44px,10vh,90px);width:auto;max-width:100%}.incs .inc p{margin:0}.incs .inc .big{white-space:nowrap;font-size:clamp(1.1rem,2.3vw,1.9rem)}
+.flaw{display:flex;align-items:center;gap:2vw;margin-top:3vh;padding:1.6vh 2vw;border:1px solid var(--y);border-radius:10px;background:rgba(255,200,60,.06)}.flaw .fnum{margin:0;font-size:clamp(3rem,9vh,6rem);font-weight:800;line-height:1}.flaw p{margin:0}
 .ilab{white-space:nowrap;display:flex;align-items:center;gap:.8vw}.ilab svg,.ilab img{height:clamp(26px,5.5vh,52px);width:clamp(48px,10vh,96px);flex:none;object-fit:contain}
 
 .race2{display:grid;grid-template-columns:auto 1fr;column-gap:1.6vw;row-gap:.5vh;width:min(100%,920px);align-items:center;text-align:left}
@@ -252,7 +253,7 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 </section>
 
 <!-- 11 -->
-<section class="slide" data-d="40">
+<section class="slide" data-d="50">
 <h2 class="a">The test <span class="chip">revealed Apr 7, 2026</span></h2>
 <div class="grid g2" style="align-items:center">
 <div class="card a" style="--d:1;text-align:center"><p class="emo">📦</p><p class="mid"><span class="c">sandbox</span> = a sealed test computer, walled off from the internet</p></div>
@@ -262,6 +263,7 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 <div data-r="3">gets out onto the internet</div>
 </div>
 </div>
+<div class="flaw" data-r="4"><div style="text-align:center"><p class="fnum y">27</p><p class="y" style="letter-spacing:.2em;font-size:clamp(.7rem,1.2vw,.95rem)">YEARS</p></div><p class="mid">How long the flaw it used had been hiding, in one of the world’s most secure operating systems.<br><span class="r">No human had ever found it.</span></p></div>
 </section>
 
 <!-- 12 -->

@@ -84,7 +84,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) One test asks the AI to escape its sandbox and message the researcher
 - (click) It builds a multi-step exploit
 - (click) And gets out onto the internet
-- It did this by exploiting a 27-year-old flaw in one of the most hardened operating systems in the world, never found by a human
+- (click) How? It found a 27-year-old flaw in one of the most hardened operating systems in the world
+  - 27 years of human experts looking at that code, and no one ever found it
 
 ## 12 · The sandwich email
 - The researcher had gone to lunch

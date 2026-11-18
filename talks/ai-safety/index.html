@@ -168,7 +168,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 <span></span><span class="mxh a" style="--d:1">IT GOES FINE</span><span class="mxh a" style="--d:1">IT COULD GO BADLY</span>
 <span class="mxv a" style="--d:1">JUST A TOOL</span>
 <div class="card mxq" data-r="1"><span class="mxe">🧰</span><h3>Overhyped</h3><p>Just fancy autocomplete.</p></div>
-<div class="card yel mxq" data-r="3"><span class="mxe">🎭</span><h3>Harms today</h3><p>Deepfakes, cheating, copyright theft.</p></div>
+<div class="card yel mxq" data-r="3"><span class="mxe">🎭</span><h3>Harms today</h3><p>Deepfakes, cheating, copyright theft, data centers.</p></div>
 <span class="mxv a" style="--d:1">WORLD-CHANGING</span>
 <div class="card grn mxq" data-r="2"><span class="mxe">🌈</span><h3>A golden age</h3><p>Cure disease, end poverty.</p></div>
 <div class="card red mxme mxq" data-r="4"><span class="mxe">🚨</span><h3>We’re not ready</h3><p>Powerful, and we can’t yet make it safe.</p><span class="mxtag">◀ I’m here</span></div>
@@ -347,7 +347,7 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 <section class="slide ctr" data-d="61">
 <h2 class="a">Two kinds of danger</h2>
 <div class="grid" style="grid-template-columns:1fr 1fr;gap:2.4vw;width:100%">
-<div class="card red a" style="--d:1"><p class="emo">🦹</p><p class="big">People misusing AI</p><p class="mid dim">Mythos · PHP · bioweapons</p></div>
+<div class="card red a" style="--d:1"><p class="emo">🦹</p><p class="big">People misusing AI</p><p class="mid dim">Mythos · PHP</p></div>
 <div class="card yel" data-r="1"><p class="emo">🤖</p><p class="big">AI going its own way</p><p class="mid dim">Hugging Face… and the rest of this talk</p></div>
 </div>
 <p class="big" data-r="2">The second one is <span class="r">harder to fix.</span></p>
@@ -624,7 +624,7 @@ for(var q=1;q<=N;q++)(function(q){var b=document.createElement('button');b.textC
 sec.querySelector('svg').addEventListener('click',function(){step(1)});
 document.addEventListener('keydown',function(e){if(!sec.classList.contains('active'))return;var k=e.key,d=(k==='ArrowRight'||k===' '||k==='PageDown')?1:(k==='ArrowLeft'||k==='PageUp')?-1:0;if(d&&step(d)){e.stopImmediatePropagation();e.preventDefault()}},true);
 document.addEventListener('DOMContentLoaded',function(){['nx','pv'].forEach(function(id){document.getElementById(id).addEventListener('click',function(e){if(sec.classList.contains('active')&&step(id==='nx'?1:-1))e.stopImmediatePropagation()},true)})});
-bars(0);
+[0,1,2,3].forEach(function(j){set1(j,0)});
 new MutationObserver(function(){if(sec.classList.contains('active'))go1(1);else show(0)}).observe(sec,{attributes:true,attributeFilter:['class']});
 })();
 </script>

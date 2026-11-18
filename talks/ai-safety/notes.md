@@ -36,7 +36,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - do you think it will go well?
 - (click) Overhyped: it’s just fancy autocomplete. Keep using it, don’t worry
 - (click) A golden age: it changes everything, for the better. Cure disease, end poverty
-- (click) Harms today: the problems are already here. Deepfakes, cheating on exams, copyright theft
+- (click) Harms today: the problems are already here. Deepfakes, cheating on exams, copyright theft, and data centers: the power, water and carbon they use
 - (click) We’re not ready: it’s powerful, and we can’t yet make it safe (particularly loss of control and alignment)
 - Ask the room: which box are you in?
 - Every box has smart, informed people in it
@@ -148,7 +148,6 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 20 · Two kinds of danger
 - Point at the left card: everything so far. Mythos, PHP
-  - And it’s not just cybersecurity. AI is getting good at biology too, and the same misuse risk applies to bioweapons
 - (click) The second one is more of a problem: AI going its own way
 - (click) Harder to fix
 > Here’s a real example from this summer, and our third incident: 

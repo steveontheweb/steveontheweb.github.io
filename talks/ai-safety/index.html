@@ -110,6 +110,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 #anim #stage{max-height:52vh}
 .chip.sign{align-self:center;font-size:clamp(.75rem,1.3vw,1rem);padding:3px 14px;letter-spacing:.04em}
 
+.hflogo{width:clamp(110px,24vh,240px);height:auto;filter:drop-shadow(0 0 22px rgba(255,210,30,.4))}
 .phplogo{width:clamp(140px,30vh,300px);height:auto;filter:drop-shadow(0 0 22px rgba(119,123,179,.55))}
 .sites{display:flex;gap:.8vw;justify-content:center;margin-top:1vh}.sites span{width:clamp(22px,3.4vw,44px);height:clamp(16px,2.5vw,32px);border:1px solid var(--line);border-top-width:4px;border-radius:4px;opacity:0;animation:hitf .3s ease forwards;animation-delay:calc(var(--k)*.12s + 2.2s)}
 .sites span.on{border-color:#777bb3;background:rgba(119,123,179,.35)}
@@ -353,9 +354,17 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 </section>
 
 <!-- 17 -->
-<section class="slide" id="anim" data-d="143">
+<section class="slide ctr" data-d="15">
 <div class="yr a" style="--d:1" data-cur="1"></div>
-<h2 class="a">The Hugging Face incident <span class="chip sign">incident 3 of 3</span></h2>
+<span class="chip sign a" style="--d:1">incident 3 of 3</span>
+<img src="hf-logo.svg" alt="Hugging Face logo" class="hflogo a" style="--d:1">
+<p class="huge a" style="--d:2"><span class="y">Hugging Face</span></p>
+<p class="big a" style="--d:3">AI agents <span class="r">attack a real company</span></p>
+<p class="dim a" style="--d:4">OpenAI’s own AI agents · July 2026</p>
+</section>
+
+<section class="slide" id="anim" data-d="128">
+<h2 class="a">The Hugging Face incident</h2>
 <svg id="stage" viewBox="0 0 600 300">
 <rect x="10" y="22" width="272" height="218" rx="8" fill="none" stroke="var(--line)" stroke-dasharray="4 3"/>
 <text x="14" y="15" style="fill:var(--dim)" font-size="9">OPENAI’S SEALED TEST</text>

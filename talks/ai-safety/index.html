@@ -110,7 +110,7 @@ svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 #anim #stage{max-height:52vh}
 .chip.sign{align-self:center;font-size:clamp(.75rem,1.3vw,1rem);padding:3px 14px;letter-spacing:.04em}
 
-.hflogo{width:clamp(110px,24vh,240px);height:auto;filter:drop-shadow(0 0 22px rgba(255,210,30,.4))}
+.hflogo{width:clamp(90px,18vh,190px);height:auto;filter:drop-shadow(0 0 22px rgba(255,210,30,.4))}
 .phplogo{width:clamp(140px,30vh,300px);height:auto;filter:drop-shadow(0 0 22px rgba(119,123,179,.55))}
 .sites{display:flex;gap:.8vw;justify-content:center;margin-top:1vh}.sites span{width:clamp(22px,3.4vw,44px);height:clamp(16px,2.5vw,32px);border:1px solid var(--line);border-top-width:4px;border-radius:4px;opacity:0;animation:hitf .3s ease forwards;animation-delay:calc(var(--k)*.12s + 2.2s)}
 .sites span.on{border-color:#777bb3;background:rgba(119,123,179,.35)}
@@ -354,13 +354,14 @@ new MutationObserver(function(){if(v.classList.contains('active')){box.style.opa
 </section>
 
 <!-- 17 -->
-<section class="slide ctr" data-d="15">
+<section class="slide ctr" data-d="30">
 <div class="yr a" style="--d:1" data-cur="1"></div>
 <span class="chip sign a" style="--d:1">incident 3 of 3</span>
 <img src="hf-logo.svg" alt="Hugging Face logo" class="hflogo a" style="--d:1">
 <p class="huge a" style="--d:2"><span class="y">Hugging Face</span></p>
-<p class="big a" style="--d:3">AI agents <span class="r">attack a real company</span></p>
-<p class="dim a" style="--d:4">OpenAI’s own AI agents · July 2026</p>
+<p class="mid a" style="--d:3">The <span class="c">GitHub of AI</span> <span class="dim">· where people share AI models &amp; data</span></p>
+<p class="big a" style="--d:4">AI agents <span class="r">attack a real company</span></p>
+<p class="dim a" style="--d:5">OpenAI’s own AI agents · July 2026</p>
 </section>
 
 <section class="slide" id="anim" data-d="128">
@@ -413,18 +414,6 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 </section>
 
 <!-- 17b -->
-<section class="slide" data-d="50">
-<h2 class="a">Why Hugging Face?</h2>
-<div class="grid" style="grid-template-columns:auto 1fr;gap:2.4vh 2.4vw;align-items:center">
-<img src="hf-logo.svg" alt="Hugging Face logo" class="a" style="--d:1;width:clamp(70px,13vh,130px);height:auto">
-<p class="big a" style="--d:1">The GitHub of AI <span class="dim">· AI models &amp; data</span></p>
-<span class="emo2" data-r="1">🔍</span><p class="big" data-r="1">Clues to <span class="y">cheat the test</span></p>
-<span class="emo2" data-r="2">🙋</span><p class="big" data-r="2">First: they <span class="g">asked politely</span></p>
-<span class="emo2" data-r="3">💥</span><p class="big" data-r="3">Then: <span class="r">hundreds hacked in</span></p>
-</div>
-<p class="src">Source: METR/Redwood investigation (Aug 26, 2026).</p>
-</section>
-
 <!-- 18 -->
 <section class="slide ctr" data-d="25">
 <h2 class="a">Who was faster?</h2>

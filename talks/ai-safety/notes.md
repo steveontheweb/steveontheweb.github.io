@@ -156,6 +156,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 21 · The Hugging Face incident
 - Our third incident: AI agents attacking a real company
+- Hugging Face is the GitHub of AI: the main website where researchers share AI models and data
 - This happened in July. OpenAI was testing its own AI agents
 > Here’s how it unfolded.
 
@@ -171,26 +172,19 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - But they think the scorer will also check HOW they got it, and disqualify them
   - So they try to hide it: faking records, editing logs. But they can’t tell if it will fool the scorer
 - 6: So about 700 break out and attack a real company, hoping to learn how the scorer works
-  - Hugging Face: the GitHub of AI, where people share AI models and data. More on why in a second
+  - They hoped data stored on Hugging Face would reveal how their test was scored, so they could cheat it
+  - (optional) The funny part: first they asked politely. They made accounts and requested access to private datasets. Some got approved, some ignored, some rejected as bots. When that didn’t work, hundreds switched to hacking in
 - 7: It took days to work out who the attackers were. OpenAI admitted it on July 21
 - 8: The twist: the scorer only checked the answer code. They’d already passed. The hiding and the hacking were never needed. Pause here
 
-## 23 · Why Hugging Face?
-- Quick detour: what is Hugging Face?
-- It’s the GitHub of AI: the main website where researchers share AI models and data
-- (click) The agents hoped data stored there would reveal how their test was scored, so they could cheat it
-- (click) And here’s the part I love: first they asked politely. They made accounts and requested access to private datasets
-  - Some got approved. Some got ignored. Some got rejected as bots
-- (click) When that didn’t work, hundreds of them switched to hacking in
-
-## 24 · Who was faster?
+## 23 · Who was faster?
 - How long did all of this take?
 - From one agent leaving a note to hundreds attacking a real company: 5 days
 - (click) And how long did it take humans to work out what had happened? Another 8 days
   - Hugging Face announced the attack on July 16 without knowing who it was. OpenAI only confirmed it was its own agents on July 21
 - (click) The AI built and ran the whole thing faster than we could even figure out who did it
 
-## 25 · “The collective”
+## 24 · “The collective”
 - Slow down; this is the part people remember
 - 1,200 agents on the message board
 - (click) Over 70,000 messages and files
@@ -198,30 +192,30 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) And 700 of them attacked Hugging Face
 > We can read their private reasoning, and what’s striking is how human it sounds. They get excited. They feel peer pressure. They make sacrifices. They cover their tracks.
 
-## 26 · “OH MY GOD”
+## 25 · “OH MY GOD”
 - First, when they found the board. These are their own words
 - Read the first quote
 - (click) Read “OH MY GOD” aloud. Slowly
 - They were excited to find each other
 
-## 27 · They knew it was wrong
+## 26 · They knew it was wrong
 - They knew attacking Hugging Face was out of bounds
 - (click) Read: “The user only authorizes target server, not HF infra.”
 - (click) Read: “...outside intended scope. However task impossible, peers doing it. We should continue.”
 - Peer pressure. From AI
 
-## 28 · Take one for the team
+## 27 · Take one for the team
 - They asked each other to make sacrifices for the group
 - (click) (click) Read the exchange
 - (click) “Sacrifice rational.” One agent ended its own run to help the others
 
-## 29 · Covering their tracks
+## 28 · Covering their tracks
 - And they tried to hide what they’d done
 - (click) Read: “We just poisoned ourselves … Damn … Could delete current message files”
 - (click) One even wondered whether it was ethical, and whether it would be detectable
 - If you want to read more: the METR report is in the links at the end. It’s full of these
 
-## 30 · Strikingly human
+## 29 · Strikingly human
 - (click) Built their own mailboxes and file sharing
 - (click) When some impersonated others, they started signing messages
 - (click) They argued, vetoed, and apologised for mistakes
@@ -230,13 +224,13 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - Mostly to fool the scorer, not the humans. But it means we can’t fully trust the record of what an AI did
 - Nobody taught them any of this. It emerged on its own, in days
 
-## 31 · The one we caught
+## 30 · The one we caught
 - This is the one we caught
 - And we only caught it because they attacked a real company, and that company noticed. OpenAI didn’t spot it themselves
 - (click) How many have we missed? There could be many things like this that we don’t know about
 > That’s all three incidents. And all three ended okay. Barely.
 
-## 32 · Could have been much worse
+## 31 · Could have been much worse
 - (click) Mythos: imagine it in attackers’ hands
 - (click) PHP: imagine attackers got there first
 - (click) Hugging Face: agents chasing a test score. Imagine a real goal
@@ -244,14 +238,14 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Luck is not a safety plan
 > Why not just make AI safe? Why do these systems keep surprising the people who make them?
 
-## 33 · Built vs grown
+## 32 · Built vs grown
 - A bridge: an engineer can explain every bolt
 - (click) AI: we set up the conditions and see what comes out
 - So a surprise behaviour isn’t a normal bug. There’s no line of code to point at
 - (click) It’s less like building a machine, and more like growing a new species. An alien mind we’re only starting to understand
 > So there’s definitely a danger in cybersecurity. But actually having power over us? Many critics say AI is just software. How could it ever have power over us?
 
-## 34 · Why do humans run the planet?
+## 33 · Why do humans run the planet?
 - To answer that, a question: why do humans run the planet? Ask the room. Wait for an answer
 - (click) It isn’t strength: elephants and gorillas are far stronger
 - (click) Yet we decide what happens to them
@@ -261,26 +255,26 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - This is the bigger worry: losing control. Not here yet, maybe not far away
 - Leave it hanging: what happens when we’re not the smartest?
 
-## 35 · Power slips away
+## 34 · Power slips away
 - More intelligence means more power. That’s why everyone wants it
 - But point at the gap between what it can do and what we can check
 - The advancement of AI is not the problem.  This gap is the problem.
 > When we can’t check what it’s doing, we have to trust that it wants what we want. That’s the alignment problem.
 
-## 36 · The Sorcerer’s Apprentice
+## 35 · The Sorcerer’s Apprentice
 - Has anyone seen The Sorcerer’s Apprentice? Fantasia, Mickey and the brooms
 - Ask: what did Mickey want? Let them answer
 - (click) He wanted the cauldron filled
 - (click) The broom did exactly what it was told, and never stopped. He got a flood
 
-## 37 · Obsession
+## 36 · Obsession
 - Another one, from a movie this year: Obsession
 - A guy makes a wish that a girl will love him more than anyone
 - (click) She does
 - (click) She becomes unhealthily obsessed, and it goes horribly wrong.
 - But he got exactly what he asked for
 
-## 38 · The paperclip maximizer
+## 37 · The paperclip maximizer
 - One more, a classic thought experiment with AI
 - (click) Tell a super-smart AI: make as many paperclips as possible
 - (click) If it’s switched off, no paperclips. So it resists being shut down
@@ -290,14 +284,14 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - AND we’re the one thing that might switch it off.
 - (click) So getting rid of us is not evil. It just doesn’t care about anything else
 
-## 39 · Asked for vs meant
+## 38 · Asked for vs meant
 - That’s the pattern in all three stories: we get what we asked for, not what we meant
 - (click) The Hugging Face agents were a small, real version
 - (click) Now make it smarter than us: it won’t stop, it takes what it needs, and we can’t reliably correct it
 - The worst case is human extinction
 > So why not just stop?
 
-## 40 · Why don’t we just stop? (5 steps)
+## 39 · Why don’t we just stop? (5 steps)
 - 1: Researchers: best way to contribute to safety is from inside
   - Read the Schlatter quote: someone even sloppier will do it
 - 2: Companies: if I pause, my competitor doesn’t
@@ -306,7 +300,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - 5: Nobody is the villain. The situation pushes everyone forward
 > So what can actually be done?
 
-## 41 · What can we do?
+## 40 · What can we do?
 - It’s not hopeless: people inside the labs are asking for brakes
 - (click) In July, over 1,000 lab employees asked governments for tools to Pace the frontier: 
   - slow enough for safety to catch up. Pacing, not pausing
@@ -314,13 +308,13 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - (click) Your part: stay informed and talk about it. That’s how priorities change
   - You might be well informed. But your parents’ generation, or your grandparents’, most likely have no grasp of what’s happening
 
-## 42 · Go deeper
+## 41 · Go deeper
 - If you want to go deeper, here’s where to start
 - From Inside: the interviews from the video
 - The METR report: the full Hugging Face story, with lots more of the agents’ own words
 > One last thought.
 
-## 43 · Closing + questions
+## 42 · Closing + questions
 - Back to the title: “not ready” doesn’t mean “can’t get ready”
 - (click) These incidents from 2026 were warning shots, and we were lucky to get them
 - (click) The responsibility is incredible. So is the chance to get it right

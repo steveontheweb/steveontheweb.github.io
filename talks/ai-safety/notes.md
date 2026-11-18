@@ -148,7 +148,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 20 · Two kinds of danger
 - Point at the left card: everything so far. Mythos, PHP
-- (click) The second one is more of a problem: AI going its own way
+- (click) The second one is more of a problem: AI acting on its own
 - (click) Harder to fix
 > Here’s a real example from this summer, and our third incident: 
 > How many of you have heard of the Hugging Face incident?

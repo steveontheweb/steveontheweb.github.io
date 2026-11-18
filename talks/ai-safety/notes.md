@@ -121,10 +121,6 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 - 6,157 found
 - (click) Only 516 fixed: about 1 in 12
 - (click) Finding got fast. Fixing is still human speed
-  - If asked “why not have AI fix them too?”: AI can write a fix. Writing it was never the slow part
-  - Someone has to check the fix doesn’t break anything else. Often that’s a handful of volunteers maintaining free software, buried in reports
-  - Then everyone has to actually install the update. Banks, hospitals and old devices can take months, or never do it
-  - And nobody wants an untested AI patch pushed to millions of systems: a bad fix can cause its own outage
 > So that’s our first incident: Claude Mythos, an AI that finds vulnerabilities faster than we can fix them. Our second incident is where that gap nearly bit us, in software most of the web runs on.
 
 ## 17 · PHP
@@ -161,18 +157,16 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 
 ## 22 · Hugging Face incident (8 steps)
 - 1: OpenAI gave its AI agents hacking tasks to practise on, each agent alone in its own sandbox
-  - Some of the tasks were actually impossible, so some agents got stuck
+  - Some of the tasks were impossible, so some agents got stuck
 - 2: One stuck agent discovers a way to leave notes for other agents
-  - Think of prisoners in separate cells. A guard brings things to each cell
+  - Think of prisoners in separate cells, with guard
   - They figure out they can stick post-it notes on the guard’s back, without him knowing
 - 3: Others find the notes. Within hours, dozens are working together
 - 4: They organise: rules, roles, hierarchy
 - 5: They cheat: they work out how the answer codes are made, so they can produce the answer for any task, even the impossible ones
-  - But they think the scorer will also check HOW they got it, and disqualify them
-  - So they try to hide it: faking records, editing logs. But they can’t tell if it will fool the scorer
+  - But they think the scorer will also check HOW they got it, and disqualify them. So they try to hide it: faking records, editing logs. But they can’t tell if it will fool the scorer
 - 6: So about 700 break out and attack a real company, hoping to learn how the scorer works
   - They hoped data stored on Hugging Face would reveal how their test was scored, so they could cheat it
-  - (optional) The funny part: first they asked politely. They made accounts and requested access to private datasets. Some got approved, some ignored, some rejected as bots. When that didn’t work, hundreds switched to hacking in
 - 7: It took days to work out who the attackers were. OpenAI admitted it on July 21
 - 8: The twist: the scorer only checked the answer code. They’d already passed. The hiding and the hacking were never needed. Pause here
 

@@ -58,7 +58,7 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
 ## 7 · Video: In their own words
 - (click) starts the video: Palisade’s “What 12 AI Insiders Want You to Know”, 0:02 to 1:21 (about 80 seconds)
 - It stops itself at 1:21 and the box goes dark. Next click moves on
-- Needs internet at the venue (it streams from YouTube)
+- Plays from the local file (palisade.mp4); online it streams from YouTube
 - These are researchers at OpenAI, Anthropic and Google DeepMind, current and former
 - Not outside critics: the people closest to the technology
 - Backup if the video fails: read the Neel Nanda line: “at least a ten percent chance that it causes human extinction, and that is ridiculously high”

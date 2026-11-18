@@ -798,7 +798,7 @@ var RK='aisafety-rehearsal',D=[],lt=Date.now();try{D=JSON.parse(localStorage.get
 acc=D.reduce(function(x,y){return x+(y||0)},0);label();
 function plan(c){var S=window.S;return c+1<S.length?secs(S[c+1].dataset.t)-secs(S[c].dataset.t):null}
 function acct(){var now=Date.now();if(run){var c=window.i||0;D[c]=(D[c]||0)+(now-lt);try{localStorage.setItem(RK,JSON.stringify(D))}catch(e){}}lt=now;
-var c2=window.i||0,a=Math.floor((D[c2]||0)/1000),p=plan(c2);document.getElementById('pst').innerHTML='this slide '+fmt(a)+(p!==null?' · plan '+fmt(p)+(a>p?' <span style="color:var(--r)">(over by '+fmt(a-p)+')</span>':''):'')}
+var c2=window.i||0,a=Math.floor((D[c2]||0)/1000),p=plan(c2);document.getElementById('pst').innerHTML='this slide '+fmt(a)+(p!==null?' · plan '+fmt(p)+(p>0&&a>p?' <span style="color:var(--r)">(over by '+fmt(a-p)+')</span>':''):'')}
 function pad(x,n){x=String(x);while(x.length<n)x+=' ';return x}
 function report(){var S=window.S,L=['Rehearsal timings, '+new Date().toLocaleString(),'',pad('#',4)+pad('actual',8)+pad('plan',7)+pad('starts',8)+'slide'],cum=0;
 for(var c=0;c<S.length;c++){var a=Math.round((D[c]||0)/1000),p=plan(c);L.push(pad(c+1,4)+pad(fmt(a),8)+pad(p===null?'-':fmt(p),7)+pad(fmt(cum),8)+(N[c]?N[c][0]:''));cum+=a}

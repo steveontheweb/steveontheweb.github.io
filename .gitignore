@@ -21,3 +21,6 @@ package-lock.json
 # Misc
 assets/js/dist
 website-modernization-brief.md
+
+# Talk videos (kept local, not published)
+talks/**/*.mp4

@@ -804,9 +804,9 @@ function report(){var S=window.S,L=['Rehearsal timings, '+new Date().toLocaleStr
 for(var c=0;c<S.length;c++){var a=Math.round((D[c]||0)/1000),p=plan(c);L.push(pad(c+1,4)+pad(fmt(a),8)+pad(p===null?'-':fmt(p),7)+pad(fmt(cum),8)+(N[c]?N[c][0]:''));cum+=a}
 L.push('','Total: '+fmt(cum)+' (planned: last slide starts at '+S[S.length-1].dataset.t+')');return L.join('\n')}
 function tick(){if(window.R!==hlR){hlR=window.R;hl()}acct();draw();var pd=document.getElementById('pd'),ms=el();if(!run&&!ms){document.getElementById('pe').textContent='0:00';pd.textContent='press Start when you begin';return}
-var e=Math.floor(ms/1000),pl=secs(window.S[window.i||0].dataset.t),df=e-pl;
+var c=window.i||0,e=Math.floor(ms/1000),st=secs(window.S[c].dataset.t),pn=plan(c),en=st+(pn||0),df=e<st?e-st:e>en?e-en:0;
 document.getElementById('pe').textContent=fmt(e);
-pd.innerHTML=!run?'<span class="bh">paused</span>':Math.abs(df)<15?'on pace':df>0?'<span class="bh">'+fmt(df)+' behind</span>':'<span class="ah">'+fmt(df)+' ahead</span>'}
+pd.innerHTML=!run?'<span class="bh">paused</span>':pn===0?'title slide':Math.abs(df)<15?'on pace':df>0?'<span class="bh">'+fmt(df)+' behind</span>':'<span class="ah">'+fmt(df)+' ahead</span>'}
 document.getElementById('pgo').onclick=function(){startStop();this.blur()};
 document.getElementById('phm').onclick=function(){go(0);if(ch){ch.postMessage({k:'Home'});sync()}this.blur()};
 document.getElementById('prs').onclick=function(){if(el()&&!confirm('Reset the timer to 0:00 and clear the rehearsal timings?'))return;acc=0;run=false;D=[];try{localStorage.removeItem(RK)}catch(e){}label();this.blur()};

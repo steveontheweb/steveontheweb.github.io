@@ -100,8 +100,8 @@ Format: "## number · title" starts a slide (slides are matched in order), "- " 
   - 27 years of human experts looking at that code, and no one ever found it
 
 ## 13 · The sandwich email
-- The researcher had gone to lunch
-- Gets an email from the AI while eating a sandwich in a park
+- The researcher wasn’t even at their desk
+- They found out when an email from the AI arrived while they were eating a sandwich in a park
 - (pause for the laugh)
 
 ## 14 · Nobody asked it to

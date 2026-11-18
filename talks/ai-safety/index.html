@@ -65,7 +65,7 @@ svg text{font-family:inherit;fill:var(--fg);font-size:11px}
 .chip{display:inline-block;border:1px solid var(--y);color:var(--y);padding:1px 10px;border-radius:12px;font-size:clamp(.65rem,1.2vw,.95rem);font-weight:400;text-shadow:none;vertical-align:middle;white-space:nowrap}
 svg [data-s]{opacity:0;transition:opacity .5s}svg [data-s].on{opacity:1}
 .bob{display:inline-block;animation:bob 1.6s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-8px) rotate(-6deg)}}
-.q{font-size:clamp(.85rem,1.45vw,1.1rem);font-weight:700;line-height:1.35;margin:0 0 .6vh}#stage{max-height:46vh}a{color:var(--c);word-break:break-all}.rs li{font-size:clamp(.72rem,1.3vw,1rem)}.ns [data-s]{opacity:0;transition:opacity .25s}.ns [data-s].on{opacity:1}.bar2{transform-box:fill-box;transform-origin:50% 100%;transition:transform .35s ease}.bar2.cb,.bar2.nb{transition-delay:.2s}
+.q{font-size:clamp(.85rem,1.45vw,1.1rem);font-weight:700;line-height:1.35;margin:0 0 .6vh}#stage{max-height:46vh}a{color:var(--c);word-break:break-all}.rs li{font-size:clamp(.72rem,1.3vw,1rem)}.ns [data-s]{opacity:0;transition:opacity .25s}.ns [data-s].on{opacity:1}.bar2{transform-box:fill-box;transform-origin:50% 100%;transition:transform .5s ease-out}
 .ctr{align-items:center;text-align:center}.ctr .big{max-width:38ch}
 .huge{font-size:clamp(2rem,6vw,4.8rem);font-weight:700;line-height:1.12;margin:0}
 .mid{font-size:clamp(1rem,2.1vw,1.6rem);line-height:1.4}
@@ -616,11 +616,17 @@ new MutationObserver(function(){clearTimeout(t);if(sec.classList.contains('activ
 </ul></div>
 <svg viewBox="0 0 250 260"><line x1="10" y1="200" x2="240" y2="200" stroke="var(--dim)"/><text x="62" y="26" text-anchor="middle" font-size="9" style="fill:var(--c)">COMPANIES</text><text x="187" y="26" text-anchor="middle" font-size="9" style="fill:var(--r)">COUNTRIES</text><rect class="bar2 ca" x="25" y="65" width="30" height="135" rx="3" fill="var(--c)"/><text x="40" y="216" text-anchor="middle" font-size="9" style="fill:var(--dim)">A</text><rect class="bar2 cb" x="70" y="65" width="30" height="135" rx="3" fill="var(--y)"/><text x="85" y="216" text-anchor="middle" font-size="9" style="fill:var(--dim)">B</text><rect class="bar2 na" x="150" y="65" width="30" height="135" rx="3" fill="var(--r)"/><text x="165" y="216" text-anchor="middle" font-size="9" style="fill:var(--dim)">A</text><rect class="bar2 nb" x="195" y="65" width="30" height="135" rx="3" fill="var(--y)"/><text x="210" y="216" text-anchor="middle" font-size="9" style="fill:var(--dim)">B</text><g data-s="5"><text x="125" y="238" text-anchor="middle" font-size="9" style="fill:var(--dim)">every jump forces the other side to match.</text><text x="125" y="252" text-anchor="middle" font-size="9" style="fill:var(--dim)">Nobody steps down.</text></g></svg>
 </div>
-<div style="display:flex;gap:12px;align-items:center"><span id="rdots" style="display:flex;gap:8px"></span><span class="tag">step through: arrow keys, click, or numbers</span></div>
+<div style="display:none"><span id="rdots"></span></div>
 <script>
 (function(){var sec=document.getElementById('race'),els=[].slice.call(sec.querySelectorAll('[data-s]')),N=5,n=1,dots=document.getElementById('rdots'),db=[];
 var L=[[0,0,0,0],[2,2,0,0],[2,2,2,2],[3,3,3,3],[4,4,4,4]],B=['ca','cb','na','nb'].map(function(c){return sec.querySelector('.bar2.'+c)});
-function bars(k){B.forEach(function(r,j){r.style.transform='scaleY('+((15+30*L[k][j])/135).toFixed(3)+')'})}
+var cur=[0,0,0,0],tm=[];
+function set1(j,v){cur[j]=v;B[j].style.transform='scaleY('+((15+30*v)/135).toFixed(3)+')'}
+function bars(k){tm.forEach(clearTimeout);tm=[];var T=L[k],j;
+if(T.some(function(v,j){return v<cur[j]})){for(j=0;j<4;j++)set1(j,T[j]);return}
+var c=cur.slice(),moves=[];
+while(c.some(function(v,j){return v<T[j]})){[0,1].forEach(function(o){var m=[];[0,2].forEach(function(p){j=p+o;if(c[j]<T[j]){c[j]++;m.push([j,c[j]])}});if(m.length)moves.push(m)})}
+moves.forEach(function(m,x){tm.push(setTimeout(function(){m.forEach(function(q){set1(q[0],q[1])})},x*650))})}
 function show(k){els.forEach(function(e){e.classList.toggle('on',k>0&&(','+e.getAttribute('data-s')+',').indexOf(','+k+',')>-1)});bars(k>0?k-1:0)}
 function mark(){db.forEach(function(b,i){var on=i+1===n;b.style.background=on?'var(--g)':'none';b.style.color=on?'#000':'var(--g)'})}
 function go1(k){n=k;show(n);mark()}
